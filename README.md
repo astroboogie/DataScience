@@ -1,5 +1,7 @@
 # Data Science
 
+<img src="http://i.imgur.com/pQWh0gz.png" height="50">
+
 Welcome to the official Github repository for Folsom Lake College's Data Science Club. This is where all projects will be stored open-source. Welcome to innovation.
 
 ### About the Data Science Club
@@ -15,4 +17,4 @@ Projects are  managed in two categories:
   - Team projects for collaboration under the "Projects" folder.
 
 ### Setting up Github, the easy way
-If you're ambitious enough to [learn Git](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners), I'd recommend doing so for a more thorough understanding of using Github. If you would like to learn how to use Github without the terminal, I would instead recommend [Github Desktop](https://help.github.com/desktop/guides/getting-started/).
+If you're ambitious enough to [learn Git](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners), I'd recommend doing so for a more thorough understanding of using Github. If you would like to learn how to use Github without the terminal, I would instead recommend [Github Desktop](https://desktop.github.com/).
