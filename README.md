@@ -1,6 +1,4 @@
-# Data Science
-
-<img src="http://i.imgur.com/pQWh0gz.png" height="50">
+# Data Science <img src="http://i.imgur.com/pQWh0gz.png" height="50">
 
 Welcome to the official Github repository for Folsom Lake College's Data Science Club. This is where all projects will be stored open-source. Welcome to innovation.
 
