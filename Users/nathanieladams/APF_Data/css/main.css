@@ -1,0 +1,125 @@
+body {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.waterfall-header {
+    font-size: 1.8rem;
+    color: darkgray;
+    font-weight: 250;
+    text-anchor: middle;
+    left: Calc(50% - 200px);
+    top: 30px;
+    position: absolute;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 250;
+    left: Calc(50% - 90px);
+    top: 70px;
+    text-anchor: middle;
+    position: absolute;
+}
+
+.center {
+    margin:auto;
+    width:900px;
+}
+
+.tooltip {
+
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+.yaxis {
+    /*stroke: black;*/
+    stroke-width: 1.0;
+    fill: #000000;
+    shape-rendering: crispEdges;
+    font-size: 12px;
+}
+
+.tooltip {
+    position: absolute;
+    width: 160px;
+    height: 20px;
+    pointer-events: none;
+    font-size: 10px;
+}
+
+/*.yaxis line {*/
+    /*stroke-width: 1.0;*/
+    /*stroke: black;*/
+/*}*/
+
+.xaxis {
+    /*stroke: black;*/
+    fill: #000000;
+    shape-rendering: crispEdges;
+    font-size: 12px;
+}
+
+.xaxis line {
+    stroke-width: 1.0;
+    stroke: #000000;
+}
+
+.bigtext {
+    fill: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+    fill: #d0d0d0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.graphbutton {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+.form {
+    position: absolute;
+    top: 6.8%;
+    right: Calc(35% - 200px);
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26px;
+    height: 20px;
+    padding: 4px 12px;
+}
+
+.error {
+    position: absolute;
+    top: Calc(6.8% + 22px);
+    right: Calc(35% - 195px);
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    color: red;
+    padding: 4px 12px;
+    font-weight: 200;
+    line-height: 26px;
+    opacity: 0;
+}
