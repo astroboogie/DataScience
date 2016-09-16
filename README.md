@@ -3,9 +3,9 @@
 Welcome to the official Github repository for Folsom Lake College's Data Science Club. This is where all projects will be stored open-source. Welcome to innovation.
 
 ### About the Data Science Club
-Our club exists to innovate and push students toward a "learn by doing" model that exists in developer workplaces to remain competitive. We maintain a sharp learning curve and push our members to compete with industry standard in the fields of backend and frontend software development using data science methods.
+Our club exists to innovate and push students toward a "learn by doing" model that exists in developer workplaces to remain competitive. We plan on getting Data Science students into internships, top-tier universities, or the industry for their dream company or lab.
 
-This club is for students interested in programming, entrepreneurship, or design. We'll discuss data science methods such as introductory machine learning, data visualization, data mining, and many more subjects. This club exists to stand at the frontier of computer science. We'll engage in subfields of development highly desired by companies such as Uber, Google, Apple, and many more.
+This club is for students interested in science, programming, entrepreneurship, or design. We'll discuss data science methods such as introductory machine learning, data visualization, data mining, and many more subjects. This club exists to stand at the frontier of computer science. We'll engage in subfields of development highly desired by companies such as Uber, Google, Apple, and many more.
 
 E-mail Rebekah at keelyrebe@gmail.com if you have any questions.
 
@@ -15,4 +15,4 @@ Projects are  managed in two categories:
   - Team projects for collaboration under the "Projects" folder.
 
 ### Setting up Github, the easy way
-If you're ambitious enough to [learn Git](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners), I'd recommend doing so for a more thorough understanding of using Github. If you would like to learn how to use Github without the terminal, I would instead recommend [Github Desktop](https://desktop.github.com/).
+For a thorough understanding of using Github, you can [learn Git](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) here. If you'd like to learn how to use Github without the terminal, you should use [Github Desktop](https://desktop.github.com/).
