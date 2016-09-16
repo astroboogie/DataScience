@@ -3,9 +3,9 @@
 Welcome to the official Github repository for Folsom Lake College's Data Science Club. This is where all projects will be stored open-source. Welcome to innovation.
 
 ### About the Data Science Club
-Our club exists to innovate and push students toward a "learn by doing" model that exists in developer workplaces to remain competitive. We plan on getting Data Science students into internships, top-tier universities, or the industry for their dream company or lab.
+Our club exists to innovate and push students toward a "learn by doing" model that exists in developer workplaces to remain competitive. Data Science is a new field that was created in response to big data and the need for large-scale computing. It's most competitive in university environments as seen with [MIT](http://mitsloan.mit.edu/undergrad/explore-by-interest/business-analytics-and-operations-research/), [Berkeley](https://bids.berkeley.edu), or [Stanford](https://sdsi.stanford.edu). We plan on getting Data Science students into internships, top-tier universities, or the industry for their dream company or lab.
 
-This club is for students interested in science, programming, entrepreneurship, or design. We'll discuss data science methods such as introductory machine learning, data visualization, data mining, and many more subjects. This club exists to stand at the frontier of computer science. We'll engage in subfields of development highly desired by companies such as Uber, Google, Apple, and many more.
+This club is for students interested in science, programming, entrepreneurship, or design. We'll discuss data science methods such as introductory machine learning, data visualization, data mining, and many more subjects. We'll engage in subfields of development highly desired by companies such as Uber, Google, Apple, and many more.
 
 E-mail Rebekah at keelyrebe@gmail.com if you have any questions.
 
