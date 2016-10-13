@@ -1,0 +1,139 @@
+.mainPage
+{
+	position: relative;
+	width: 100%;
+	height: 95%;
+	overflow: hidden;
+}
+.mainPage > div
+{
+	width: 100%;
+}
+
+#homeWrapper
+{
+	height: auto;
+}
+
+#logo
+{
+	position: relative;
+	height: 215px;
+	background: url(../icon/logoCRC.svg), #fafafa;
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logo::after
+{
+	content: "COSUMNES";
+	position: relative;
+	top: 170px;
+	left: 37.5%;
+	color: #2c6fbf;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.mainWin
+{
+	text-align: center;
+	color: #fafafa;
+	font-size: 150%;
+	line-height: 413%;
+	text-shadow: 1px 1px 7px black;
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+}
+
+.mainWin:nth-child(1)
+{
+	background: -webkit-radial-gradient(rgba(255, 153, 51, .7), rgba(204, 102, 0, .7) ), url(../img/studentLife.jpg);
+	background: -o-radial-gradient(rgba(255, 153, 51, .7), rgba(204, 102, 0, .7) ), url(../img/studentLife.jpg);
+	background: -ms-radial-gradient(rgba(255, 153, 51, .7), rgba(204, 102, 0, .7) ), url(../img/studentLife.jpg);
+	background: -moz-radial-gradient(rgba(255, 153, 51, .7), rgba(204, 102, 0, .7) ), url(../img/studentLife.jpg);
+	background: radial-gradient(rgba(255, 153, 51, .7), rgba(204, 102, 0, .7) ), url(../img/studentLife.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.mainWin:nth-child(2)
+{
+	background: -webkit-radial-gradient(rgba(200, 200, 200, .7), rgba(150, 150, 150, .7) ), url(../img/places.jpg);
+	background: -o-radial-gradient(rgba(200, 200, 200, .7), rgba(150, 150, 150, .7) ), url(../img/places.jpg);
+	background: -ms-radial-gradient(rgba(200, 200, 200, .7), rgba(150, 150, 150, .7) ), url(../img/places.jpg);
+	background: -moz-radial-gradient(rgba(200, 200, 200, .7), rgba(150, 150, 150, .7) ), url(../img/places.jpg);
+	background: radial-gradient(rgba(200, 200, 200, .7), rgba(150, 150, 150, .7) ), url(../img/places.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.mainWin:nth-child(3)
+{
+	background: -webkit-radial-gradient(rgba(77, 184, 255, .7), rgba(0, 153, 255, .7) ), url(../img/sports.jpg), purple;
+	background: -o-radial-gradient(rgba(77, 184, 255, .7), rgba(0, 153, 255, .7) ), url(../img/sports.jpg), purple;
+	background: -ms-radial-gradient(rgba(77, 184, 255, .7), rgba(0, 153, 255, .7) ), url(../img/sports.jpg), purple;
+	background: -moz-radial-gradient(rgba(77, 184, 255, .7), rgba(0, 153, 255, .7) ), url(../img/sports.jpg), purple;
+	background: radial-gradient(rgba(77, 184, 255, .7), rgba(0, 153, 255, .7) ), url(../img/sports.jpg), purple;
+	background-size: cover;
+	background-position: center;
+}
+.mainWin:nth-child(4)
+{
+	background: -webkit-radial-gradient(rgba(0, 51, 204, .7), rgba(0, 32, 128, .7) ), url(../img/courses.jpg), brown;
+	background: -o-radial-gradient(rgba(0, 51, 204, .7), rgba(0, 32, 128, .7) ), url(../img/courses.jpg), brown;
+	background: -ms-radial-gradient(rgba(0, 51, 204, .7), rgba(0, 32, 128, .7) ), url(../img/courses.jpg), brown;
+	background: -moz-radial-gradient(rgba(0, 51, 204, .7), rgba(0, 32, 128, .7) ), url(../img/courses.jpg), brown;
+	background: radial-gradient(rgba(0, 51, 204, .7), rgba(0, 32, 128, .7) ), url(../img/courses.jpg), brown;
+	background-size: cover;
+	background-position: center; 
+}
+
+#tabWrapper
+{
+	position: absolute;
+	bottom: 32px;
+	width: 98.4%;
+	height: 40px;
+	z-index: 0;
+	background: #2c6fbf;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+}
+
+.tab
+{
+	margin: 0 -2px;
+	padding: 0;
+	width: 50%;
+	height: 100%;
+	background: transparent;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+    flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+	cursor: pointer;
+
+}
+
+.currentTab
+{
+	background: #fc8300 !important;
+}
+/*
+.tab:hover
+{
+	font-weight: bolder;
+}*/
