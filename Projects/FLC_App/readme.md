@@ -6,6 +6,7 @@ User Analytics
 Front-End Design
 - Nathaniel
 - Ali
+- Natanya
 
 App Data
 - Aaron
