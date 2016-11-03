@@ -145,9 +145,29 @@ starButton.click(function () {
 
 // Append course data to generated elements
 
-$.getJson("http://aaronhartigan.github.io/data", function(data) {
-    console.log(data);
-});
+var courseData = "https://cdn.rawgit.com/AstroBoogie/DataScience/master/Projects/FLC_App/app_data/classesOut.json";
+var items = [];
+
+var success = function () {
+    console.log("cat");
+};
+
+var jqxhr = $.getJSON( "classesOut.json", function() {
+    console.log( "success" );
+})
+    .done(function() {
+        console.log( "second success" );
+    })
+    .fail(function() {
+        console.log( "error" );
+    })
+    .always(function() {
+        console.log( "complete" );
+    });
+
+// Perform other work here ...
+
+
 // $.getJSON("blabla.json", function(data) {
 //
 //     // loop through data, parse it into items dictionary
