@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="US">
+<head>
+    <meta charset="UTF-8">
+    <title>FLC - Mobile App</title>
+
+    <!-- Primary CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div id="main-container">
+        <!-- implement handlebars -->
+        <div id="header-container">
+            <button id="category-back">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+            <div>
+                <i class="material-icons">class</i>
+            </div>
+        </div>
+
+        <!-- main container -->
+        <div class="body-container">
+            <!--<div id="schedule-padding"></div>-->
+
+            <!-- search container -->
+            <div id="schedule-container">
+
+                <!-- configure/contents toggle section -->
+                <span>Browse Courses</span>
+                <div id="category-toggle">
+                    <button class="category-selected" id="configure">Configure</button>
+                    <button id="contents">Courses</button>
+                </div>
+
+                <!-- configure section -->
+                <div id="configure-container">
+                    <button id="subject" class="category">
+                        <div class="text-container">
+                            <h1 id="subject-header">Subject</h1>
+                            <span id="subject-text">Select a course</span>
+                        </div>
+                        <div class="arrow-container">
+                            <span id="subject-arrow" class="material-icons">keyboard_arrow_right</span>
+                        </div>
+                    </button>
+
+                    <div id="weekdays" class="category">
+                        <h1 id="weekday-header">Days/Online</h1>
+                        <form action="">
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Monday">
+                                    <span>M</span>
+                                </div>
+                            </label>
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Tuesday">
+                                    <span>T</span>
+                                </div>
+                            </label>
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Wednesday">
+                                    <span>W</span>
+                                </div>
+                            </label>
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Thursday">
+                                    <span>Th</span>
+                                </div>
+                            </label>
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Friday">
+                                    <span>F</span>
+                                </div>
+                            </label>
+                            <label>
+                                <div>
+                                    <input type="radio" name="day" value="Saturday">
+                                    <span>S</span>
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- course section -->
+                <div id="course-container">
+                    <div class="category">
+                        <div class="category-body">
+                            <div class="category-header">
+                                <span class="course-title">PHIL 300 - Introduction to Philosophy</span>
+                            </div>
+                            <div class="category-description">
+                                <span class="course-days">MoWeFri</span>
+                                <span class="course-time">9:00am - 10:20am</span>
+                            </div>
+                        </div>
+                        <button class="category-star">
+                            <i class="material-icons">stars</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- course categories -->
+            <div id="schedule-categories">
+                <div id="categories-padding"></div>
+
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Anthropology</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Mathematics</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Computer Science</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>History</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Anthropology</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Mathematics</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Computer Science</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>History</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Anthropology</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Mathematics</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Computer Science</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>History</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Anthropology</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Mathematics</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>Computer Science</span>
+                    </div>
+                </button>
+                <button class="category-container">
+                    <div class="category-text">
+                        <span>History</span>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Primary JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
