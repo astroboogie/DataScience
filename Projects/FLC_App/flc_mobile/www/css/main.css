@@ -236,7 +236,7 @@ body {
 .category {
     padding: 0 0 0 0 !important;
     width: 100vw;
-    height: 50px;
+    height: auto;
     background-color: white;
     border: none;
     outline: none;
@@ -397,9 +397,7 @@ body {
 #weekdays > form > label > div {
     width: calc(100vw / 7);
     height: 50px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    display: table;
 }
 
 #weekdays > form > label > div > input {
@@ -411,6 +409,12 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 4vw;
     font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 #weekdays > form > label {
@@ -420,25 +424,27 @@ body {
     margin-bottom: 0 !important;
 }
 
-input[type="radio"]{
+input[type="checkbox"]{
     visibility:hidden;
 }
 
 /* course section */
 #course-container {
-    margin-top: -60vh;
+    margin-top: -58vh;
     margin-left: 100vw;
 }
 
 .category-body {
     margin-left: 5%;
-    height: 50px;
+    min-height: 50px;
     width: 75%;
     float: left;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
 
 .category-header {
-    height: 25px;
+    min-height: 25px;
     width: 100%;
 }
 
@@ -457,17 +463,26 @@ input[type="radio"]{
 }
 
 .course-time {
+    margin-left: 4vw;
     font-size: 3.5vw;
     color: #35709c;
 }
 
 .category-star {
+    z-index: 3;
     background-color: transparent;
     border: none;
     float: left;
-    height: 50px;
     width: 20%;
     display: table;
+}
+
+.sm-star {
+    height: 50px;
+}
+
+.md-star {
+    height: 73px;
 }
 
 .category-star > i {
