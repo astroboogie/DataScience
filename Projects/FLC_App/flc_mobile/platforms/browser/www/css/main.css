@@ -152,14 +152,16 @@ body {
 /* ====== Body Section ====== */
 
 .body-container {
-    height: 100%;
+    height: 100% !important;
     width: 100vw;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
+.overflow-locked {
+    overflow-y: hidden;
+}
 /* Home Page */
 
 #body-padding {
@@ -339,12 +341,13 @@ body {
 
 /* Schedule Categories */
 #schedule-categories {
-    margin-top: -121vh;
+    margin-top: -155vh;
     margin-left: 100vw;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     float: left;
     -webkit-transition: margin-left 0.3s;
+    overflow-y: scroll;
 }
 
 #categories-padding {
@@ -382,6 +385,7 @@ body {
 
 .categories-scaled {
     margin-left: 0vw !important;
+    height: 2000px !important;
 }
 
 /* Weekday Radio Buttons */
@@ -430,8 +434,10 @@ input[type="checkbox"]{
 
 /* course section */
 #course-container {
+    height: auto !important;
     margin-top: -58vh;
     margin-left: 100vw;
+    overflow-y: scroll;
 }
 
 .category-body {
@@ -472,22 +478,14 @@ input[type="checkbox"]{
     z-index: 3;
     background-color: transparent;
     border: none;
-    float: left;
+    float: right;
     width: 20%;
     display: table;
 }
 
-.sm-star {
-    height: 50px;
-}
-
-.md-star {
-    height: 73px;
-}
-
 .category-star > i {
     color: #35709c;
-    width: 100%;
+    width: 20vw;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -496,6 +494,23 @@ input[type="checkbox"]{
 
 .starToggle {
     color: #d9ce59 !important;
+}
+
+/* Empty Course Results */
+
+#empty-results {
+    text-align: center !important;
+    margin-top: 12vh;
+}
+
+#empty-results > i {
+    font-size: 20vw;
+    color: #c7c7c7;
+}
+
+#empty-results > span {
+    font-size: 5vw;
+    color: #c7c7c7;
 }
 
 /* ====== Footer Section ====== */

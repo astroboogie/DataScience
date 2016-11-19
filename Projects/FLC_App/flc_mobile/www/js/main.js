@@ -38,6 +38,7 @@ body.scroll(function () {
 var subjectButton = $("#subject");
 var scheduleContainer = $("#schedule-container");
 var scheduleCategories = $("#schedule-categories");
+var bodyContainer = $(".body-container");
 // $("#category-back").prop('disabled', true);
 
 // creates subject debounce
@@ -49,18 +50,14 @@ var selectedVal;
 var categorySlide = function () {
     scheduleContainer.addClass("container-scaled");
     scheduleCategories.addClass("categories-scaled");
-
-    // $("#category-back").prop('disabled', false);
-    // $("#category-back").addClass("enable-opacity");
-
+    // bodyContainer.removeClass("overflow-locked");
 };
 
 // Creates function that unslides schedule page
 var categoryUnslide = function () {
-    $("input").prop('disabled', true);
     scheduleContainer.removeClass("container-scaled");
     scheduleCategories.removeClass("categories-scaled");
-    // $("#category-back").removeClass("enable-opacity");
+    // bodyContainer.addClass("overflow-locked");
 
     $(".body-container").scrollTop(0);
 };
@@ -89,11 +86,9 @@ $('#weekdays input').on('change', function() {
     var selectionLabel = $(this).parent().children("span");
 
     if (selectionLabel.css('background-color') == "rgb(220, 220, 220)") {
-        console.log(selectionLabel.css('background-color'));
         selectionLabel.css('background-color', 'rgb(255, 255, 255)');
     }
     else {
-        console.log(selectionLabel.css('background-color'));
         selectionLabel.css('background-color', 'rgb(220, 220, 220)');
     }
 });
@@ -154,25 +149,10 @@ $.getJSON("classesOut.json", function(data) {
 
                 // creates schedule categories
                 $("#schedule-categories").append("<button class='category-container'><div class='category-text'><span>" + titleName + "</span></div></button>")
-            }
-            else {
+
             }
         });
     });
-
-    // create schedule categories
-
-
-
-
-
-    // organize courses dictionary into course container objects
-    // for (i = 0, i < data.length, i++) {
-    //     $( "<div/>", {
-    //         class: "course-title",
-    //         text: (course["course" + i][0] + course["course" + i][1])
-    //     }).appendTo("#course-container");
-    // }
 
 })
 .done(function() {
@@ -189,15 +169,6 @@ $.getJSON("classesOut.json", function(data) {
         categoryUnslide();
 
     });
-
-    // Star Click
-    var starButton = $(".category-star");
-
-    starButton.click(function () {
-        console.log("clicked");
-        $(this).children('i').toggleClass("starToggle");
-    });
-
     // updates course listing on courses button click
     $("#contents").click(function() {
         $("#course-container").empty();
@@ -209,9 +180,9 @@ $.getJSON("classesOut.json", function(data) {
             var tempCourseTitle = title.split(" ")[0];
 
             if (tempCourseTitle == selectedVal) {
-                $("#course-container").append("<div class='category' id='" + key + "'><div class='category-body'><div class='category-header'><span class='course-title'>" + title + " " + className + "</span></div><div class='category-description'><span class='course-days'>MoWeFri</span><span class='course-time'>9:00am - 10:20am</span></div></div><button class='category-star'><i class='material-icons'>stars</i></button></div>")
+                $("#course-container").append("<div class='category' id='" + key + "'><div class='category-body'><div class='category-header'><span class='course-title'>" + title + " " + className + "</span></div><div class='category-description'><span class='course-days'>MoWeFri</span><span class='course-time'>9:00am - 10:20am</span></div></div><button class='category-star'><i class='material-icons'>keyboard_arrow_right</i></button></div>")
 
-                var currContainer = $("#" + key)
+                var currContainer = $("#" + key);
 
                 var containerHeight = currContainer.find(".category-body").height();
 
@@ -219,5 +190,49 @@ $.getJSON("classesOut.json", function(data) {
 
             }
         }
+
+        if ($('#course-container').is(':empty')) {
+            $("#course-container").append("<div id='empty-results'><i class='material-icons'>block</i></br><span>There are no course results listed</span></div>")
+        }
+
+        // Star Click
+        var starButton = $(".category-star");
+
+        starButton.click(function () {
+            $(this).children('i').toggleClass("starToggle");
+        });
     })
 });
+
+//Home transitions
+
+// Page Open
+var pageArray = window.location.pathname.split("/");
+var pageName = pageArray[pageArray.length - 1];
+
+if (pageName == "schedule.html") {
+    $("body > *").css("opacity", 0);
+    $("body > *").animate({
+        opacity: "1"
+    }, 500);
+}
+
+// Page leave
+$(".button-object").click(function () {
+    var clickedObject = $(this);
+
+    var destination = clickedObject.attr('id').split("-")[1];
+    console.log(destination);
+
+    $("#background-container").animate({
+        opacity: "1"
+    }, 500);
+
+    $("body > *").not("body > #background-container").animate({
+        opacity: "0"
+    }, 500, function() {
+        window.location = destination + ".html";
+    });
+
+});
+
