@@ -15,12 +15,12 @@
 <body>
     <div id="main-container">
         <!-- implement handlebars -->
-        <div id="header-container">
+        <div id="header-container" class="header-scaled">
             <button id="category-back">
                 <i class="material-icons">keyboard_arrow_left</i>
             </button>
             <div>
-                <i class="material-icons">class</i>
+                <span>Browse Courses</span>
             </div>
         </div>
 
@@ -32,7 +32,6 @@
             <div id="schedule-container">
 
                 <!-- configure/contents toggle section -->
-                <span>Browse Courses</span>
                 <div id="category-toggle">
                     <button class="category-selected" id="configure">Configure</button>
                     <button id="contents">Courses</button>
@@ -40,9 +39,10 @@
 
                 <!-- configure section -->
                 <div id="configure-container">
+                    <!-- subject selection -->
+                    <h1 class="container-header">Subject</h1>
                     <button id="subject" class="category">
                         <div class="text-container">
-                            <h1 id="subject-header">Subject</h1>
                             <span id="subject-text">Select a course</span>
                         </div>
                         <div class="arrow-container">
@@ -50,8 +50,9 @@
                         </div>
                     </button>
 
+                    <!-- day selection -->
                     <div id="weekdays" class="category">
-                        <h1 id="weekday-header">Days</h1>
+                        <h1 class="container-header">Days</h1>
                         <form action="">
                             <label>
                                 <div>
@@ -92,6 +93,19 @@
                         </form>
                     </div>
 
+                    <!-- class type selection -->
+                    <div id="course-type" class="category">
+                        <h1 class="container-header">Course Type</h1>
+                        <button class="category">
+                            <div class="text-container">
+                                <span>Select Course Type</span>
+                            </div>
+                            <div class="arrow-container">
+                                <span class="material-icons">keyboard_arrow_right</span>
+                            </div>
+                        </button>
+                    </div>
+
                 </div>
 
                 <!-- course section -->
@@ -123,11 +137,11 @@
     </div>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
     <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
     <!-- Primary JS -->
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <!-- fastclick -->
     <script src="lib/fastclick.js"></script>
 

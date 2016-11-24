@@ -1,19 +1,3 @@
-// fast Click
-$(function() {
-    FastClick.attach(document.body);
-});
-
-// Page Enter Transition
-var pageArray = window.location.pathname.split("/");
-var pageName = pageArray[pageArray.length - 1];
-
-if (pageName == "schedule.html") {
-    $("body > *").css("opacity", 0);
-    $("body > *").animate({
-        opacity: "1"
-    }, 150);
-}
-
 // Page Leave Transition
 $(".button-object").click(function () {
     var clickedObject = $(this);
@@ -32,4 +16,3 @@ $(".button-object").click(function () {
     });
 
 });
-

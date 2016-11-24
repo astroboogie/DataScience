@@ -1,149 +1,356 @@
 <!DOCTYPE html>
-<html lang="US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>FLC - Mobile App</title>
 
     <!-- Primary CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/schedule.css"/>
+    <link rel="stylesheet" type="text/css" href="css/schedule-subpages.css"/>
+
+    <!-- Native App Configuration -->
+    <link rel="stylesheet" type="text/css" href="css/native_app_configuration.css"/>
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
 
 </head>
 <body>
     <div id="main-container">
-        <!-- implement handlebars -->
-        <div id="header-container" class="header-scaled">
-            <button id="category-back">
-                <i class="material-icons">keyboard_arrow_left</i>
-            </button>
-            <div>
-                <span>Browse Courses</span>
+        <div id="header-section">
+            <!--<img src="img/iphone-header.png">-->
+            <div id="header-container">
+                <div id="back-arrow">
+                    <i class="material-icons">arrow_back</i>
+                </div>
+                <div id="header-text">
+                    <span>Browse Courses</span>
+                </div>
             </div>
         </div>
 
-        <!-- main container -->
-        <div class="overflow-locked body-container">
-            <!--<div id="schedule-padding"></div>-->
+        <div id="body-section">
 
-            <!-- search container -->
-            <div id="schedule-container">
-
-                <!-- configure/contents toggle section -->
-                <div id="category-toggle">
-                    <button class="category-selected" id="configure">Configure</button>
-                    <button id="contents">Courses</button>
+        <!-- Subject Section -->
+            <div class="title-container">
+                <span>
+                    SUBJECT
+                </span>
+            </div>
+            <div class="option-container" id="subject-button">
+                <div id="subject-text">
+                    <span>
+                        Select a course
+                    </span>
                 </div>
-
-                <!-- configure section -->
-                <div id="configure-container">
-                    <!-- subject selection -->
-                    <h1 class="container-header">Subject</h1>
-                    <button id="subject" class="category">
-                        <div class="text-container">
-                            <span id="subject-text">Select a course</span>
-                        </div>
-                        <div class="arrow-container">
-                            <span id="subject-arrow" class="material-icons">keyboard_arrow_right</span>
-                        </div>
-                    </button>
-
-                    <!-- day selection -->
-                    <div id="weekdays" class="category">
-                        <h1 class="container-header">Days</h1>
-                        <form action="">
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Monday">
-                                    <span>M</span>
-                                </div>
-                            </label>
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Tuesday">
-                                    <span>T</span>
-                                </div>
-                            </label>
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Wednesday">
-                                    <span>W</span>
-                                </div>
-                            </label>
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Thursday">
-                                    <span>Th</span>
-                                </div>
-                            </label>
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Friday">
-                                    <span>F</span>
-                                </div>
-                            </label>
-                            <label>
-                                <div>
-                                    <input type="checkbox" name="day" value="Saturday">
-                                    <span>S</span>
-                                </div>
-                            </label>
-                        </form>
-                    </div>
-
-                    <!-- class type selection -->
-                    <div id="course-type" class="category">
-                        <h1 class="container-header">Course Type</h1>
-                        <button class="category">
-                            <div class="text-container">
-                                <span>Select Course Type</span>
-                            </div>
-                            <div class="arrow-container">
-                                <span class="material-icons">keyboard_arrow_right</span>
-                            </div>
-                        </button>
-                    </div>
-
-                </div>
-
-                <!-- course section -->
-                <div id="course-container">
-                    <div class="category">
-                        <div class="category-body">
-                            <div class="category-header">
-                                <span class="course-title">PHIL 300 - Introduction to Philosophy</span>
-                            </div>
-                            <div class="category-description">
-                                <span class="course-days">MoWeFri</span>
-                                <span class="course-time">9:00am - 10:20am</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="category-star">
-                        <i class="material-icons">stars</i>
-                    </button>
+                <div id="right-arrow">
+                    <i class="material-icons">keyboard_arrow_right</i>
                 </div>
             </div>
 
-            <!-- course categories -->
-            <div id="schedule-categories">
-                <div id="categories-padding"></div>
+        <!-- Course Day Section -->
+            <div class="title-container">
+                <span>
+                    DAYS
+                </span>
+            </div>
+            <div class="option-container">
+                <div id="day-form">
+                    <form>
+                        <label class="type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="M">
+                                <span class="checkbox-text">M</span>
+                        </label>
+                        <label class="type-checkbox">
+                                <input type="checkbox" name="day" value="T">
+                                <span class="checkbox-text">T</span>
+                        </label>
+                        <label class="type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="W">
+                                <span class="checkbox-text">W</span>
+                        </label>
+                        <label class="type-checkbox">
+                                <input type="checkbox" name="day" value="Th">
+                                <span class="checkbox-text">Th</span>
+                        </label>
+                        <label class="type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="F">
+                                <span class="checkbox-text">F</span>
+                        </label>
+                        <label class="type-checkbox">
+                                <input type="checkbox" name="day" value="S">
+                                <span class="checkbox-text">S</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
 
+        <!-- Course Type Section -->
+            <div class="title-container">
+                <span>
+                    COURSE TYPE
+                </span>
+            </div>
+            <div class="option-container" id="type-container">
+                <div class="type-form">
+                    <form>
+                        <label class="type-radio control-checkbox">
+                            <input type="radio" name="type" value="All" checked="checked">
+                            <div class="input-object">
+                                <div></div>
+                            </div>
+                            <div class="span-object">
+                                <span>All</span>
+                            </div>
+                        </label>
+                        <label class="type-radio control-checkbox">
+                            <input type="radio" name="type" value="Fast Track">
+                            <div class="input-object">
+                                <div></div>
+                            </div>
+                            <div class="span-object">
+                                <span>Fast Track</span>
+                            </div>
+                        </label>
+                        <label class="type-radio control-checkbox">
+                            <input type="radio" name="type" value="Online">
+                            <div class="input-object">
+                                <div></div>
+                            </div>
+                            <div class="span-object">
+                                <span>Online</span>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+        <!-- Course Semester Section -->
+            <div class="title-container">
+                <span>
+                    SEMESTER
+                </span>
+            </div>
+            <div class="option-container" id="semester-container">
+                <div class="type-form">
+                    <form>
+                        <label class="type-radio control-checkbox">
+                            <input type="radio" name="type" value="Fall 2016" checked="checked">
+                            <div class="input-object">
+                                <div></div>
+                            </div>
+                            <div class="span-object">
+                                <span>Fall 2016</span>
+                            </div>
+                        </label>
+                        <label class="type-radio control-checkbox">
+                            <input type="radio" name="type" value="Spring 2017">
+                            <div class="input-object">
+                                <div></div>
+                            </div>
+                            <div class="span-object">
+                                <span>Spring 2017</span>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+        <!--&lt;!&ndash; Enrollment Section &ndash;&gt;-->
+            <!--<div class="title-container">-->
+                <!--<span>-->
+                    <!--ENROLLMENT STATUS-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--<div class="option-container" id="enrollment-container">-->
+                <!--<div class="type-form">-->
+                    <!--<form>-->
+                        <!--<label class="type-radio control-checkbox">-->
+                            <!--<input type="radio" name="type" value="All" checked="checked">-->
+                            <!--<div class="input-object">-->
+                                <!--<div></div>-->
+                            <!--</div>-->
+                            <!--<div class="span-object">-->
+                                <!--<span>All</span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                        <!--<label class="type-radio control-checkbox">-->
+                            <!--<input type="radio" name="type" value="Open">-->
+                            <!--<div class="input-object">-->
+                                <!--<div></div>-->
+                            <!--</div>-->
+                            <!--<div class="span-object">-->
+                                <!--<span>Open</span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                        <!--<label class="type-radio control-checkbox">-->
+                            <!--<input type="radio" name="type" value="Waitlisted">-->
+                            <!--<div class="input-object">-->
+                                <!--<div></div>-->
+                            <!--</div>-->
+                            <!--<div class="span-object">-->
+                                <!--<span>Waitlisted</span>-->
+                            <!--</div>-->
+                        <!--</label>-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+        <!--&lt;!&ndash; Course Start Time &ndash;&gt;-->
+            <!--<div class="title-container">-->
+                <!--<span>-->
+                    <!--START TIME-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--<div class="option-container" id="time-container">-->
+                <!--<div id="shading-container">-->
+                    <!--<div class="med-gray"></div>-->
+                    <!--<div class="light-gray"></div>-->
+                    <!--<div id="time-divider"></div>-->
+                    <!--<div class="light-gray"></div>-->
+                    <!--<div class="med-gray"></div>-->
+                <!--</div>-->
+                <!--<div id="clock-container">-->
+                    <!--<div class="time-object">-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                        <!--<div>1</div>-->
+                        <!--<div>2</div>-->
+                        <!--<div>3</div>-->
+                        <!--<div>4</div>-->
+                        <!--<div>5</div>-->
+                        <!--<div>6</div>-->
+                        <!--<div>7</div>-->
+                        <!--<div>8</div>-->
+                        <!--<div>9</div>-->
+                        <!--<div>10</div>-->
+                        <!--<div>11</div>-->
+                        <!--<div>12</div>-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                    <!--</div>-->
+                    <!--<div class="time-object">-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                        <!--<div>00</div>-->
+                        <!--<div>10</div>-->
+                        <!--<div>20</div>-->
+                        <!--<div>30</div>-->
+                        <!--<div>40</div>-->
+                        <!--<div>50</div>-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                    <!--</div>-->
+                    <!--<div class="time-object">-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                        <!--<div>AM</div>-->
+                        <!--<div>PM</div>-->
+                        <!--<div></div>-->
+                        <!--<div></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+         <!--Search Button -->
+            <div id="search-container">
+                <div id="search-button">
+                    <span>
+                        Search
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subjects">
+    </div>
+
+    <div id="courses">
+
+        <div class='course-object'>
+            <div class='course-text-container'>
+                <div class='course-title'>
+                    <span>
+                        PHIL 300: Intro to Philosophy
+                    </span>
+                </div>
+                <div class='course-description'>
+                    <div class='course-professor'>G. Tully</div>
+                    <div class='course-days'>MoWeFri</div>
+                    <div class='course-time'>9:00AM - 10:30AM</div>
+                </div>
+                <div class='course-location'>
+                    <span>CRC MAIN LRC 105</span>
+                </div>
+            </div>
+            <div class='course-arrow'>
+                <i class='material-icons'>keyboard_arrow_right</i>
             </div>
         </div>
 
     </div>
 
+    <div id="course-overlay">
+        <div id="overlay-container">
+            <div id="overlay-border"></div>
+            <div id="overlay-header">
+                <div id="overlay-icon">
+                    <img src="img/icon-anth.png">
+                </div>
+                <div id="overlay-title">
+                    <div id="title-flex">
+                        <div id="title-container">
+                            <span>ANTH 320: Introduction to Archaeology and World Prehistory</span>
+                        </div>
+                        <div id="title-description">
+                            <span id="course-number">14294</span>
+                            <span id="course-units">3.00 Units</span>
+                            <span id="overlay-transfer">Open Consent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay-body">
+                <div id="body-container">
+                    <div class="body-section">
+                        <div id="overlay-professor">Professor H. Olts</div>
+                        <div id="overlay-timedate">T Th 9:00AM - 10:20AM</div>
+                    </div>
+                    <div class="body-section">
+                        <div id="overlay-location"><strong>Location: </strong><span>FLC MAIN FL1 203</span></div>
+                        <div id="overlay-schedule"><strong>Schedule: </strong><span>Full Term, Aug 20-Dec 15</span></div>
+                    </div>
+                    <div class="body-section">
+                        <div id="overlay-prerequisites"><strong>Prerequisite: </strong><span>None.</span></div>
+                        <div id="overlay-corequisites"><strong>Corequisites: </strong><span>None.</span></div>
+                        <div id="overlay-advisory"><strong>Advisory: </strong><span>Eligibility for ENGWR 300 or equivalent skills as demonstrated through the assessment process.</span></div>
+                        <div id="overlay-generaled"><strong>General Education: </strong><span>AA/AS Area IV; CSU Area B2; IGETC Area 5B</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay-footer">
+                <div id="footer-header">Description</div>
+                <span id="overlay-description">This course is an introduction to the science of physical anthropology, and analyzes the human place in nature. This class focuses on how humans evolved and the unique role of culture in our evolution and how genetics and reproduction shape our lives. The course also covers the classification and distribution of living and extinct human populations, how we determine the geological age of our ancestors, and our relationship to non-human primates such as monkeys and apes. Topics covered in this course include: the scientific method, principles and mechanisms of genetics and heredity, geological dating methods, classification of humans and our near relatives, social organization and behavior of living primates, comparative skeletal anatomy of humans and non-human primates. Local field trips may be required. (C-ID ANTH 110)</span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
     <!-- jQuery -->
     <script type="text/javascript" src="lib/jquery.js"></script>
     <!-- Bootstrap -->
-    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
     <!-- Primary JS -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/schedule.js"></script>
     <!-- fastclick -->
     <script src="lib/fastclick.js"></script>
 
-</body>
 </html>

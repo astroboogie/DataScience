@@ -4,22 +4,6 @@
     background-color: rgba(255,255,255,0);
 }
 
-#background-container {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(235, 240, 247, 1);
-    opacity: 0;
-}
-
-#loading-screen {
-    margin-top: -100vh;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(235, 240, 247, 1);
-}
-
 /* ----== Header Section ==---- */
 
 #header-section {
@@ -30,6 +14,7 @@
 }
 
 #title-container {
+    margin-top: 5%;
     width: 50%;
     height: 30%;
     align-self: center;
@@ -52,7 +37,7 @@
     height: auto;
     text-align: center;
     font-size: 5vw;
-    color: #959595;
+    color: #636363;
     font-weight: 500;
 }
 
@@ -98,9 +83,9 @@
 }
 
 .button-object > span {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
-    color: #c7c8c8;
+    color: #636363;
     display: block;
     width: 100%;
     margin-top: -10%;
@@ -119,7 +104,7 @@
 
 #footer-section > span {
     align-self: center;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     color: #c7c8c8;
     font-family: 'PT Sans Narrow', sans-serif;

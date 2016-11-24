@@ -1,0 +1,66 @@
+#header-section {
+    height: 10vh;
+    width: 100vw;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+#header-container {
+    background-color: red;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#back-arrow {
+    width: 15%;
+    height: 69%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+#back-arrow > i {
+    font-size: 1.5em;
+    align-self: center;
+}
+
+#header-text {
+    background-color: yellow;
+    width: 85%;
+    height: 69%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+#map-container {
+    height: 90vh;
+    width: 100vw;
+}
+
+#map-container > iframe {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#test {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}

@@ -36,11 +36,6 @@
     /*display: none;*/
 }
 
-.btn, .btn:focus, .btn:active:focus, .btn.active:focus{
-    outline:none;
-    box-shadow:none;
-}
-
 input
 {
     -webkit-user-select: auto !important;
@@ -71,7 +66,7 @@ body {
 /* Main Page */
 #header-container {
     position: absolute;
-    background-color: #337ab7;
+    background-color: white;
     height: 20%;
     width: 100%;
     -webkit-transition: height 0.13s;
@@ -89,7 +84,7 @@ body {
 }
 
 .header-scaled {
-    height: 10% !important;
+    height: 10vh !important;
 }
 
 .header-scaled > img {
@@ -123,7 +118,6 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    color: white;
     font-size: 6em;
     width: 100vw;
     cursor: default;
@@ -134,10 +128,17 @@ body {
     -webkit-transition: opacity 0.13s;
 }
 
+#header-container > div > span {
+    color: #4d4d4d;
+    font-size: 1.3em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left
+}
+
 #category-back {
+    height: 10vh;
     float: left;
-    margin-left: 5px;
-    margin-top: 6px;
     background-color: transparent;
     border: none;
     outline:none;
@@ -145,8 +146,10 @@ body {
 }
 
 #category-back > i {
+    color: #b1b1b1;
+    margin-top: 8px;
+    margin-left: 6px;
     font-size: 3em;
-    color: white;
 }
 
 /* ====== Body Section ====== */
@@ -169,7 +172,6 @@ body {
 }
 
 .button-click {
-    background-color: green;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
@@ -222,7 +224,7 @@ body {
 
 /* Schedule Page */
 #schedule-container {
-    margin-top: 21vh;
+    margin-top: 10vh;
     height: 100vh;
     width: 100vw;
     overflow-y: auto;
@@ -238,10 +240,11 @@ body {
 .category {
     padding: 0 0 0 0 !important;
     width: 100vw;
-    height: auto;
-    background-color: white;
+    height: 0px;
+    background-color: transparent;
     border: none;
     outline: none;
+    z-index: -1;
 }
 
 /* toggle section */
@@ -318,12 +321,17 @@ body {
 
 }
 
-#subject-header {
+.container-header {
     color: #808080;
     position: absolute;
     font-size: 3.5vw;
     font-weight: 400;
     margin-top: -17px;
+    margin-left: 10px;
+}
+
+#subject {
+    margin-top: 10px;
 }
 
 #weekday-header {
@@ -332,6 +340,15 @@ body {
     font-size: 3.5vw;
     font-weight: 400;
     margin-top: -17px;
+    margin-left: 10px;
+}
+
+#type-header {
+    color: #808080;
+    position: absolute;
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-top: 0px;
     margin-left: 10px;
 }
 
@@ -390,17 +407,19 @@ body {
 
 /* Weekday Radio Buttons */
 #weekdays {
-    height: 350px !important;
-    margin-top: 4vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: table;
 }
 
 #weekdays > form {
-    display: table;
+    text-align: center;
+    display: table-cell;
 }
 
 #weekdays > form > label > div {
     width: calc(100vw / 7);
-    height: 50px;
+    height: calc(100vw / 7);
     display: table;
 }
 
@@ -417,15 +436,8 @@ body {
     vertical-align: middle;
     display: table-cell;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-
-#weekdays > form > label {
-    width: calc(100vw / 6);
-    height: 50px;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    width: 100%;
+    height: 100%;
 }
 
 input[type="checkbox"]{
@@ -500,7 +512,7 @@ input[type="checkbox"]{
 
 #empty-results {
     text-align: center !important;
-    margin-top: 12vh;
+    margin-top: 20vh;
 }
 
 #empty-results > i {
@@ -511,6 +523,10 @@ input[type="checkbox"]{
 #empty-results > span {
     font-size: 5vw;
     color: #c7c7c7;
+}
+
+#course-type > button {
+    margin-top: 10px;
 }
 
 /* ====== Footer Section ====== */
