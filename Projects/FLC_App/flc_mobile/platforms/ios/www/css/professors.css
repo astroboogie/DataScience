@@ -1,0 +1,277 @@
+#header-section {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+}
+
+#header-container {
+    height: 69%;
+    width: 100vw;
+    align-self: flex-end;
+}
+
+#back-arrow {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: opacity 0.3s;
+}
+
+#back-arrow > i {
+    font-size: 5vw;
+    align-self: center;
+}
+
+#header-text {
+    opacity: 0;
+    z-index: -3;
+    position: fixed;
+    margin-left: 15%;
+    width: 85%;
+    height: 6.9vh;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+
+.professor-scaled {
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-text-scaled {
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+#header-search {
+    width: 85%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: margin-left 0.3s;
+}
+
+#search-bar {
+    background-color: #f8f8f8;
+    height: 60%;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#search-text-container {
+    width: auto;
+    align-self: center;
+    height: 100%;
+    -webkit-transition: width 0.3s;
+}
+
+#search-text {
+    width: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#search-text > input {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #727272;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+}
+
+#search-icon {
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    padding-right: 3px;
+    -webkit-transition: opacity 0.3s;
+}
+
+#search-icon > i {
+    align-self: center;
+    font-size: 4vw;
+    color: #727272;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#cancel-button-container {
+    position: fixed;
+    width: 20vw;
+    margin-left: 100vw;
+    height: 6.9vh;
+    margin-top: 3.1vh;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-transition: margin-left 0.3s;
+}
+
+#cancel-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#cancel-button > span {
+    align-self: center;
+    opacity: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    color: #4c4c4c;
+    font-weight: 500;
+    -webkit-transition: opacity 0.5s;
+}
+
+/* Search Click Transition Classes */
+.transition-back-arrow {
+    opacity: 0;
+}
+
+.transition-header-search {
+    margin-left: -15%;
+}
+
+.transition-search-text-container {
+    width: 100% !important;
+}
+
+.transition-search-icon {
+    opacity: 0;
+}
+
+.transition-cancel-button-container {
+    margin-left: 80vw !important;
+}
+
+.transition-cancel-button {
+    opacity: 1 !important;
+}
+
+#professor-container {
+    overflow-y: scroll;
+    padding-top: 12vh;
+    -webkit-transition: margin-left 0.3s;
+}
+
+.transition-professor-container {
+    margin-left: -100vw;
+}
+
+.course-object {
+    width: 100%;
+    height: auto;
+}
+
+.course-text-container {
+    width: 85%;
+    min-height: 75px;
+    float: left;
+}
+
+.professor-title {
+    width: 100%;
+    min-height: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.professor-title > span {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4f9bd4;
+    font-weight: 500;
+    padding-left: 5%;
+    align-self: center;
+}
+
+.professor-description {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.professor-status {
+    float: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+    padding-left: 5%;
+}
+
+.professor-subject {
+    float: left;
+    margin-left: 5%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+.professor-email {
+    width: 100%;
+    min-height: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.professor-email > span {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding-left: 5%;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.professor-arrow {
+    float: left;
+    width: 15%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.professor-arrow > i {
+    font-size: 6vw;
+    color: #636363;
+    align-self: center;
+}

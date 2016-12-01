@@ -1,0 +1,88 @@
+{
+    "testEvents": [
+        {
+            "name": "Falcons Eye Auditions",
+            "date": "01/26/2016",
+            "time": "8:00 p.m - 10:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "Peregrine Room FR-240 (upper level of Falcons Roost by Cafeteria"
+        },
+        {
+            "name": "Pangaea: A Global Gathering",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "Stage 3, Scott-Skillman Recital Hall"
+        },
+        {
+            "name": "Meditation Group",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "Stage 3, Scott-Skillman Recital Hall"
+        },
+        {
+            "name": "On Course: Develop Emotional Intelligence",
+            "date": "11/29/2016",
+            "time": "12 PM - 1:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "PE-204"
+        },
+                {
+            "name": "Falcons Eye Auditions2",
+            "date": "01/26/2016",
+            "time": "8:00 p.m - 10:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "2 Peregrine Room FR-240 (upper level of Falcons Roost by Cafeteria"
+        },
+        {
+            "name": "Pangaea: A Global Gathering2",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "2 Stage 3, Scott-Skillman Recital Hall"
+        },
+        {
+            "name": "Meditation Group2",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "2 Stage 3, Scott-Skillman Recital Hall"
+        },
+        {
+            "name": "On Course: Develop Emotional Intelligence2",
+            "date": "11/29/2016",
+            "time": "12 PM - 1:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "2 PE-204"
+        },
+                {
+            "name": "Falcons Eye Auditions3",
+            "date": "01/26/2016",
+            "time": "8:00 p.m - 10:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "3 Peregrine Room FR-240 (upper level of Falcons Roost by Cafeteria"
+        },
+        {
+            "name": "Pangaea: A Global Gathering3",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "3 Stage 3, Scott-Skillman Recital Hall3"
+        },
+        {
+            "name": "Meditation Group",
+            "date": "11/30/2016",
+            "time": "8:00 p.m. - 10:00 p.m.",
+            "campus": "Harris Center",
+            "location": "3 Stage 3, Scott-Skillman Recital Hall"
+        },
+        {
+            "name": "On Course: Develop Emotional Intelligence3",
+            "date": "11/29/2016",
+            "time": "12 PM - 1:00 p.m",
+            "campus": "Folsom Campus",
+            "location": "3 PE-204"
+        }
+    ]
+}

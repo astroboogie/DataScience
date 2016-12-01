@@ -1,0 +1,139 @@
+/* Header */
+#header-section {
+    position: fixed;
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-container {
+    height: 69%;
+    width: 100vw;
+    align-self: flex-end;
+}
+
+#back-arrow {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#back-arrow > i {
+    font-size: 5vw;
+    align-self: center;
+}
+
+#header-text {
+    width: 85%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+#schedule-container {
+    padding-top: 12vh;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* Event Object */
+
+.event-object {
+    width: 100%;
+    height: auto;
+}
+
+.event-text-container {
+    width: 85%;
+    min-height: 75px;
+    float: left;
+}
+
+.event-title {
+    width: 100%;
+    min-height: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.event-title > span {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4f9bd4;
+    font-weight: 500;
+    padding-left: 5%;
+    align-self: center;
+}
+
+.event-description {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.event-date {
+    float: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+    padding-left: 5%;
+}
+
+.event-campus {
+    float: left;
+    margin-left: 5%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+.event-location {
+    width: 100%;
+    min-height: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.event-location > span {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding-left: 5%;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.event-arrow {
+    float: left;
+    width: 15%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.event-arrow > i{
+    font-size: 6vw;
+    color: #bcbcbc;
+    align-self: center;
+}

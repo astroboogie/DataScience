@@ -39,7 +39,8 @@ $("#back-arrow").click(function () {
         pageTransition("back", "body-section", "courses");
     }
     else if (currentPage == "description") {
-        $("#courses").addClass("show-container").scrollTop(0);
+        $("#courses").addClass("show-container");
+        $("#courses").removeClass("course-full-transition");
         currentPage = "courses";
         pageTransition("back", "courses", "course-overlay");
         $("#header-text > span").text("Browse Courses");
@@ -53,6 +54,8 @@ var selectedSubject;
 
 // Retrieves json data
 $.getJSON("classesOut.json", function(data) {
+
+    console.log(data);
 
     classes = data['classes'];
     
@@ -95,8 +98,10 @@ $.getJSON("classesOut.json", function(data) {
 
                     // Day conditions
                     $("#day-form > form > label > input:checked").each(function() {
-                        console.log(value['days']);
                         if (value['days'].indexOf($(this).val()) > -1) {
+                            invalid = false;
+                        }
+                        if (value['days'] == "TBA") {
                             invalid = false;
                         }
                     });
@@ -163,26 +168,34 @@ $.getJSON("classesOut.json", function(data) {
             }
         });
 
+        if( $("#courses").is(':empty') ) {
+            $("#courses").append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
+        }
 
-        // creates course full description functionality
+
+            // creates course full description functionality
         $(".course-arrow").click(function () {
             var currentId = $(this).parent().attr("id").replace(/[^\/\d]/g,'');
 
             var currentCourse = tempClasses[currentId][0];
             var currentTopic = tempClasses[currentId][1];
-            console.log(currentCourse["instructor"]);
 
             var courseTime;
             var courseLocation;
-            var coursePrequisite;
-            var courseCorequisite;
-
+            var coursePrerequisite = currentTopic["prerequisite"];
+            var courseCorequisite = currentTopic["corequisite"];
+            var courseAdvisory = currentTopic["advisory"];
+            
             if (currentTopic["corequisite"] == null) {
                 courseCorequisite = "None.";
             }
 
             if (currentTopic["prerequisite"] == null) {
-                coursePrequisite = "None.";
+                coursePrerequisite = "None.";
+            }
+
+            if (currentTopic["advisory"] == null) {
+                courseAdvisory = "None.";
             }
 
             if (currentCourse["labRoom"] == null) {
@@ -193,9 +206,6 @@ $.getJSON("classesOut.json", function(data) {
                 courseTime = currentCourse["labTime"];
                 courseLocation = currentCourse["labRoom"];
             }
-
-            console.log(courseTime, courseLocation);
-
 
             // adds course details
             $("#title-container > span").text(currentTopic["courseTitle"] + ": " + currentTopic["courseName"]);
@@ -208,8 +218,8 @@ $.getJSON("classesOut.json", function(data) {
             $("#overlay-location > span").text(courseLocation);
             $("#overlay-schedule > span").text(currentCourse["schedule"]);
             $("#overlay-corequisites > span").text(courseCorequisite);
-            $("#overlay-prerequisites > span").text(coursePrequisite);
-            $("#overlay-advisory > span").text(currentTopic["advisory"]);
+            $("#overlay-prerequisites > span").text(coursePrerequisite);
+            $("#overlay-advisory > span").text(courseAdvisory);
             $("#overlay-generaled > span").text(currentTopic["generalEducation"]);
             $("#overlay-description > span").text(currentTopic["description"]);
 
@@ -217,6 +227,7 @@ $.getJSON("classesOut.json", function(data) {
             currentPage = "description";
             $("#header-text > span").text("Course Description");
             $("#courses").removeClass("show-container");
+            $("#courses").addClass("course-full-transition");
             pageTransition("new", "courses", "course-overlay");
         });
 
