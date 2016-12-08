@@ -53,7 +53,7 @@ var classes = [];
 var selectedSubject;
 
 // Retrieves json data
-$.getJSON("classesOut.json", function(data) {
+$.getJSON("backend.json", function(data) {
 
     console.log(data);
 

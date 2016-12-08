@@ -83,7 +83,7 @@ var professorPage = function(object) {
     professorUpdate("empty");
 };
 
-$.getJSON("classesOut.json", function(data) {
+$.getJSON("backend.json", function(data) {
 
     instructors = data['instructors'];
 
