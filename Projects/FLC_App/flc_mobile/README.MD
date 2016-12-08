@@ -9,6 +9,6 @@
 
 (You must install python and set it as a PATH variable)
 
-4.) Open http://localhost:8000 in your favorite webbrowser
+4.) Open `http://localhost:8000` in your favorite webbrowser
 
-4.) Use your browser responsive design to adjust screen resolution
+5.) Use your browser responsive design to adjust screen resolution

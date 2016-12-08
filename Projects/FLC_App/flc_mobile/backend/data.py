@@ -41,6 +41,7 @@ def extractInfoFromLine(line, marker, lindex, rindex):
 		info = info.replace('"', '')												 # remove quotes (messes up json parsing)
 		info = re.sub(r'<.+?>', '', info)											 # remove any html elements in the line
 		info = filter(lambda x: x in string.printable, info) 						 # remove non-printing characters
+		info = info.replace("&amp;", "&")
 	return info
 
 # Special function for Units because the page formatting does

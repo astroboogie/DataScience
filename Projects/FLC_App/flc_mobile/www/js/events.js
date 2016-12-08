@@ -9,12 +9,27 @@ $("#back-arrow").click(function () {
 
 var eventsData;
 
-$.getJSON("testEvents.json", function(data) {
-    eventsData = data;
+$.getJSON("backend.json", function(data) {
+    eventsData = data['events'];
+    console.log(eventsData)
 }).done(function () {
-    $(eventsData['testEvents']).each(function(index, value) {
-        var eventTitle = value['name'];
-        $("#schedule-container").append("<div class='event-object'>" + eventTitle + "</div>");
+    $.each(eventsData, function(index, value) {
+        var eventTitle = value['title'] || "";
+        var eventDescription = value['description'] || ""
+        var eventLocation = value['location'] || ""
+        var eventDate = value['date'] || ""
+        $("#schedule-container").append(
+            "<div class='event-object'>\
+                <div class='event-text-container'>\
+                    <div class='event-title'>" + eventTitle + "</div>\
+                    <div class='event-date'><b>Date: </b>" + eventDate + "</div>\
+                    <div class='event-location'><b>Location: </b>" + eventLocation + "</div>\
+                    <div class='event-description'>" + eventDescription + "</div>\
+                </div>\
+                <div class='event-arrow'>\
+                    <i class='material-icons'>star</i>\
+                </div>\
+            </div>");
         console.log(value['name']);
     });
 });
