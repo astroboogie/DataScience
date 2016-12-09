@@ -11,7 +11,6 @@ var eventsData;
 
 $.getJSON("backend.json", function(data) {
     eventsData = data['events'];
-    console.log(eventsData)
 }).done(function () {
     $.each(eventsData, function(index, value) {
         var eventTitle = value['title'] || "";

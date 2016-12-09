@@ -5,17 +5,59 @@ var backSelectable = true;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-var professorUpdate = function (characters) {
-
-    $("#professor-container").empty();
-
-    $.each(instructors, function(index, element) {
-        if (characters == "ten&limit") {
-            $("#professor-container").append("<div class='course-object'><div class='course-text-container'><div class='professor-title'><span>" + element + "</span></div><div class='professor-description'><div class='professor-status'>Full-time</div><div class='professor-subject'>Mathematics</div></div><div class='professor-email'><span>tullyg@flc.losrios.edu</span></div></div><div class='professor-arrow'><i class='material-icons'>keyboard_arrow_right</i></div></div>")
+var professorUpdate = function (professors) {
+    //$("#professor-container").empty();
+    $.each(professors, function(index, element) {
+        console.log("ELEMENT: ", element);
+        let professorName = element["name"]
+        let professorEmail = element["email"] || ""
+        let professorPhone = element["phone"] || ""
+        let professorSubjects
+        // If the professor has too many subjects, limit their list to 3
+        if (element["subjects"].length > 3) {
+            element["subjects"] = element["subjects"].slice(0, 3)
+            professorSubjects = element["subjects"].join(", ") + "…";
         }
-        else if (element.toLowerCase().indexOf(characters.toLowerCase()) > -1) {
-            $("#professor-container").append("<div class='course-object'><div class='course-text-container'><div class='professor-title'><span>" + element + "</span></div><div class='professor-description'><div class='professor-status'>Full-time</div><div class='professor-subject'>Mathematics</div></div><div class='professor-email'><span>tullyg@flc.losrios.edu</span></div></div><div class='professor-arrow'><i class='material-icons'>keyboard_arrow_right</i></div></div>")
+        else {
+            professorSubjects = element["subjects"].join(", ");
         }
+        let professorStatus = ""
+        let professorHours = element["classHours"];
+        professorHours = parseInt(professorHours.substring(0, professorHours.indexOf('hr')));
+        console.log("HOURS: ", professorHours);
+        if (professorHours >= 8 || element["classList"].length >= 6) {
+            professorStatus = "Full-time";
+        }
+        else {
+            professorStatus = "Part-time";
+        }
+
+        console.log(professorName);
+        $("#professor-container").append("\
+            <div class='course-object'>\
+                <div class='course-text-container'>\
+                    <div class='professor-title'>\
+                        <span>" + professorName + "</span>\
+                    </div>\
+                    <div class='professor-info'>\
+                        <div class='professor-status'>\
+                            <span>" + professorStatus + "</span>\
+                        </div>\
+                        <div class='professor-subject'>\
+                            <span>" + professorSubjects + "</span>\
+                        </div>\
+                    </div>\
+                    <div class='professor-info'>\
+                        <span>" + professorEmail + "</span>\
+                    </div>\
+                    <div class='professor-info'>\
+                        <span>" + professorPhone + "</span>\
+                    </div>\
+                </div>\
+                <div class='professor-arrow'>\
+                    <i class='material-icons'>keyboard_arrow_right</i>\
+                </div>\
+            </div>");
     });
 
     $(".professor-arrow").click(function () {
@@ -41,10 +83,10 @@ var backArrowPress = function(pageSet) {
             $("#header-search").removeClass("professor-scaled");
             $("#header-text").removeClass("header-text-scaled");
 
-            professorUpdate("ten&limit");
+            //professorUpdate("ten&limit");
 
             setTimeout(function(){
-                professorUpdate("");
+                //professorUpdate("");
             }, 300);
         }
     }
@@ -80,18 +122,15 @@ var professorPage = function(object) {
 
     // remove search bar content
     searchInput.val("");
-    professorUpdate("empty");
+    //professorUpdate("empty");
 };
 
+var instructors
 $.getJSON("backend.json", function(data) {
-
     instructors = data['instructors'];
-
 }).done(function() {
-
     // generates subject list
-    professorUpdate("");
-
+    professorUpdate(instructors);
 });
 
 // back arrow functionality
@@ -133,7 +172,7 @@ $("#header-search").click(function () {
 $("#cancel-button").click(function () {
 
     searchInput.val("");
-    professorUpdate("");
+    //professorUpdate("");
 
     backSelectable = true;
 
@@ -148,11 +187,10 @@ $("#cancel-button").click(function () {
 // Updates search results upon key press
 searchInput.keyup(function() {
     if (searchInput.val().length > 0) {
-        professorUpdate(searchInput.val());
+        //professorUpdate(searchInput.val());
     }
 
     if (searchInput.val().length <= 0) {
-        professorUpdate("");
+        //professorUpdate("");
     }
-
 });

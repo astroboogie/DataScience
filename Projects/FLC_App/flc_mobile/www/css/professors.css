@@ -190,8 +190,10 @@ button:focus {
 }
 
 .course-object {
-    width: 100%;
+    width: 80%;
     height: auto;
+    float: left;
+    margin: 0 0 15px 0;
 }
 
 .course-text-container {
@@ -244,14 +246,14 @@ button:focus {
     align-self: center;
 }
 
-.professor-email {
+.professor-info {
     width: 100%;
     min-height: 25px;
     display: flex;
     justify-content: flex-start;
 }
 
-.professor-email > span {
+.professor-info > span {
     width: 100%;
     font-family: 'PT Sans', sans-serif;
     font-size: 4vw;
@@ -259,7 +261,6 @@ button:focus {
     font-weight: 500;
     padding-left: 5%;
     align-self: center;
-    margin-bottom: 15px;
 }
 
 .professor-arrow {
