@@ -243,7 +243,10 @@ def populateInstructors(object, url):
 						facultyName = facultyName[0 : facultyName.index("(")].rstrip(' ')
 					if facultyName.find("Dean") != -1 and facultyName.find("Dean") != 0:
 						facultyName = facultyName[0 : facultyName.index("Dean")]
-					facultyEmail = extractInfoFromLine(line2, '', '<a href="mailto:', '">Email')
+					if '">Email' in line2:
+						facultyEmail = extractInfoFromLine(line2, '', '<a href="mailto:', '">Email')
+					else:
+						facultyEmail = extractInfoFromLine(line2, '', '<a href="mailto:', '">')
 					if ' ' in facultyEmail:
 						facultyEmail = facultyEmail[0 : facultyEmail.find(' ')]
 					if '(' in line2:
@@ -369,11 +372,12 @@ def populateEvents(object, url):
 		location = extractInfo(eventItem, 'Location:', 'Location:</b>', '</p>')
 		description = extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
 		
-		object["events"].append({"title" : title})
-		object["events"][-1]["date"] = date
-		object["events"][-1]["location"] = location
-		object["events"][-1]["description"] = description
-		eventCount += 1
+		if not filter(lambda event: event['description'] == description, object["events"]):
+			object["events"].append({"title" : title})
+			object["events"][-1]["date"] = date
+			object["events"][-1]["location"] = location
+			object["events"][-1]["description"] = description
+			eventCount += 1
 	print "Successfully parsed", eventCount, "events."
 
 def Main():
