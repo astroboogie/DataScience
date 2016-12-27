@@ -71,6 +71,7 @@ $.ajax({
     },
 });
 
+// TODO: This ajax call NEEDS to wait for the previous one to finish
 $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
     type: "GET",
