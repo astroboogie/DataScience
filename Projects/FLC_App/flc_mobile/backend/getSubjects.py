@@ -21,7 +21,7 @@ def populateSubjects(object, url):
 			subjectCount += 1
 	print "Successfully added ", subjectCount, " subjects.\n"
 
-def Main():
+def getSubjects():
 	subjects = {}
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateSubjects(subjects, url)
@@ -31,4 +31,4 @@ def Main():
 	f.write(r)
 	
 	f.close()
-Main()
+getSubjects()

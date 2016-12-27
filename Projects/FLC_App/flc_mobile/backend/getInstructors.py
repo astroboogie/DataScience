@@ -118,7 +118,7 @@ def populateInstructors(object, url):
 		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "Successfully added", instructorCount, " instructors.\n"
 
-def Main():
+def getInstructors():
 	instructors = {}
 	populateInstructors(instructors, "http://www.flc.losrios.edu/academics")
 	
@@ -127,4 +127,4 @@ def Main():
 	f.write(r)
 	
 	f.close()
-Main()
+getInstructors()
