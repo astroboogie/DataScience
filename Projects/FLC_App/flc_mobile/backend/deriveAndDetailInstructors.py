@@ -1,8 +1,9 @@
 import utils
 import json
 
-def populateInstructors(object, url):
+def getInstructorDetails(object, url):
 	# Assemble list of professors and their respective subjects from FLC Faculty page
+	# These are stored as a temporary results to combine with the full instructor data
 	print "Fetching faculty information..."
 	facultyMembersNum = 0
 	facultyMembers = []
@@ -50,16 +51,28 @@ def populateInstructors(object, url):
 						facultyMembers[-1]["phone"] = facultyPhone
 						facultyMembersNum += 1
 	utils.clearLine()
-	print "\rSuccessfully found ", facultyMembersNum, " faculty members.\n"
-	
-	print "Parsing the instructors..."
+
+	# Populate professors email and phone numbers
+	for professor in object["instructors"]:
+		for faculty in facultyMembers:
+			lastName = professor["name"][3:]
+			if lastName in faculty["name"] and professor["name"][0] == faculty["name"][0]:
+				professor["name"] = faculty["name"]
+				professor["email"] = faculty["email"]
+				professor["phone"] = faculty["phone"]
+			
+	# Convert class hours to easy-to-read format
+	for professor in object["instructors"]:
+		professor["classHours"] = utils.convertTime(professor["classHours"])
+	print "\rSuccessfully added details to ", facultyMembersNum, " faculty members.\n"
+
+def deriveInstructorsFromClasses(object, classes):
+	print "Parsing the instructors from classes..."
 	instructorCount = 0
 	object["instructors"] = []
-	classes = open('classes.json')
-	data = json.load(classes)
 	# DERIVED INFO, SEPARATE THIS OUT LATER
 	# Create list of all professors
-	for item in data["classes"]:
+	for item in classes["classes"]:
 		for classTime in item["classTimes"]:
 			if classTime["instructor"] != "TBA":
 				if not filter(lambda person: person['name'] == classTime["instructor"], object["instructors"]):
@@ -82,7 +95,7 @@ def populateInstructors(object, url):
 					instructorCount += 1
 	
 	# Populate information about professors
-	for item in data["classes"]:
+	for item in classes["classes"]:
 		for classTime in item["classTimes"]:
 			if classTime["instructor"] != "TBA":
 				for professor in object["instructors"]:
@@ -102,29 +115,20 @@ def populateInstructors(object, url):
 								professor["classTimes"][day].append(classTime["labTime"])
 								professor["classTimes"][day].sort(utils.sortTimes)
 								professor["classHours"] += utils.calcTime(classTime["labTime"])
-
-	# Populate professors email and phone numbers
-	for professor in object["instructors"]:
-		for faculty in facultyMembers:
-			lastName = professor["name"][3:]
-			if lastName in faculty["name"] and professor["name"][0] == faculty["name"][0]:
-				professor["name"] = faculty["name"]
-				professor["email"] = faculty["email"]
-				professor["phone"] = faculty["phone"]
-			
-	
-	# Convert class hours to easy-to-read format
-	for professor in object["instructors"]:
-		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "Successfully added", instructorCount, " instructors.\n"
-
-def getInstructors():
+	
+def deriveAndDetailInstructors():
 	instructors = {}
-	populateInstructors(instructors, "http://www.flc.losrios.edu/academics")
+	classes = json.load(open('classes.json'))
+	
+	deriveInstructorsFromClasses(instructors, classes)
+	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
 	
 	r = json.dumps(instructors, sort_keys=True, indent=4, separators=(',', ': '))
 	f = open('instructors.json', 'w')
 	f.write(r)
 	
 	f.close()
-getInstructors()
+
+if __name__ == "__main__":
+	deriveAndDetailInstructors()

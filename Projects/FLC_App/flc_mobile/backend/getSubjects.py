@@ -31,4 +31,6 @@ def getSubjects():
 	f.write(r)
 	
 	f.close()
-getSubjects()
+	
+if __name__ == "__main__":
+	getSubjects()

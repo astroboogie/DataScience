@@ -139,4 +139,6 @@ def getClasses():
 	f = open('classes.json', 'w')
 	f.write(r)
 	f.close()
-getClasses()
+	
+if __name__ == "__main__":
+	getClasses()

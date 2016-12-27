@@ -22,7 +22,7 @@ def populateEvents(object, url):
 			object["events"][-1]["location"] = location
 			object["events"][-1]["description"] = description
 			eventCount += 1
-	print "Successfully parsed", eventCount, "events."
+	print "Successfully parsed", eventCount, "events.\n"
 
 def getEvents():
 	events = {}
@@ -33,4 +33,6 @@ def getEvents():
 
 	f.write(r)
 	f.close()
-getEvents()
+	
+if __name__ == "__main__":
+	getEvents()

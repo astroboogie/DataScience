@@ -1,13 +1,15 @@
 from getClasses import getClasses
 from getEvents import getEvents
-from getInstructors import getInstructors
+from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 
-def updateAll():
+def getAll():
 	getSubjects()
 	getEvents()
-	getClasses() # currently this MUST be called before instructors (TODO: fix that)
-	getInstructors()
+	getClasses()
 
-updateAll()
+def deriveAll():
+	deriveAndDetailInstructors()
 
+getAll()
+deriveAll()
