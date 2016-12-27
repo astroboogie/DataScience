@@ -3,12 +3,6 @@
 
 1.) Clone the project
 
-2.) Navigate to DataScience/Projects/FLC_App/flc_mobile/www/
+2.) DataScience/Projects/FLC_App/flc_mobile/www/index.html in your favorite web browser
 
-3.) Run a local server with `python -m SimpleHTTPServer`
-
-(You must install python and set it as a PATH variable)
-
-4.) Open `http://localhost:8000` in your favorite webbrowser
-
-5.) Use your browser responsive design to adjust screen resolution
+3.) Use your browser's responsive design to adjust screen resolution to smart-phone size
