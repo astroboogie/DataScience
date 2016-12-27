@@ -1,5 +1,6 @@
 import utils
 import json
+import os
 
 # Subjects stores each subject in a key:value pattern
 # Where the key is the abbreviated subject, and the value is the full subject
@@ -26,11 +27,15 @@ def getSubjects():
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateSubjects(subjects, url)
 	
-	r = json.dumps(subjects, sort_keys=True, indent=4, separators=(',', ': '))
-	f = open('subjects.json', 'w')
-	f.write(r)
-	
-	f.close()
-	
+	if os.path.isdir('/tmp'):
+		# For writing on AWS Lambda
+		filePath = '/tmp/subjects.json'
+	else:
+		# For writing locally
+		filePath = 'subjects.json'
+		
+	with open(filePath, 'w') as f:
+		f.write(json.dumps(subjects, indent=4, separators=(',', ': ')))
+
 if __name__ == "__main__":
 	getSubjects()

@@ -1,5 +1,6 @@
 import utils
 import json
+import os
 
 def getInstructorDetails(object, url):
 	# Assemble list of professors and their respective subjects from FLC Faculty page
@@ -119,16 +120,27 @@ def deriveInstructorsFromClasses(object, classes):
 	
 def deriveAndDetailInstructors():
 	instructors = {}
-	classes = json.load(open('classes.json'))
+	if os.path.isdir('/tmp'):
+		# For reading on AWS Lambda
+		filePath = '/tmp/classes.json'
+	else:
+		# For reading locally
+		filePath = 'classes.json'
+
+	classes = json.load(open(filePath))
 	
 	deriveInstructorsFromClasses(instructors, classes)
 	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
 	
-	r = json.dumps(instructors, sort_keys=True, indent=4, separators=(',', ': '))
-	f = open('instructors.json', 'w')
-	f.write(r)
-	
-	f.close()
+	if os.path.isdir('/tmp'):
+		# For writing on AWS Lambda
+		filePath = '/tmp/instructors.json'
+	else:
+		# For writing locally
+		filePath = 'instructors.json'
+
+	with open(filePath, 'w') as f:
+		f.write(json.dumps(instructors, indent=4, separators=(',', ': ')))
 
 if __name__ == "__main__":
 	deriveAndDetailInstructors()

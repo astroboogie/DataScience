@@ -62,7 +62,9 @@ def extractInfoFromLine(line, marker, lindex, rindex):
 	
 def clearLine():
 	print "\r                                                                                ",
-
+	
+# Returns -1 if A is a lesser time than B
+# Very ugly, should be cleaned up
 def sortTimes(a, b):
 	aNum = int(a[0]) * 10 + int(a[1]) + (int(a[3]) * 10 + int(a[4]))/60 
 	if a[5] == "P" and not (a[0] == "1" and a[1] == "2"):
@@ -78,6 +80,8 @@ def sortTimes(a, b):
 	else:
 		return 0
 
+# Given a time in the DD:DDAM-DD:DDPM format, it calculates the time between the two in hours
+# Note that A and P are interchangeable in the time format
 def calcTime(time):
 	startTime = float(time[0]) * 10 + float(time[1]) + (float(time[3]) * 10 + float(time[4]))/60
 	if time[5] == "P" and not (time[0] == "1" and time[1] == "2"):

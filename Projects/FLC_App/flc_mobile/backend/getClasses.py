@@ -1,6 +1,7 @@
 import utils
 import json
 import re
+import os
 
 # Special function for Units because the page formatting does
 # not have unique delimeters for the Units
@@ -135,10 +136,15 @@ def getClasses():
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateClasses(classes, url)
 	
-	r = json.dumps(classes, sort_keys=True, indent=4, separators=(',', ': '))
-	f = open('classes.json', 'w')
-	f.write(r)
-	f.close()
+	if os.path.isdir('/tmp'):
+		# For writing on AWS Lambda
+		filePath = '/tmp/classes.json'
+	else:
+		# For writing locally
+		filePath = 'classes.json'
+		
+	with open(filePath, 'w') as f:
+		f.write(json.dumps(classes, indent=4, separators=(',', ': ')))
 	
 if __name__ == "__main__":
 	getClasses()

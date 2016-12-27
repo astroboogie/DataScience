@@ -1,5 +1,6 @@
 import utils
 import json
+import os
 
 def populateEvents(object, url):
 	response = utils.getHTML(url, "events")
@@ -28,11 +29,15 @@ def getEvents():
 	events = {}
 	populateEvents(events, "http://www.flc.losrios.edu/x65?view=month")
 	
-	r = json.dumps(events, sort_keys=True, indent=4, separators=(',', ': '))
-	f = open('events.json', 'w')
-
-	f.write(r)
-	f.close()
+	if os.path.isdir('/tmp'):
+		# For writing on AWS Lambda
+		filePath = '/tmp/events.json'
+	else:
+		# For writing locally
+		filePath = 'events.json'
 	
+	with open(filePath, 'w') as f:
+		f.write(json.dumps(events, indent=4, separators=(',', ': ')))
+			
 if __name__ == "__main__":
 	getEvents()
