@@ -1,19 +1,19 @@
-from utils import *
+import utils
 import json
 
 def populateEvents(object, url):
-	response = getHTML(url, "events")
+	response = utils.getHTML(url, "events")
 	print "Parsing event data..."
 	eventCount = 0
 	object["events"] = []
 	while True:
-		eventItem = extractCourseInfo(response, '<div class="calendarentry">', '</div>')
+		eventItem = utils.extractCourseInfo(response, '<div class="calendarentry">', '</div>')
 		if not eventItem:
 			break
-		title = extractInfo(eventItem, '<h4>', '<h4>', '</h4>')
-		date = extractInfo(eventItem, 'Date:', 'Date:</b>', '<br>')
-		location = extractInfo(eventItem, 'Location:', 'Location:</b>', '</p>')
-		description = extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
+		title = utils.extractInfo(eventItem, '<h4>', '<h4>', '</h4>')
+		date = utils.extractInfo(eventItem, 'Date:', 'Date:</b>', '<br>')
+		location = utils.extractInfo(eventItem, 'Location:', 'Location:</b>', '</p>')
+		description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
 		
 		if not filter(lambda event: event['description'] == description, object["events"]):
 			object["events"].append({"title" : title})
@@ -24,7 +24,7 @@ def populateEvents(object, url):
 			eventCount += 1
 	print "Successfully parsed", eventCount, "events."
 
-def Main():
+def getEvents():
 	events = {}
 	populateEvents(events, "http://www.flc.losrios.edu/x65?view=month")
 	
@@ -33,4 +33,4 @@ def Main():
 
 	f.write(r)
 	f.close()
-Main()
+getEvents()

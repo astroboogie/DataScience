@@ -1,4 +1,4 @@
-from utils import *
+import utils
 import json
 
 def populateInstructors(object, url):
@@ -6,38 +6,38 @@ def populateInstructors(object, url):
 	print "Fetching faculty information..."
 	facultyMembersNum = 0
 	facultyMembers = []
-	response = getHTML(url, None)
+	response = utils.getHTML(url, None)
 	for line in response:
-		subjectURLStr = extractInfoFromLine(line, '<li><a href="academics/', '<li><a href="academics/', '">')
+		subjectURLStr = utils.extractInfoFromLine(line, '<li><a href="academics/', '<li><a href="academics/', '">')
 		if subjectURLStr and "catalog" not in subjectURLStr and "bustec-courses" not in subjectURLStr:
 			subjectURL = url + '/' + subjectURLStr
-			subjectHTML = getHTML(subjectURL, None)
-			subject = extractInfo(subjectHTML, '<meta name="description" content="', '<meta name="description" content="', '">')
+			subjectHTML = utils.getHTML(subjectURL, None)
+			subject = utils.extractInfo(subjectHTML, '<meta name="description" content="', '<meta name="description" content="', '">')
 			if "(" in subject:
 				subject = subject[0 : subject.index("(")]
 			subject = subject.rstrip(' ')
-			clearLine()
+			utils.clearLine()
 			print "\rSearching", subject + "...",
-			facultyURLStr = extractInfo(subjectHTML, '-faculty">', '<li><a href="academics/' + subjectURLStr, '-faculty">')
+			facultyURLStr = utils.extractInfo(subjectHTML, '-faculty">', '<li><a href="academics/' + subjectURLStr, '-faculty">')
 			if facultyURLStr:
 				facultyURL = subjectURL + '/' + facultyURLStr + '-faculty'
-				facultyHTML = getHTML(facultyURL, None)
-				facultyNamesHTML = extractCourseInfo(facultyHTML, '<div class="calendarcontent">', "</div>")
+				facultyHTML = utils.getHTML(facultyURL, None)
+				facultyNamesHTML = utils.extractCourseInfo(facultyHTML, '<div class="calendarcontent">', "</div>")
 				for line2 in facultyNamesHTML:
 					if '<a href="mailto:' not in line2:
 						continue
 					if '<br />' in line2:
-						facultyName = extractInfoFromLine(line2, '', '', '<br />')
+						facultyName = utils.extractInfoFromLine(line2, '', '', '<br />')
 					else:
-						facultyName = extractInfoFromLine(line2, '', '', '</span>')
+						facultyName = utils.extractInfoFromLine(line2, '', '', '</span>')
 					if "(" in facultyName:
 						facultyName = facultyName[0 : facultyName.index("(")].rstrip(' ')
 					if facultyName.find("Dean") != -1 and facultyName.find("Dean") != 0:
 						facultyName = facultyName[0 : facultyName.index("Dean")]
 					if '">Email' in line2:
-						facultyEmail = extractInfoFromLine(line2, '', '<a href="mailto:', '">Email')
+						facultyEmail = utils.extractInfoFromLine(line2, '', '<a href="mailto:', '">Email')
 					else:
-						facultyEmail = extractInfoFromLine(line2, '', '<a href="mailto:', '">')
+						facultyEmail = utils.extractInfoFromLine(line2, '', '<a href="mailto:', '">')
 					if ' ' in facultyEmail:
 						facultyEmail = facultyEmail[0 : facultyEmail.find(' ')]
 					if '(' in line2:
@@ -49,7 +49,7 @@ def populateInstructors(object, url):
 						facultyMembers[-1]["email"] = facultyEmail
 						facultyMembers[-1]["phone"] = facultyPhone
 						facultyMembersNum += 1
-	clearLine()
+	utils.clearLine()
 	print "\rSuccessfully found ", facultyMembersNum, " faculty members.\n"
 	
 	print "Parsing the instructors..."
@@ -96,12 +96,12 @@ def populateInstructors(object, url):
 						for day in days:
 							if classTime["lecTime"] and classTime["lecTime"] != "TBA" and classTime["lecTime"] not in professor["classTimes"][day]:
 								professor["classTimes"][day].append(classTime["lecTime"])
-								professor["classTimes"][day].sort(sortTimes)
-								professor["classHours"] += calcTime(classTime["lecTime"])
+								professor["classTimes"][day].sort(utils.sortTimes)
+								professor["classHours"] += utils.calcTime(classTime["lecTime"])
 							if classTime["labTime"] and classTime["labTime"] != "TBA" and classTime["labTime"] not in professor["classTimes"][day]:
 								professor["classTimes"][day].append(classTime["labTime"])
-								professor["classTimes"][day].sort(sortTimes)
-								professor["classHours"] += calcTime(classTime["labTime"])
+								professor["classTimes"][day].sort(utils.sortTimes)
+								professor["classHours"] += utils.calcTime(classTime["labTime"])
 
 	# Populate professors email and phone numbers
 	for professor in object["instructors"]:
@@ -115,7 +115,7 @@ def populateInstructors(object, url):
 	
 	# Convert class hours to easy-to-read format
 	for professor in object["instructors"]:
-		professor["classHours"] = convertTime(professor["classHours"])
+		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "Successfully added", instructorCount, " instructors.\n"
 
 def Main():

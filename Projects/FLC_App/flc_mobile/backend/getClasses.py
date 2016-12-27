@@ -1,5 +1,6 @@
-from utils import *
+import utils
 import json
+import re
 
 # Special function for Units because the page formatting does
 # not have unique delimeters for the Units
@@ -81,33 +82,33 @@ def extractClassTimesInfo(courseInfo):
 # @Param - Object, holds the json data
 # @Param - url
 def populateClasses(object, url):
-	response = getHTML(url, "class schedule")
+	response = utils.getHTML(url, "class schedule")
 	print "Parsing the classes..."
 	classCount = 0
 	classTimesCount = 0
 	object["classes"] = []
 	while True:
-		courseInfo = extractCourseInfo(response, "<!--Course Title-->", "<center><hr width=60%></center>")
+		courseInfo = utils.extractCourseInfo(response, "<!--Course Title-->", "<center><hr width=60%></center>")
 		if not courseInfo:
 			break
 
-		courseTitle = extractInfo(courseInfo, "Course Title", "<b>", "    ")
+		courseTitle = utils.extractInfo(courseInfo, "Course Title", "<b>", "    ")
 		if not courseTitle:
 			continue
 		classCount += 1
 		
-		courseName = extractInfo(courseInfo, "Course Title", "    ", "    ")
+		courseName = utils.extractInfo(courseInfo, "Course Title", "    ", "    ")
 		units = extractUnits(courseInfo)
-		description = extractInfo(courseInfo, "Description:", "</em>", "<br />")
-		prerequisite = extractInfo(courseInfo, "Prerequisite:", "</em>", "<br />")
-		corequisite = extractInfo(courseInfo, "Corequisite:", "</em>", "<br />")
-		hours = extractInfo(courseInfo, "Hours:", "</em>", "<br />")
-		transferableTo = extractInfo(courseInfo, "Transferable to", "Course Transferable to ", "</em>")
-		advisory = extractInfo(courseInfo, "Advisory:", "</em>", "<br />")
-		generalEducation = extractInfo(courseInfo, "General Education: ", "</em>", "<br />")
-		enrollmentLimitation = extractInfo(courseInfo, "Enrollment Limitation:", "</em>", "<br />")
-		sameAs = extractInfo(courseInfo, "Same As:", "</em>", "<br />")
-		courseFamily = extractInfo(courseInfo, "Course Family:", "</em>", "<br />")
+		description = utils.extractInfo(courseInfo, "Description:", "</em>", "<br />")
+		prerequisite = utils.extractInfo(courseInfo, "Prerequisite:", "</em>", "<br />")
+		corequisite = utils.extractInfo(courseInfo, "Corequisite:", "</em>", "<br />")
+		hours = utils.extractInfo(courseInfo, "Hours:", "</em>", "<br />")
+		transferableTo = utils.extractInfo(courseInfo, "Transferable to", "Course Transferable to ", "</em>")
+		advisory = utils.extractInfo(courseInfo, "Advisory:", "</em>", "<br />")
+		generalEducation = utils.extractInfo(courseInfo, "General Education: ", "</em>", "<br />")
+		enrollmentLimitation = utils.extractInfo(courseInfo, "Enrollment Limitation:", "</em>", "<br />")
+		sameAs = utils.extractInfo(courseInfo, "Same As:", "</em>", "<br />")
+		courseFamily = utils.extractInfo(courseInfo, "Course Family:", "</em>", "<br />")
 
 		object["classes"].append({"courseTitle" : courseTitle})
 		object["classes"][-1]["courseName"] = courseName
@@ -128,7 +129,7 @@ def populateClasses(object, url):
 		object["classes"][-1]["classTimes"] = classTimes
 	print "Successfully added ", classCount, " classes and ", classTimesCount, " class times.\n"
 
-def Main():
+def getClasses():
 	classes = {}
 	
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
@@ -138,4 +139,4 @@ def Main():
 	f = open('classes.json', 'w')
 	f.write(r)
 	f.close()
-Main()
+getClasses()

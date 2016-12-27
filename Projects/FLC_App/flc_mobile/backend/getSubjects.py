@@ -1,11 +1,11 @@
-from utils import *
+import utils
 import json
 
 # Subjects stores each subject in a key:value pattern
 # Where the key is the abbreviated subject, and the value is the full subject
 # e.g. "ANTH": "Anthropology"
 def populateSubjects(object, url):
-	response = getHTML(url, "subjects")
+	response = utils.getHTML(url, "subjects")
 	print "Parsing the subjects..."
 	subjectCount = 0
 	object["subjects"] = []
