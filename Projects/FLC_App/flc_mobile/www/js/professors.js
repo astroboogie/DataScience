@@ -8,7 +8,6 @@ var searchInput = $("#search-text > input");
 var professorUpdate = function (professors) {
     //$("#professor-container").empty();
     $.each(professors, function(index, element) {
-        console.log("ELEMENT: ", element);
         let professorName = element["name"]
         let professorEmail = element["email"] || ""
         let professorPhone = element["phone"] || ""
@@ -24,7 +23,6 @@ var professorUpdate = function (professors) {
         let professorStatus = ""
         let professorHours = element["classHours"];
         professorHours = parseInt(professorHours.substring(0, professorHours.indexOf('hr')));
-        console.log("HOURS: ", professorHours);
         if (professorHours >= 8 || element["classList"].length >= 6) {
             professorStatus = "Full-time";
         }
@@ -32,7 +30,6 @@ var professorUpdate = function (professors) {
             professorStatus = "Part-time";
         }
 
-        console.log(professorName);
         $("#professor-container").append("\
             <div class='course-object'>\
                 <div class='course-text-container'>\
@@ -125,12 +122,14 @@ var professorPage = function(object) {
     //professorUpdate("empty");
 };
 
-var instructors
-$.getJSON("backend.json", function(data) {
-    instructors = data['instructors'];
-}).done(function() {
-    // generates subject list
-    professorUpdate(instructors);
+let url = "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json";
+$.ajax({
+    url: url,
+    type: "GET",
+    success: function(data) {
+        instructors = data['instructors'];
+        professorUpdate(instructors);
+    },
 });
 
 // back arrow functionality
