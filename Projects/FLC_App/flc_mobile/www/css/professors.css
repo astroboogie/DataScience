@@ -276,3 +276,7 @@ button:focus {
     color: #636363;
     align-self: center;
 }
+
+.course-object-hide {
+    display: none;
+}

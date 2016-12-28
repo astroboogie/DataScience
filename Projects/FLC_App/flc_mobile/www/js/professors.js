@@ -4,6 +4,14 @@ var backSelectable = true;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json",
+    type: "GET",
+    success: function(data) {
+        createProfessors(data);
+    },
+});
+
 // Creates a div for each professor and appends it to the
 // professor-container div.
 var createProfessors = function (professors) {
@@ -35,8 +43,8 @@ var createSubjectList = function(subjects, max = 99) {
     return subjects.join(", ");
 }
 
-// Returns a string indicating the professors status
-// hours is passed as a string in the form "8hr 50min"
+// Returns a string indicating the professor's status
+// hours is passed in as a string of the form "8hr 50min"
 var determineProfessorStatus = function(hours, classlist) {
     let parsedHours = parseInt(hours.substring(0, hours.indexOf('hr')));
     if (parsedHours >= 8 || classlist.length >= 6) {
@@ -75,28 +83,41 @@ var professorInfo = function(name, status, subjects, email, phone) {
     );
 }
 
+var filterProfessors = function(search, professorDivs) {
+    $.each(professorDivs.children('div'), function(index, element) {
+        name = $(element).find($(".course-text-container > .professor-title > span")).text();
+        subjects = $(element).find($(".course-text-container > .professor-info > .professor-subject > span")).text();
+        if (cleanString(name + subjects).indexOf(cleanString(search)) !== -1) {
+            $(element).removeClass("course-object-hide");
+        }
+        else {
+            $(element).addClass("course-object-hide");
+        }
+    });
+}
+
+// Removes all punctuation and makes all characters lowercase
+var cleanString = function(string) {
+    if (typeof(string) !== "string") {
+        return "";
+    }
+    return string.replace(/[^a-z]/ig,'').toLowerCase();
+}
+
 var backArrowPress = function(pageSet) {
-    if (backSelectable == true) {
-        if (pageSet == "search") {
-            $("body > *").animate({
-                opacity: "0"
-            }, 150, function() {
-                window.location = "index.html";
-            });
-        }
-        else if (pageSet == "professor-overlay") {
-            currentPage = "search";
-            $("#professor-overlay").removeClass("transition-professor-overlay");
-            $("#professor-container").removeClass("transition-professor-container");
-            $("#header-search").removeClass("professor-scaled");
-            $("#header-text").removeClass("header-text-scaled");
-
-            //professorUpdate("ten&limit");
-
-            setTimeout(function(){
-                //professorUpdate("");
-            }, 300);
-        }
+    if (pageSet == "search") {
+        $("body > *").animate({
+            opacity: "0"
+        }, 150, function() {
+            window.location = "index.html";
+        });
+    }
+    else if (pageSet == "professor-overlay") {
+        currentPage = "search";
+        $("#professor-overlay").removeClass("transition-professor-overlay");
+        $("#professor-container").removeClass("transition-professor-container");
+        $("#header-search").removeClass("professor-scaled");
+        $("#header-text").removeClass("header-text-scaled");
     }
 };
 
@@ -125,29 +146,13 @@ var professorPage = function(object) {
     $("#search-icon > i").removeClass("transition-search-icon");
     $("#cancel-button-container").removeClass("transition-cancel-button-container");
     $("#cancel-button > span").removeClass("transition-cancel-button");
-
-    // remove search bar content
-    searchInput.val("");
-    //professorUpdate("empty");
 };
-
-let url = "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json";
-$.ajax({
-    url: url,
-    type: "GET",
-    success: function(data) {
-        createProfessors(data);
-    },
-});
 
 // back arrow functionality
 $(function () {
     $("#back-arrow").click(function () {
-        if (currentPage == "search") {
-            backArrowPress("search");
-        }
-        else if (currentPage == "professor-overlay") {
-            backArrowPress("professor-overlay");
+        if (backSelectable) {
+            backArrowPress(currentPage);
         }
     });
 });
@@ -165,7 +170,7 @@ var resetContainerWidth = function() {
 }
 
 // Creates transitions when the search bar is clicked
-var createSearchTransition = function() {
+var createSearchHeaderTransitionOnClick = function() {
     $("#header-search").click(function () {
         backSelectable = false;
 
@@ -181,11 +186,8 @@ var createSearchTransition = function() {
 }
 
 // Removes transitions when the search cancel button is clicked
-var removeSearchTransition = function() {
+var createSearchHeaderCancelTransitionOnClick = function() {
     $("#cancel-button").click(function () {
-        searchInput.val("");
-        //professorUpdate("");
-
         backSelectable = true;
 
         $("#back-arrow").removeClass("transition-back-arrow");
@@ -194,24 +196,26 @@ var removeSearchTransition = function() {
         $("#search-icon > i").removeClass("transition-search-icon");
         $("#cancel-button-container").removeClass("transition-cancel-button-container");
         $("#cancel-button > span").removeClass("transition-cancel-button");
+
+        searchInput.val("");
+        filterProfessors("", $("#professor-container"));
     });
 }
 
 // Updates search results upon key press
-var updateSearchResults = function() {
+var createUpdateSearchResultsHandler = function() {
     searchInput.keyup(function() {
         if (searchInput.val().length > 0) {
-            //professorUpdate(searchInput.val());
+            filterProfessors(searchInput.val(), $("#professor-container"));
         }
-
-        if (searchInput.val().length <= 0) {
-            //professorUpdate("");
+        else {
+            filterProfessors("", $("#professor-container"));
         }
     });
 }
 
 setIntputTextWidth();
 resetContainerWidth();
-createSearchTransition();
-removeSearchTransition();
-updateSearchResults();
+createSearchHeaderTransitionOnClick();
+createSearchHeaderCancelTransitionOnClick();
+createUpdateSearchResultsHandler();
