@@ -127,8 +127,7 @@ $.ajax({
     url: url,
     type: "GET",
     success: function(data) {
-        instructors = data['instructors'];
-        professorUpdate(instructors);
+        professorUpdate(data);
     },
 });
 

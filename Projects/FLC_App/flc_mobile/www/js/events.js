@@ -12,8 +12,7 @@ $.ajax({
     url: url,
     type: "GET",
     success: function(data) {
-        let eventsData = data['events'];
-        $.each(eventsData, function(index, value) {
+        $.each(data, function(index, value) {
             let eventTitle = value['title'] || "";
             let eventDescription = value['description'] || ""
             let eventLocation = value['location'] || ""

@@ -82,12 +82,11 @@ def extractClassTimesInfo(courseInfo):
 
 # @Param - Object, holds the json data
 # @Param - url
-def populateClasses(object, url):
+def populateClasses(classes, url):
 	response = utils.getHTML(url, "class schedule")
 	print "Parsing the classes..."
 	classCount = 0
 	classTimesCount = 0
-	object["classes"] = []
 	while True:
 		courseInfo = utils.extractCourseInfo(response, "<!--Course Title-->", "<center><hr width=60%></center>")
 		if not courseInfo:
@@ -111,27 +110,27 @@ def populateClasses(object, url):
 		sameAs = utils.extractInfo(courseInfo, "Same As:", "</em>", "<br />")
 		courseFamily = utils.extractInfo(courseInfo, "Course Family:", "</em>", "<br />")
 
-		object["classes"].append({"courseTitle" : courseTitle})
-		object["classes"][-1]["courseName"] = courseName
-		object["classes"][-1]["units"] = units
-		object["classes"][-1]["description"] = description
-		object["classes"][-1]["prerequisite"] = prerequisite
-		object["classes"][-1]["corequisite"] = corequisite
-		object["classes"][-1]["hours"] = hours
-		object["classes"][-1]["transferableTo"] = transferableTo
-		object["classes"][-1]["advisory"] = advisory
-		object["classes"][-1]["generalEducation"] = generalEducation
-		object["classes"][-1]["enrollmentLimitation"] = enrollmentLimitation
-		object["classes"][-1]["sameAs"] = sameAs
-		object["classes"][-1]["courseFamily"] = courseFamily
+		classes.append({"courseTitle" : courseTitle})
+		classes[-1]["courseName"] = courseName
+		classes[-1]["units"] = units
+		classes[-1]["description"] = description
+		classes[-1]["prerequisite"] = prerequisite
+		classes[-1]["corequisite"] = corequisite
+		classes[-1]["hours"] = hours
+		classes[-1]["transferableTo"] = transferableTo
+		classes[-1]["advisory"] = advisory
+		classes[-1]["generalEducation"] = generalEducation
+		classes[-1]["enrollmentLimitation"] = enrollmentLimitation
+		classes[-1]["sameAs"] = sameAs
+		classes[-1]["courseFamily"] = courseFamily
 		
 		classTimes = extractClassTimesInfo(extractClassTimes(courseInfo))
 		classTimesCount += len(classTimes)
-		object["classes"][-1]["classTimes"] = classTimes
+		classes[-1]["classTimes"] = classTimes
 	print "Successfully added ", classCount, " classes and ", classTimesCount, " class times.\n"
 
 def getClasses():
-	classes = {}
+	classes = []
 	
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateClasses(classes, url)

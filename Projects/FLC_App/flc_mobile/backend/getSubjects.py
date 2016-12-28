@@ -5,11 +5,10 @@ import os
 # Subjects stores each subject in a key:value pattern
 # Where the key is the abbreviated subject, and the value is the full subject
 # e.g. "ANTH": "Anthropology"
-def populateSubjects(object, url):
+def populateSubjects(subjects, url):
 	response = utils.getHTML(url, "subjects")
 	print "Parsing the subjects..."
 	subjectCount = 0
-	object["subjects"] = []
 	lindex = "</b></b><center><h3>"
 	rindex = "</h3>"
 	
@@ -18,12 +17,12 @@ def populateSubjects(object, url):
 			subject = line[line.index(lindex) + len(lindex) : line.rindex(rindex)]
 			subjectAbbrev = subject[subject.find("(") + 1 : subject.find(")")]
 			subjectReadable = subject[0 : subject.find("(")].rstrip(" ")
-			object["subjects"].append({subjectAbbrev : subjectReadable})
+			subjects.append({subjectAbbrev : subjectReadable})
 			subjectCount += 1
 	print "Successfully added ", subjectCount, " subjects.\n"
 
 def getSubjects():
-	subjects = {}
+	subjects = []
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateSubjects(subjects, url)
 	

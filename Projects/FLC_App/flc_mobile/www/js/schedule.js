@@ -55,8 +55,7 @@ $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
     type: "GET",
     success: function(data) {
-        subjects = data['subjects'];
-        $.each(subjects, function(index, element) {
+        $.each(data, function(index, element) {
             $.each(element, function(key, value) {
                 subjects[key] = value;
                 $("#subjects").append(
@@ -76,8 +75,6 @@ $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
     type: "GET",
     success: function(data) {
-        classes = data['classes'];
-
         // Creates subject page buttons
         $(".category-container").click(function() {
             selectedSubject = $(this).children('div').children('span').text();
@@ -94,7 +91,7 @@ $.ajax({
             var tempClasses = {};
             $("#courses").empty();
 
-            $.each(classes, function(index, element) {
+            $.each(data, function(index, element) {
                 // check if currentTitle is the same as the selectedSubject
                 var currentTitle = element['courseTitle'].split(" ")[0];
                 if (subjects[currentTitle] == selectedSubject) {

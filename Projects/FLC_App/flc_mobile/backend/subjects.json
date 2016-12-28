@@ -1,211 +1,209 @@
-{
-    "subjects": [
-        {
-            "ACCT": "Accounting"
-        },
-        {
-            "ADMJ": "Administration of Justice"
-        },
-        {
-            "AH": "Allied Health"
-        },
-        {
-            "ANTH": "Anthropology"
-        },
-        {
-            "ART": "Art"
-        },
-        {
-            "ARTH": "Art History"
-        },
-        {
-            "ASTR": "Astronomy"
-        },
-        {
-            "BIOL": "Biology"
-        },
-        {
-            "BUS": "Business"
-        },
-        {
-            "BUSTEC": "Business Technology"
-        },
-        {
-            "CHEM": "Chemistry"
-        },
-        {
-            "CISC": "Computer Info Science - Core"
-        },
-        {
-            "CISP": "Computer Info Science -Program"
-        },
-        {
-            "COMM": "Communication Studies"
-        },
-        {
-            "DANCE": "Dance"
-        },
-        {
-            "ECE": "Early Childhood Education"
-        },
-        {
-            "ECON": "Economics"
-        },
-        {
-            "EMT": "Emergency Medical Technology"
-        },
-        {
-            "ENGR": "Engineering"
-        },
-        {
-            "ENGCW": "English - Creative Writing"
-        },
-        {
-            "ENGLB": "English - Laboratory"
-        },
-        {
-            "ENGLT": "English - Literature"
-        },
-        {
-            "ENGRD": "English - Reading"
-        },
-        {
-            "ENGWR": "English - Writing"
-        },
-        {
-            "ESL": "ESL - English as a Second Lang"
-        },
-        {
-            "ESLG": "ESL - Grammar"
-        },
-        {
-            "ESLL": "ESL - Listening"
-        },
-        {
-            "ESLR": "ESL - Reading"
-        },
-        {
-            "ESLW": "ESL - Writing"
-        },
-        {
-            "ENVT": "Environmental Technology"
-        },
-        {
-            "FT": "Fire Technology"
-        },
-        {
-            "FREN": "French"
-        },
-        {
-            "GEOG": "Geography"
-        },
-        {
-            "GEOL": "Geology"
-        },
-        {
-            "GERON": "Gerontology"
-        },
-        {
-            "HEED": "Health Education"
-        },
-        {
-            "HIST": "History"
-        },
-        {
-            "HCD": "Human Career Development"
-        },
-        {
-            "HUM": "Humanities"
-        },
-        {
-            "HSER": "Human Services"
-        },
-        {
-            "INDIS": "Interdisciplinary Studies"
-        },
-        {
-            "LIBR": "Library"
-        },
-        {
-            "MGMT": "Management"
-        },
-        {
-            "MKT": "Marketing"
-        },
-        {
-            "MATH": "Mathematics"
-        },
-        {
-            "MEDTEC": "Medical Technology"
-        },
-        {
-            "MUFHL": "Music Fndmntals, History & Lit"
-        },
-        {
-            "MUIVI": "Instrumental/Voice Instruction"
-        },
-        {
-            "MUP": "Music Performance"
-        },
-        {
-            "MUSM": "Specializations in Music"
-        },
-        {
-            "NUTRI": "Nutrition and Foods"
-        },
-        {
-            "PHIL": "Philosophy"
-        },
-        {
-            "KINES": "Physical Education - Kinesiology"
-        },
-        {
-            "FITNS": "Fitness"
-        },
-        {
-            "PACT": "Personal Activities"
-        },
-        {
-            "SPORT": "Sports"
-        },
-        {
-            "TMACT": "Team Activities"
-        },
-        {
-            "PHYS": "Physics"
-        },
-        {
-            "POLS": "Political Science"
-        },
-        {
-            "PRJMGT": "Project Management"
-        },
-        {
-            "PSYC": "Psychology"
-        },
-        {
-            "RE": "Real Estate"
-        },
-        {
-            "SILA": "Sign Language Studies"
-        },
-        {
-            "SOC": "Sociology"
-        },
-        {
-            "SPAN": "Spanish"
-        },
-        {
-            "STAT": "Statistics"
-        },
-        {
-            "TA": "Theatre Arts"
-        },
-        {
-            "TAP": "Theatre Arts Performance"
-        },
-        {
-            "WEXP": "Work Experience"
-        }
-    ]
-}
+[
+    {
+        "ACCT": "Accounting"
+    },
+    {
+        "ADMJ": "Administration of Justice"
+    },
+    {
+        "AH": "Allied Health"
+    },
+    {
+        "ANTH": "Anthropology"
+    },
+    {
+        "ART": "Art"
+    },
+    {
+        "ARTH": "Art History"
+    },
+    {
+        "ASTR": "Astronomy"
+    },
+    {
+        "BIOL": "Biology"
+    },
+    {
+        "BUS": "Business"
+    },
+    {
+        "BUSTEC": "Business Technology"
+    },
+    {
+        "CHEM": "Chemistry"
+    },
+    {
+        "CISC": "Computer Info Science - Core"
+    },
+    {
+        "CISP": "Computer Info Science -Program"
+    },
+    {
+        "COMM": "Communication Studies"
+    },
+    {
+        "DANCE": "Dance"
+    },
+    {
+        "ECE": "Early Childhood Education"
+    },
+    {
+        "ECON": "Economics"
+    },
+    {
+        "EMT": "Emergency Medical Technology"
+    },
+    {
+        "ENGR": "Engineering"
+    },
+    {
+        "ENGCW": "English - Creative Writing"
+    },
+    {
+        "ENGLB": "English - Laboratory"
+    },
+    {
+        "ENGLT": "English - Literature"
+    },
+    {
+        "ENGRD": "English - Reading"
+    },
+    {
+        "ENGWR": "English - Writing"
+    },
+    {
+        "ESL": "ESL - English as a Second Lang"
+    },
+    {
+        "ESLG": "ESL - Grammar"
+    },
+    {
+        "ESLL": "ESL - Listening"
+    },
+    {
+        "ESLR": "ESL - Reading"
+    },
+    {
+        "ESLW": "ESL - Writing"
+    },
+    {
+        "ENVT": "Environmental Technology"
+    },
+    {
+        "FT": "Fire Technology"
+    },
+    {
+        "FREN": "French"
+    },
+    {
+        "GEOG": "Geography"
+    },
+    {
+        "GEOL": "Geology"
+    },
+    {
+        "GERON": "Gerontology"
+    },
+    {
+        "HEED": "Health Education"
+    },
+    {
+        "HIST": "History"
+    },
+    {
+        "HCD": "Human Career Development"
+    },
+    {
+        "HUM": "Humanities"
+    },
+    {
+        "HSER": "Human Services"
+    },
+    {
+        "INDIS": "Interdisciplinary Studies"
+    },
+    {
+        "LIBR": "Library"
+    },
+    {
+        "MGMT": "Management"
+    },
+    {
+        "MKT": "Marketing"
+    },
+    {
+        "MATH": "Mathematics"
+    },
+    {
+        "MEDTEC": "Medical Technology"
+    },
+    {
+        "MUFHL": "Music Fndmntals, History & Lit"
+    },
+    {
+        "MUIVI": "Instrumental/Voice Instruction"
+    },
+    {
+        "MUP": "Music Performance"
+    },
+    {
+        "MUSM": "Specializations in Music"
+    },
+    {
+        "NUTRI": "Nutrition and Foods"
+    },
+    {
+        "PHIL": "Philosophy"
+    },
+    {
+        "KINES": "Physical Education - Kinesiology"
+    },
+    {
+        "FITNS": "Fitness"
+    },
+    {
+        "PACT": "Personal Activities"
+    },
+    {
+        "SPORT": "Sports"
+    },
+    {
+        "TMACT": "Team Activities"
+    },
+    {
+        "PHYS": "Physics"
+    },
+    {
+        "POLS": "Political Science"
+    },
+    {
+        "PRJMGT": "Project Management"
+    },
+    {
+        "PSYC": "Psychology"
+    },
+    {
+        "RE": "Real Estate"
+    },
+    {
+        "SILA": "Sign Language Studies"
+    },
+    {
+        "SOC": "Sociology"
+    },
+    {
+        "SPAN": "Spanish"
+    },
+    {
+        "STAT": "Statistics"
+    },
+    {
+        "TA": "Theatre Arts"
+    },
+    {
+        "TAP": "Theatre Arts Performance"
+    },
+    {
+        "WEXP": "Work Experience"
+    }
+]

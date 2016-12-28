@@ -1,11 +1,9 @@
-{
-    "events": [
-        {
-            "date": "12/23/2016",
-            "description": "Folsom Lake College (including El Dorado Center and Rancho Cordova Center) will be closed for Winter Recess Friday, December 23 - Monday, January 2. Most college offices will re-open on Tuesday, January 3, 2017.The Spring 2017 semester officially begins on January 14 with most Spring classes meeting for the first time January 17-23. Students can register online during the break here. To check out the class schedule, click here.",
-            "location": "All campuses",
-            "id": "0",
-            "title": "Closed for Winter Recess (thru 1/2)"
-        }
-    ]
-}
+[
+    {
+        "date": "12/23/2016",
+        "description": "Folsom Lake College (including El Dorado Center and Rancho Cordova Center) will be closed for Winter Recess Friday, December 23 - Monday, January 2. Most college offices will re-open on Tuesday, January 3, 2017.The Spring 2017 semester officially begins on January 14 with most Spring classes meeting for the first time January 17-23. Students can register online during the break here. To check out the class schedule, click here.",
+        "location": "All campuses",
+        "id": "0",
+        "title": "Closed for Winter Recess (thru 1/2)"
+    }
+]
