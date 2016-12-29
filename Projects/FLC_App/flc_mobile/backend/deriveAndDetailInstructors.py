@@ -94,13 +94,13 @@ def deriveInstructorsFromCourses(instructors, courses):
 					instructorCount += 1
 	
 	# Populate information about professors
-	for item in courses:
+	for course in courses:
 		for classTime in course["classes"]:
 			if classTime["instructor"] != "TBA":
 				for professor in instructors:
 					if classTime["instructor"] == professor["name"]:
 						professor["classList"].append(classTime["id"])
-						subject = item["courseTitle"][0 : item["courseTitle"].index(" ")]
+						subject = course["courseTitle"][0 : course["courseTitle"].index(" ")]
 						if subject not in professor["subjects"]:
 							professor["subjects"].append(subject)
 							professor["subjects"].sort()

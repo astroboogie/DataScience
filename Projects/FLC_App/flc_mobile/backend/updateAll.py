@@ -2,6 +2,7 @@ from getCourses import getCourses
 from getEvents import getEvents
 from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
+from getClasses import getClasses
 import boto3
 import os
 import sys
@@ -10,6 +11,7 @@ def getAll():
 	getSubjects()
 	getEvents()
 	getCourses()
+	getClasses()
 
 def deriveAll():
 	deriveAndDetailInstructors()
