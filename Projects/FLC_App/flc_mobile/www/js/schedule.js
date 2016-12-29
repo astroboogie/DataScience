@@ -72,7 +72,7 @@ $.ajax({
 
 // TODO: This ajax call NEEDS to wait for the previous one to finish
 $.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
     type: "GET",
     success: function(data) {
         // Creates subject page buttons
@@ -95,22 +95,22 @@ $.ajax({
                 // check if currentTitle is the same as the selectedSubject
                 var currentTitle = element['courseTitle'].split(" ")[0];
                 if (subjects[currentTitle] == selectedSubject) {
-                    $.each(element['classTimes'], function(key, value) {
+                    $.each(element['classes'], function(key, value) {
                         // Condition to be met throughout all search conditions
-                        var validCourse = false;
+                        var validClass = false;
 
                         // Day conditions
                         $("#day-form > form > label > input:checked").each(function() {
                             if (value['days'].indexOf($(this).val()) > -1) {
-                                validCourse = true;
+                                validClass = true;
                             }
                             if (value['days'] == "TBA") {
-                                validCourse = true;
+                                validClass = true;
                             }
                         });
 
                         // Course Type conditions
-                        if (validCourse) {
+                        if (validClass) {
                             $("#type-container > div > form > label > input:checked").each(function() {
                                 var fastTrackCourse = false;
                                 var onlineCourse = false;
@@ -134,15 +134,15 @@ $.ajax({
 
                                 // creates checkbox statements to match previous conditions
                                 if ($(this).val() == "Fast Track" && fastTrackCourse == false) {
-                                    validCourse = false;
+                                    validClass = false;
                                 }
                                 else if ($(this).val() == "Online" && onlineCourse == false) {
-                                    validCourse = false;
+                                    validClass = false;
                                 }
                             });
                         }
                         // Finalizes course append
-                        if (validCourse) {
+                        if (validClass) {
                             // Grab lec/lab type
                             var selectedTime;
                             var selectedRoom;

@@ -1,14 +1,15 @@
-from getClasses import getClasses
+from getCourses import getCourses
 from getEvents import getEvents
 from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 import boto3
 import os
+import sys
 
 def getAll():
 	getSubjects()
 	getEvents()
-	getClasses()
+	getCourses()
 
 def deriveAll():
 	deriveAndDetailInstructors()
@@ -34,15 +35,19 @@ def uploadAll():
 			filesUploaded += 1
 	print 'Successfully loaded', filesUploaded, 'files.\n'
 
-def updateAll():
+def updateAll(uploadToServer):
 	getAll()
 	deriveAll()
-	uploadAll()
+	if uploadToServer:
+		uploadAll()
 
 if __name__ == "__main__":
-	updateAll()
+	uploadToServer = False
+	if '--server' in sys.argv:
+		uploadToServer = True
+	updateAll(uploadToServer)
 
 # This is the function that AWS Lambda looks for to execute
 def lambda_handler(event, context):
-	updateAll()
+	updateAll(True)
 	return 'Hello from Lambda'

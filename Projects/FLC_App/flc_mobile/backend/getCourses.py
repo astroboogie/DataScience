@@ -14,19 +14,19 @@ def extractUnits(courseInfo):
 			units = re.sub("[^.0-9\-]", "", units)
 	return units
 
-def extractClassTimes(courseInfo):
-	classTimes = ""
+def extractClasses(courseInfo):
+	classes = ""
 	scheduleMarker = False
 	for line in courseInfo:
 		if scheduleMarker or "Schedule:" in line:
 			scheduleMarker = True
-			classTimes += line + "\n"
-	return classTimes.splitlines()
+			classes += line + "\n"
+	return classes.splitlines()
 
 # Returns an array of dictionaries that containing
 # all information pertaining to class times
-def extractClassTimesInfo(courseInfo):
-	classTime = []
+def extractClassesInfo(courseInfo, classId):
+	classes = []
 	schedule = None
 	days = None
 	lecTime = None
@@ -35,7 +35,6 @@ def extractClassTimesInfo(courseInfo):
 	lecRoom = None
 	labRoom = None
 	classNum = None
-	classTimesCount = 0
 	for line in courseInfo:
 		line = line.replace("&nbsp;", " ")
 		if "Schedule:" in line:
@@ -62,29 +61,29 @@ def extractClassTimesInfo(courseInfo):
 				room = lecRoom or labRoom
 				classNum = line[line.index(room) + len(room) : line.index("<a href")].lstrip(" ").rstrip(" ")
 		if schedule and days and instructor and classNum and (lecTime or labTime) or (lecRoom or labRoom):
-			classTime.append({"schedule" : schedule})
-			classTime[-1]["days"] = days
-			classTime[-1]["lecTime"] = lecTime
-			classTime[-1]["labTime"] = labTime
-			classTime[-1]["instructor"] = instructor
-			classTime[-1]["lecRoom"] = lecRoom
-			classTime[-1]["labRoom"] = labRoom
-			classTime[-1]["classNum"] = classNum
-			classTime[-1]["id"] = str(classTimesCount)
+			classes.append({"schedule" : schedule})
+			classes[-1]["days"] = days
+			classes[-1]["lecTime"] = lecTime
+			classes[-1]["labTime"] = labTime
+			classes[-1]["instructor"] = instructor
+			classes[-1]["lecRoom"] = lecRoom
+			classes[-1]["labRoom"] = labRoom
+			classes[-1]["classNum"] = classNum
+			classes[-1]["id"] = str(classId)
 			days = None
 			lecTime = None
 			labTime = None
 			instructor = None
 			lecRoom = None
 			labRoom = None
-			classTimesCount += 1
-	return classTime
+			classId += 1
+	return classes
 
 # @Param - Object, holds the json data
 # @Param - url
-def populateClasses(classes, url):
+def populateCourses(courses, url):
 	response = utils.getHTML(url, "class schedule")
-	print "Parsing the classes..."
+	print "Parsing the courses..."
 	classCount = 0
 	classTimesCount = 0
 	while True:
@@ -110,40 +109,40 @@ def populateClasses(classes, url):
 		sameAs = utils.extractInfo(courseInfo, "Same As:", "</em>", "<br />")
 		courseFamily = utils.extractInfo(courseInfo, "Course Family:", "</em>", "<br />")
 
-		classes.append({"courseTitle" : courseTitle})
-		classes[-1]["courseName"] = courseName
-		classes[-1]["units"] = units
-		classes[-1]["description"] = description
-		classes[-1]["prerequisite"] = prerequisite
-		classes[-1]["corequisite"] = corequisite
-		classes[-1]["hours"] = hours
-		classes[-1]["transferableTo"] = transferableTo
-		classes[-1]["advisory"] = advisory
-		classes[-1]["generalEducation"] = generalEducation
-		classes[-1]["enrollmentLimitation"] = enrollmentLimitation
-		classes[-1]["sameAs"] = sameAs
-		classes[-1]["courseFamily"] = courseFamily
+		courses.append({"courseTitle" : courseTitle})
+		courses[-1]["courseName"] = courseName
+		courses[-1]["units"] = units
+		courses[-1]["description"] = description
+		courses[-1]["prerequisite"] = prerequisite
+		courses[-1]["corequisite"] = corequisite
+		courses[-1]["hours"] = hours
+		courses[-1]["transferableTo"] = transferableTo
+		courses[-1]["advisory"] = advisory
+		courses[-1]["generalEducation"] = generalEducation
+		courses[-1]["enrollmentLimitation"] = enrollmentLimitation
+		courses[-1]["sameAs"] = sameAs
+		courses[-1]["courseFamily"] = courseFamily
 		
-		classTimes = extractClassTimesInfo(extractClassTimes(courseInfo))
-		classTimesCount += len(classTimes)
-		classes[-1]["classTimes"] = classTimes
-	print "Successfully added ", classCount, " classes and ", classTimesCount, " class times.\n"
+		classes = extractClassesInfo(extractClasses(courseInfo), classTimesCount)
+		classTimesCount += len(classes)
+		courses[-1]["classes"] = classes
+	print "Successfully added ", classCount, " courses and ", classTimesCount, " class times.\n"
 
-def getClasses():
-	classes = []
+def getCourses():
+	courses = []
 	
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
-	populateClasses(classes, url)
+	populateCourses(courses, url)
 	
 	if os.path.isdir('/tmp'):
 		# For writing on AWS Lambda
-		filePath = '/tmp/classes.json'
+		filePath = '/tmp/courses.json'
 	else:
 		# For writing locally
-		filePath = 'classes.json'
+		filePath = 'courses.json'
 		
 	with open(filePath, 'w') as f:
-		f.write(json.dumps(classes, indent=4, separators=(',', ': ')))
+		f.write(json.dumps(courses, indent=4, separators=(',', ': ')))
 	
 if __name__ == "__main__":
 	getClasses()

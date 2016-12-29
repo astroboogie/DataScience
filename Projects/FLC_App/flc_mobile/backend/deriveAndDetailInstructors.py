@@ -67,13 +67,13 @@ def getInstructorDetails(instructors, url):
 		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "\rSuccessfully added details to ", facultyMembersNum, " faculty members.\n"
 
-def deriveInstructorsFromClasses(instructors, classes):
-	print "Parsing the instructors from classes..."
+def deriveInstructorsFromCourses(instructors, courses):
+	print "Parsing the instructors from courses..."
 	instructorCount = 0
 	# DERIVED INFO, SEPARATE THIS OUT LATER
 	# Create list of all professors
-	for item in classes:
-		for classTime in item["classTimes"]:
+	for course in courses:
+		for classTime in course["classes"]:
 			if classTime["instructor"] != "TBA":
 				if not filter(lambda person: person['name'] == classTime["instructor"], instructors):
 					instructors.append({"name" : classTime["instructor"]})
@@ -94,12 +94,12 @@ def deriveInstructorsFromClasses(instructors, classes):
 					instructorCount += 1
 	
 	# Populate information about professors
-	for item in classes:
-		for classTime in item["classTimes"]:
+	for item in courses:
+		for classTime in course["classes"]:
 			if classTime["instructor"] != "TBA":
 				for professor in instructors:
 					if classTime["instructor"] == professor["name"]:
-						professor["classList"].append({item["courseTitle"] : classTime["classNum"]})
+						professor["classList"].append(classTime["id"])
 						subject = item["courseTitle"][0 : item["courseTitle"].index(" ")]
 						if subject not in professor["subjects"]:
 							professor["subjects"].append(subject)
@@ -120,14 +120,12 @@ def deriveAndDetailInstructors():
 	instructors = []
 	if os.path.isdir('/tmp'):
 		# For reading on AWS Lambda
-		filePath = '/tmp/classes.json'
+		filePath = '/tmp/courses.json'
 	else:
 		# For reading locally
-		filePath = 'classes.json'
+		filePath = 'courses.json'
 
-	classes = json.load(open(filePath))
-	
-	deriveInstructorsFromClasses(instructors, classes)
+	deriveInstructorsFromCourses(instructors, json.load(open(filePath)))
 	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
 	
 	if os.path.isdir('/tmp'):
