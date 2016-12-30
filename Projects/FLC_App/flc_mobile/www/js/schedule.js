@@ -1,5 +1,30 @@
-var subjects = {};
-var classes = [];
+var subjects;
+var selectedSubject;
+var currentPage = "schedule";
+
+var getSubjects = function(url) {
+    let subjects = {};
+    $.ajax({
+        url: url,
+        type: "GET",
+        success: function(data) {
+            $.each(data, function(index, element) {
+                $.each(element, function(key, value) {
+                    subjects[key] = value;
+                    $("#subjects").append(
+                        "<button class='category-container'>\
+                            <div class='category-text'>\
+                                <span>" + value + "</span>\
+                            </div>\
+                        </button>"
+                    );
+                });
+            });
+        },
+    });
+    return subjects;
+}
+subjects = getSubjects("https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json");
 
 // Scrolls between pages
 var pageTransition = function (direction, initPage, newPage) {
@@ -13,9 +38,6 @@ var pageTransition = function (direction, initPage, newPage) {
     }
 
 };
-
-// Transitions page from schedule page to subject list
-var currentPage = "schedule";
 
 $("#subject-button").click(function () {
     currentPage = "subjects";
@@ -49,44 +71,6 @@ $("#back-arrow").click(function () {
         $("#header-text > span").text("Browse Courses");
     }
 });
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
-    type: "GET",
-    success: function(data) {
-        $.each(data, function(index, element) {
-            $.each(element, function(key, value) {
-                subjects[key] = value;
-                $("#subjects").append(
-                    "<button class='category-container'>\
-                        <div class='category-text'>\
-                            <span>" + value + "</span>\
-                        </div>\
-                    </button>"
-                );
-            });
-        });
-    },
-});
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        classes = data;
-    },
-});
-
-// Transitions the subjects list page to the main schedule page
-// Returns a string of the selected subject
-var transitionFromSubjectToSchedule = function() {
-    $(".category-container").click(function() {
-        selectedSubject = $(this).children('div').children('span').text();
-        $("#subject-text").children('span').text(selectedSubject);
-        currentPage = "schedule";
-        pageTransition("back", "body-section", "subjects");
-    });
-}
 
 // Returns true if any of the selected days matches a class days
 // Returns true if class days have not been determined
@@ -158,11 +142,69 @@ var courseInfo = function(classNum, courseTitle, courseName, courseType, days, t
     ");
 }
 
+
+// TODO: This ajax call NEEDS to wait for the previous one to finish
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+    type: "GET",
+    success: function(data) {
+        createTransitionFromSubjectToSchedule();
+        // Assign function to 'search' button that transitions page from schedule to list of courses
+        // Also create the page when the 'search' button is clicked
+        $("#search-button").click(function () {
+            currentPage = "courses";
+            pageTransition("new", "body-section", "courses");
+            resetSearchResults($("#courses"));
+            createSearchResults($("#courses"), data);
+            createCourseFullDescription($(".course-arrow"), data);
+        });
+    },
+});
+
+// Transitions the subjects list page to the main schedule page
+// Returns a string of the selected subject
+var createTransitionFromSubjectToSchedule = function() {
+    $(".category-container").click(function() {
+        selectedSubject = $(this).children('div').children('span').text();
+        $("#subject-text").children('span').text(selectedSubject);
+        currentPage = "schedule";
+        pageTransition("back", "body-section", "subjects");
+    });
+}
+
+var resetSearchResults = function(div) {
+    $(div).empty();
+}
+
+var createSearchResults = function(div, classes) {
+    $.each(classes, function(index, element) {
+        // Check that each class is the same as the selected subjects
+        // e.g. that all classes are "Anthopology"
+        let courseTitleAbbrev = subjects[element['courseTitle'].split(" ")[0]];
+        let isCorrectSubject = (courseTitleAbbrev === selectedSubject);
+        if (!isCorrectSubject) {
+            return "continue"; //jQuery version of continue
+        }
+
+        if (hasValidDayConditions($("#day-form > form > label > input:checked"), element['days'])
+            && hasValidCourseType("#type-container > div > form > label > input:checked", element["schedule"], element["labRoom"], element["lecRoom"])) {
+            // Grab lec/lab type
+            let room = element['labRoom'] || element['lecRoom'];
+            let time = element['labTime'] || element['lecTime'];
+            let courseType = element['labTime'] ? " LAB" : "";
+            $(div).append(courseInfo(element['classNum'], element['courseTitle'], element['courseName'], courseType, element['days'], time, element['instructor'], room));
+        }
+    });
+    // Display error message if search result is empty.
+    if ($(div).is(':empty')) {
+        $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
+    }
+}
+
 // Adds an on_click event to an arrow that creates the entire course description
 var createCourseFullDescription = function(arrow, classes) {
     $(arrow).click(function () {
         var currentId = $(this).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digits
-
         var currentCourse = classes[currentId][0];
         var currentTopic = classes[currentId][1];
 
@@ -196,48 +238,3 @@ var createCourseFullDescription = function(arrow, classes) {
         pageTransition("new", "courses", "course-overlay");
     });
 }
-
-var selectedSubject;
-// TODO: This ajax call NEEDS to wait for the previous one to finish
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
-    type: "GET",
-    success: function(data) {
-        transitionFromSubjectToSchedule();
-        console.log(selectedSubject);
-        // Assign function to 'search' button that transitions page from schedule to list of courses
-        $("#search-button").click(function () {
-            currentPage = "courses";
-            pageTransition("new", "body-section", "courses");
-
-            var tempClasses = {};
-
-            // Create courses divs based on search criteria
-            $("#courses").empty();
-            $.each(data, function(index, element) {
-                // check if currentTitle is the same as the selectedSubject
-                let currentTitle = element['courseTitle'].split(" ")[0];
-                if (subjects[currentTitle] == selectedSubject) {
-                    $.each(element['classes'], function(key, value) {
-                        if (hasValidDayConditions($("#day-form > form > label > input:checked"), value['days'])
-                            && hasValidCourseType("#type-container > div > form > label > input:checked", value["schedule"], value["labRoom"], value["lecRoom"])) {
-                            // Grab lec/lab type
-                            let room = value['labRoom'] || value['lecRoom'];
-                            let time = value['labTime'] || value['lecTime'];
-                            let courseType = value['labTime'] ? " LAB" : "";
-
-                            tempClasses[value['classNum']] = [value, element];
-
-                            $("#courses").append(courseInfo(value['classNum'], element['courseTitle'], element['courseName'], courseType, value['days'], time, value['instructor'], room));
-                        }
-                    });
-                }
-            });
-            // Display error message if search result is empty.
-            if( $("#courses").is(':empty') ) {
-                $("#courses").append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
-            }
-            createCourseFullDescription($(".course-arrow"), tempClasses);
-        });
-    },
-});
