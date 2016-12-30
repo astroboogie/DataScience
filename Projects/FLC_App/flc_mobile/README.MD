@@ -2,6 +2,8 @@
 
 ### Requirements
   * [Node.js](https://nodejs.org/)
+
+### Recommended
   * [git](https://git-scm.com/downloads)
 
 ### Directory Layout
