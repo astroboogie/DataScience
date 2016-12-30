@@ -1,5 +1,7 @@
 var currentPage = "search";
 var backSelectable = true;
+var classes;
+var professors;
 
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
@@ -8,21 +10,30 @@ $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json",
     type: "GET",
     success: function(data) {
+        professors = $.extend([], data); // copies data into professors
         createProfessors(data);
     },
 });
 
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+    type: "GET",
+    success: function(data) {
+        classes = $.extend([], data); // copies data into classes
+    },
+});
 // Creates a div for each professor and appends it to the
 // professor-container div.
 var createProfessors = function (professors) {
     $.each(professors, function(index, element) {
         let name = element["name"];
+        let id = element["id"];
         let email = element["email"] || "";
         let phone = element["phone"] || "";
         let subjects = createSubjectList(element["subjects"], 3);
         let status = determineProfessorStatus(element["classHours"], element["classList"]);
 
-        $("#professor-container").append(professorInfo(name, status, subjects, email, phone));
+        $("#professor-container").append(professorInfo(id, name, status, subjects, email, phone));
     });
 
     // Adds professor-arrow click-functionality to view
@@ -54,9 +65,9 @@ var determineProfessorStatus = function(hours, classlist) {
 }
 
 // Returns a div outlining the professor's information
-var professorInfo = function(name, status, subjects, email, phone) {
+var professorInfo = function(id, name, status, subjects, email, phone) {
     return ("\
-        <div class='course-object'>\
+        <div id='" + id + "' class='course-object'>\
             <div class='course-text-container'>\
                 <div class='professor-title'>\
                     <span>" + name + "</span>\
@@ -133,6 +144,13 @@ var professorPage = function(object) {
     $("#professor-subject > span").text(professorSubject);
     $("#professor-email > span").text(professorEmail);
 
+    let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
+    let classIds = professors[professorId]["classList"];
+    $("#course-container").empty();
+    $(classIds).each(function (index, element) {
+        $("#course-container").append(professorCoursesList(Number(element)));
+    });
+
     // add header transitions
     $("#professor-overlay").addClass("transition-professor-overlay");
     $("#professor-container").addClass("transition-professor-container");
@@ -200,6 +218,35 @@ var createSearchHeaderCancelTransitionOnClick = function() {
         searchInput.val("");
         filterProfessors("", $("#professor-container"));
     });
+}
+
+// Returns a string representation of html corresponding to the list of classes
+// the professor has.
+var professorCoursesList = function(id) {
+    let courseTitle = classes[id]["courseTitle"];
+    let courseName = classes[id]["courseName"]
+    let days = classes[id]["days"];
+    let time = classes[id]["lecTime"] || classes[id]["labTime"];
+    let location = classes[id]["lecRoom"] || classes[id]["labRoom"];
+    return ("\
+        <div class='course-object'>\
+            <div class='course-text-container'>\
+                <div class='course-title'>\
+                    <span>" + courseTitle + " : " + courseName + "</span>\
+                </div>\
+                <div class='course-description'>\
+                    <div class='course-days'>" + days + "</div>\
+                    <div class='course-time'>" + time + "</div>\
+                </div>\
+                <div class='course-location'>\
+                    <span>" + location + "</span>\
+                </div>\
+            </div>\
+            <div class='course-arrow'>\
+                <i class='material-icons'>keyboard_arrow_right</i>\
+            </div>\
+        </div>"
+    );
 }
 
 // Updates search results upon key press
