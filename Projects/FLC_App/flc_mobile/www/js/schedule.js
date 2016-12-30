@@ -1,30 +1,36 @@
 var subjects;
+var courses;
 var selectedSubject;
 var currentPage = "schedule";
 
-var getSubjects = function(url) {
-    let subjects = {};
-    $.ajax({
-        url: url,
-        type: "GET",
-        success: function(data) {
-            $.each(data, function(index, element) {
-                $.each(element, function(key, value) {
-                    subjects[key] = value;
-                    $("#subjects").append(
-                        "<button class='category-container'>\
-                            <div class='category-text'>\
-                                <span>" + value + "</span>\
-                            </div>\
-                        </button>"
-                    );
-                });
-            });
-        },
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
+    type: "GET",
+    success: function(data) {
+        subjects = $.extend({}, data); // copies data into subjects
+        createSubjectsList("#subjects", subjects);
+    },
+});
+
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
+    type: "GET",
+    success: function(data) {
+        courses = $.extend([], data); // copies data into subjects
+    },
+});
+
+var createSubjectsList = function(div, subjects) {
+    $.each(subjects, function(subjectAbbrev, subjectReadable) {
+        $(div).append(
+            "<button class='category-container'>\
+                <div class='category-text'>\
+                    <span>" + subjectReadable + "</span>\
+                </div>\
+            </button>"
+        );
     });
-    return subjects;
 }
-subjects = getSubjects("https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json");
 
 // Scrolls between pages
 var pageTransition = function (direction, initPage, newPage) {
@@ -119,9 +125,9 @@ var hasValidCourseType = function(classTypeInputs, schedule, labRoom, lecRoom) {
 }
 
 // Returns a string containing the html representation of a course
-var courseInfo = function(classNum, courseTitle, courseName, courseType, days, time, instructor, room) {
+var courseInfo = function(classId, courseTitle, courseName, courseType, days, time, instructor, room) {
     return ("\
-        <div id='" + classNum + "' class='course-object'>\
+        <div id='" + classId + "' class='course-object'>\
             <div class='course-text-container'>\
                 <div class='course-title'>\
                     <span>" + courseTitle + ": " + courseName + courseType + "</span>\
@@ -156,7 +162,7 @@ $.ajax({
             pageTransition("new", "body-section", "courses");
             resetSearchResults($("#courses"));
             createSearchResults($("#courses"), data);
-            createCourseFullDescription($(".course-arrow"), data);
+            createCourseFullDescription($(".course-arrow"), data, courses);
         });
     },
 });
@@ -192,7 +198,7 @@ var createSearchResults = function(div, classes) {
             let room = element['labRoom'] || element['lecRoom'];
             let time = element['labTime'] || element['lecTime'];
             let courseType = element['labTime'] ? " LAB" : "";
-            $(div).append(courseInfo(element['classNum'], element['courseTitle'], element['courseName'], courseType, element['days'], time, element['instructor'], room));
+            $(div).append(courseInfo(element['id'], element['courseTitle'], element['courseName'], courseType, element['days'], time, element['instructor'], room));
         }
     });
     // Display error message if search result is empty.
@@ -202,33 +208,40 @@ var createSearchResults = function(div, classes) {
 }
 
 // Adds an on_click event to an arrow that creates the entire course description
-var createCourseFullDescription = function(arrow, classes) {
+var createCourseFullDescription = function(arrow, classes, courses) {
     $(arrow).click(function () {
-        var currentId = $(this).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digits
-        var currentCourse = classes[currentId][0];
-        var currentTopic = classes[currentId][1];
+        let id = $(this).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digits
+        let curClass = classes[id];
+        let course = $.grep(courses, function(e) {
+            //console.log("COURSE TITLE: ", course["courseTitle"]);
+            //console.log("CLASS COURSE TITLE: ", curClass["courseTitle"]);
+            return e["courseTitle"] === curClass["courseTitle"];
+        });
+        course = course[0];
+        console.log(curClass);
+        console.log(course);
 
-        var courseTime = currentCourse["lecTime"] || currentCourse["labTime"];
-        var courseLocation = currentCourse["lecRoom"] || currentCourse["labRoom"];
-        var coursePrerequisite = currentTopic["prerequisite"] || "None.";
-        var courseCorequisite = currentTopic["corequisite"] || "None.";
-        var courseAdvisory = currentTopic["advisory"] || "None.";
-
+        let classTime = curClass["lecTime"] || curClass["labTime"];
+        let classLocation = curClass["lecRoom"] || curClass["labRoom"];
+        let coursePrerequisite = course["prerequisite"] || "None.";
+        let courseCorequisite = course["corequisite"] || "None.";
+        let courseAdvisory = course["advisory"] || "None.";
+        let generalEducation = course["generalEducation"] || "None.";
         // adds course details
-        $("#title-container > span").text(currentTopic["courseTitle"] + ": " + currentTopic["courseName"]);
-        $("#course-number").text(currentCourse["classNum"]);
-        $("#course-units").text(currentTopic["units"] + " Units");
-        $("#overlay-transfer").text(currentTopic["transferableTo"]);
+        $("#title-container > span").text(course["courseTitle"] + ": " + course["courseName"]);
+        $("#course-number").text(curClass["classNum"]);
+        $("#course-units").text(course["units"] + " Units");
+        $("#overlay-transfer").text(course["transferableTo"]);
 
-        $("#overlay-professor").text("Professor " + currentCourse["instructor"]);
-        $("#overlay-timedate").text(currentCourse["days"] + " " + courseTime);
-        $("#overlay-location > span").text(courseLocation);
-        $("#overlay-schedule > span").text(currentCourse["schedule"]);
+        $("#overlay-professor").text("Professor " + curClass["instructor"]);
+        $("#overlay-timedate").text(curClass["days"] + " " + classTime);
+        $("#overlay-location > span").text(classLocation);
+        $("#overlay-schedule > span").text(course["schedule"]);
         $("#overlay-corequisites > span").text(courseCorequisite);
         $("#overlay-prerequisites > span").text(coursePrerequisite);
         $("#overlay-advisory > span").text(courseAdvisory);
-        $("#overlay-generaled > span").text(currentTopic["generalEducation"]);
-        $("#overlay-description > span").text(currentTopic["description"]);
+        $("#overlay-generaled > span").text(generalEducation);
+        $("#overlay-description > span").text(course["description"]);
 
         // adds transitions
         currentPage = "description";

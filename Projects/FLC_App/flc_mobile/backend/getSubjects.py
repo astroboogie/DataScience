@@ -17,12 +17,12 @@ def populateSubjects(subjects, url):
 			subject = line[line.index(lindex) + len(lindex) : line.rindex(rindex)]
 			subjectAbbrev = subject[subject.find("(") + 1 : subject.find(")")]
 			subjectReadable = subject[0 : subject.find("(")].rstrip(" ")
-			subjects.append({subjectAbbrev : subjectReadable})
+			subjects[subjectAbbrev] = subjectReadable
 			subjectCount += 1
 	print "Successfully added ", subjectCount, " subjects.\n"
 
 def getSubjects():
-	subjects = []
+	subjects = {}
 	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
 	populateSubjects(subjects, url)
 	
@@ -34,7 +34,7 @@ def getSubjects():
 		filePath = 'subjects.json'
 		
 	with open(filePath, 'w') as f:
-		f.write(json.dumps(subjects, indent=4, separators=(',', ': ')))
+		f.write(json.dumps(subjects, sort_keys=True, indent=4, separators=(',', ': ')))
 
 if __name__ == "__main__":
 	getSubjects()
