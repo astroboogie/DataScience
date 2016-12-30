@@ -68,9 +68,9 @@
             "4",
             "7",
             "10",
-            "182",
-            "185",
-            "187"
+            "121",
+            "124",
+            "126"
         ],
         "id": "2",
         "phone": null,
@@ -105,8 +105,7 @@
         "classList": [
             "5",
             "6",
-            "12",
-            "13"
+            "12"
         ],
         "id": "3",
         "phone": "(916) 608-6582",
@@ -166,41 +165,41 @@
         "name": "K. Funderburg",
         "office": null,
         "classList": [
+            "13",
             "14",
-            "15",
+            "26",
             "27",
-            "28",
-            "199",
-            "200",
-            "267",
-            "268",
-            "331",
-            "332",
-            "358",
-            "359",
-            "386",
-            "387",
-            "561",
-            "562",
-            "568",
-            "569",
-            "599",
-            "600",
-            "679",
-            "680",
-            "692",
-            "693",
-            "699",
-            "700",
-            "836",
-            "853",
-            "854",
-            "1019",
-            "1020",
-            "1047",
-            "1048",
-            "1051",
-            "1052"
+            "137",
+            "138",
+            "181",
+            "182",
+            "229",
+            "230",
+            "247",
+            "248",
+            "271",
+            "272",
+            "419",
+            "420",
+            "426",
+            "427",
+            "448",
+            "449",
+            "514",
+            "515",
+            "524",
+            "525",
+            "531",
+            "532",
+            "633",
+            "648",
+            "649",
+            "786",
+            "787",
+            "806",
+            "807",
+            "810",
+            "811"
         ],
         "id": "5",
         "phone": null,
@@ -238,23 +237,23 @@
         "name": "A. Domek",
         "office": null,
         "classList": [
-            "16",
-            "29",
-            "201",
-            "269",
-            "333",
-            "360",
-            "388",
-            "563",
-            "570",
-            "601",
-            "681",
-            "694",
-            "701",
-            "855",
-            "1021",
-            "1049",
-            "1053"
+            "15",
+            "28",
+            "139",
+            "183",
+            "231",
+            "249",
+            "273",
+            "421",
+            "428",
+            "450",
+            "516",
+            "526",
+            "533",
+            "650",
+            "788",
+            "808",
+            "812"
         ],
         "id": "6",
         "phone": null,
@@ -291,23 +290,23 @@
         "name": "S. Wells",
         "office": null,
         "classList": [
-            "17",
-            "30",
-            "202",
-            "270",
-            "334",
-            "361",
-            "389",
-            "564",
-            "571",
-            "602",
-            "682",
-            "695",
-            "702",
-            "856",
-            "1022",
-            "1050",
-            "1054"
+            "16",
+            "29",
+            "140",
+            "184",
+            "232",
+            "250",
+            "274",
+            "422",
+            "429",
+            "451",
+            "517",
+            "527",
+            "534",
+            "651",
+            "789",
+            "809",
+            "813"
         ],
         "id": "7",
         "phone": null,
@@ -344,10 +343,10 @@
         "name": "Reynando Accooe",
         "office": null,
         "classList": [
+            "17",
             "18",
-            "19",
-            "21",
-            "24"
+            "20",
+            "23"
         ],
         "id": "8",
         "phone": "(916) 608-6912",
@@ -380,7 +379,7 @@
         "name": "D. Hopkins",
         "office": null,
         "classList": [
-            "20"
+            "19"
         ],
         "id": "9",
         "phone": null,
@@ -404,9 +403,9 @@
         "name": "L. Bettencourt",
         "office": null,
         "classList": [
+            "21",
             "22",
-            "23",
-            "26"
+            "25"
         ],
         "id": "10",
         "phone": null,
@@ -438,7 +437,7 @@
         "name": "A. Bates",
         "office": null,
         "classList": [
-            "25"
+            "24"
         ],
         "id": "11",
         "phone": null,
@@ -462,27 +461,23 @@
         "name": "C. Yeager",
         "office": null,
         "classList": [
-            "31",
-            "178"
+            "30"
         ],
         "id": "12",
         "phone": null,
         "subjects": [
-            "AH",
-            "BIOL"
+            "AH"
         ],
-        "classHours": "8hr 50min",
+        "classHours": "2hr 40min",
         "classTimes": {
             "W": [],
             "F": [],
             "M": [],
             "T": [
-                "09:00AM-10:20AM",
-                "02:00PM-05:05PM"
+                "09:00AM-10:20AM"
             ],
             "Th": [
-                "09:00AM-10:20AM",
-                "02:00PM-05:05PM"
+                "09:00AM-10:20AM"
             ],
             "Sa": []
         },
@@ -492,12 +487,11 @@
         "name": "Erica Tyler",
         "office": null,
         "classList": [
-            "32",
+            "31",
             "33",
+            "34",
             "35",
-            "36",
-            "37",
-            "38"
+            "36"
         ],
         "id": "13",
         "phone": "(916) 608-6709",
@@ -524,7 +518,7 @@
         "name": "J. Marshall",
         "office": null,
         "classList": [
-            "34"
+            "32"
         ],
         "id": "14",
         "phone": null,
@@ -546,7 +540,7 @@
         "name": "J. Thompson",
         "office": null,
         "classList": [
-            "39"
+            "37"
         ],
         "id": "15",
         "phone": null,
@@ -572,7 +566,7 @@
         "name": "D. Hoffman",
         "office": null,
         "classList": [
-            "40"
+            "38"
         ],
         "id": "16",
         "phone": null,
@@ -596,7 +590,7 @@
         "name": "S. Stratton",
         "office": null,
         "classList": [
-            "41"
+            "39"
         ],
         "id": "17",
         "phone": null,
@@ -620,29 +614,19 @@
         "name": "Debi Davis Worth",
         "office": null,
         "classList": [
-            "42",
-            "43",
-            "335",
-            "336",
-            "337",
-            "338",
-            "339",
-            "340",
-            "343",
-            "344",
-            "345",
-            "346",
-            "347",
-            "348",
-            "349",
-            "350",
-            "351",
-            "352",
-            "353",
-            "354",
-            "355",
-            "356",
-            "357"
+            "40",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246"
         ],
         "id": "18",
         "phone": "(916) 608-6775",
@@ -650,12 +634,11 @@
             "ANTH",
             "DANCE"
         ],
-        "classHours": "23hr 30min",
+        "classHours": "19hr 20min",
         "classTimes": {
             "W": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
-                "01:00PM-03:05PM"
+                "10:30AM-11:50AM"
             ],
             "F": [
                 "09:30AM-10:35AM",
@@ -674,7 +657,6 @@
             ],
             "Th": [
                 "09:00AM-10:20AM",
-                "10:30AM-12:35PM",
                 "01:00PM-04:10PM"
             ],
             "Sa": []
@@ -685,10 +667,10 @@
         "name": "H. Olts",
         "office": null,
         "classList": [
+            "41",
+            "42",
             "44",
-            "45",
-            "47",
-            "50"
+            "47"
         ],
         "id": "19",
         "phone": null,
@@ -720,7 +702,7 @@
         "name": "A. Hertzberg",
         "office": null,
         "classList": [
-            "46"
+            "43"
         ],
         "id": "20",
         "phone": null,
@@ -744,7 +726,7 @@
         "name": "S. Watters",
         "office": null,
         "classList": [
-            "48"
+            "45"
         ],
         "id": "21",
         "phone": null,
@@ -770,7 +752,7 @@
         "name": "A. Cahoon",
         "office": null,
         "classList": [
-            "49"
+            "46"
         ],
         "id": "22",
         "phone": null,
@@ -792,7 +774,7 @@
         "name": "J. Rush",
         "office": null,
         "classList": [
-            "51"
+            "48"
         ],
         "id": "23",
         "phone": null,
@@ -816,18 +798,12 @@
         "name": "Marisa Sayago",
         "office": null,
         "classList": [
-            "52",
-            "53",
-            "54",
-            "55",
-            "68",
-            "69",
+            "49",
+            "50",
+            "57",
+            "58",
             "70",
-            "71",
-            "94",
-            "95",
-            "98",
-            "99"
+            "72"
         ],
         "id": "24",
         "phone": "(916) 608-6556",
@@ -869,16 +845,11 @@
         "name": "Heike Schmid",
         "office": null,
         "classList": [
-            "56",
-            "57",
-            "64",
-            "65",
-            "74",
-            "75",
-            "80",
-            "81",
-            "82",
-            "83"
+            "51",
+            "55",
+            "60",
+            "63",
+            "64"
         ],
         "id": "25",
         "phone": "(916) 608-6794",
@@ -918,11 +889,9 @@
         "name": "M. Welty",
         "office": null,
         "classList": [
-            "58",
-            "59",
-            "60",
-            "61",
-            "102"
+            "52",
+            "53",
+            "74"
         ],
         "id": "26",
         "phone": null,
@@ -954,9 +923,8 @@
         "name": "T. Germany",
         "office": null,
         "classList": [
-            "62",
-            "63",
-            "111"
+            "54",
+            "79"
         ],
         "id": "27",
         "phone": null,
@@ -986,8 +954,7 @@
         "name": "D. Coco-Russell",
         "office": null,
         "classList": [
-            "66",
-            "67"
+            "56"
         ],
         "id": "28",
         "phone": null,
@@ -1012,17 +979,12 @@
         "name": "Eunyoung Hwang",
         "office": null,
         "classList": [
-            "72",
-            "73",
+            "59",
+            "61",
+            "62",
             "76",
-            "77",
             "78",
-            "79",
-            "105",
-            "106",
-            "109",
-            "110",
-            "113"
+            "81"
         ],
         "id": "29",
         "phone": "(916) 608-6425",
@@ -1061,12 +1023,9 @@
         "name": "A. Hart",
         "office": null,
         "classList": [
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89"
+            "65",
+            "66",
+            "67"
         ],
         "id": "30",
         "phone": null,
@@ -1097,14 +1056,10 @@
         "name": "J. Hayes",
         "office": null,
         "classList": [
-            "90",
-            "91",
-            "92",
-            "93",
-            "96",
-            "97",
-            "100",
-            "101"
+            "68",
+            "69",
+            "71",
+            "73"
         ],
         "id": "31",
         "phone": null,
@@ -1132,8 +1087,7 @@
         "name": "K. Wendt",
         "office": null,
         "classList": [
-            "103",
-            "104"
+            "75"
         ],
         "id": "32",
         "phone": null,
@@ -1157,8 +1111,7 @@
         "name": "P. Milton",
         "office": null,
         "classList": [
-            "107",
-            "108"
+            "77"
         ],
         "id": "33",
         "phone": null,
@@ -1182,8 +1135,8 @@
         "name": "S. Mirmobiny",
         "office": null,
         "classList": [
-            "112",
-            "666"
+            "80",
+            "506"
         ],
         "id": "34",
         "phone": null,
@@ -1210,7 +1163,7 @@
         "name": "M. Shiva",
         "office": null,
         "classList": [
-            "114"
+            "82"
         ],
         "id": "35",
         "phone": null,
@@ -1236,12 +1189,11 @@
         "name": "Daniel Hale",
         "office": null,
         "classList": [
-            "115",
-            "117",
-            "118",
-            "124",
-            "903",
-            "904"
+            "83",
+            "85",
+            "86",
+            "92",
+            "694"
         ],
         "id": "36",
         "phone": "(916) 608-6786",
@@ -1275,10 +1227,10 @@
         "name": "R. Laurent",
         "office": null,
         "classList": [
-            "116",
-            "120",
-            "122",
-            "123"
+            "84",
+            "88",
+            "90",
+            "91"
         ],
         "id": "37",
         "phone": null,
@@ -1306,7 +1258,7 @@
         "name": "M. Mijic",
         "office": null,
         "classList": [
-            "119"
+            "87"
         ],
         "id": "38",
         "phone": null,
@@ -1332,12 +1284,10 @@
         "name": "Daria Eiteneer-Harmon",
         "office": null,
         "classList": [
-            "121",
-            "896",
-            "897",
-            "898",
-            "901",
-            "902"
+            "89",
+            "690",
+            "691",
+            "693"
         ],
         "id": "39",
         "phone": null,
@@ -1345,7 +1295,7 @@
             "ASTR",
             "PHYS"
         ],
-        "classHours": "16hr 0min",
+        "classHours": "13hr 20min",
         "classTimes": {
             "W": [
                 "01:00PM-02:20PM",
@@ -1358,13 +1308,11 @@
             ],
             "T": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "12:00PM-01:20PM",
                 "05:30PM-06:50PM"
             ],
             "Th": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "12:00PM-01:20PM",
                 "05:30PM-06:50PM"
             ],
@@ -1376,10 +1324,8 @@
         "name": "P. Jazbi",
         "office": null,
         "classList": [
-            "125",
-            "126",
-            "175",
-            "176"
+            "93",
+            "117"
         ],
         "id": "40",
         "phone": null,
@@ -1409,11 +1355,10 @@
         "name": "M. Keller",
         "office": null,
         "classList": [
-            "127",
-            "139",
-            "153",
-            "154",
-            "553"
+            "94",
+            "100",
+            "106",
+            "414"
         ],
         "id": "41",
         "phone": null,
@@ -1448,29 +1393,28 @@
         "name": "Eric Wada",
         "office": null,
         "classList": [
-            "128",
-            "134",
-            "137",
-            "138"
+            "95",
+            "99"
         ],
         "id": "42",
         "phone": "(916) 608-6767",
         "subjects": [
             "BIOL"
         ],
-        "classHours": "11hr 30min",
+        "classHours": "17hr 40min",
         "classTimes": {
             "W": [],
             "F": [],
-            "M": [
-                "07:00PM-10:05PM"
-            ],
+            "M": [],
             "T": [
                 "01:00PM-02:20PM",
-                "05:45PM-07:05PM"
+                "02:30PM-05:35PM",
+                "05:45PM-07:05PM",
+                "07:15PM-10:20PM"
             ],
             "Th": [
                 "01:00PM-02:20PM",
+                "02:30PM-05:35PM",
                 "05:45PM-07:05PM",
                 "07:15PM-10:20PM"
             ],
@@ -1479,42 +1423,14 @@
         "email": "wadae@flc.losrios.edu"
     },
     {
-        "name": "D. Weyland Watson",
-        "office": null,
-        "classList": [
-            "129"
-        ],
-        "id": "43",
-        "phone": null,
-        "subjects": [
-            "BIOL"
-        ],
-        "classHours": "3hr 5min",
-        "classTimes": {
-            "W": [],
-            "F": [],
-            "M": [],
-            "T": [
-                "02:30PM-05:35PM"
-            ],
-            "Th": [],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
         "name": "M. Wenzel",
         "office": null,
         "classList": [
-            "130",
-            "131",
-            "132",
-            "140",
-            "141",
-            "554",
-            "555"
+            "96",
+            "101",
+            "415"
         ],
-        "id": "44",
+        "id": "43",
         "phone": null,
         "subjects": [
             "BIOL",
@@ -1540,31 +1456,29 @@
         "name": "C. Osorio",
         "office": null,
         "classList": [
-            "133",
-            "135",
-            "136",
-            "144",
-            "146",
-            "148"
+            "97",
+            "98"
         ],
-        "id": "45",
+        "id": "44",
         "phone": null,
         "subjects": [
             "BIOL"
         ],
-        "classHours": "11hr 40min",
+        "classHours": "18hr 0min",
         "classTimes": {
             "W": [
                 "09:30AM-10:50AM",
-                "05:30PM-06:50PM"
+                "11:00AM-02:15PM",
+                "05:30PM-06:50PM",
+                "07:00PM-10:05PM"
             ],
             "F": [
                 "09:30AM-10:50AM",
-                "11:00AM-02:15PM",
-                "05:00PM-08:05PM"
+                "11:00AM-02:15PM"
             ],
             "M": [
-                "05:30PM-06:50PM"
+                "05:30PM-06:50PM",
+                "07:00PM-10:05PM"
             ],
             "T": [],
             "Th": [],
@@ -1576,10 +1490,10 @@
         "name": "W. Hamilton",
         "office": null,
         "classList": [
-            "142",
-            "556"
+            "102",
+            "416"
         ],
-        "id": "46",
+        "id": "45",
         "phone": null,
         "subjects": [
             "BIOL",
@@ -1604,11 +1518,9 @@
         "name": "R. Skillen",
         "office": null,
         "classList": [
-            "143",
-            "145",
-            "147"
+            "103"
         ],
-        "id": "47",
+        "id": "46",
         "phone": null,
         "subjects": [
             "BIOL"
@@ -1630,12 +1542,10 @@
         "name": "Steve Holzberg",
         "office": null,
         "classList": [
-            "149",
-            "150",
-            "151",
-            "152"
+            "104",
+            "105"
         ],
-        "id": "48",
+        "id": "47",
         "phone": "(916) 608-6657",
         "subjects": [
             "BIOL"
@@ -1667,37 +1577,30 @@
         "name": "Sherry Rogers",
         "office": null,
         "classList": [
-            "155",
-            "156",
-            "157",
-            "158"
+            "107",
+            "108"
         ],
-        "id": "49",
+        "id": "48",
         "phone": "(916) 608-6550",
         "subjects": [
             "BIOL"
         ],
-        "classHours": "17hr 50min",
+        "classHours": "13hr 40min",
         "classTimes": {
-            "W": [
-                "08:40AM-10:45AM",
-                "11:05AM-01:10PM"
-            ],
-            "F": [
-                "08:40AM-10:45AM",
-                "11:05AM-01:10PM"
-            ],
-            "M": [
-                "08:40AM-10:45AM",
-                "11:05AM-01:10PM"
-            ],
+            "W": [],
+            "F": [],
+            "M": [],
             "T": [
+                "08:40AM-10:45AM",
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "11:05AM-01:10PM"
             ],
             "Th": [
+                "08:40AM-10:45AM",
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "11:05AM-01:10PM"
             ],
             "Sa": []
         },
@@ -1707,12 +1610,10 @@
         "name": "David Lagala",
         "office": null,
         "classList": [
-            "159",
-            "160",
-            "165",
-            "166"
+            "109",
+            "112"
         ],
-        "id": "50",
+        "id": "49",
         "phone": "(530) 642-5638",
         "subjects": [
             "BIOL"
@@ -1744,12 +1645,11 @@
         "name": "M. Robinson",
         "office": null,
         "classList": [
-            "161",
-            "162",
-            "643",
-            "644"
+            "110",
+            "485",
+            "486"
         ],
-        "id": "51",
+        "id": "50",
         "phone": null,
         "subjects": [
             "BIOL",
@@ -1782,10 +1682,9 @@
         "name": "J. Patterson",
         "office": null,
         "classList": [
-            "163",
-            "164"
+            "111"
         ],
-        "id": "52",
+        "id": "51",
         "phone": null,
         "subjects": [
             "BIOL"
@@ -1811,10 +1710,9 @@
         "name": "M. Aly",
         "office": null,
         "classList": [
-            "167",
-            "168"
+            "113"
         ],
-        "id": "53",
+        "id": "52",
         "phone": null,
         "subjects": [
             "BIOL"
@@ -1840,13 +1738,11 @@
         "name": "Linda Abraham",
         "office": null,
         "classList": [
-            "169",
-            "170",
-            "171",
-            "172",
-            "683"
+            "114",
+            "115",
+            "518"
         ],
-        "id": "54",
+        "id": "53",
         "phone": "(916) 608-6682",
         "subjects": [
             "BIOL",
@@ -1855,22 +1751,20 @@
         "classHours": "13hr 40min",
         "classTimes": {
             "W": [
+                "08:30AM-10:35AM",
                 "09:00AM-10:20AM",
-                "11:00AM-12:20PM"
+                "11:00AM-12:20PM",
+                "11:00AM-01:05PM"
             ],
             "F": [],
             "M": [
+                "08:30AM-10:35AM",
                 "09:00AM-10:20AM",
-                "11:00AM-12:20PM"
-            ],
-            "T": [
-                "08:30AM-10:35AM",
+                "11:00AM-12:20PM",
                 "11:00AM-01:05PM"
             ],
-            "Th": [
-                "08:30AM-10:35AM",
-                "11:00AM-01:05PM"
-            ],
+            "T": [],
+            "Th": [],
             "Sa": []
         },
         "email": "AbrahaL@flc.losrios.edu"
@@ -1879,27 +1773,28 @@
         "name": "S. Jahangiri",
         "office": null,
         "classList": [
-            "173",
-            "174",
-            "177"
+            "116",
+            "118"
         ],
-        "id": "55",
+        "id": "54",
         "phone": null,
         "subjects": [
             "BIOL"
         ],
-        "classHours": "9hr 30min",
+        "classHours": "15hr 40min",
         "classTimes": {
             "W": [],
             "F": [],
             "M": [],
             "T": [
                 "12:30PM-01:50PM",
+                "02:00PM-05:05PM",
                 "06:00PM-07:20PM",
                 "07:30PM-09:35PM"
             ],
             "Th": [
                 "12:30PM-01:50PM",
+                "02:00PM-05:05PM",
                 "06:00PM-07:20PM",
                 "07:30PM-09:35PM"
             ],
@@ -1911,19 +1806,16 @@
         "name": "Matt Watanabe",
         "office": null,
         "classList": [
-            "179",
-            "180",
-            "183",
-            "186",
-            "189",
-            "190",
-            "402",
-            "403",
-            "696",
-            "697",
-            "698"
+            "119",
+            "122",
+            "125",
+            "128",
+            "283",
+            "528",
+            "529",
+            "530"
         ],
-        "id": "56",
+        "id": "55",
         "phone": "(916) 608-6973",
         "subjects": [
             "BUS",
@@ -1957,11 +1849,11 @@
         "name": "J. McClatchy",
         "office": null,
         "classList": [
-            "184",
-            "191",
-            "404"
+            "123",
+            "129",
+            "284"
         ],
-        "id": "57",
+        "id": "56",
         "phone": null,
         "subjects": [
             "BUS",
@@ -1986,10 +1878,10 @@
         "name": "D. Buch",
         "office": null,
         "classList": [
-            "188",
-            "196"
+            "127",
+            "134"
         ],
-        "id": "58",
+        "id": "57",
         "phone": null,
         "subjects": [
             "BUS"
@@ -2009,11 +1901,11 @@
         "name": "O. Ghamami",
         "office": null,
         "classList": [
-            "192",
-            "193",
-            "688"
+            "130",
+            "131",
+            "520"
         ],
-        "id": "59",
+        "id": "58",
         "phone": null,
         "subjects": [
             "BUS",
@@ -2036,13 +1928,13 @@
         "name": "C. Howell Ellerman",
         "office": null,
         "classList": [
-            "194",
-            "195",
-            "954",
-            "955",
-            "956"
+            "132",
+            "133",
+            "738",
+            "739",
+            "740"
         ],
-        "id": "60",
+        "id": "59",
         "phone": "(530) 344-5717",
         "subjects": [
             "BUS",
@@ -2074,9 +1966,9 @@
         "name": "D. White",
         "office": null,
         "classList": [
-            "197"
+            "135"
         ],
-        "id": "61",
+        "id": "60",
         "phone": null,
         "subjects": [
             "BUS"
@@ -2096,38 +1988,26 @@
         "name": "Elizabeth Swithenbank",
         "office": null,
         "classList": [
-            "203",
-            "204",
-            "205",
-            "206",
-            "207",
-            "208",
-            "209",
-            "210",
-            "211",
-            "212",
-            "213",
-            "219",
-            "220"
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "150"
         ],
-        "id": "62",
+        "id": "61",
         "phone": "(916) 608-6774",
         "subjects": [
             "BUSTEC"
         ],
-        "classHours": "6hr 15min",
+        "classHours": "0hr 0min",
         "classTimes": {
-            "W": [
-                "10:30AM-12:35PM"
-            ],
+            "W": [],
             "F": [],
             "M": [],
-            "T": [
-                "10:30AM-12:35PM"
-            ],
-            "Th": [
-                "10:30AM-12:35PM"
-            ],
+            "T": [],
+            "Th": [],
             "Sa": []
         },
         "email": "swithee@flc.losrios.edu"
@@ -2136,12 +2016,10 @@
         "name": "J. Millington",
         "office": null,
         "classList": [
-            "214",
-            "215",
-            "265",
-            "266"
+            "147",
+            "180"
         ],
-        "id": "63",
+        "id": "62",
         "phone": null,
         "subjects": [
             "BUSTEC",
@@ -2162,9 +2040,9 @@
         "name": "C. Hicks",
         "office": null,
         "classList": [
-            "216"
+            "148"
         ],
-        "id": "64",
+        "id": "63",
         "phone": null,
         "subjects": [
             "BUSTEC"
@@ -2184,14 +2062,11 @@
         "name": "F. Heiler",
         "office": null,
         "classList": [
-            "217",
-            "218",
-            "221",
-            "222",
-            "223",
-            "224"
+            "149",
+            "151",
+            "152"
         ],
-        "id": "65",
+        "id": "64",
         "phone": null,
         "subjects": [
             "BUSTEC"
@@ -2211,38 +2086,32 @@
         "name": "Christa Oberth",
         "office": null,
         "classList": [
-            "225",
-            "226",
-            "227",
-            "252",
-            "253",
-            "254"
+            "153",
+            "154",
+            "170",
+            "171"
         ],
-        "id": "66",
+        "id": "65",
         "phone": "(916) 608-6663",
         "subjects": [
             "CHEM"
         ],
-        "classHours": "25hr 20min",
+        "classHours": "18hr 30min",
         "classTimes": {
             "W": [
                 "08:30AM-11:35AM",
-                "12:30PM-01:50PM",
                 "02:30PM-05:35PM"
             ],
             "F": [],
             "M": [
                 "08:30AM-11:35AM",
-                "12:30PM-01:50PM",
                 "02:30PM-05:35PM"
             ],
             "T": [
-                "08:30AM-11:35AM",
-                "12:30PM-02:35PM"
+                "08:30AM-11:35AM"
             ],
             "Th": [
-                "08:30AM-11:35AM",
-                "12:30PM-02:35PM"
+                "08:30AM-11:35AM"
             ],
             "Sa": []
         },
@@ -2252,24 +2121,21 @@
         "name": "L. Bria",
         "office": null,
         "classList": [
-            "228",
-            "230",
-            "231"
+            "155",
+            "156"
         ],
-        "id": "67",
+        "id": "66",
         "phone": null,
         "subjects": [
             "CHEM"
         ],
-        "classHours": "10hr 20min",
+        "classHours": "6hr 10min",
         "classTimes": {
             "W": [
-                "05:00PM-07:05PM",
                 "07:15PM-10:20PM"
             ],
             "F": [],
             "M": [
-                "05:00PM-07:05PM",
                 "07:15PM-10:20PM"
             ],
             "T": [],
@@ -2279,64 +2145,25 @@
         "email": null
     },
     {
-        "name": "Marjorie Samples",
-        "office": null,
-        "classList": [
-            "229",
-            "249",
-            "250"
-        ],
-        "id": "68",
-        "phone": "(916) 608-6681",
-        "subjects": [
-            "CHEM"
-        ],
-        "classHours": "13hr 0min",
-        "classTimes": {
-            "W": [
-                "05:00PM-07:05PM"
-            ],
-            "F": [],
-            "M": [
-                "05:00PM-07:05PM"
-            ],
-            "T": [
-                "09:00AM-12:05PM",
-                "01:00PM-02:20PM"
-            ],
-            "Th": [
-                "09:00AM-12:05PM",
-                "01:00PM-02:20PM"
-            ],
-            "Sa": []
-        },
-        "email": "samplem@flc.losrios.edu"
-    },
-    {
         "name": "W. Sughrue",
         "office": null,
         "classList": [
-            "232",
-            "233",
-            "234"
+            "157",
+            "158"
         ],
-        "id": "69",
+        "id": "67",
         "phone": null,
         "subjects": [
             "CHEM"
         ],
-        "classHours": "10hr 40min",
+        "classHours": "6hr 30min",
         "classTimes": {
-            "W": [
-                "07:15AM-09:20AM"
-            ],
+            "W": [],
             "F": [
                 "09:00AM-12:15PM",
                 "01:00PM-04:15PM"
             ],
-            "M": [
-                "07:15AM-09:20AM"
-            ],
+            "M": [],
             "T": [],
             "Th": [],
             "Sa": []
@@ -2347,26 +2174,22 @@
         "name": "Ted Foster",
         "office": null,
         "classList": [
-            "235",
-            "236",
-            "237",
-            "255",
-            "256"
+            "159",
+            "160",
+            "172"
         ],
-        "id": "70",
+        "id": "68",
         "phone": "(530) 642-5610",
         "subjects": [
             "CHEM"
         ],
-        "classHours": "19hr 10min",
+        "classHours": "15hr 0min",
         "classTimes": {
             "W": [
-                "12:00PM-02:05PM",
                 "02:15PM-05:20PM"
             ],
             "F": [],
             "M": [
-                "12:00PM-02:05PM",
                 "02:15PM-05:20PM"
             ],
             "T": [
@@ -2385,54 +2208,22 @@
         "name": "J. Stark",
         "office": null,
         "classList": [
-            "238",
-            "239",
-            "240"
+            "161",
+            "162"
         ],
-        "id": "71",
+        "id": "69",
         "phone": null,
         "subjects": [
             "CHEM"
         ],
-        "classHours": "10hr 20min",
+        "classHours": "6hr 10min",
         "classTimes": {
             "W": [
-                "05:25PM-07:30PM",
                 "07:40PM-10:45PM"
             ],
             "F": [],
             "M": [
-                "05:25PM-07:30PM",
                 "07:40PM-10:45PM"
-            ],
-            "T": [],
-            "Th": [],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
-        "name": "D. Green",
-        "office": null,
-        "classList": [
-            "241",
-            "243"
-        ],
-        "id": "72",
-        "phone": null,
-        "subjects": [
-            "CHEM"
-        ],
-        "classHours": "8hr 50min",
-        "classTimes": {
-            "W": [
-                "11:30AM-12:50PM",
-                "02:30PM-05:35PM"
-            ],
-            "F": [],
-            "M": [
-                "11:30AM-12:50PM",
-                "02:30PM-05:35PM"
             ],
             "T": [],
             "Th": [],
@@ -2444,9 +2235,9 @@
         "name": "J. Oswald",
         "office": null,
         "classList": [
-            "242"
+            "163"
         ],
-        "id": "73",
+        "id": "70",
         "phone": null,
         "subjects": [
             "CHEM"
@@ -2467,32 +2258,53 @@
         "email": null
     },
     {
+        "name": "D. Green",
+        "office": null,
+        "classList": [
+            "164"
+        ],
+        "id": "71",
+        "phone": null,
+        "subjects": [
+            "CHEM"
+        ],
+        "classHours": "6hr 10min",
+        "classTimes": {
+            "W": [
+                "02:30PM-05:35PM"
+            ],
+            "F": [],
+            "M": [
+                "02:30PM-05:35PM"
+            ],
+            "T": [],
+            "Th": [],
+            "Sa": []
+        },
+        "email": null
+    },
+    {
         "name": "Max Mahoney",
         "office": null,
         "classList": [
-            "244",
-            "245",
-            "246",
-            "251",
-            "684"
+            "165",
+            "166",
+            "169"
         ],
-        "id": "74",
+        "id": "72",
         "phone": "(916) 608-6917",
         "subjects": [
-            "CHEM",
-            "INDIS"
+            "CHEM"
         ],
-        "classHours": "21hr 10min",
+        "classHours": "18hr 30min",
         "classTimes": {
             "W": [
                 "11:00AM-02:05PM",
-                "03:00PM-04:20PM",
                 "06:00PM-09:05PM"
             ],
             "F": [],
             "M": [
                 "11:00AM-02:05PM",
-                "03:00PM-04:20PM",
                 "06:00PM-09:05PM"
             ],
             "T": [
@@ -2509,15 +2321,12 @@
         "name": "P. Dao",
         "office": null,
         "classList": [
-            "247",
-            "248",
-            "686"
+            "167"
         ],
-        "id": "75",
+        "id": "73",
         "phone": null,
         "subjects": [
-            "CHEM",
-            "INDIS"
+            "CHEM"
         ],
         "classHours": "8hr 50min",
         "classTimes": {
@@ -2537,13 +2346,38 @@
         "email": null
     },
     {
+        "name": "Marjorie Samples",
+        "office": null,
+        "classList": [
+            "168"
+        ],
+        "id": "74",
+        "phone": "(916) 608-6681",
+        "subjects": [
+            "CHEM"
+        ],
+        "classHours": "6hr 10min",
+        "classTimes": {
+            "W": [],
+            "F": [],
+            "M": [],
+            "T": [
+                "09:00AM-12:05PM"
+            ],
+            "Th": [
+                "09:00AM-12:05PM"
+            ],
+            "Sa": []
+        },
+        "email": "samplem@flc.losrios.edu"
+    },
+    {
         "name": "M. Davis",
         "office": null,
         "classList": [
-            "257",
-            "258"
+            "173"
         ],
-        "id": "76",
+        "id": "75",
         "phone": null,
         "subjects": [
             "CISC"
@@ -2565,14 +2399,12 @@
         "name": "Dan Ross",
         "office": null,
         "classList": [
-            "259",
-            "286",
-            "287",
-            "294",
-            "411",
-            "412"
+            "174",
+            "196",
+            "200",
+            "287"
         ],
-        "id": "77",
+        "id": "76",
         "phone": "(916) 608-6532",
         "subjects": [
             "CISC",
@@ -2603,9 +2435,9 @@
         "name": "A. Mukarram",
         "office": null,
         "classList": [
-            "260"
+            "175"
         ],
-        "id": "78",
+        "id": "77",
         "phone": null,
         "subjects": [
             "CISC"
@@ -2629,10 +2461,10 @@
         "name": "R. Monsen",
         "office": null,
         "classList": [
-            "261",
-            "276"
+            "176",
+            "189"
         ],
-        "id": "79",
+        "id": "78",
         "phone": null,
         "subjects": [
             "CISC",
@@ -2655,14 +2487,12 @@
         "name": "Suha Al Juboori",
         "office": null,
         "classList": [
-            "262",
-            "273",
-            "277",
-            "278",
-            "292",
-            "293"
+            "177",
+            "186",
+            "190",
+            "199"
         ],
-        "id": "80",
+        "id": "79",
         "phone": "(916) 608-6513",
         "subjects": [
             "CISC",
@@ -2692,9 +2522,9 @@
         "name": "R. Hendricks",
         "office": null,
         "classList": [
-            "263"
+            "178"
         ],
-        "id": "81",
+        "id": "80",
         "phone": null,
         "subjects": [
             "CISC"
@@ -2716,11 +2546,10 @@
         "name": "S. Allen",
         "office": null,
         "classList": [
-            "264",
-            "281",
-            "282"
+            "179",
+            "193"
         ],
-        "id": "82",
+        "id": "81",
         "phone": null,
         "subjects": [
             "CISC",
@@ -2745,12 +2574,10 @@
         "name": "D. Tully",
         "office": null,
         "classList": [
-            "271",
-            "272",
-            "288",
-            "289"
+            "185",
+            "197"
         ],
-        "id": "83",
+        "id": "82",
         "phone": null,
         "subjects": [
             "CISP"
@@ -2774,15 +2601,13 @@
         "name": "Caleb Fowler",
         "office": null,
         "classList": [
-            "274",
-            "275",
-            "283",
-            "284",
-            "285",
-            "290",
-            "291"
+            "187",
+            "188",
+            "194",
+            "195",
+            "198"
         ],
-        "id": "84",
+        "id": "83",
         "phone": "(916) 608-6595",
         "subjects": [
             "CISP"
@@ -2814,10 +2639,10 @@
         "name": "G. Johnson",
         "office": null,
         "classList": [
-            "279",
-            "280"
+            "191",
+            "192"
         ],
-        "id": "85",
+        "id": "84",
         "phone": null,
         "subjects": [
             "CISP"
@@ -2837,12 +2662,11 @@
         "name": "Paula Haug",
         "office": null,
         "classList": [
-            "295",
-            "297",
-            "298",
-            "317"
+            "201",
+            "203",
+            "218"
         ],
-        "id": "86",
+        "id": "85",
         "phone": "(916) 608-6691",
         "subjects": [
             "COMM"
@@ -2869,10 +2693,10 @@
         "name": "S. Laczko",
         "office": null,
         "classList": [
-            "296",
-            "323"
+            "202",
+            "223"
         ],
-        "id": "87",
+        "id": "86",
         "phone": null,
         "subjects": [
             "COMM"
@@ -2898,9 +2722,9 @@
         "name": "L. Hygh",
         "office": null,
         "classList": [
-            "299"
+            "204"
         ],
-        "id": "88",
+        "id": "87",
         "phone": null,
         "subjects": [
             "COMM"
@@ -2922,9 +2746,9 @@
         "name": "H. Boeh",
         "office": null,
         "classList": [
-            "300"
+            "205"
         ],
-        "id": "89",
+        "id": "88",
         "phone": null,
         "subjects": [
             "COMM"
@@ -2946,10 +2770,9 @@
         "name": "T. Upton Benton",
         "office": null,
         "classList": [
-            "301",
-            "302"
+            "206"
         ],
-        "id": "90",
+        "id": "89",
         "phone": null,
         "subjects": [
             "COMM"
@@ -2971,12 +2794,11 @@
         "name": "B. Works",
         "office": null,
         "classList": [
-            "303",
-            "304",
-            "319",
-            "322"
+            "207",
+            "219",
+            "222"
         ],
-        "id": "91",
+        "id": "90",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3003,10 +2825,9 @@
         "name": "E. LeFebvre",
         "office": null,
         "classList": [
-            "305",
-            "306"
+            "208"
         ],
-        "id": "92",
+        "id": "91",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3028,16 +2849,14 @@
         "name": "Angela Prelip",
         "office": null,
         "classList": [
-            "307",
-            "308",
-            "309",
-            "315",
-            "316",
-            "320",
-            "329",
-            "330"
+            "209",
+            "210",
+            "216",
+            "217",
+            "220",
+            "228"
         ],
-        "id": "93",
+        "id": "92",
         "phone": "(530) 642-5636",
         "subjects": [
             "COMM"
@@ -3064,11 +2883,11 @@
         "name": "C. Boylan",
         "office": null,
         "classList": [
-            "310",
-            "311",
-            "312"
+            "211",
+            "212",
+            "213"
         ],
-        "id": "94",
+        "id": "93",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3097,11 +2916,11 @@
         "name": "A. Hicks",
         "office": null,
         "classList": [
-            "313",
-            "321",
-            "327"
+            "214",
+            "221",
+            "226"
         ],
-        "id": "95",
+        "id": "94",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3128,9 +2947,9 @@
         "name": "D. DeMercurio",
         "office": null,
         "classList": [
-            "314"
+            "215"
         ],
-        "id": "96",
+        "id": "95",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3152,9 +2971,9 @@
         "name": "M. Brandson",
         "office": null,
         "classList": [
-            "324"
+            "224"
         ],
-        "id": "97",
+        "id": "96",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3178,10 +2997,9 @@
         "name": "F. Winters",
         "office": null,
         "classList": [
-            "325",
-            "326"
+            "225"
         ],
-        "id": "98",
+        "id": "97",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3203,9 +3021,9 @@
         "name": "B. Droege",
         "office": null,
         "classList": [
-            "328"
+            "227"
         ],
-        "id": "99",
+        "id": "98",
         "phone": null,
         "subjects": [
             "COMM"
@@ -3227,10 +3045,10 @@
         "name": "S. Mitchell",
         "office": null,
         "classList": [
-            "341",
-            "342"
+            "239",
+            "240"
         ],
-        "id": "100",
+        "id": "99",
         "phone": null,
         "subjects": [
             "DANCE"
@@ -3254,13 +3072,11 @@
         "name": "A. Sutton",
         "office": null,
         "classList": [
-            "362",
-            "369",
-            "370",
-            "952",
-            "953"
+            "251",
+            "258",
+            "737"
         ],
-        "id": "101",
+        "id": "100",
         "phone": null,
         "subjects": [
             "ECE",
@@ -3285,11 +3101,11 @@
         "name": "R. Thomas",
         "office": null,
         "classList": [
-            "363",
-            "368",
-            "951"
+            "252",
+            "257",
+            "736"
         ],
-        "id": "102",
+        "id": "101",
         "phone": null,
         "subjects": [
             "ECE",
@@ -3314,9 +3130,9 @@
         "name": "E. Ferry-Perata",
         "office": null,
         "classList": [
-            "364"
+            "253"
         ],
-        "id": "103",
+        "id": "102",
         "phone": null,
         "subjects": [
             "ECE"
@@ -3340,18 +3156,17 @@
         "name": "Jennifer Kraemer",
         "office": null,
         "classList": [
-            "365",
-            "366",
-            "367",
-            "371",
-            "372",
-            "383",
-            "384",
-            "948",
-            "949",
-            "950"
+            "254",
+            "255",
+            "256",
+            "259",
+            "260",
+            "269",
+            "733",
+            "734",
+            "735"
         ],
-        "id": "104",
+        "id": "103",
         "phone": "(916) 608-6685",
         "subjects": [
             "ECE",
@@ -3377,11 +3192,11 @@
         "name": "Marsha Peralta",
         "office": null,
         "classList": [
-            "373",
-            "379",
-            "380"
+            "261",
+            "265",
+            "266"
         ],
-        "id": "105",
+        "id": "104",
         "phone": "(916) 608-6667",
         "subjects": [
             "ECE"
@@ -3405,13 +3220,11 @@
         "name": "Lisa Daly",
         "office": null,
         "classList": [
-            "374",
-            "375",
-            "376",
-            "377",
-            "381"
+            "262",
+            "263",
+            "267"
         ],
-        "id": "106",
+        "id": "105",
         "phone": "(916) 608-6559",
         "subjects": [
             "ECE"
@@ -3437,9 +3250,9 @@
         "name": "K. Bliss",
         "office": null,
         "classList": [
-            "378"
+            "264"
         ],
-        "id": "107",
+        "id": "106",
         "phone": null,
         "subjects": [
             "ECE"
@@ -3463,9 +3276,9 @@
         "name": "J. Daniels",
         "office": null,
         "classList": [
-            "382"
+            "268"
         ],
-        "id": "108",
+        "id": "107",
         "phone": null,
         "subjects": [
             "ECE"
@@ -3487,9 +3300,9 @@
         "name": "J. Walker",
         "office": null,
         "classList": [
-            "385"
+            "270"
         ],
-        "id": "109",
+        "id": "108",
         "phone": null,
         "subjects": [
             "ECE"
@@ -3511,9 +3324,9 @@
         "name": "J. Radding",
         "office": null,
         "classList": [
-            "390"
+            "275"
         ],
-        "id": "110",
+        "id": "109",
         "phone": null,
         "subjects": [
             "ECON"
@@ -3537,10 +3350,10 @@
         "name": "C. Smith",
         "office": null,
         "classList": [
-            "391",
-            "397"
+            "276",
+            "280"
         ],
-        "id": "111",
+        "id": "110",
         "phone": null,
         "subjects": [
             "ECON"
@@ -3562,12 +3375,10 @@
         "name": "S. Fitch",
         "office": null,
         "classList": [
-            "394",
-            "395",
-            "400",
-            "401"
+            "278",
+            "282"
         ],
-        "id": "112",
+        "id": "111",
         "phone": null,
         "subjects": [
             "ECON"
@@ -3591,9 +3402,9 @@
         "name": "D. Barthel",
         "office": null,
         "classList": [
-            "396"
+            "279"
         ],
-        "id": "113",
+        "id": "112",
         "phone": null,
         "subjects": [
             "ECON"
@@ -3617,22 +3428,17 @@
         "name": "J. Swanson",
         "office": null,
         "classList": [
-            "405",
-            "406",
-            "407",
-            "408"
+            "285"
         ],
-        "id": "114",
+        "id": "113",
         "phone": null,
         "subjects": [
             "EMT"
         ],
-        "classHours": "11hr 5min",
+        "classHours": "8hr 0min",
         "classTimes": {
             "W": [],
-            "F": [
-                "06:00PM-09:05PM"
-            ],
+            "F": [],
             "M": [],
             "T": [
                 "06:00PM-08:10PM",
@@ -3650,10 +3456,9 @@
         "name": "B. Olson-Arenz",
         "office": null,
         "classList": [
-            "409",
-            "410"
+            "286"
         ],
-        "id": "115",
+        "id": "114",
         "phone": null,
         "subjects": [
             "EMT"
@@ -3675,12 +3480,12 @@
         "name": "Mike Kroencke",
         "office": null,
         "classList": [
-            "413",
-            "719",
-            "723",
-            "744"
+            "288",
+            "550",
+            "554",
+            "571"
         ],
-        "id": "116",
+        "id": "115",
         "phone": "(916) 608-6596",
         "subjects": [
             "ENGR",
@@ -3716,13 +3521,13 @@
         "name": "Josh Fernandez",
         "office": null,
         "classList": [
-            "414",
-            "467",
-            "469",
-            "508",
-            "525"
+            "289",
+            "336",
+            "338",
+            "373",
+            "387"
         ],
-        "id": "117",
+        "id": "116",
         "phone": "(916) 608-6911",
         "subjects": [
             "ENGCW",
@@ -3757,15 +3562,15 @@
         "name": "Lisa Sapra",
         "office": null,
         "classList": [
-            "415",
-            "420",
-            "422",
-            "423",
-            "464",
-            "486",
-            "523"
+            "290",
+            "291",
+            "292",
+            "293",
+            "333",
+            "354",
+            "385"
         ],
-        "id": "118",
+        "id": "117",
         "phone": "(916) 608-6783",
         "subjects": [
             "ENGLB",
@@ -3789,18 +3594,53 @@
         "email": "SapraL@flc.losrios.edu"
     },
     {
+        "name": "Kathy Leland",
+        "office": null,
+        "classList": [
+            "294",
+            "295",
+            "300",
+            "304",
+            "305",
+            "313",
+            "315",
+            "317",
+            "319"
+        ],
+        "id": "118",
+        "phone": "(530) 642-5637",
+        "subjects": [
+            "ENGLB",
+            "ENGLT",
+            "ENGRD",
+            "ENGWR"
+        ],
+        "classHours": "2hr 40min",
+        "classTimes": {
+            "W": [],
+            "F": [],
+            "M": [],
+            "T": [
+                "10:30AM-11:50AM"
+            ],
+            "Th": [
+                "10:30AM-11:50AM"
+            ],
+            "Sa": []
+        },
+        "email": "LelandK@flc.losrios.edu"
+    },
+    {
         "name": "Francis Fletcher",
         "office": null,
         "classList": [
-            "416",
-            "426",
-            "427",
-            "507"
+            "296",
+            "297",
+            "372"
         ],
         "id": "119",
         "phone": "(916) 608-6627",
         "subjects": [
-            "ENGLB",
             "ENGLT",
             "ENGWR"
         ],
@@ -3826,181 +3666,16 @@
         "email": "FletchF@flc.losrios.edu"
     },
     {
-        "name": "Lisa Danner",
-        "office": null,
-        "classList": [
-            "417",
-            "421",
-            "442",
-            "444",
-            "446",
-            "448",
-            "463",
-            "492",
-            "494",
-            "514",
-            "524"
-        ],
-        "id": "120",
-        "phone": "(916) 608-6670",
-        "subjects": [
-            "ENGLB",
-            "ENGWR"
-        ],
-        "classHours": "14hr 50min",
-        "classTimes": {
-            "W": [
-                "08:15AM-10:20AM",
-                "10:30AM-11:50AM",
-                "01:00PM-02:20PM"
-            ],
-            "F": [],
-            "M": [
-                "08:15AM-10:20AM",
-                "10:30AM-11:50AM",
-                "01:00PM-02:20PM"
-            ],
-            "T": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
-            ],
-            "Th": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
-            ],
-            "Sa": []
-        },
-        "email": "dannerl@flc.losrios.edu"
-    },
-    {
-        "name": "Krisi Brown",
-        "office": null,
-        "classList": [
-            "418",
-            "432",
-            "433",
-            "461",
-            "482",
-            "512",
-            "517"
-        ],
-        "id": "121",
-        "phone": "(530) 642-5633",
-        "subjects": [
-            "ENGLB",
-            "ENGRD",
-            "ENGWR"
-        ],
-        "classHours": "19hr 40min",
-        "classTimes": {
-            "W": [
-                "05:30PM-06:50PM"
-            ],
-            "F": [],
-            "M": [
-                "05:30PM-06:50PM"
-            ],
-            "T": [
-                "10:30AM-02:35PM",
-                "10:30AM-01:35PM",
-                "07:00PM-08:20PM"
-            ],
-            "Th": [
-                "10:30AM-02:35PM",
-                "10:30AM-01:35PM",
-                "07:00PM-08:20PM"
-            ],
-            "Sa": []
-        },
-        "email": "brownk@flc.losrios.edu"
-    },
-    {
-        "name": "C. Stanphill",
-        "office": null,
-        "classList": [
-            "419",
-            "462",
-            "483",
-            "513",
-            "518"
-        ],
-        "id": "122",
-        "phone": null,
-        "subjects": [
-            "ENGLB",
-            "ENGWR"
-        ],
-        "classHours": "19hr 40min",
-        "classTimes": {
-            "W": [
-                "05:30PM-06:50PM"
-            ],
-            "F": [],
-            "M": [
-                "05:30PM-06:50PM"
-            ],
-            "T": [
-                "10:30AM-02:35PM",
-                "10:30AM-01:35PM",
-                "07:00PM-08:20PM"
-            ],
-            "Th": [
-                "10:30AM-02:35PM",
-                "10:30AM-01:35PM",
-                "07:00PM-08:20PM"
-            ],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
-        "name": "Kathy Leland",
-        "office": null,
-        "classList": [
-            "424",
-            "425",
-            "430",
-            "434",
-            "435",
-            "443",
-            "445",
-            "447",
-            "449"
-        ],
-        "id": "123",
-        "phone": "(530) 642-5637",
-        "subjects": [
-            "ENGLB",
-            "ENGLT",
-            "ENGRD",
-            "ENGWR"
-        ],
-        "classHours": "2hr 40min",
-        "classTimes": {
-            "W": [],
-            "F": [],
-            "M": [],
-            "T": [
-                "10:30AM-11:50AM"
-            ],
-            "Th": [
-                "10:30AM-11:50AM"
-            ],
-            "Sa": []
-        },
-        "email": "LelandK@flc.losrios.edu"
-    },
-    {
         "name": "Yvonne Price",
         "office": null,
         "classList": [
-            "428",
-            "466",
-            "470",
-            "488",
-            "490"
+            "298",
+            "335",
+            "339",
+            "355",
+            "356"
         ],
-        "id": "124",
+        "id": "120",
         "phone": "(916) 608-6785",
         "subjects": [
             "ENGLT",
@@ -4035,13 +3710,13 @@
         "name": "Danny Siegfried",
         "office": null,
         "classList": [
-            "429",
-            "465",
-            "493",
-            "511",
-            "522"
+            "299",
+            "334",
+            "359",
+            "376",
+            "384"
         ],
-        "id": "125",
+        "id": "121",
         "phone": "(916) 608-6671",
         "subjects": [
             "ENGLT",
@@ -4076,29 +3751,22 @@
         "name": "Debora Larry-Kearney",
         "office": null,
         "classList": [
-            "431",
-            "436",
-            "440",
-            "487",
-            "489"
+            "301",
+            "306",
+            "310"
         ],
-        "id": "126",
+        "id": "122",
         "phone": "(530) 344-5702",
         "subjects": [
-            "ENGRD",
-            "ENGWR"
+            "ENGRD"
         ],
-        "classHours": "13hr 20min",
+        "classHours": "8hr 0min",
         "classTimes": {
             "W": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "01:00PM-02:20PM"
             ],
             "F": [],
             "M": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "01:00PM-02:20PM"
             ],
             "T": [
@@ -4114,14 +3782,54 @@
         "email": "larrykd@flc.losrios.edu"
     },
     {
+        "name": "Krisi Brown",
+        "office": null,
+        "classList": [
+            "302",
+            "303",
+            "331",
+            "351",
+            "377",
+            "380"
+        ],
+        "id": "123",
+        "phone": "(530) 642-5633",
+        "subjects": [
+            "ENGRD",
+            "ENGWR"
+        ],
+        "classHours": "19hr 40min",
+        "classTimes": {
+            "W": [
+                "05:30PM-06:50PM"
+            ],
+            "F": [],
+            "M": [
+                "05:30PM-06:50PM"
+            ],
+            "T": [
+                "10:30AM-02:35PM",
+                "10:30AM-01:35PM",
+                "07:00PM-08:20PM"
+            ],
+            "Th": [
+                "10:30AM-02:35PM",
+                "10:30AM-01:35PM",
+                "07:00PM-08:20PM"
+            ],
+            "Sa": []
+        },
+        "email": "brownk@flc.losrios.edu"
+    },
+    {
         "name": "M. Plaxton",
         "office": null,
         "classList": [
-            "437",
-            "450",
-            "521"
+            "307",
+            "320",
+            "383"
         ],
-        "id": "127",
+        "id": "124",
         "phone": null,
         "subjects": [
             "ENGRD",
@@ -4152,14 +3860,13 @@
         "name": "Tracy Rauschkolb",
         "office": null,
         "classList": [
-            "438",
-            "439",
-            "441",
-            "453",
-            "503",
-            "504"
+            "308",
+            "309",
+            "311",
+            "323",
+            "369"
         ],
-        "id": "128",
+        "id": "125",
         "phone": "(916) 608-6805",
         "subjects": [
             "ENGRD",
@@ -4190,12 +3897,56 @@
         "email": "RauschT@flc.losrios.edu"
     },
     {
+        "name": "Lisa Danner",
+        "office": null,
+        "classList": [
+            "312",
+            "314",
+            "316",
+            "318",
+            "332",
+            "358",
+            "360",
+            "378",
+            "386"
+        ],
+        "id": "126",
+        "phone": "(916) 608-6670",
+        "subjects": [
+            "ENGWR"
+        ],
+        "classHours": "14hr 50min",
+        "classTimes": {
+            "W": [
+                "08:15AM-10:20AM",
+                "10:30AM-11:50AM",
+                "01:00PM-02:20PM"
+            ],
+            "F": [],
+            "M": [
+                "08:15AM-10:20AM",
+                "10:30AM-11:50AM",
+                "01:00PM-02:20PM"
+            ],
+            "T": [
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM"
+            ],
+            "Th": [
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM"
+            ],
+            "Sa": []
+        },
+        "email": "dannerl@flc.losrios.edu"
+    },
+    {
         "name": "B. Beda",
         "office": null,
         "classList": [
-            "451"
+            "321"
         ],
-        "id": "129",
+        "id": "127",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4219,12 +3970,12 @@
         "name": "A. Williamson",
         "office": null,
         "classList": [
-            "452",
-            "457",
-            "472",
-            "501"
+            "322",
+            "327",
+            "341",
+            "367"
         ],
-        "id": "130",
+        "id": "128",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4256,10 +4007,10 @@
         "name": "W. Williams",
         "office": null,
         "classList": [
-            "454",
-            "455"
+            "324",
+            "325"
         ],
-        "id": "131",
+        "id": "129",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4287,10 +4038,10 @@
         "name": "J. Manfredi",
         "office": null,
         "classList": [
-            "456",
-            "499"
+            "326",
+            "365"
         ],
-        "id": "132",
+        "id": "130",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4318,12 +4069,12 @@
         "name": "R. Roehr",
         "office": null,
         "classList": [
-            "458",
-            "468",
-            "477",
-            "529"
+            "328",
+            "337",
+            "346",
+            "390"
         ],
-        "id": "133",
+        "id": "131",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4355,10 +4106,10 @@
         "name": "M. Magneson",
         "office": null,
         "classList": [
-            "459",
-            "480"
+            "329",
+            "349"
         ],
-        "id": "134",
+        "id": "132",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4384,12 +4135,12 @@
         "name": "D. Lacy",
         "office": null,
         "classList": [
-            "460",
-            "471",
-            "479",
-            "509"
+            "330",
+            "340",
+            "348",
+            "374"
         ],
-        "id": "135",
+        "id": "133",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4421,10 +4172,10 @@
         "name": "R. Cruz",
         "office": null,
         "classList": [
-            "473",
-            "505"
+            "342",
+            "370"
         ],
-        "id": "136",
+        "id": "134",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4450,10 +4201,10 @@
         "name": "M. Barrish",
         "office": null,
         "classList": [
-            "474",
-            "500"
+            "343",
+            "366"
         ],
-        "id": "137",
+        "id": "135",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4479,10 +4230,10 @@
         "name": "J. Hawley",
         "office": null,
         "classList": [
-            "475",
-            "528"
+            "344",
+            "389"
         ],
-        "id": "138",
+        "id": "136",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4508,9 +4259,9 @@
         "name": "S. Abeyta",
         "office": null,
         "classList": [
-            "476"
+            "345"
         ],
-        "id": "139",
+        "id": "137",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4534,10 +4285,10 @@
         "name": "D. Powell",
         "office": null,
         "classList": [
-            "478",
-            "485"
+            "347",
+            "353"
         ],
-        "id": "140",
+        "id": "138",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4563,9 +4314,9 @@
         "name": "L. Fox",
         "office": null,
         "classList": [
-            "481"
+            "350"
         ],
-        "id": "141",
+        "id": "139",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4589,13 +4340,12 @@
         "name": "Tina Royer",
         "office": null,
         "classList": [
-            "484",
-            "498",
-            "515",
-            "516",
-            "520"
+            "352",
+            "364",
+            "379",
+            "382"
         ],
-        "id": "142",
+        "id": "140",
         "phone": "(916) 608-6762",
         "subjects": [
             "ENGWR"
@@ -4619,10 +4369,10 @@
         "name": "N. Oliver",
         "office": null,
         "classList": [
-            "491",
-            "519"
+            "357",
+            "381"
         ],
-        "id": "143",
+        "id": "141",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4648,9 +4398,9 @@
         "name": "N. McQueen",
         "office": null,
         "classList": [
-            "495"
+            "361"
         ],
-        "id": "144",
+        "id": "142",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4674,9 +4424,9 @@
         "name": "E. Mailman",
         "office": null,
         "classList": [
-            "496"
+            "362"
         ],
-        "id": "145",
+        "id": "143",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4700,9 +4450,9 @@
         "name": "H. Davatz",
         "office": null,
         "classList": [
-            "497"
+            "363"
         ],
-        "id": "146",
+        "id": "144",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4726,9 +4476,9 @@
         "name": "F. Graham",
         "office": null,
         "classList": [
-            "502"
+            "368"
         ],
-        "id": "147",
+        "id": "145",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4752,9 +4502,9 @@
         "name": "J. Howerter",
         "office": null,
         "classList": [
-            "506"
+            "371"
         ],
-        "id": "148",
+        "id": "146",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4776,10 +4526,10 @@
         "name": "A. Knudson",
         "office": null,
         "classList": [
-            "510",
-            "634"
+            "375",
+            "476"
         ],
-        "id": "149",
+        "id": "147",
         "phone": null,
         "subjects": [
             "ENGWR",
@@ -4805,10 +4555,9 @@
         "name": "K. Meyer",
         "office": null,
         "classList": [
-            "526",
-            "527"
+            "388"
         ],
-        "id": "150",
+        "id": "148",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4830,9 +4579,9 @@
         "name": "H. Beatty",
         "office": null,
         "classList": [
-            "530"
+            "391"
         ],
-        "id": "151",
+        "id": "149",
         "phone": null,
         "subjects": [
             "ENGWR"
@@ -4856,14 +4605,14 @@
         "name": "Diana Tinoco",
         "office": null,
         "classList": [
-            "531",
-            "532",
-            "534",
-            "536",
-            "540",
-            "548"
+            "392",
+            "393",
+            "395",
+            "397",
+            "401",
+            "409"
         ],
-        "id": "152",
+        "id": "150",
         "phone": "(916) 608-6661",
         "subjects": [
             "ESL",
@@ -4894,13 +4643,13 @@
         "name": "Ann Lynn Bjerke",
         "office": null,
         "classList": [
-            "533",
-            "538",
-            "542",
-            "544",
-            "550"
+            "394",
+            "399",
+            "403",
+            "405",
+            "411"
         ],
-        "id": "153",
+        "id": "151",
         "phone": "(530) 642-5683",
         "subjects": [
             "ESL",
@@ -4936,13 +4685,13 @@
         "name": "Spencer Eckman",
         "office": null,
         "classList": [
-            "535",
-            "537",
-            "539",
-            "541",
-            "547"
+            "396",
+            "398",
+            "400",
+            "402",
+            "408"
         ],
-        "id": "154",
+        "id": "152",
         "phone": "(916) 608-6795",
         "subjects": [
             "ESLG",
@@ -4979,14 +4728,14 @@
         "name": "Bernadette Anayah",
         "office": null,
         "classList": [
-            "543",
-            "545",
-            "546",
-            "549",
-            "551",
-            "552"
+            "404",
+            "406",
+            "407",
+            "410",
+            "412",
+            "413"
         ],
-        "id": "155",
+        "id": "153",
         "phone": "(916) 608-6522",
         "subjects": [
             "ESLR",
@@ -5019,9 +4768,9 @@
         "name": "M. Tolin",
         "office": null,
         "classList": [
-            "557"
+            "417"
         ],
-        "id": "156",
+        "id": "154",
         "phone": null,
         "subjects": [
             "ENVT"
@@ -5043,26 +4792,21 @@
         "name": "C. Abney",
         "office": null,
         "classList": [
-            "558",
-            "559",
-            "560"
+            "418"
         ],
-        "id": "157",
+        "id": "155",
         "phone": null,
         "subjects": [
             "ENVT"
         ],
-        "classHours": "9hr 25min",
+        "classHours": "6hr 20min",
         "classTimes": {
             "W": [],
-            "F": [
-                "05:30PM-08:45PM"
-            ],
-            "M": [
-                "06:00PM-09:05PM"
-            ],
+            "F": [],
+            "M": [],
             "T": [],
             "Th": [
+                "05:30PM-08:45PM",
                 "06:00PM-09:05PM"
             ],
             "Sa": []
@@ -5073,9 +4817,9 @@
         "name": "J. Woodward",
         "office": null,
         "classList": [
-            "565"
+            "423"
         ],
-        "id": "158",
+        "id": "156",
         "phone": null,
         "subjects": [
             "FT"
@@ -5097,10 +4841,10 @@
         "name": "D. Whitt",
         "office": null,
         "classList": [
-            "566",
-            "567"
+            "424",
+            "425"
         ],
-        "id": "159",
+        "id": "157",
         "phone": null,
         "subjects": [
             "FT"
@@ -5126,19 +4870,16 @@
         "name": "Viviane Ritzi-Marouf",
         "office": null,
         "classList": [
-            "572",
-            "573",
-            "576",
-            "577",
-            "578",
-            "579"
+            "430",
+            "432",
+            "433"
         ],
-        "id": "160",
+        "id": "158",
         "phone": "(916) 608-6506",
         "subjects": [
             "FREN"
         ],
-        "classHours": "16hr 10min",
+        "classHours": "13hr 30min",
         "classTimes": {
             "W": [
                 "10:30AM-11:50AM",
@@ -5152,12 +4893,10 @@
                 "07:30PM-08:55PM"
             ],
             "T": [
-                "10:30AM-11:50AM",
                 "06:00PM-07:20PM",
                 "07:30PM-08:50PM"
             ],
             "Th": [
-                "10:30AM-11:50AM",
                 "06:00PM-07:20PM",
                 "07:30PM-08:50PM"
             ],
@@ -5169,10 +4908,9 @@
         "name": "N. Emad",
         "office": null,
         "classList": [
-            "574",
-            "575"
+            "431"
         ],
-        "id": "161",
+        "id": "159",
         "phone": null,
         "subjects": [
             "FREN"
@@ -5198,10 +4936,9 @@
         "name": "S. Welsh",
         "office": null,
         "classList": [
-            "580",
-            "581"
+            "434"
         ],
-        "id": "162",
+        "id": "160",
         "phone": null,
         "subjects": [
             "GEOG"
@@ -5223,16 +4960,13 @@
         "name": "Jason Pittman",
         "office": null,
         "classList": [
-            "582",
-            "583",
-            "584",
-            "585",
-            "586",
-            "591",
-            "592",
-            "593"
+            "435",
+            "436",
+            "437",
+            "442",
+            "443"
         ],
-        "id": "163",
+        "id": "161",
         "phone": "(916) 608-6668",
         "subjects": [
             "GEOG",
@@ -5259,10 +4993,10 @@
         "name": "T. Krabacher",
         "office": null,
         "classList": [
-            "587",
-            "588"
+            "438",
+            "439"
         ],
-        "id": "164",
+        "id": "162",
         "phone": null,
         "subjects": [
             "GEOG"
@@ -5284,12 +5018,11 @@
         "name": "G. Wheeldon",
         "office": null,
         "classList": [
-            "589",
-            "590",
-            "597",
-            "598"
+            "440",
+            "441",
+            "447"
         ],
-        "id": "165",
+        "id": "163",
         "phone": null,
         "subjects": [
             "GEOL"
@@ -5315,9 +5048,9 @@
         "name": "A. Reed",
         "office": null,
         "classList": [
-            "594"
+            "444"
         ],
-        "id": "166",
+        "id": "164",
         "phone": null,
         "subjects": [
             "GEOL"
@@ -5339,10 +5072,10 @@
         "name": "K. Stevens",
         "office": null,
         "classList": [
-            "595",
-            "596"
+            "445",
+            "446"
         ],
-        "id": "167",
+        "id": "165",
         "phone": null,
         "subjects": [
             "GEOL"
@@ -5366,12 +5099,12 @@
         "name": "Matt Wright",
         "office": null,
         "classList": [
-            "603",
-            "604",
-            "606",
-            "852"
+            "452",
+            "453",
+            "455",
+            "647"
         ],
-        "id": "168",
+        "id": "166",
         "phone": "(916) 608-6797",
         "subjects": [
             "HEED",
@@ -5396,21 +5129,20 @@
         "name": "Donny Ribaudo",
         "office": null,
         "classList": [
-            "605",
-            "609",
-            "610",
-            "886",
-            "894",
-            "895"
+            "454",
+            "458",
+            "681",
+            "688",
+            "689"
         ],
-        "id": "169",
+        "id": "167",
         "phone": "(916) 608-6619",
         "subjects": [
             "HEED",
             "SPORT",
             "TMACT"
         ],
-        "classHours": "14hr 55min",
+        "classHours": "12hr 15min",
         "classTimes": {
             "W": [
                 "01:00PM-02:50PM"
@@ -5423,11 +5155,9 @@
                 "01:00PM-02:50PM"
             ],
             "T": [
-                "10:30AM-11:50AM",
                 "01:00PM-02:50PM"
             ],
             "Th": [
-                "10:30AM-11:50AM",
                 "01:00PM-02:50PM"
             ],
             "Sa": []
@@ -5438,10 +5168,10 @@
         "name": "N. Podesta",
         "office": null,
         "classList": [
-            "607",
-            "849"
+            "456",
+            "644"
         ],
-        "id": "170",
+        "id": "168",
         "phone": null,
         "subjects": [
             "HEED",
@@ -5462,12 +5192,12 @@
         "name": "E. Johnston",
         "office": null,
         "classList": [
-            "608",
-            "861",
-            "874",
-            "875"
+            "457",
+            "656",
+            "669",
+            "670"
         ],
-        "id": "171",
+        "id": "169",
         "phone": null,
         "subjects": [
             "FITNS",
@@ -5498,13 +5228,13 @@
         "name": "Richard Mowrer",
         "office": null,
         "classList": [
-            "611",
-            "613",
-            "618",
-            "624",
-            "633"
+            "459",
+            "461",
+            "464",
+            "469",
+            "475"
         ],
-        "id": "172",
+        "id": "170",
         "phone": "(916) 608-6910",
         "subjects": [
             "HIST"
@@ -5538,9 +5268,9 @@
         "name": "M. Walker",
         "office": null,
         "classList": [
-            "612"
+            "460"
         ],
-        "id": "173",
+        "id": "171",
         "phone": null,
         "subjects": [
             "HIST"
@@ -5564,18 +5294,13 @@
         "name": "Gena Estep-Gompert",
         "office": null,
         "classList": [
-            "614",
-            "615",
-            "616",
-            "617",
-            "621",
-            "622",
-            "627",
-            "628",
-            "631",
-            "632"
+            "462",
+            "463",
+            "467",
+            "471",
+            "474"
         ],
-        "id": "174",
+        "id": "172",
         "phone": "(916) 608-6590",
         "subjects": [
             "HIST"
@@ -5603,12 +5328,12 @@
         "name": "Deborah Moreno",
         "office": null,
         "classList": [
-            "619",
-            "623",
-            "630",
-            "637"
+            "465",
+            "468",
+            "473",
+            "479"
         ],
-        "id": "175",
+        "id": "173",
         "phone": "(916) 608-6521",
         "subjects": [
             "HIST"
@@ -5640,11 +5365,11 @@
         "name": "R. Maddock",
         "office": null,
         "classList": [
-            "620",
-            "629",
-            "635"
+            "466",
+            "472",
+            "477"
         ],
-        "id": "176",
+        "id": "174",
         "phone": null,
         "subjects": [
             "HIST"
@@ -5674,10 +5399,9 @@
         "name": "P. Baltimore",
         "office": null,
         "classList": [
-            "625",
-            "626"
+            "470"
         ],
-        "id": "177",
+        "id": "175",
         "phone": null,
         "subjects": [
             "HIST"
@@ -5699,9 +5423,9 @@
         "name": "R. Chester",
         "office": null,
         "classList": [
-            "636"
+            "478"
         ],
-        "id": "178",
+        "id": "176",
         "phone": null,
         "subjects": [
             "HIST"
@@ -5725,11 +5449,11 @@
         "name": "R. Nielsen",
         "office": null,
         "classList": [
-            "638",
-            "642",
-            "645"
+            "480",
+            "484",
+            "487"
         ],
-        "id": "179",
+        "id": "177",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5759,9 +5483,9 @@
         "name": "K. McGhee",
         "office": null,
         "classList": [
-            "639"
+            "481"
         ],
-        "id": "180",
+        "id": "178",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5785,9 +5509,9 @@
         "name": "B. Lewis",
         "office": null,
         "classList": [
-            "640"
+            "482"
         ],
-        "id": "181",
+        "id": "179",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5811,10 +5535,10 @@
         "name": "Juan Flores",
         "office": null,
         "classList": [
-            "641",
-            "646"
+            "483",
+            "488"
         ],
-        "id": "182",
+        "id": "180",
         "phone": "(916) 608-6722",
         "subjects": [
             "HCD"
@@ -5842,9 +5566,9 @@
         "name": "C. Palomares",
         "office": null,
         "classList": [
-            "647"
+            "489"
         ],
-        "id": "183",
+        "id": "181",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5868,10 +5592,9 @@
         "name": "Chris Clark",
         "office": null,
         "classList": [
-            "648",
-            "649"
+            "490"
         ],
-        "id": "184",
+        "id": "182",
         "phone": "(916) 608-6719",
         "subjects": [
             "HCD"
@@ -5893,9 +5616,9 @@
         "name": "J. Collier",
         "office": null,
         "classList": [
-            "650"
+            "491"
         ],
-        "id": "185",
+        "id": "183",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5915,13 +5638,13 @@
         "name": "S. Raskin",
         "office": null,
         "classList": [
-            "651",
-            "652",
-            "653",
-            "654",
-            "655"
+            "492",
+            "493",
+            "494",
+            "495",
+            "496"
         ],
-        "id": "186",
+        "id": "184",
         "phone": null,
         "subjects": [
             "HCD"
@@ -5941,17 +5664,15 @@
         "name": "Rebecca DeVille",
         "office": null,
         "classList": [
-            "656",
-            "657",
-            "660",
-            "661",
-            "663",
-            "664",
-            "665",
-            "669",
-            "670"
+            "497",
+            "498",
+            "501",
+            "502",
+            "504",
+            "505",
+            "508"
         ],
-        "id": "187",
+        "id": "185",
         "phone": "(916) 608-6694",
         "subjects": [
             "HUM"
@@ -5980,10 +5701,10 @@
         "name": "M. Pinkerton",
         "office": null,
         "classList": [
-            "658",
-            "662"
+            "499",
+            "503"
         ],
-        "id": "188",
+        "id": "186",
         "phone": null,
         "subjects": [
             "HUM"
@@ -6009,9 +5730,9 @@
         "name": "M. Emmert",
         "office": null,
         "classList": [
-            "659"
+            "500"
         ],
-        "id": "189",
+        "id": "187",
         "phone": null,
         "subjects": [
             "HUM"
@@ -6033,10 +5754,9 @@
         "name": "B. Herzberger",
         "office": null,
         "classList": [
-            "667",
-            "668"
+            "507"
         ],
-        "id": "190",
+        "id": "188",
         "phone": null,
         "subjects": [
             "HUM"
@@ -6058,10 +5778,10 @@
         "name": "K. Van Noord",
         "office": null,
         "classList": [
-            "671",
-            "673"
+            "509",
+            "511"
         ],
-        "id": "191",
+        "id": "189",
         "phone": null,
         "subjects": [
             "HSER"
@@ -6089,11 +5809,10 @@
         "name": "Kalinda Jones",
         "office": null,
         "classList": [
-            "672",
-            "677",
-            "678"
+            "510",
+            "513"
         ],
-        "id": "192",
+        "id": "190",
         "phone": "(530) 642-5641",
         "subjects": [
             "HSER"
@@ -6118,21 +5837,21 @@
         "name": "C. Ciampa",
         "office": null,
         "classList": [
-            "674",
-            "675"
+            "512"
         ],
-        "id": "193",
+        "id": "191",
         "phone": null,
         "subjects": [
             "HSER"
         ],
-        "classHours": "4hr 15min",
+        "classHours": "5hr 50min",
         "classTimes": {
             "W": [],
             "F": [],
             "M": [],
             "T": [
-                "01:00PM-02:20PM"
+                "01:00PM-02:20PM",
+                "02:30PM-04:05PM"
             ],
             "Th": [
                 "01:00PM-02:20PM",
@@ -6143,52 +5862,12 @@
         "email": null
     },
     {
-        "name": "R. Giordano",
-        "office": null,
-        "classList": [
-            "685",
-            "825",
-            "826",
-            "828",
-            "829",
-            "832",
-            "835"
-        ],
-        "id": "194",
-        "phone": null,
-        "subjects": [
-            "INDIS",
-            "NUTRI"
-        ],
-        "classHours": "11hr 10min",
-        "classTimes": {
-            "W": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
-                "01:00PM-04:10PM"
-            ],
-            "F": [],
-            "M": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
-            ],
-            "T": [
-                "09:00AM-10:20AM"
-            ],
-            "Th": [
-                "09:00AM-10:20AM"
-            ],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
         "name": "Amy Brinkley",
         "office": null,
         "classList": [
-            "687"
+            "519"
         ],
-        "id": "195",
+        "id": "192",
         "phone": "(916) 608-6914",
         "subjects": [
             "LIBR"
@@ -6208,9 +5887,9 @@
         "name": "M. Mabry",
         "office": null,
         "classList": [
-            "690"
+            "522"
         ],
-        "id": "196",
+        "id": "193",
         "phone": null,
         "subjects": [
             "MGMT"
@@ -6230,9 +5909,9 @@
         "name": "R. Garbett",
         "office": null,
         "classList": [
-            "691"
+            "523"
         ],
-        "id": "197",
+        "id": "194",
         "phone": null,
         "subjects": [
             "MGMT"
@@ -6252,12 +5931,12 @@
         "name": "Joy Fuson",
         "office": null,
         "classList": [
-            "703",
-            "741",
-            "745",
-            "757"
+            "535",
+            "568",
+            "572",
+            "584"
         ],
-        "id": "198",
+        "id": "195",
         "phone": "(916) 608-6504",
         "subjects": [
             "MATH"
@@ -6294,11 +5973,11 @@
         "name": "Marc Olsen",
         "office": null,
         "classList": [
-            "704",
-            "707",
-            "764"
+            "536",
+            "539",
+            "591"
         ],
-        "id": "199",
+        "id": "196",
         "phone": "(916) 608-6759",
         "subjects": [
             "MATH"
@@ -6329,9 +6008,9 @@
         "name": "B. Watson",
         "office": null,
         "classList": [
-            "705"
+            "537"
         ],
-        "id": "200",
+        "id": "197",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6355,11 +6034,11 @@
         "name": "Bi Nguyen",
         "office": null,
         "classList": [
-            "706",
-            "749",
-            "759"
+            "538",
+            "576",
+            "586"
         ],
-        "id": "201",
+        "id": "198",
         "phone": "(916) 361-6314",
         "subjects": [
             "MATH"
@@ -6392,11 +6071,11 @@
         "name": "Keith Clayton",
         "office": null,
         "classList": [
-            "708",
-            "751",
-            "768"
+            "540",
+            "578",
+            "595"
         ],
-        "id": "202",
+        "id": "199",
         "phone": "(530) 344-5701",
         "subjects": [
             "MATH"
@@ -6427,13 +6106,13 @@
         "name": "Wayne Jensen",
         "office": null,
         "classList": [
-            "709",
-            "710",
-            "716",
-            "997",
-            "1001"
+            "541",
+            "542",
+            "547",
+            "768",
+            "772"
         ],
-        "id": "203",
+        "id": "200",
         "phone": "(916) 608-6629",
         "subjects": [
             "MATH",
@@ -6472,15 +6151,14 @@
         "name": "Joe Eitel",
         "office": null,
         "classList": [
-            "711",
-            "718",
-            "725",
-            "726",
-            "762",
-            "766",
-            "999"
+            "543",
+            "549",
+            "556",
+            "589",
+            "593",
+            "770"
         ],
-        "id": "204",
+        "id": "201",
         "phone": "(916) 608-6580",
         "subjects": [
             "MATH",
@@ -6518,11 +6196,11 @@
         "name": "Vadim Nersesyan Email",
         "office": null,
         "classList": [
-            "712",
-            "717",
-            "763"
+            "544",
+            "548",
+            "590"
         ],
-        "id": "205",
+        "id": "202",
         "phone": "(916) 608-6873",
         "subjects": [
             "MATH"
@@ -6554,12 +6232,11 @@
         "name": "Steve McFaul",
         "office": null,
         "classList": [
-            "713",
-            "714",
-            "742",
-            "761"
+            "545",
+            "569",
+            "588"
         ],
-        "id": "206",
+        "id": "203",
         "phone": "(916) 608-6675",
         "subjects": [
             "MATH"
@@ -6591,10 +6268,10 @@
         "name": "S. Hafezi",
         "office": null,
         "classList": [
-            "715",
-            "733"
+            "546",
+            "561"
         ],
-        "id": "207",
+        "id": "204",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6622,9 +6299,9 @@
         "name": "N. Wai",
         "office": null,
         "classList": [
-            "720"
+            "551"
         ],
-        "id": "208",
+        "id": "205",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6650,11 +6327,11 @@
         "name": "Jeremy Harden",
         "office": null,
         "classList": [
-            "721",
-            "738",
-            "750"
+            "552",
+            "565",
+            "577"
         ],
-        "id": "209",
+        "id": "206",
         "phone": "(916) 608-6592",
         "subjects": [
             "MATH"
@@ -6687,11 +6364,11 @@
         "name": "L. Schritter",
         "office": null,
         "classList": [
-            "722",
-            "724",
-            "740"
+            "553",
+            "555",
+            "567"
         ],
-        "id": "210",
+        "id": "207",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6723,13 +6400,11 @@
         "name": "Dean Pietromonaco",
         "office": null,
         "classList": [
-            "727",
-            "728",
-            "729",
-            "730",
-            "731"
+            "557",
+            "558",
+            "559"
         ],
-        "id": "211",
+        "id": "208",
         "phone": "(916) 608-6990",
         "subjects": [
             "MATH"
@@ -6761,9 +6436,9 @@
         "name": "Y. Zhang",
         "office": null,
         "classList": [
-            "732"
+            "560"
         ],
-        "id": "212",
+        "id": "209",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6789,9 +6464,9 @@
         "name": "M. Roberts",
         "office": null,
         "classList": [
-            "734"
+            "562"
         ],
-        "id": "213",
+        "id": "210",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6815,14 +6490,13 @@
         "name": "Tim Curran",
         "office": null,
         "classList": [
-            "735",
-            "736",
-            "758",
-            "767",
-            "1005",
-            "1006"
+            "563",
+            "585",
+            "594",
+            "776",
+            "777"
         ],
-        "id": "214",
+        "id": "211",
         "phone": "(530) 642-5673",
         "subjects": [
             "MATH",
@@ -6857,9 +6531,9 @@
         "name": "C. Middleton",
         "office": null,
         "classList": [
-            "737"
+            "564"
         ],
-        "id": "215",
+        "id": "212",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6883,11 +6557,11 @@
         "name": "Michelle Chiang-Yamada",
         "office": null,
         "classList": [
-            "739",
-            "743",
-            "756"
+            "566",
+            "570",
+            "583"
         ],
-        "id": "216",
+        "id": "213",
         "phone": "(916) 608-6606",
         "subjects": [
             "MATH"
@@ -6919,12 +6593,12 @@
         "name": "Calvin Greene",
         "office": null,
         "classList": [
-            "746",
-            "752",
-            "760",
-            "771"
+            "573",
+            "579",
+            "587",
+            "598"
         ],
-        "id": "217",
+        "id": "214",
         "phone": "(530) 642-5611",
         "subjects": [
             "MATH"
@@ -6959,9 +6633,9 @@
         "name": "T. Dyer",
         "office": null,
         "classList": [
-            "747"
+            "574"
         ],
-        "id": "218",
+        "id": "215",
         "phone": null,
         "subjects": [
             "MATH"
@@ -6985,9 +6659,9 @@
         "name": "J. Bulaong",
         "office": null,
         "classList": [
-            "748"
+            "575"
         ],
-        "id": "219",
+        "id": "216",
         "phone": null,
         "subjects": [
             "MATH"
@@ -7011,9 +6685,9 @@
         "name": "C. Glover",
         "office": null,
         "classList": [
-            "753"
+            "580"
         ],
-        "id": "220",
+        "id": "217",
         "phone": null,
         "subjects": [
             "MATH"
@@ -7037,9 +6711,9 @@
         "name": "T. Suter",
         "office": null,
         "classList": [
-            "754"
+            "581"
         ],
-        "id": "221",
+        "id": "218",
         "phone": null,
         "subjects": [
             "MATH"
@@ -7063,9 +6737,9 @@
         "name": "D. Jordan",
         "office": null,
         "classList": [
-            "755"
+            "582"
         ],
-        "id": "222",
+        "id": "219",
         "phone": null,
         "subjects": [
             "MATH"
@@ -7089,11 +6763,11 @@
         "name": "Kevin Pipkin",
         "office": null,
         "classList": [
-            "765",
-            "769",
-            "770"
+            "592",
+            "596",
+            "597"
         ],
-        "id": "223",
+        "id": "220",
         "phone": "(916) 608-6674",
         "subjects": [
             "MATH"
@@ -7126,12 +6800,10 @@
         "name": "N. Cherok-Fenner",
         "office": null,
         "classList": [
-            "772",
-            "773",
-            "774",
-            "775"
+            "599",
+            "600"
         ],
-        "id": "224",
+        "id": "221",
         "phone": null,
         "subjects": [
             "MEDTEC"
@@ -7157,10 +6829,9 @@
         "name": "M. Semnani",
         "office": null,
         "classList": [
-            "776",
-            "777"
+            "601"
         ],
-        "id": "225",
+        "id": "222",
         "phone": null,
         "subjects": [
             "MEDTEC"
@@ -7186,10 +6857,9 @@
         "name": "Jason Pedro",
         "office": null,
         "classList": [
-            "778",
-            "779"
+            "602"
         ],
-        "id": "226",
+        "id": "223",
         "phone": "(530) 642-5639",
         "subjects": [
             "MEDTEC"
@@ -7215,34 +6885,26 @@
         "name": "David Newnham",
         "office": null,
         "classList": [
-            "780",
-            "781",
-            "790",
-            "791",
-            "792",
-            "793",
-            "795",
-            "796",
-            "798",
-            "799",
-            "812",
-            "813",
-            "814",
-            "815",
-            "816"
+            "603",
+            "604",
+            "610",
+            "611",
+            "612",
+            "613",
+            "619",
+            "620"
         ],
-        "id": "227",
+        "id": "224",
         "phone": "(916) 608-6777",
         "subjects": [
             "MUFHL",
             "MUIVI",
             "MUP"
         ],
-        "classHours": "17hr 55min",
+        "classHours": "15hr 50min",
         "classTimes": {
             "W": [
                 "09:00AM-10:20AM",
-                "12:00PM-02:05PM",
                 "02:30PM-03:20PM",
                 "03:20PM-03:50PM"
             ],
@@ -7274,30 +6936,23 @@
         "name": "Philip Angove",
         "office": null,
         "classList": [
-            "782",
-            "784",
-            "785",
-            "786",
-            "787",
-            "788",
-            "820",
-            "821"
+            "605",
+            "607",
+            "608",
+            "609",
+            "622"
         ],
-        "id": "228",
+        "id": "225",
         "phone": "(916) 608-6725",
         "subjects": [
             "MUFHL",
             "MUP"
         ],
-        "classHours": "22hr 40min",
+        "classHours": "15hr 40min",
         "classTimes": {
-            "W": [
-                "10:30AM-01:35PM",
-                "02:00PM-02:50PM"
-            ],
+            "W": [],
             "F": [],
             "M": [
-                "10:30AM-01:35PM",
                 "02:00PM-02:50PM"
             ],
             "T": [
@@ -7319,13 +6974,11 @@
         "name": "L. Johnson",
         "office": null,
         "classList": [
-            "783",
-            "807",
-            "808",
-            "809",
-            "810"
+            "606",
+            "616",
+            "617"
         ],
-        "id": "229",
+        "id": "226",
         "phone": null,
         "subjects": [
             "MUFHL",
@@ -7353,29 +7006,72 @@
         "email": null
     },
     {
+        "name": "S. Rink",
+        "office": null,
+        "classList": [
+            "614",
+            "615",
+            "618"
+        ],
+        "id": "227",
+        "phone": null,
+        "subjects": [
+            "MUIVI"
+        ],
+        "classHours": "1hr 55min",
+        "classTimes": {
+            "W": [],
+            "F": [],
+            "M": [],
+            "T": [
+                "03:15PM-04:05PM",
+                "04:15PM-05:20PM"
+            ],
+            "Th": [],
+            "Sa": []
+        },
+        "email": null
+    },
+    {
+        "name": "E. Sporov",
+        "office": null,
+        "classList": [
+            "621"
+        ],
+        "id": "228",
+        "phone": null,
+        "subjects": [
+            "MUP"
+        ],
+        "classHours": "1hr 50min",
+        "classTimes": {
+            "W": [],
+            "F": [],
+            "M": [
+                "07:00PM-08:50PM"
+            ],
+            "T": [],
+            "Th": [],
+            "Sa": []
+        },
+        "email": null
+    },
+    {
         "name": "M. Dale",
         "office": null,
         "classList": [
-            "789",
-            "822",
-            "823",
-            "824"
+            "623"
         ],
-        "id": "230",
+        "id": "229",
         "phone": null,
         "subjects": [
-            "MUFHL",
             "MUSM"
         ],
-        "classHours": "7hr 50min",
+        "classHours": "2hr 30min",
         "classTimes": {
-            "W": [
-                "01:45PM-03:10PM",
-                "06:00PM-08:30PM"
-            ],
+            "W": [],
             "F": [],
             "M": [
-                "01:45PM-03:10PM",
                 "06:00PM-06:25PM",
                 "06:25PM-08:30PM"
             ],
@@ -7386,91 +7082,38 @@
         "email": null
     },
     {
-        "name": "M. Pechenova",
+        "name": "R. Giordano",
         "office": null,
         "classList": [
-            "794",
-            "797",
-            "800"
+            "624",
+            "626",
+            "627",
+            "630",
+            "632"
         ],
-        "id": "231",
+        "id": "230",
         "phone": null,
         "subjects": [
-            "MUIVI"
+            "NUTRI"
         ],
-        "classHours": "1hr 0min",
+        "classHours": "11hr 10min",
         "classTimes": {
             "W": [
-                "03:20PM-03:50PM"
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM",
+                "01:00PM-04:10PM"
             ],
             "F": [],
             "M": [
-                "03:20PM-03:50PM"
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM"
             ],
-            "T": [],
-            "Th": [],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
-        "name": "S. Rink",
-        "office": null,
-        "classList": [
-            "801",
-            "802",
-            "803",
-            "804",
-            "805",
-            "806",
-            "811",
-            "817"
-        ],
-        "id": "232",
-        "phone": null,
-        "subjects": [
-            "MUIVI",
-            "MUP"
-        ],
-        "classHours": "4hr 0min",
-        "classTimes": {
-            "W": [],
-            "F": [],
-            "M": [],
             "T": [
-                "03:15PM-04:05PM",
-                "04:15PM-05:20PM"
+                "09:00AM-10:20AM"
             ],
             "Th": [
-                "03:15PM-05:20PM"
+                "09:00AM-10:20AM"
             ],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
-        "name": "E. Sporov",
-        "office": null,
-        "classList": [
-            "818",
-            "819"
-        ],
-        "id": "233",
-        "phone": null,
-        "subjects": [
-            "MUP"
-        ],
-        "classHours": "3hr 40min",
-        "classTimes": {
-            "W": [
-                "07:00PM-08:50PM"
-            ],
-            "F": [],
-            "M": [
-                "07:00PM-08:50PM"
-            ],
-            "T": [],
-            "Th": [],
             "Sa": []
         },
         "email": null
@@ -7479,11 +7122,10 @@
         "name": "Julie BoarerPitchford,  MS, PhD",
         "office": null,
         "classList": [
-            "827",
-            "833",
-            "834"
+            "625",
+            "631"
         ],
-        "id": "234",
+        "id": "231",
         "phone": null,
         "subjects": [
             "NUTRI"
@@ -7505,9 +7147,9 @@
         "name": "Debora Oliveira da Silva, MS",
         "office": null,
         "classList": [
-            "830"
+            "628"
         ],
-        "id": "235",
+        "id": "232",
         "phone": null,
         "subjects": [
             "NUTRI"
@@ -7531,9 +7173,9 @@
         "name": "Kevin D. Cooper, MAS, RD, LD",
         "office": null,
         "classList": [
-            "831"
+            "629"
         ],
-        "id": "236",
+        "id": "233",
         "phone": null,
         "subjects": [
             "NUTRI"
@@ -7557,15 +7199,14 @@
         "name": "Daniel Considine",
         "office": null,
         "classList": [
-            "837",
-            "838",
-            "839",
-            "840",
-            "844",
-            "845",
-            "846"
+            "634",
+            "635",
+            "636",
+            "639",
+            "640",
+            "641"
         ],
-        "id": "237",
+        "id": "234",
         "phone": "(916) 608-6594",
         "subjects": [
             "PHIL"
@@ -7598,10 +7239,10 @@
         "name": "C. Bauer",
         "office": null,
         "classList": [
-            "841",
-            "848"
+            "637",
+            "643"
         ],
-        "id": "238",
+        "id": "235",
         "phone": null,
         "subjects": [
             "PHIL"
@@ -7627,10 +7268,9 @@
         "name": "J. Tees",
         "office": null,
         "classList": [
-            "842",
-            "843"
+            "638"
         ],
-        "id": "239",
+        "id": "236",
         "phone": null,
         "subjects": [
             "PHIL"
@@ -7652,9 +7292,9 @@
         "name": "M. Warnes",
         "office": null,
         "classList": [
-            "847"
+            "642"
         ],
-        "id": "240",
+        "id": "237",
         "phone": null,
         "subjects": [
             "PHIL"
@@ -7676,13 +7316,13 @@
         "name": "Matt Torrez",
         "office": null,
         "classList": [
-            "850",
-            "863",
-            "867",
-            "871",
-            "893"
+            "645",
+            "658",
+            "662",
+            "666",
+            "687"
         ],
-        "id": "241",
+        "id": "238",
         "phone": "(916) 608-6600",
         "subjects": [
             "FITNS",
@@ -7720,11 +7360,11 @@
         "name": "M. Jacques",
         "office": null,
         "classList": [
-            "851",
-            "860",
-            "870"
+            "646",
+            "655",
+            "665"
         ],
-        "id": "242",
+        "id": "239",
         "phone": null,
         "subjects": [
             "FITNS",
@@ -7753,13 +7393,13 @@
         "name": "Justin Johnson",
         "office": null,
         "classList": [
-            "857",
-            "858",
-            "859",
-            "868",
-            "885"
+            "652",
+            "653",
+            "654",
+            "663",
+            "680"
         ],
-        "id": "243",
+        "id": "240",
         "phone": "(916) 608-6624",
         "subjects": [
             "FITNS",
@@ -7798,11 +7438,11 @@
         "name": "Ron Richardson",
         "office": null,
         "classList": [
-            "862",
-            "864",
-            "881"
+            "657",
+            "659",
+            "676"
         ],
-        "id": "244",
+        "id": "241",
         "phone": "(916) 608-6812",
         "subjects": [
             "FITNS",
@@ -7833,9 +7473,9 @@
         "name": "K. Morning",
         "office": null,
         "classList": [
-            "865"
+            "660"
         ],
-        "id": "245",
+        "id": "242",
         "phone": null,
         "subjects": [
             "FITNS"
@@ -7859,11 +7499,11 @@
         "name": "John Alexander",
         "office": null,
         "classList": [
-            "866",
-            "887",
-            "888"
+            "661",
+            "682",
+            "683"
         ],
-        "id": "246",
+        "id": "243",
         "phone": "(916) 608-6514",
         "subjects": [
             "FITNS",
@@ -7898,10 +7538,10 @@
         "name": "R. Gregory",
         "office": null,
         "classList": [
-            "869",
-            "884"
+            "664",
+            "679"
         ],
-        "id": "247",
+        "id": "244",
         "phone": null,
         "subjects": [
             "FITNS",
@@ -7932,9 +7572,9 @@
         "name": "K. Diehl",
         "office": null,
         "classList": [
-            "872"
+            "667"
         ],
-        "id": "248",
+        "id": "245",
         "phone": null,
         "subjects": [
             "FITNS"
@@ -7958,9 +7598,9 @@
         "name": "H. Alkhayyat",
         "office": null,
         "classList": [
-            "873"
+            "668"
         ],
-        "id": "249",
+        "id": "246",
         "phone": null,
         "subjects": [
             "FITNS"
@@ -7984,12 +7624,12 @@
         "name": "F. Gaviola",
         "office": null,
         "classList": [
-            "876",
-            "877",
-            "878",
-            "879"
+            "671",
+            "672",
+            "673",
+            "674"
         ],
-        "id": "250",
+        "id": "247",
         "phone": null,
         "subjects": [
             "FITNS"
@@ -8015,14 +7655,14 @@
         "name": "C. Perez",
         "office": null,
         "classList": [
-            "880",
-            "882",
-            "883",
-            "889",
-            "891",
-            "892"
+            "675",
+            "677",
+            "678",
+            "684",
+            "685",
+            "686"
         ],
-        "id": "251",
+        "id": "248",
         "phone": null,
         "subjects": [
             "PACT",
@@ -8057,43 +7697,12 @@
         "email": null
     },
     {
-        "name": "P. Rutz",
-        "office": null,
-        "classList": [
-            "890"
-        ],
-        "id": "252",
-        "phone": null,
-        "subjects": [
-            "SPORT"
-        ],
-        "classHours": "5hr 20min",
-        "classTimes": {
-            "W": [
-                "01:00PM-02:20PM"
-            ],
-            "F": [],
-            "M": [
-                "01:00PM-02:20PM"
-            ],
-            "T": [
-                "01:00PM-02:20PM"
-            ],
-            "Th": [
-                "01:00PM-02:20PM"
-            ],
-            "Sa": []
-        },
-        "email": null
-    },
-    {
         "name": "D. Ring",
         "office": null,
         "classList": [
-            "899",
-            "900"
+            "692"
         ],
-        "id": "253",
+        "id": "249",
         "phone": null,
         "subjects": [
             "PHYS"
@@ -8119,10 +7728,9 @@
         "name": "D. Selby",
         "office": null,
         "classList": [
-            "905",
-            "906"
+            "695"
         ],
-        "id": "254",
+        "id": "250",
         "phone": null,
         "subjects": [
             "POLS"
@@ -8144,13 +7752,13 @@
         "name": "David Reese",
         "office": null,
         "classList": [
-            "907",
-            "908",
-            "909",
-            "910",
-            "911"
+            "696",
+            "697",
+            "698",
+            "699",
+            "700"
         ],
-        "id": "255",
+        "id": "251",
         "phone": "(916) 608-6665",
         "subjects": [
             "POLS"
@@ -8184,11 +7792,10 @@
         "name": "A. Clarke",
         "office": null,
         "classList": [
-            "912",
-            "913",
-            "914"
+            "701",
+            "702"
         ],
-        "id": "256",
+        "id": "252",
         "phone": null,
         "subjects": [
             "POLS"
@@ -8212,10 +7819,10 @@
         "name": "D. Repetto",
         "office": null,
         "classList": [
-            "915",
-            "916"
+            "703",
+            "704"
         ],
-        "id": "257",
+        "id": "253",
         "phone": null,
         "subjects": [
             "POLS"
@@ -8243,9 +7850,9 @@
         "name": "T. Gaffaney",
         "office": null,
         "classList": [
-            "917"
+            "705"
         ],
-        "id": "258",
+        "id": "254",
         "phone": null,
         "subjects": [
             "POLS"
@@ -8269,10 +7876,10 @@
         "name": "C. Wright",
         "office": null,
         "classList": [
-            "918",
-            "919"
+            "706",
+            "707"
         ],
-        "id": "259",
+        "id": "255",
         "phone": null,
         "subjects": [
             "PRJMGT"
@@ -8292,12 +7899,11 @@
         "name": "J. Rodriguez",
         "office": null,
         "classList": [
-            "920",
-            "921",
-            "940",
-            "947"
+            "708",
+            "725",
+            "732"
         ],
-        "id": "260",
+        "id": "256",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8323,10 +7929,10 @@
         "name": "C. Snow",
         "office": null,
         "classList": [
-            "922",
-            "946"
+            "709",
+            "731"
         ],
-        "id": "261",
+        "id": "257",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8350,9 +7956,9 @@
         "name": "S. Mullen",
         "office": null,
         "classList": [
-            "923"
+            "710"
         ],
-        "id": "262",
+        "id": "258",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8376,11 +7982,11 @@
         "name": "Ken Snell",
         "office": null,
         "classList": [
-            "924",
-            "941",
-            "942"
+            "711",
+            "726",
+            "727"
         ],
-        "id": "263",
+        "id": "259",
         "phone": "(916) 608-6575",
         "subjects": [
             "PSYC"
@@ -8405,10 +8011,10 @@
         "name": "B. Lynch",
         "office": null,
         "classList": [
-            "925",
-            "945"
+            "712",
+            "730"
         ],
-        "id": "264",
+        "id": "260",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8433,9 +8039,9 @@
         "name": "B. Gross",
         "office": null,
         "classList": [
-            "926"
+            "713"
         ],
-        "id": "265",
+        "id": "261",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8457,11 +8063,11 @@
         "name": "B. Raines",
         "office": null,
         "classList": [
-            "927",
-            "936",
-            "944"
+            "714",
+            "721",
+            "729"
         ],
-        "id": "266",
+        "id": "262",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8488,9 +8094,9 @@
         "name": "J. Samboceti",
         "office": null,
         "classList": [
-            "928"
+            "715"
         ],
-        "id": "267",
+        "id": "263",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8512,35 +8118,29 @@
         "name": "Sean Fannon",
         "office": null,
         "classList": [
-            "929",
-            "930",
-            "931",
-            "932",
-            "933",
-            "934"
+            "716",
+            "717",
+            "718",
+            "719"
         ],
-        "id": "268",
+        "id": "264",
         "phone": "(916) 608-6755",
         "subjects": [
             "PSYC"
         ],
-        "classHours": "17hr 40min",
+        "classHours": "12hr 20min",
         "classTimes": {
             "W": [
-                "05:30PM-06:50PM",
                 "07:00PM-10:05PM"
             ],
             "F": [],
             "M": [
-                "05:30PM-06:50PM",
                 "07:00PM-10:05PM"
             ],
             "T": [
-                "10:30AM-11:50AM",
                 "01:00PM-04:05PM"
             ],
             "Th": [
-                "10:30AM-11:50AM",
                 "01:00PM-04:05PM"
             ],
             "Sa": []
@@ -8551,12 +8151,12 @@
         "name": "Christina Aldrich",
         "office": null,
         "classList": [
-            "935",
-            "937",
-            "938",
-            "939"
+            "720",
+            "722",
+            "723",
+            "724"
         ],
-        "id": "269",
+        "id": "265",
         "phone": "(916) 608-6951",
         "subjects": [
             "PSYC"
@@ -8586,9 +8186,9 @@
         "name": "R. Stieferman",
         "office": null,
         "classList": [
-            "943"
+            "728"
         ],
-        "id": "270",
+        "id": "266",
         "phone": null,
         "subjects": [
             "PSYC"
@@ -8610,9 +8210,9 @@
         "name": "G. Zeller",
         "office": null,
         "classList": [
-            "957"
+            "741"
         ],
-        "id": "271",
+        "id": "267",
         "phone": null,
         "subjects": [
             "RE"
@@ -8634,13 +8234,13 @@
         "name": "Michelle Lennert",
         "office": null,
         "classList": [
-            "958",
-            "959",
-            "960",
-            "962",
-            "963"
+            "742",
+            "743",
+            "744",
+            "746",
+            "747"
         ],
-        "id": "272",
+        "id": "268",
         "phone": "(916) 608-6630",
         "subjects": [
             "SILA"
@@ -8674,9 +8274,9 @@
         "name": "S. Thrapp",
         "office": null,
         "classList": [
-            "961"
+            "745"
         ],
-        "id": "273",
+        "id": "269",
         "phone": null,
         "subjects": [
             "SILA"
@@ -8700,15 +8300,13 @@
         "name": "Diane Carlson",
         "office": null,
         "classList": [
-            "964",
-            "965",
-            "967",
-            "968",
-            "969",
-            "970",
-            "972"
+            "748",
+            "750",
+            "751",
+            "752",
+            "754"
         ],
-        "id": "274",
+        "id": "270",
         "phone": null,
         "subjects": [
             "SOC"
@@ -8733,10 +8331,10 @@
         "name": "L. Faulkner",
         "office": null,
         "classList": [
-            "966",
-            "971"
+            "749",
+            "753"
         ],
-        "id": "275",
+        "id": "271",
         "phone": null,
         "subjects": [
             "SOC"
@@ -8762,9 +8360,9 @@
         "name": "P. Burke",
         "office": null,
         "classList": [
-            "973"
+            "755"
         ],
-        "id": "276",
+        "id": "272",
         "phone": null,
         "subjects": [
             "SOC"
@@ -8786,9 +8384,9 @@
         "name": "C. Cannon",
         "office": null,
         "classList": [
-            "974"
+            "756"
         ],
-        "id": "277",
+        "id": "273",
         "phone": null,
         "subjects": [
             "SOC"
@@ -8810,19 +8408,16 @@
         "name": "Juan Carlos Moraga",
         "office": null,
         "classList": [
-            "975",
-            "976",
-            "977",
-            "978",
-            "981",
-            "982"
+            "757",
+            "758",
+            "760"
         ],
-        "id": "278",
+        "id": "274",
         "phone": "(916) 608-6669",
         "subjects": [
             "SPAN"
         ],
-        "classHours": "16hr 0min",
+        "classHours": "10hr 40min",
         "classTimes": {
             "W": [
                 "09:00AM-10:20AM",
@@ -8834,14 +8429,10 @@
                 "10:30AM-11:50AM"
             ],
             "T": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "06:00PM-07:20PM",
                 "07:30PM-08:50PM"
             ],
             "Th": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "06:00PM-07:20PM",
                 "07:30PM-08:50PM"
             ],
@@ -8853,12 +8444,10 @@
         "name": "Elvia Macias-Perez",
         "office": null,
         "classList": [
-            "979",
-            "980",
-            "991",
-            "992"
+            "759",
+            "765"
         ],
-        "id": "279",
+        "id": "275",
         "phone": "(916) 608-6544",
         "subjects": [
             "SPAN"
@@ -8890,10 +8479,9 @@
         "name": "P. Alford",
         "office": null,
         "classList": [
-            "983",
-            "984"
+            "761"
         ],
-        "id": "280",
+        "id": "276",
         "phone": null,
         "subjects": [
             "SPAN"
@@ -8919,12 +8507,10 @@
         "name": "Carlos Lopez",
         "office": null,
         "classList": [
-            "985",
-            "986",
-            "993",
-            "994"
+            "762",
+            "766"
         ],
-        "id": "281",
+        "id": "277",
         "phone": "(530) 642-5618",
         "subjects": [
             "SPAN"
@@ -8950,10 +8536,9 @@
         "name": "A. Divittorio",
         "office": null,
         "classList": [
-            "987",
-            "988"
+            "763"
         ],
-        "id": "282",
+        "id": "278",
         "phone": null,
         "subjects": [
             "SPAN"
@@ -8979,10 +8564,9 @@
         "name": "S. Postiglione",
         "office": null,
         "classList": [
-            "989",
-            "990"
+            "764"
         ],
-        "id": "283",
+        "id": "279",
         "phone": null,
         "subjects": [
             "SPAN"
@@ -9008,10 +8592,9 @@
         "name": "S. Mason",
         "office": null,
         "classList": [
-            "995",
-            "996"
+            "767"
         ],
-        "id": "284",
+        "id": "280",
         "phone": null,
         "subjects": [
             "SPAN"
@@ -9037,9 +8620,9 @@
         "name": "K. Straus",
         "office": null,
         "classList": [
-            "998"
+            "769"
         ],
-        "id": "285",
+        "id": "281",
         "phone": null,
         "subjects": [
             "STAT"
@@ -9063,9 +8646,9 @@
         "name": "Y. Cai",
         "office": null,
         "classList": [
-            "1000"
+            "771"
         ],
-        "id": "286",
+        "id": "282",
         "phone": null,
         "subjects": [
             "STAT"
@@ -9089,10 +8672,10 @@
         "name": "M. Nye",
         "office": null,
         "classList": [
-            "1002",
-            "1004"
+            "773",
+            "775"
         ],
-        "id": "287",
+        "id": "283",
         "phone": null,
         "subjects": [
             "STAT"
@@ -9118,9 +8701,9 @@
         "name": "M. Taheri",
         "office": null,
         "classList": [
-            "1003"
+            "774"
         ],
-        "id": "288",
+        "id": "284",
         "phone": null,
         "subjects": [
             "STAT"
@@ -9144,9 +8727,9 @@
         "name": "J. Wallace",
         "office": null,
         "classList": [
-            "1007"
+            "778"
         ],
-        "id": "289",
+        "id": "285",
         "phone": null,
         "subjects": [
             "TA"
@@ -9166,29 +8749,21 @@
         "name": "David Harris",
         "office": null,
         "classList": [
-            "1008",
-            "1023",
-            "1024",
-            "1025",
-            "1026",
-            "1031",
-            "1032",
-            "1033",
-            "1034",
-            "1035",
-            "1036",
-            "1037",
-            "1038",
-            "1039",
-            "1040",
-            "1041",
-            "1042",
-            "1043",
-            "1044",
-            "1045",
-            "1046"
+            "779",
+            "790",
+            "791",
+            "792",
+            "793",
+            "798",
+            "799",
+            "800",
+            "801",
+            "802",
+            "803",
+            "804",
+            "805"
         ],
-        "id": "290",
+        "id": "286",
         "phone": "(916) 608-6760",
         "subjects": [
             "TA",
@@ -9213,9 +8788,9 @@
         "name": "J. Nicholson",
         "office": null,
         "classList": [
-            "1009"
+            "780"
         ],
-        "id": "291",
+        "id": "287",
         "phone": null,
         "subjects": [
             "TA"
@@ -9239,10 +8814,9 @@
         "name": "P. Mohrmann",
         "office": null,
         "classList": [
-            "1010",
-            "1011"
+            "781"
         ],
-        "id": "292",
+        "id": "288",
         "phone": null,
         "subjects": [
             "TA"
@@ -9268,18 +8842,15 @@
         "name": "Ian Wallace",
         "office": null,
         "classList": [
-            "1012",
-            "1013",
-            "1014",
-            "1015",
-            "1016",
-            "1017",
-            "1027",
-            "1028",
-            "1029",
-            "1030"
+            "782",
+            "783",
+            "784",
+            "794",
+            "795",
+            "796",
+            "797"
         ],
-        "id": "293",
+        "id": "289",
         "phone": "(916) 608-6933",
         "subjects": [
             "TA",
@@ -9312,9 +8883,9 @@
         "name": "S. Schmidt",
         "office": null,
         "classList": [
-            "1018"
+            "785"
         ],
-        "id": "294",
+        "id": "290",
         "phone": null,
         "subjects": [
             "TA"

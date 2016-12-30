@@ -67,65 +67,66 @@ def getInstructorDetails(instructors, url):
 		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "\rSuccessfully added details to ", facultyMembersNum, " faculty members.\n"
 
-def deriveInstructorsFromCourses(instructors, courses):
+def deriveInstructorsFromClasses(instructors, classes):
 	print "Parsing the instructors from courses..."
 	instructorCount = 0
-	# DERIVED INFO, SEPARATE THIS OUT LATER
 	# Create list of all professors
-	for course in courses:
-		for classTime in course["classes"]:
-			if classTime["instructor"] != "TBA":
-				if not filter(lambda person: person['name'] == classTime["instructor"], instructors):
-					instructors.append({"name" : classTime["instructor"]})
-					instructors[-1]["classList"] = []
-					instructors[-1]["classHours"] = 0
-					instructors[-1]["classTimes"] = {}
-					instructors[-1]["classTimes"]["M"] = []
-					instructors[-1]["classTimes"]["T"] = []
-					instructors[-1]["classTimes"]["W"] = []
-					instructors[-1]["classTimes"]["Th"] = []
-					instructors[-1]["classTimes"]["F"] = []
-					instructors[-1]["classTimes"]["Sa"] = []
-					instructors[-1]["subjects"] = []
-					instructors[-1]["email"] = None
-					instructors[-1]["office"] = None
-					instructors[-1]["phone"] = None
-					instructors[-1]["id"] = str(instructorCount)
-					instructorCount += 1
-	
+	for item in classes:
+		validInstructor = (item["instructor"] != "TBA")
+		alreadyExists = filter(lambda person: person['name'] == item["instructor"], instructors)
+		if validInstructor and not alreadyExists:
+			instructors.append({"name" : item["instructor"]})
+			instructors[-1]["classList"] = []
+			instructors[-1]["classHours"] = 0
+			instructors[-1]["classTimes"] = {}
+			instructors[-1]["classTimes"]["M"] = []
+			instructors[-1]["classTimes"]["T"] = []
+			instructors[-1]["classTimes"]["W"] = []
+			instructors[-1]["classTimes"]["Th"] = []
+			instructors[-1]["classTimes"]["F"] = []
+			instructors[-1]["classTimes"]["Sa"] = []
+			instructors[-1]["subjects"] = []
+			instructors[-1]["email"] = None
+			instructors[-1]["office"] = None
+			instructors[-1]["phone"] = None
+			instructors[-1]["id"] = str(instructorCount)
+			instructorCount += 1
+
 	# Populate information about professors
-	for course in courses:
-		for classTime in course["classes"]:
-			if classTime["instructor"] != "TBA":
-				for professor in instructors:
-					if classTime["instructor"] == professor["name"]:
-						professor["classList"].append(classTime["id"])
-						subject = course["courseTitle"][0 : course["courseTitle"].index(" ")]
-						if subject not in professor["subjects"]:
-							professor["subjects"].append(subject)
-							professor["subjects"].sort()
-						days = classTime["days"].split()
-						for day in days:
-							if classTime["lecTime"] and classTime["lecTime"] != "TBA" and classTime["lecTime"] not in professor["classTimes"][day]:
-								professor["classTimes"][day].append(classTime["lecTime"])
-								professor["classTimes"][day].sort(utils.sortTimes)
-								professor["classHours"] += utils.calcTime(classTime["lecTime"])
-							if classTime["labTime"] and classTime["labTime"] != "TBA" and classTime["labTime"] not in professor["classTimes"][day]:
-								professor["classTimes"][day].append(classTime["labTime"])
-								professor["classTimes"][day].sort(utils.sortTimes)
-								professor["classHours"] += utils.calcTime(classTime["labTime"])
+	for item in classes:
+		validInstructor = (item["instructor"] != "TBA")
+		if validInstructor:
+			for professor in instructors:
+				if item["instructor"] == professor["name"]:
+					professor["classList"].append(item["id"])
+					subject = item["courseTitle"][0 : item["courseTitle"].index(" ")]
+					if subject not in professor["subjects"]:
+						professor["subjects"].append(subject)
+						professor["subjects"].sort()
+					days = item["days"].split()
+					for day in days:
+						if day == "TBA":
+							continue
+						if item["lecTime"] and item["lecTime"] != "TBA" and item["lecTime"] not in professor["classTimes"][day]:
+							professor["classTimes"][day].append(item["lecTime"])
+							professor["classTimes"][day].sort(utils.sortTimes)
+							professor["classHours"] += utils.calcTime(item["lecTime"])
+						if item["labTime"] and item["labTime"] != "TBA" and item["labTime"] not in professor["classTimes"][day]:
+							professor["classTimes"][day].append(item["labTime"])
+							professor["classTimes"][day].sort(utils.sortTimes)
+							professor["classHours"] += utils.calcTime(item["labTime"])
 	print "Successfully added", instructorCount, " instructors.\n"
 	
 def deriveAndDetailInstructors():
 	instructors = []
 	if os.path.isdir('/tmp'):
 		# For reading on AWS Lambda
-		filePath = '/tmp/courses.json'
+		filePath = '/tmp/classes.json'
 	else:
 		# For reading locally
-		filePath = 'courses.json'
+		filePath = 'classes.json'
 
-	deriveInstructorsFromCourses(instructors, json.load(open(filePath)))
+	deriveInstructorsFromClasses(instructors, json.load(open(filePath)))
 	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
 	
 	if os.path.isdir('/tmp'):

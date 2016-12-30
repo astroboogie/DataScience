@@ -96,30 +96,22 @@ var hasValidDayConditions = function(checkBoxes, days) {
 
 // Returns true if there are no conflicts between the set conditions
 // and the course itself.
-var hasValidCourseType = function(classTypeInputs, schedule, labRoom, lecRoom) {
+var hasValidCourseType = function(classTypeInputs, curClass) {
     let ret = true;
     $(classTypeInputs).each(function() {
         // condition to check if course is fast track
-        let isFastTrackCourse = (schedule.indexOf("Eight") != -1);
-        if ($(this).val() == "Fast Track" && !isFastTrackCourse) {
+        let isFastTrackCourse = (curClass["schedule"].indexOf("Eight") != -1);
+        if ($(this).val() === "Fast Track" && !isFastTrackCourse) {
             ret = false;
             return;
         }
 
         // condition to check if course is online
-        let isOnlineCourse = ($(this).val() == "Online");
-        let isLecOnline = (lecRoom && (lecRoom.indexOf("ONLINE") != -1));
-        let isLabOnline = (labRoom && (labRoom.indexOf("ONLINE") != -1));
-        if (isOnlineCourse) {
-            if ((lecRoom != null) && !isLecOnline) {
-                ret = false;
-                return;
-            }
-            if ((labRoom != null) && !isLabOnline) {
-                ret = false;
-                return;
-            }
-        }
+        let isOnlineCourse = (curClass["classType"] === "Online")
+        if ($(this).val() === "Online" && !isOnlineCourse) {
+            ret = false;
+            return;
+        };
     });
     return ret;
 }
@@ -193,7 +185,8 @@ var createSearchResults = function(div, classes) {
         }
 
         if (hasValidDayConditions($("#day-form > form > label > input:checked"), element['days'])
-            && hasValidCourseType("#type-container > div > form > label > input:checked", element["schedule"], element["labRoom"], element["lecRoom"])) {
+            && hasValidCourseType("#type-container > div > form > label > input:checked", element)
+            ) {
             // Grab lec/lab type
             let room = element['labRoom'] || element['lecRoom'];
             let time = element['labTime'] || element['lecTime'];
@@ -212,14 +205,9 @@ var createCourseFullDescription = function(arrow, classes, courses) {
     $(arrow).click(function () {
         let id = $(this).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digits
         let curClass = classes[id];
-        let course = $.grep(courses, function(e) {
-            //console.log("COURSE TITLE: ", course["courseTitle"]);
-            //console.log("CLASS COURSE TITLE: ", curClass["courseTitle"]);
-            return e["courseTitle"] === curClass["courseTitle"];
-        });
-        course = course[0];
-        console.log(curClass);
-        console.log(course);
+        let course = $.grep(courses, function(course) {
+            return course["courseTitle"] === curClass["courseTitle"];
+        })[0];
 
         let classTime = curClass["lecTime"] || curClass["labTime"];
         let classLocation = curClass["lecRoom"] || curClass["labRoom"];

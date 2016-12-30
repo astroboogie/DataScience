@@ -12,10 +12,26 @@ def extractClasses(courseInfo):
 			classes += line + "\n"
 	return classes.splitlines()
 
+def getDays(line):
+	return line[line.index("size=-1>") + len("size=-1>") : line.index("    ")].replace("M", "M ").replace("Th", "Th ").replace("F", "F ").replace("W", "W ").replace("TS", "T S").replace("TF", "T F").replace("TT", "T T").replace("TW", "T W").rstrip(" ")
+
+def getLecTime(line):
+	return line[line.index("    ") + len("    ") : line.index("LEC")].lstrip(" ").rstrip(" ")
+	
+def getLabTime(line):
+	return line[line.index("    ") + len("    ") : line.rindex("LAB")].lstrip(" ").rstrip(" ")
+	
+def getRoom(start, line):
+	room = line[line.rindex(start) + len(start) : line.rindex("  ")].lstrip(" ").rstrip(" ")
+	if not room:
+		room = line[line.rfind(start) + len(start) : line.rfind("<a href") - 7].lstrip(" ").rstrip(" ") or "TBA"
+	return room
+	
 def populateClasses(classes, url):
 	response = utils.getHTML(url, "class schedule")
-	print "Parsing the courses..."
 	classCount = 0
+	print "Parsing the classes..."
+	
 	schedule = None
 	days = None
 	lecTime = None
@@ -24,7 +40,7 @@ def populateClasses(classes, url):
 	lecRoom = None
 	labRoom = None
 	classNum = None
-	classType = None
+	classType = 'On Campus'
 	while True:
 		courseInfo = utils.extractCourseInfo(response, "<!--Course Title-->", "<center><hr width=60%></center>")
 		if not courseInfo:
@@ -37,40 +53,29 @@ def populateClasses(classes, url):
 
 		for line in courseInfo:
 			line = line.replace("&nbsp;", " ")
-			if "Schedule:" in line:
-				schedule = line[line.index("</em><b>") + len("</em><b>") : line.index("</b>")]
-			elif "font face=Courier" in line:
-				days = line[line.index("size=-1>") + len("size=-1>") : line.index("    ")].replace("M", "M ").replace("Th", "Th ").replace("F", "F ").replace("W", "W ").replace("TS", "T S").replace("TF", "T F").replace("TT", "T T").replace("TW", "T W").rstrip(" ")
+			schedule = utils.extractInfoFromLine(line, "Schedule:", "</em><b>", "</b>") or schedule
+			if "font face=Courier" in line:
+				days = getDays(line)
 				if "LEC" in line:
-					lecTime = line[line.index("    ") + len("    ") : line.index("LEC")].lstrip(" ").rstrip(" ")
+					lecTime = getLecTime(line)
 					instructor = line[line.index("LEC") + len("LEC") : line.index("  ", line.index("LEC"))].lstrip(" ").rstrip(" ")
-					lecRoom = line[line.rindex(instructor) + len(instructor) : line.rindex("  ")].lstrip(" ").rstrip(" ")
-					if not lecRoom:
-						lecRoom = line[line.rindex(instructor) + len(instructor) : line.rindex("<a href") - 7].lstrip(" ").rstrip(" ")
-					instructor = instructor.replace(".", ". ")
+					lecRoom = getRoom(instructor, line)
 				elif "LAB" in line:
-					labTime = line[line.index("    ") + len("    ") : line.rindex("LAB")].lstrip(" ").rstrip(" ")
+					labTime = getLabTime(line)
 					instructor = line[line.index("LAB") + len("LAB") : line.index("    ", line.index("LAB"))].lstrip(" ").rstrip(" ")
-					labRoom = line[line.rindex(instructor) + len(instructor) : line.rindex("  ")].lstrip(" ").rstrip(" ")
-					if not labRoom:
-						labRoom = line[line.rfind(instructor) + len(instructor) : line.rfind("<a href") - 7].lstrip(" ").rstrip(" ")
-						if not labRoom:
-							labRoom = "TBA"
-					instructor = instructor.replace(".", ". ")
-				if "Textbook" in line:
-					room = lecRoom or labRoom
-					classNum = line[line.index(room) + len(room) : line.index("<a href")].lstrip(" ").rstrip(" ")
-			meetingNotes = utils.extractCourseInfo(courseInfo, '<font face=Courier size=-1>', '<font face=Courier size=-1>')
-			for line2 in meetingNotes:
-				if '<!--Meetings Notes-->' in line2 and '<b>' in line2:
-					classTypeNote = utils.extractInfoFromLine(line2, '<!--Meetings Notes-->', '<b>', '</b>')
-					if classTypeNote:
-						if 'hybrid' in classTypeNote:
-							classType = 'Hybrid'
-						elif 'online' in classTypeNote:
-							classType = 'Online'
-						else:
-							classType = 'On Campus'
+					labRoom = getRoom(instructor, line)
+				instructor = instructor.replace(".", ". ")
+				classNum = utils.extractInfoFromLine(line, "Textbook", lecRoom or labRoom, "<a href") or classNum
+			if '<!--Meetings Notes-->' in line and '<b>' in line:
+				classTypeNote = utils.extractInfoFromLine(line, '<!--Meetings Notes-->', '<b>', '</b>') or ''
+				if 'Interactive Television' in classTypeNote:
+					classes[-1]["classType"] = 'Television'
+				elif 'hybrid' in classTypeNote:
+					classes[-1]["classType"] = 'Hybrid'
+				elif 'online' in classTypeNote:
+					classes[-1]["classType"] = 'Online'
+				else:
+					classes[-1]["classType"] = 'On Campus'
 			if schedule and days and instructor and classNum and (lecTime or labTime) or (lecRoom or labRoom):
 				if len(classes) > 1 and classNum == classes[-1]["classNum"]:
 					classes[-1]["labTime"] = classes[-1]["labTime"] or labTime
