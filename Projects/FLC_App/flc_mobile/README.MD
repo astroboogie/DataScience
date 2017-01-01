@@ -11,6 +11,7 @@
 
 ```
 .
+├── /build/                     # The folder for compiled output
 ├── /backend/                   # All scripts relating to gathering and saving our backend data
 ├── /node_modules/              # 3rd-party libraries and utilities
 ├── /hooks/                     # Scripts to support custom Cordova commands
