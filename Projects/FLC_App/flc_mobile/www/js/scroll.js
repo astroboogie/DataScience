@@ -1,6 +1,16 @@
+import $ from 'jquery';
+import '../css/scroll.css';
+import '../css/native_app_configuration.css';
+import '../fonts/material-icons.css';
+import '../lib/font-awesome.min.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { applyFastClick } from './fastclick';
+
+applyFastClick();
+
 var currentTime = {
-    hour: 01,
-    minute: 00,
+    hour: 1,
+    minute: 0,
     period: "AM"
 };
 

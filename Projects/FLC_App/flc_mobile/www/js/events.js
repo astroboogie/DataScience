@@ -1,15 +1,17 @@
-// Page Leave Transition
-$("#back-arrow").click(function () {
-    $("body > *").animate({
-        opacity: "0"
-    }, 150, function() {
-        window.location = "index.html";
-    });
-});
+import $ from 'jquery';
+import '../css/events.css';
+import '../css/native_app_configuration.css';
+import '../fonts/material-icons.css';
+import '../lib/font-awesome.min.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { applyFastClick } from './fastclick';
+import { applyBackTransition } from './backtransition';
 
-let url = "https://s3-us-west-1.amazonaws.com/flc-app-data/events.json";
+applyBackTransition();
+applyFastClick();
+
 $.ajax({
-    url: url,
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/events.json",
     type: "GET",
     success: function(data) {
         $.each(data, function(index, value) {

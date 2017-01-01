@@ -3,6 +3,7 @@ from getEvents import getEvents
 from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 from getClasses import getClasses
+from buildPackage import buildPackage
 import boto3
 import os
 import sys
@@ -19,14 +20,14 @@ def deriveAll():
 def uploadAll():
 	s3 = boto3.resource('s3')
 	bucket = s3.Bucket('flc-app-data')
-	
+
 	if os.path.isdir('/tmp'):
 		fileDirectory = '/tmp'
 		filePath = '/tmp/'
 	else:
 		fileDirectory = '.'
 		filePath = ''
-	
+
 	filesUploaded = 0
 	print 'Loading files to AWS...'
 	for file in os.listdir(fileDirectory):
@@ -36,6 +37,13 @@ def uploadAll():
 			bucket.put_object(Key=file, ACL='public-read', Body=fileData, ContentType='application/json')
 			filesUploaded += 1
 	print 'Successfully loaded', filesUploaded, 'files.\n'
+
+def uploadPackage():
+	print "Uploading package to AWS..."
+	client = boto3.client('lambda')
+	zipFile = open('update-flc-app-data-package.zip', 'rb').read()
+	client.update_function_code(FunctionName='FLC-App-Update-Data', ZipFile=zipFile)
+	print "Successfully uploaded package.\n"
 
 def updateAll(uploadToServer):
 	getAll()
@@ -47,6 +55,8 @@ if __name__ == "__main__":
 	uploadToServer = False
 	if '--server' in sys.argv:
 		uploadToServer = True
+		buildPackage()
+		uploadPackage()
 	updateAll(uploadToServer)
 
 # This is the function that AWS Lambda looks for to execute

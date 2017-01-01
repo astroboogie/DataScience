@@ -1,3 +1,16 @@
+import $ from 'jquery';
+import '../css/professors.css';
+import '../css/professors_subpages.css';
+import '../css/native_app_configuration.css';
+import '../fonts/material-icons.css';
+import '../lib/font-awesome.min.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { applyFastClick } from './fastclick';
+import { applyBackTransition } from './backtransition';
+
+applyBackTransition();
+applyFastClick();
+
 var currentPage = "search";
 var backSelectable = true;
 var classes;
@@ -165,15 +178,6 @@ var professorPage = function(object) {
     $("#cancel-button-container").removeClass("transition-cancel-button-container");
     $("#cancel-button > span").removeClass("transition-cancel-button");
 };
-
-// back arrow functionality
-$(function () {
-    $("#back-arrow").click(function () {
-        if (backSelectable) {
-            backArrowPress(currentPage);
-        }
-    });
-});
 
 // sets width of text inputs to placeholder length
 var setIntputTextWidth = function() {

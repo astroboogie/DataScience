@@ -1,7 +1,8 @@
 ## Getting Started
 
 ### Requirements
-  * [Node.js](https://nodejs.org/)
+  * [Node.js](https://nodejs.org/) (LTS version is fine)
+  * [Python 2.7](https://www.python.org/downloads/) (NOT 3)
 
 ### Recommended
   * [git](https://git-scm.com/downloads)

@@ -31,6 +31,9 @@ build/Release
 node_modules
 jspm_packages
 
+# Build directory
+build
+
 # Optional npm cache directory
 .npm
 
@@ -42,6 +45,9 @@ jspm_packages
 
 # Output of 'npm pack'
 *.tgz
+
+# Optional log files
+npm-debug.log
 
 # Yarn Integrity file
 .yarn-integrity

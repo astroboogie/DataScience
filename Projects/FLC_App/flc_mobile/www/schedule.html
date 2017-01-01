@@ -3,20 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <title>FLC - Mobile App</title>
-
-    <!-- Primary CSS -->
-    <link rel="stylesheet" type="text/css" href="css/schedule.css"/>
-    <link rel="stylesheet" type="text/css" href="css/schedule-subpages.css"/>
-
-    <!-- Native App Configuration -->
-    <link rel="stylesheet" type="text/css" href="css/native_app_configuration.css"/>
-    <!-- Google Icon Font -->
-    <link href="fonts/material-icons.css" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">-->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="lib/bootstrap.css">
-    <link rel="stylesheet" href="lib/font-awesome.min.css">
-
+    <link href="../build/common.js.css" rel="stylesheet">
+    <link href="../build/scheduleEntry.css" rel="stylesheet">
 </head>
 <body>
     <div id="schedule-container">
@@ -223,29 +211,6 @@
         </div>
 
         <div id="courses">
-            <!-- Can we Delete this? -->
-            <!--
-            <div class='course-object'>
-                <div class='course-text-container'>
-                    <div class='course-title'>
-                    <span>
-                        PHIL 300: Intro to Philosophy
-                    </span>
-                    </div>
-                    <div class='course-description'>
-                        <div class='course-professor'>G. Tully</div>
-                        <div class='course-days'>MoWeFri</div>
-                        <div class='course-time'>9:00AM - 10:30AM</div>
-                    </div>
-                    <div class='course-location'>
-                        <span>CRC MAIN LRC 105</span>
-                    </div>
-                </div>
-                <div class='course-arrow'>
-                    <i class='material-icons'>keyboard_arrow_right</i>
-                </div>
-            </div>
-            -->
         </div>
 
         <div id="course-overlay">
@@ -297,14 +262,7 @@
 
 </body>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="lib/jquery.js"></script>
-    <!-- Bootstrap -->
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-    <!-- Primary JS -->
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/schedule.js"></script>
-    <!-- fastclick -->
-    <script type='application/javascript' src='lib/fastclick.js'></script>
+<script type="text/javascript" src="../build/common.js"></script>
+<script type="text/javascript" src="../build/scheduleEntry.js"></script>
 
 </html>

@@ -1,8 +1,11 @@
-// Page Leave Transition
-$("#back-arrow").click(function () {
-    $("body > *").animate({
-        opacity: "0"
-    }, 150, function() {
-        window.location = "index.html";
-    });
-});
+import $ from 'jquery';
+import '../css/map.css';
+import '../css/native_app_configuration.css';
+import '../fonts/material-icons.css';
+import '../lib/font-awesome.min.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { applyFastClick } from './fastclick';
+import { applyBackTransition } from './backtransition';
+
+applyBackTransition();
+applyFastClick();
