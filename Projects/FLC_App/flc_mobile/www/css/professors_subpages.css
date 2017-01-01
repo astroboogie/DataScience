@@ -23,7 +23,22 @@
     -webkit-transition: margin-left 0.3s;
 }
 
+#course-overlay {
+    width: 100vw;
+    height: 90vh;
+    margin-left: 100vw;
+    margin-top: 10vh;
+    z-index: 4;
+    position: fixed;
+    background-color: green;
+    -webkit-transition: margin-left 0.3s;
+}
+
 .transition-professor-overlay {
+    margin-left: 0 !important;
+}
+
+.transition-course-overlay {
     margin-left: 0 !important;
 }
 
@@ -45,6 +60,32 @@
     width: 90%;
     margin-left: 5%;
     height: 18%;
+}
+
+#overlay-icon {
+    width: 30%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#overlay-icon > img {
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
+
+#overlay-title {
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#overlay-title > div {
+    align-self: center;
 }
 
 #header-title {

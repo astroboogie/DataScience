@@ -6,18 +6,43 @@ import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { applyFastClick } from './fastclick';
-import { applyBackTransition } from './backtransition';
+import { addAppendClassOverlayOnClick } from './classDescription';
 
-applyBackTransition();
 applyFastClick();
 
 var currentPage = "search";
 var backSelectable = true;
 var classes;
+var courses;
 var professors;
+var subjects;
 
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
+
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+    type: "GET",
+    success: function(data) {
+        classes = $.extend([], data); // copies data into classes
+    },
+});
+
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
+    type: "GET",
+    success: function(data) {
+        courses = $.extend([], data); // copies data into professors
+    },
+});
+
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
+    type: "GET",
+    success: function(data) {
+        subjects = $.extend([], data); // copies data into professors
+    },
+});
 
 $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json",
@@ -28,13 +53,6 @@ $.ajax({
     },
 });
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        classes = $.extend([], data); // copies data into classes
-    },
-});
 // Creates a div for each professor and appends it to the
 // professor-container div.
 var createProfessors = function (div, professors) {
@@ -54,7 +72,7 @@ var createProfessors = function (div, professors) {
     $(".professor-arrow").click(function () {
         backSelectable = true;
         currentPage = "professor-overlay";
-        professorPage(this);
+        createProfessorPage(this);
     });
 };
 
@@ -107,6 +125,60 @@ var professorInfo = function(id, name, status, subjects, email, phone) {
     );
 }
 
+var createProfessorPage = function(object) {
+    var professorTitle = $(object).parent().find($(".professor-title > span")).text();
+    var professorStatus = $(object).parent().find($(".professor-status")).text();
+    var professorSubject = $(object).parent().find($(".professor-subject")).text();
+    var professorEmail = $(object).parent().find($(".professor-email > span")).text();
+
+    // updates page content
+    $("#header-title > span").text("Professor " + professorTitle);
+    $("#professor-type > span").text(professorStatus);
+    $("#professor-subject > span").text(professorSubject);
+    $("#professor-email > span").text(professorEmail);
+
+    let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
+    let classIds = professors[professorId]["classList"];
+    $("#course-container").empty();
+    $(classIds).each(function (index, element) {
+        $("#course-container").append(professorCoursesList(classes, Number(element)));
+    });
+
+    addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
+    $(".course-arrow").click(function () {
+        currentPage = "description";
+        $("#course-overlay").addClass("transition-course-overlay");
+    });
+
+    // add header transitions
+    $("#professor-overlay").addClass("transition-professor-overlay");
+    $("#professor-container").addClass("transition-professor-container");
+    $("#header-search").addClass("professor-scaled");
+    $("#header-text").addClass("header-text-scaled");
+
+    // reset search bar
+    $("#back-arrow").removeClass("transition-back-arrow");
+    $("#header-search").removeClass("transition-header-search");
+    $("#search-text-container").removeClass("transition-search-text-container");
+    $("#search-icon > i").removeClass("transition-search-icon");
+    $("#cancel-button-container").removeClass("transition-cancel-button-container");
+    $("#cancel-button > span").removeClass("transition-cancel-button");
+};
+// back arrow functionality
+$(function () {
+    $("#back-arrow").click(function () {
+        if (currentPage == "search") {
+            backArrowPress("search");
+        }
+        else if (currentPage == "professor-overlay") {
+            backArrowPress("professor-overlay");
+        }
+        else if (currentPage == "description") {
+            backArrowPress("description");
+        }
+    });
+});
+
 var filterProfessors = function(search, professorDivs) {
     $.each(professorDivs.children('div'), function(index, element) {
         name = $(element).find($(".course-text-container > .professor-title > span")).text();
@@ -143,40 +215,51 @@ var backArrowPress = function(pageSet) {
         $("#header-search").removeClass("professor-scaled");
         $("#header-text").removeClass("header-text-scaled");
     }
+    else if (pageSet == "description") {
+        currentPage = "professor-overlay";
+        $("#course-overlay").removeClass("transition-course-overlay");
+    }
 };
 
-var professorPage = function(object) {
-    var professorTitle = $(object).parent().find($(".professor-title > span")).text();
-    var professorStatus = $(object).parent().find($(".professor-status")).text();
-    var professorSubject = $(object).parent().find($(".professor-subject")).text();
-    var professorEmail = $(object).parent().find($(".professor-email > span")).text();
+// Returns a string representation of html corresponding to the list of classes
+// the professor has.
+var professorCoursesList = function(classes, id) {
+    let courseTitle = classes[id]["courseTitle"];
+    let courseName = classes[id]["courseName"]
+    let days = classes[id]["days"];
+    let time = classes[id]["lecTime"] || classes[id]["labTime"];
+    let location = classes[id]["lecRoom"] || classes[id]["labRoom"];
+    return ("\
+        <div id='" + id + "' class='course-object'>\
+            <div class='course-text-container'>\
+                <div class='course-title'>\
+                    <span>" + courseTitle + " : " + courseName + "</span>\
+                </div>\
+                <div class='course-description'>\
+                    <div class='course-days'>" + days + "</div>\
+                    <div class='course-time'>" + time + "</div>\
+                </div>\
+                <div class='course-location'>\
+                    <span>" + location + "</span>\
+                </div>\
+            </div>\
+            <div class='course-arrow'>\
+                <i class='material-icons'>keyboard_arrow_right</i>\
+            </div>\
+        </div>"
+    );
+}
 
-    // updates page content
-    $("#header-title > span").text("Professor " + professorTitle);
-    $("#professor-type > span").text(professorStatus);
-    $("#professor-subject > span").text(professorSubject);
-    $("#professor-email > span").text(professorEmail);
-
-    let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
-    let classIds = professors[professorId]["classList"];
-    $("#course-container").empty();
-    $(classIds).each(function (index, element) {
-        $("#course-container").append(professorCoursesList(Number(element)));
-    });
-
-    // add header transitions
-    $("#professor-overlay").addClass("transition-professor-overlay");
-    $("#professor-container").addClass("transition-professor-container");
-    $("#header-search").addClass("professor-scaled");
-    $("#header-text").addClass("header-text-scaled");
-
-    // reset search bar
-    $("#back-arrow").removeClass("transition-back-arrow");
-    $("#header-search").removeClass("transition-header-search");
-    $("#search-text-container").removeClass("transition-search-text-container");
-    $("#search-icon > i").removeClass("transition-search-icon");
-    $("#cancel-button-container").removeClass("transition-cancel-button-container");
-    $("#cancel-button > span").removeClass("transition-cancel-button");
+// Scrolls between pages
+var pageTransition = function (direction, initPage, newPage) {
+    if (direction == "new") {
+        $("#" + initPage).addClass("hide-container");
+        $("#" + newPage).addClass("show-container");
+    }
+    else if (direction == "back") {
+        $("#" + initPage).removeClass("hide-container");
+        $("#" + newPage).removeClass("show-container")
+    }
 };
 
 // sets width of text inputs to placeholder length
@@ -222,35 +305,6 @@ var createSearchHeaderCancelTransitionOnClick = function() {
         searchInput.val("");
         filterProfessors("", $("#professor-container"));
     });
-}
-
-// Returns a string representation of html corresponding to the list of classes
-// the professor has.
-var professorCoursesList = function(id) {
-    let courseTitle = classes[id]["courseTitle"];
-    let courseName = classes[id]["courseName"]
-    let days = classes[id]["days"];
-    let time = classes[id]["lecTime"] || classes[id]["labTime"];
-    let location = classes[id]["lecRoom"] || classes[id]["labRoom"];
-    return ("\
-        <div class='course-object'>\
-            <div class='course-text-container'>\
-                <div class='course-title'>\
-                    <span>" + courseTitle + " : " + courseName + "</span>\
-                </div>\
-                <div class='course-description'>\
-                    <div class='course-days'>" + days + "</div>\
-                    <div class='course-time'>" + time + "</div>\
-                </div>\
-                <div class='course-location'>\
-                    <span>" + location + "</span>\
-                </div>\
-            </div>\
-            <div class='course-arrow'>\
-                <i class='material-icons'>keyboard_arrow_right</i>\
-            </div>\
-        </div>"
-    );
 }
 
 // Updates search results upon key press

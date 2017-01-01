@@ -6,7 +6,7 @@ import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { applyFastClick } from './fastclick';
-import { appendClassDescriptionOverlay } from './classDescription';
+import { addAppendClassOverlayOnClick } from './classDescription';
 
 applyFastClick();
 
@@ -32,6 +32,24 @@ $.ajax({
     },
 });
 
+// TODO: This ajax call NEEDS to wait for the previous one to finish
+$.ajax({
+    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+    type: "GET",
+    success: function(data) {
+        createTransitionFromSubjectToSchedule();
+        // Assign function to 'search' button that transitions page from schedule to list of courses
+        // Also create the page when the 'search' button is clicked
+        $("#search-button").click(function () {
+            currentPage = "courses";
+            pageTransition("new", "body-section", "courses");
+            resetSearchResults($("#courses"));
+            createSearchResults($("#courses"), data);
+            createCourseFullDescription($(".course-arrow"), $("#course-overlay"), data, courses);
+        });
+    },
+});
+
 var createSubjectsList = function(div, subjects) {
     $.each(subjects, function(subjectAbbrev, subjectReadable) {
         $(div).append(
@@ -54,7 +72,6 @@ var pageTransition = function (direction, initPage, newPage) {
         $("#" + initPage).removeClass("hide-container");
         $("#" + newPage).removeClass("show-container")
     }
-
 };
 
 $("#subject-button").click(function () {
@@ -152,25 +169,6 @@ var courseInfo = function(classId, courseTitle, courseName, courseType, days, ti
     ");
 }
 
-
-// TODO: This ajax call NEEDS to wait for the previous one to finish
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        createTransitionFromSubjectToSchedule();
-        // Assign function to 'search' button that transitions page from schedule to list of courses
-        // Also create the page when the 'search' button is clicked
-        $("#search-button").click(function () {
-            currentPage = "courses";
-            pageTransition("new", "body-section", "courses");
-            resetSearchResults($("#courses"));
-            createSearchResults($("#courses"), data);
-            createCourseFullDescription($(".course-arrow"), data, courses);
-        });
-    },
-});
-
 // Transitions the subjects list page to the main schedule page
 // Returns a string of the selected subject
 var createTransitionFromSubjectToSchedule = function() {
@@ -213,42 +211,10 @@ var createSearchResults = function(div, classes) {
 }
 
 // Adds an on_click event to an arrow that creates the entire course description
-var createCourseFullDescription = function(arrow, classes, courses) {
+var createCourseFullDescription = function(arrow, div, classes, courses) {
+    addAppendClassOverlayOnClick($(arrow), $(div), classes, courses);
+    // adds transitions
     $(arrow).click(function () {
-        let id = $(this).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digits
-        let curClass = classes[id];
-        let course = $.grep(courses, function(course) {
-            return course["courseTitle"] === curClass["courseTitle"];
-        })[0];
-
-        let classTime = curClass["lecTime"] || curClass["labTime"];
-        let classLocation = curClass["lecRoom"] || curClass["labRoom"];
-        let coursePrerequisite = course["prerequisite"] || "None.";
-        let courseCorequisite = course["corequisite"] || "None.";
-        let courseAdvisory = course["advisory"] || "None.";
-        let generalEducation = course["generalEducation"] || "None.";
-
-        // adds course details
-        appendClassDescriptionOverlay(
-            $("#course-overlay"),
-            course["courseTitle"],
-            course["courseName"],
-            curClass["classNum"],
-            course["units"],
-            course["transferableTo"],
-            curClass["instructor"],
-            curClass["days"],
-            classTime,
-            classLocation,
-            curClass["schedule"],
-            coursePrerequisite,
-            courseCorequisite,
-            courseAdvisory,
-            generalEducation,
-            course["description"]
-        );
-
-        // adds transitions
         currentPage = "description";
         $("#header-text > span").text("Course Description");
         $("#courses").removeClass("show-container");
