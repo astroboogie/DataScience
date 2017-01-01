@@ -46,15 +46,11 @@ $ git clone https://github.com/AstroBoogie/DataScience.git
 This will install both run-time project dependencies and developer tools listed
 in [package.json](../package.json) file.
 
-#### 3. Run `npm start`
+#### 3. Run `npm run build`
 
 This command will build the app from the source files (`/www`) into the output
-`/build` folder. As soon as the initial build completes, it will start the
-Node.js server (`node build/server.js`).
-
-> [http://localhost:3000/](http://localhost:3000/) — Node.js server (`build/server.js`)<br>
-
-Now you can open your web app in a browser by following the link.
+`/build` folder. As soon as the initial build completes, you can open the app
+by navigating to /www/index.html and open the file with a browser.
 
 ### How to Test
 
@@ -63,6 +59,9 @@ To launch unit tests:
 ```shell
 $ npm run test          # Run unit tests with Mocha
 ```
+
+Note: no tests currently exist.
+
 ### How to Update
 
 If you need to keep your project up to date with the recent changes made,
