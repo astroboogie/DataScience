@@ -13,21 +13,21 @@
 .
 ├── /backend/                   # All scripts relating to gathering and saving our backend data
 ├── /node_modules/              # 3rd-party libraries and utilities
-├── /hooks/                     # ??? Can you fill this in Nathaniel
-├── /platforms/                 # ??? Can you fill this in Nathaniel
-├── /plugins/                   # ??? Can you fill this in Nathaniel
+├── /hooks/                     # Scripts to support custom Cordova commands
+├── /platforms/                 # Mobile platform support from Cordova
+├── /plugins/                   # Configs for Cordova/Phonegap plugins
 ├── /www/                       # The source code of the application
 │   ├── /css/                   # Css files
 │   ├── /fonts/                 # Font files
 │   ├── /img/                   # Image files
 │   ├── /js/                    # JavaScript files
 │   ├── /lib/                   # Libraries for the web browser
-│   ├── /res/                   # ??? Can you fill this in Nathaniel
+│   ├── /res/                   # Repository of Android/iPhone splash screens and icons
 │   ├── /config.js              # Global application settings
 │   └── /server.js              # Server-side startup script
 ├── /test/                      # Unit and end-to-end tests
 ├── /tools/                     # Build automation scripts and utilities
-└── config.xml                  # ??? Can you fill this in Nathaniel
+└── config.xml                  # Configuration for iPhone/Android publishing
 └── package.json                # The list of 3rd party libraries and utilities
 ```
 
