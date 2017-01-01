@@ -72,3 +72,19 @@ back into your own project by running:
 ```shell
 $ git pull
 ```
+
+### How to emulate with Phonegap on iOS
+
+#### 1. Install [Xcode](https://developer.apple.com/xcode/)
+
+#### 2. Install Phonegap by running:
+
+```shell
+$ npm install -g phonegap@latest
+```
+
+#### 3. Run Phonegap iOS emulator in Xcode
+
+```shell
+$ phonegap run ios
+```
