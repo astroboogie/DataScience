@@ -6,6 +6,7 @@ import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { applyFastClick } from './fastclick';
+import { appendClassDescriptionOverlay } from './classDescription';
 
 applyFastClick();
 
@@ -226,21 +227,26 @@ var createCourseFullDescription = function(arrow, classes, courses) {
         let courseCorequisite = course["corequisite"] || "None.";
         let courseAdvisory = course["advisory"] || "None.";
         let generalEducation = course["generalEducation"] || "None.";
-        // adds course details
-        $("#title-container > span").text(course["courseTitle"] + ": " + course["courseName"]);
-        $("#course-number").text(curClass["classNum"]);
-        $("#course-units").text(course["units"] + " Units");
-        $("#overlay-transfer").text(course["transferableTo"]);
 
-        $("#overlay-professor").text("Professor " + curClass["instructor"]);
-        $("#overlay-timedate").text(curClass["days"] + " " + classTime);
-        $("#overlay-location > span").text(classLocation);
-        $("#overlay-schedule > span").text(course["schedule"]);
-        $("#overlay-corequisites > span").text(courseCorequisite);
-        $("#overlay-prerequisites > span").text(coursePrerequisite);
-        $("#overlay-advisory > span").text(courseAdvisory);
-        $("#overlay-generaled > span").text(generalEducation);
-        $("#overlay-description > span").text(course["description"]);
+        // adds course details
+        appendClassDescriptionOverlay(
+            $("#course-overlay"),
+            course["courseTitle"],
+            course["courseName"],
+            curClass["classNum"],
+            course["units"],
+            course["transferableTo"],
+            curClass["instructor"],
+            curClass["days"],
+            classTime,
+            classLocation,
+            curClass["schedule"],
+            coursePrerequisite,
+            courseCorequisite,
+            courseAdvisory,
+            generalEducation,
+            course["description"]
+        );
 
         // adds transitions
         currentPage = "description";

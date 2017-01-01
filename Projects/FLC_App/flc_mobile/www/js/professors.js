@@ -24,7 +24,7 @@ $.ajax({
     type: "GET",
     success: function(data) {
         professors = $.extend([], data); // copies data into professors
-        createProfessors(data);
+        createProfessors($("#professor-container"), data);
     },
 });
 
@@ -37,7 +37,7 @@ $.ajax({
 });
 // Creates a div for each professor and appends it to the
 // professor-container div.
-var createProfessors = function (professors) {
+var createProfessors = function (div, professors) {
     $.each(professors, function(index, element) {
         let name = element["name"];
         let id = element["id"];
@@ -46,7 +46,7 @@ var createProfessors = function (professors) {
         let subjects = createSubjectList(element["subjects"], 3);
         let status = determineProfessorStatus(element["classHours"], element["classList"]);
 
-        $("#professor-container").append(professorInfo(id, name, status, subjects, email, phone));
+        $(div).append(professorInfo(id, name, status, subjects, email, phone));
     });
 
     // Adds professor-arrow click-functionality to view
