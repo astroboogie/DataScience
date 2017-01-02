@@ -18,8 +18,8 @@ var state = {
     isClassesLoading: true,
     isCoursesLoading: true,
     isProfessorsLoading: true,
-    hasFetchError: false,
-}
+    hasFetchError: false
+};
 
 var currentPage = "search";
 var backSelectable = true;
@@ -44,12 +44,22 @@ fetchData("instructors")
     .done(handleProfessors)
     .fail(handleError);
 
+function generateEmail(professorName) {
+    var nameContainer = professorName.split(" ");
+    if (nameContainer.length == 2) {
+        return nameContainer[1].substring(0, 6).toLowerCase() + nameContainer[0].substring(0, 1).toLowerCase() + "@flc.losrios.edu";
+    }
+    else {
+        return "";
+    }
+}
+
 // Creates a div for each professor and appends it to the given div.
 function createProfessors(div, professors) {
     $.each(professors, function(index, element) {
         let name = element["name"];
         let id = element["id"];
-        let email = element["email"] || "";
+        let email = element["email"] || generateEmail(name);
         let phone = element["phone"] || "";
         let subjects = createSubjectList(element["subjects"], 3);
         let status = determineProfessorStatus(element["classHours"], element["classList"]);
@@ -63,7 +73,7 @@ function createProfessors(div, professors) {
         currentPage = "professor-overlay";
         createProfessorPage(this);
     });
-};
+}
 
 function handleClasses(data) {
     state.isClassesLoading = false;
@@ -98,7 +108,7 @@ var createSubjectList = function(subjects, max = 99) {
         return subjects.slice(0, max).join(", ") + "…";
     }
     return subjects.join(", ");
-}
+};
 
 // Returns a string indicating the professor's status.
 // hours is passed in as a string of the form "8hr 50min"
@@ -108,10 +118,10 @@ var determineProfessorStatus = function(hours, classlist) {
         return "Full-time";
     }
     return "Part-time";
-}
+};
 
 // Returns a div outlining the professor's information
-var professorInfo = function(id, name, status, subjects, email, phone) {
+var professorInfo = function(id, name, status, subjects, email) {
     return ("\
         <div id='" + id + "' class='course-object'>\
             <div class='course-text-container'>\
@@ -129,16 +139,13 @@ var professorInfo = function(id, name, status, subjects, email, phone) {
                 <div class='professor-info'>\
                     <span>" + email + "</span>\
                 </div>\
-                <div class='professor-info'>\
-                    <span>" + phone + "</span>\
-                </div>\
             </div>\
             <div class='professor-arrow'>\
                 <i class='material-icons'>keyboard_arrow_right</i>\
             </div>\
         </div>"
     );
-}
+};
 
 var createProfessorPage = function(object) {
     var professorTitle = $(object).parent().find($(".professor-title > span")).text();
@@ -206,7 +213,7 @@ var filterProfessors = function(search, professorDivs) {
             $(element).addClass("course-object-hide");
         }
     });
-}
+};
 
 // Removes all punctuation and makes all characters lowercase
 var cleanString = function(string) {
@@ -214,7 +221,7 @@ var cleanString = function(string) {
         return "";
     }
     return string.replace(/[^a-z]/ig,'').toLowerCase();
-}
+};
 
 var backArrowPress = function(pageSet) {
     if (pageSet == "search") {
@@ -241,7 +248,7 @@ var backArrowPress = function(pageSet) {
 // the professor has.
 var professorCoursesList = function(classes, id) {
     let courseTitle = classes[id]["courseTitle"];
-    let courseName = classes[id]["courseName"]
+    let courseName = classes[id]["courseName"];
     let days = classes[id]["days"];
     let time = classes[id]["lecTime"] || classes[id]["labTime"];
     let location = classes[id]["lecRoom"] || classes[id]["labRoom"];
@@ -264,7 +271,7 @@ var professorCoursesList = function(classes, id) {
             </div>\
         </div>"
     );
-}
+};
 
 // Scrolls between pages
 var pageTransition = function (direction, initPage, newPage) {
@@ -283,12 +290,12 @@ var setIntputTextWidth = function() {
     $("input[placeholder]").each(function () {
         $(this).attr('size', $(this).attr('placeholder').length);
     });
-}
+};
 
 // Resets container widths to pixel equivalents
 var resetContainerWidth = function() {
     searchText.css("width", searchText.width());
-}
+};
 
 // Creates transitions when the search bar is clicked
 var createSearchHeaderTransitionOnClick = function() {
@@ -304,7 +311,7 @@ var createSearchHeaderTransitionOnClick = function() {
 
         searchInput.focus();
     });
-}
+};
 
 // Removes transitions when the search cancel button is clicked
 var createSearchHeaderCancelTransitionOnClick = function() {
@@ -321,7 +328,7 @@ var createSearchHeaderCancelTransitionOnClick = function() {
         searchInput.val("");
         filterProfessors("", $("#professor-container"));
     });
-}
+};
 
 // Updates search results upon key press
 var createUpdateSearchResultsHandler = function() {
@@ -333,7 +340,7 @@ var createUpdateSearchResultsHandler = function() {
             filterProfessors("", $("#professor-container"));
         }
     });
-}
+};
 
 setIntputTextWidth();
 resetContainerWidth();

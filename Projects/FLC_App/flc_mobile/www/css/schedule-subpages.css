@@ -110,7 +110,7 @@
     color: #4c4c4c;
     font-weight: 500;
     align-self: center;
-    padding-left: 5%;
+    padding-left: 2.5%;
 }
 
 .course-days {
@@ -125,7 +125,7 @@
 
 .course-time {
     float: left;
-    margin-left: 5%;
+    margin-left: 2.5%;
     font-family: 'PT Sans', sans-serif;
     font-size: 4vw;
     color: #4c4c4c;

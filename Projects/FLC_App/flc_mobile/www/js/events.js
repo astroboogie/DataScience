@@ -16,7 +16,8 @@ displayLoadingSpinner("body");
 var state = {
     isEventsLoading: true,
     hasFetchError: false,
-}
+};
+
 var events;
 
 fetchData("events")

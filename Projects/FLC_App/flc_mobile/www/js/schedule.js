@@ -18,7 +18,7 @@ var state = {
     isCoursesLoading: true,
     isClassesLoading: true,
     hasFetchError: false,
-}
+};
 
 var subjects;
 var courses;
@@ -123,7 +123,7 @@ function pageTransition(direction, initPage, newPage) {
         $("#" + initPage).removeClass("hide-container");
         $("#" + newPage).removeClass("show-container")
     }
-};
+}
 
 // Returns true if any of the selected days matches a class days
 // Returns true if class days have not been determined
@@ -139,7 +139,7 @@ var hasValidDayConditions = function(checkBoxes, days) {
         }
     });
     return ret;
-}
+};
 
 // Returns true if there are no conflicts between the set conditions
 // and the course itself.
@@ -154,14 +154,14 @@ var hasValidCourseType = function(classTypeInputs, curClass) {
         }
 
         // condition to check if course is online
-        let isOnlineCourse = (curClass["classType"] === "Online")
+        let isOnlineCourse = (curClass["classType"] === "Online");
         if ($(this).val() === "Online" && !isOnlineCourse) {
             ret = false;
             return;
-        };
+        }
     });
     return ret;
-}
+};
 
 // Returns a string containing the html representation of a course
 var courseInfo = function(classId, courseTitle, courseName, courseType, days, time, instructor, room) {
@@ -185,7 +185,7 @@ var courseInfo = function(classId, courseTitle, courseName, courseType, days, ti
             </div>\
         </div>\
     ");
-}
+};
 
 // Transitions the subjects list page to the main schedule page
 // Returns a string of the selected subject
@@ -196,11 +196,11 @@ var createTransitionFromSubjectToSchedule = function() {
         currentPage = "schedule";
         pageTransition("back", "body-section", "subjects");
     });
-}
+};
 
 var resetSearchResults = function(div) {
     $(div).empty();
-}
+};
 
 var createSearchResults = function(div, classes) {
     $.each(classes, function(index, element) {
@@ -226,7 +226,7 @@ var createSearchResults = function(div, classes) {
     if ($(div).is(':empty')) {
         $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
     }
-}
+};
 
 // Adds an on_click event to an arrow that creates the entire course description
 var createCourseFullDescription = function(arrow, div, classes, courses) {
@@ -239,4 +239,4 @@ var createCourseFullDescription = function(arrow, div, classes, courses) {
         $("#courses").addClass("course-full-transition");
         pageTransition("new", "courses", "course-overlay");
     });
-}
+};
