@@ -14,7 +14,7 @@ module.exports = {
     target: 'web',
     exclude: /node_modules/,
     output: {
-        path: './build',
+        path: './www/build',
         filename: '[name].js',
     },
     module: {

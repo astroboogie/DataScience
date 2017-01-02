@@ -1,0 +1,358 @@
+body {
+    overflow: hidden;
+}
+
+#schedule-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden !important;
+}
+
+#main-container {
+    position: fixed;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    -ms-overflow-y: hidden;
+}
+
+.hide-container {
+    margin-left: -100vw;
+}
+
+#header-section {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+}
+
+#header-section > img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#header-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#back-arrow {
+    width: 15%;
+    height: 69%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#back-arrow > i {
+    font-size: 5vw;
+    align-self: center;
+}
+
+#header-text {
+    width: 85%;
+    height: 69%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+#body-section {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 90%;
+    -webkit-transition: margin-left 0.25s;
+    /*overflow-y: scroll;*/
+    overflow: hidden;
+}
+
+.title-container {
+    height: 5.5%;
+    background-color: transparent;
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-container > span {
+    font-size: 3.5vw;
+    font-family: 'PT Sans', sans-serif;
+    color: #b6b6b6;
+}
+
+.option-container {
+    height: 8.15%;
+    background-color: white;
+}
+
+#subject-text {
+    height: 100%;
+    width: 85%;
+    padding-left: 5%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#subject-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+}
+
+#right-arrow {
+    height: 100%;
+    width: 15%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#right-arrow > i {
+    align-self: center;
+    font-size: 6vw;
+    color: #959595;
+}
+
+#day-form {
+    height: 100%;
+    width: 100%;
+}
+
+#day-form > form {
+    width: 100%;
+    height: 100%;
+}
+
+#day-form > form > label {
+    float: left;
+    height: 100%;
+    width: calc(100% / 6);
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-text {
+    align-self: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding-top: 4px;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    /*border-radius: 0.75em;*/
+    border: solid 3px #ebebeb;
+}
+
+/* Hover and Focus States */
+.type-checkbox:hover input ~ .checkbox-text,
+.type-checkbox input:focus ~ .checkbox-text{
+    border: solid 3px #ebebeb;
+    background: #ebebeb;
+}
+
+/* Checked state */
+.type-checkbox input:checked ~ .checkbox-text {
+    border: solid 3px #4f9bd4;
+    background: #4f9bd4;
+    color: white;
+}
+
+/* Hover state whilst checked */
+.type-checkbox:hover input:not([disabled]):checked ~ .checkbox-text,
+.type-checkbox input:checked:focus ~ .checkbox-text {
+    border: solid 3px #4d91c4;
+    background: #4d91c4;
+    color: white;
+}
+
+#day-form > form > label > input {
+    position: absolute;
+    margin-left: -100%;
+    visibility: hidden;
+}
+
+#type-container {
+    height: 24.45% !important;
+}
+
+
+#semester-container {
+    height: 24.45% !important;
+}
+
+#enrollment-container {
+    height: 24.45% !important;
+}
+
+.type-form {
+    height: 100%;
+    width: 100%;
+}
+
+.type-form > form {
+    height: 100%;
+    width: 100%;
+}
+
+.type-form > form > label {
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+#type-container > div > form > label {
+    height: calc(100% / 3);
+}
+
+#semester-container > div > form > label {
+    height: calc(100% / 3);
+}
+
+#enrollment-container > div > form > label {
+    height: calc(100% / 3);
+}
+
+.type-form > form > label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.span-object {
+    height: 100%;
+    width: 80%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.span-object > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding-right: 10%;
+    align-self: center;
+}
+
+.input-object {
+    height: 100%;
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.input-object > div {
+    width: 20px;
+    height: 20px;
+    background-color: #ebebeb;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hover and focus states */
+.type-radio:hover input ~ .input-object > div,
+.type-radio input:focus ~ .input-object > div {
+    background: #d8d8d8;
+}
+
+/* Checked state */
+.type-radio input:checked ~ .input-object > div {
+    background: #4f9bd4;
+}
+
+/* Hover state whilst checked */
+.type-radio:hover input:not([disabled]):checked ~ .input-object > div,
+.type-radio input:checked:focus ~ .input-object > div {
+    background: #4d91c4;
+}
+
+/* Disabled state */
+.type-radio input:disabled ~ .input-object > div {
+    pointer-events: none;
+    opacity: .6;
+    background: #e6e6e6;
+}
+
+/* Check mark */
+.input-object > div:after {
+    align-self: center;
+    display: none;
+    content: '';
+}
+
+/* Show check mark */
+.type-radio input:checked ~ .input-object > div:after {
+    display: block;
+}
+
+/* Checkbox tick */
+.control-checkbox .input-object > div:after {
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control-checkbox input:disabled ~ .input-object > div:after {
+    border-color: #7b7b7b;
+}
+
+#search-container {
+    width: 100vw;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-button {
+    width: 75%;
+    height: 50%;
+    background-color: #4f9bd4;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#search-button > span {
+    align-self: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    font-weight: 500;
+    color: white;
+}
