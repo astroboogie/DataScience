@@ -5,75 +5,35 @@ import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
 
 applyFastClick();
 
+var state = {
+    isSubjectsLoading: true,
+    isCoursesLoading: true,
+    hasFetchError: false,
+}
+
 var subjects;
 var courses;
+var classes;
 var selectedSubject;
 var currentPage = "schedule";
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
-    type: "GET",
-    success: function(data) {
-        subjects = $.extend({}, data); // copies data into subjects
-        createSubjectsList("#subjects", subjects);
-    },
-});
+fetchData("subjects")
+    .done(handleSubjects)
+    .fail(handleError);
+fetchData("courses")
+    .done(handleCourses)
+    .fail(handleError);
+fetchData("classes")
+    .done(handleClasses)
+    .fail(handleError);
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
-    type: "GET",
-    success: function(data) {
-        courses = $.extend([], data); // copies data into subjects
-    },
-});
-
-// TODO: This ajax call NEEDS to wait for the previous one to finish
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        createTransitionFromSubjectToSchedule();
-        // Assign function to 'search' button that transitions page from schedule to list of courses
-        // Also create the page when the 'search' button is clicked
-        $("#search-button").click(function () {
-            currentPage = "courses";
-            pageTransition("new", "body-section", "courses");
-            resetSearchResults($("#courses"));
-            createSearchResults($("#courses"), data);
-            createCourseFullDescription($(".course-arrow"), $("#course-overlay"), data, courses);
-        });
-    },
-});
-
-var createSubjectsList = function(div, subjects) {
-    $.each(subjects, function(subjectAbbrev, subjectReadable) {
-        $(div).append(
-            "<button class='category-container'>\
-                <div class='category-text'>\
-                    <span>" + subjectReadable + "</span>\
-                </div>\
-            </button>"
-        );
-    });
-}
-
-// Scrolls between pages
-var pageTransition = function (direction, initPage, newPage) {
-    if (direction == "new") {
-        $("#" + initPage).addClass("hide-container");
-        $("#" + newPage).addClass("show-container");
-    }
-    else if (direction == "back") {
-        $("#" + initPage).removeClass("hide-container");
-        $("#" + newPage).removeClass("show-container")
-    }
-};
-
+// Creates search arrow functionality
 $("#subject-button").click(function () {
     currentPage = "subjects";
     pageTransition("new", "body-section", "subjects");
@@ -106,6 +66,60 @@ $("#back-arrow").click(function () {
         $("#header-text > span").text("Browse Courses");
     }
 });
+
+function handleSubjects (data) {
+    state.isSubjectsLoading = false;
+    subjects = $.extend({}, data); // copies data into classes
+    createSubjectsList("#subjects", subjects);
+}
+
+function handleCourses(data) {
+    state.isCoursesLoading = false;
+    courses = $.extend([], data); // copies data into classes
+}
+
+function handleClasses(data) {
+    state.isClassesLoading = false;
+    classes = $.extend([], data); // copies data into classes
+    createTransitionFromSubjectToSchedule();
+    // Assign function to 'search' button that transitions page from schedule to list of courses
+    // Also create the page when the 'search' button is clicked
+    $("#search-button").click(function () {
+        currentPage = "courses";
+        pageTransition("new", "body-section", "courses");
+        resetSearchResults($("#courses"));
+        createSearchResults($("#courses"), data);
+        createCourseFullDescription($(".course-arrow"), $("#course-overlay"), data, courses);
+    });
+}
+
+function handleError() {
+    state.hasFetchError = true;
+}
+
+function createSubjectsList(div, subjects) {
+    $.each(subjects, function(subjectAbbrev, subjectReadable) {
+        $(div).append(
+            "<button class='category-container'>\
+                <div class='category-text'>\
+                    <span>" + subjectReadable + "</span>\
+                </div>\
+            </button>"
+        );
+    });
+}
+
+// Scrolls between pages
+function pageTransition(direction, initPage, newPage) {
+    if (direction == "new") {
+        $("#" + initPage).addClass("hide-container");
+        $("#" + newPage).addClass("show-container");
+    }
+    else if (direction == "back") {
+        $("#" + initPage).removeClass("hide-container");
+        $("#" + newPage).removeClass("show-container")
+    }
+};
 
 // Returns true if any of the selected days matches a class days
 // Returns true if class days have not been determined

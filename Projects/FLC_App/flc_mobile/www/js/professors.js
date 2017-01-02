@@ -5,10 +5,19 @@ import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
 
 applyFastClick();
+
+var state = {
+    isSubjectsLoading: true,
+    isClassesLoading: true,
+    isCoursesLoading: true,
+    isProfessorsLoading: true,
+    hasFetchError: false,
+}
 
 var currentPage = "search";
 var backSelectable = true;
@@ -20,42 +29,22 @@ var subjects;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        classes = $.extend([], data); // copies data into classes
-    },
-});
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
-    type: "GET",
-    success: function(data) {
-        courses = $.extend([], data); // copies data into professors
-    },
-});
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
-    type: "GET",
-    success: function(data) {
-        subjects = $.extend([], data); // copies data into professors
-    },
-});
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/instructors.json",
-    type: "GET",
-    success: function(data) {
-        professors = $.extend([], data); // copies data into professors
-        createProfessors($("#professor-container"), data);
-    },
-});
+fetchData("subjects")
+    .done(handleSubjects)
+    .fail(handleError);
+fetchData("classes")
+    .done(handleClasses)
+    .fail(handleError);
+fetchData("courses")
+    .done(handleCourses)
+    .fail(handleError);
+fetchData("instructors")
+    .done(handleProfessors)
+    .fail(handleError);
 
 // Creates a div for each professor and appends it to the
 // professor-container div.
-var createProfessors = function (div, professors) {
+function createProfessors(div, professors) {
     $.each(professors, function(index, element) {
         let name = element["name"];
         let id = element["id"];
@@ -76,6 +65,31 @@ var createProfessors = function (div, professors) {
     });
 };
 
+function handleClasses(data) {
+    state.isClassesLoading = false;
+    classes = $.extend([], data); // copies data into classes
+}
+
+function handleSubjects (data) {
+    state.isSubjectsLoading = false;
+    subjects = $.extend([], data); // copies data into classes
+}
+
+function handleProfessors(data) {
+    state.isProfessorsLoading = false;
+    professors = $.extend([], data); // copies data into classes
+    createProfessors($("#professor-container"), professors);
+}
+
+function handleCourses(data) {
+    state.isCoursesLoading = false;
+    courses = $.extend([], data); // copies data into classes
+}
+
+function handleError() {
+    state.hasFetchError = true;
+}
+
 // Returns a string representation of a list of subjects
 // up to the designated maximum.
 var createSubjectList = function(subjects, max = 99) {
@@ -85,7 +99,7 @@ var createSubjectList = function(subjects, max = 99) {
     return subjects.join(", ");
 }
 
-// Returns a string indicating the professor's status
+// Returns a string indicating the professor's status.
 // hours is passed in as a string of the form "8hr 50min"
 var determineProfessorStatus = function(hours, classlist) {
     let parsedHours = parseInt(hours.substring(0, hours.indexOf('hr')));
@@ -164,6 +178,7 @@ var createProfessorPage = function(object) {
     $("#cancel-button-container").removeClass("transition-cancel-button-container");
     $("#cancel-button > span").removeClass("transition-cancel-button");
 };
+
 // back arrow functionality
 $(function () {
     $("#back-arrow").click(function () {

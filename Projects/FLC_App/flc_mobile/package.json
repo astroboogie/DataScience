@@ -39,7 +39,7 @@
   "scripts": {
     "test": "mocha \"src/**/*.test.js\" --require babel-register --require test/setup.js",
     "test:watch": "npm run test -- --reporter min --watch",
-    "clean": "rimraf ./build/*",
+    "clean": "rimraf ./www/build/*",
     "prebuild": "npm run clean",
     "build": "webpack",
     "predeploy": "npm run build",

@@ -10,6 +10,16 @@ import { addAppendClassOverlayOnClick } from './classDescription';
 
 applyFastClick();
 
+var state = {
+    isSubjectsLoading: true,
+    isClassesLoading: true,
+    isCoursesLoading: true,
+    isProfessorsLoading: true,
+    hasSubjectFetchError: false,
+    hasClassesFetchError: false,
+    hasCoursesFetchError: true,
+    hasProfessorsFetchError: true,
+}
 var currentPage = "search";
 var backSelectable = true;
 var classes;
@@ -20,13 +30,20 @@ var subjects;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        classes = $.extend([], data); // copies data into classes
-    },
-});
+var fetchClasses = function() {
+    return(
+        $.ajax({
+            url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
+            type: "GET",
+        });
+    );
+}
+
+var handleClasses = function(data) {
+    classes = $.extend([], data); // copies data into classes
+}
+
+fetchClasses().success(handleClasses(data)).failure(state.hasClassesFetchError = true);
 
 $.ajax({
     url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
