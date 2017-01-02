@@ -5,6 +5,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 module.exports = {
     entry: {
         "eventsEntry": './www/js/events.js',
+        "emergencyEntry": './www/js/emergency.js',
         "indexEntry": './www/js/index.js',
         "mapEntry": './www/js/map.js',
         "professorsEntry": './www/js/professors.js',

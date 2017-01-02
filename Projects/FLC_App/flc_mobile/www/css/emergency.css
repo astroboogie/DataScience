@@ -3,7 +3,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-
 #main-container {
     background-color: #ffffff;
     height: 100vh;
@@ -103,8 +102,6 @@ body {
     overflow-x: hidden !important;
 }
 
-
-
 #emergency-container {
     margin-top: 21vh;
     height: 100vh;
@@ -120,4 +117,3 @@ body {
     font-size: 5vw;
     font-weight: 600;
 }
-
