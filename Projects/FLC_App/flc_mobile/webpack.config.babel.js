@@ -38,19 +38,19 @@ module.exports = {
         ],
     },
     plugins: [
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false,
-        //     },
-        //     output: {
-        //         comments: false,
-        //     },
-        // }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            },
+        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
         }),
-        // new webpack.optimize.CommonsChunkPlugin('common.js'),
+        new webpack.optimize.CommonsChunkPlugin('common.js'),
         new ExtractTextPlugin("[name].css"),
     ],
 };
