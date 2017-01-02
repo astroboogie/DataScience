@@ -7,9 +7,11 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { applyBackTransition } from './backtransition';
+import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 
 applyBackTransition();
 applyFastClick();
+displayLoadingSpinner("body");
 
 var state = {
     isEventsLoading: true,
@@ -23,6 +25,7 @@ fetchData("events")
 
 function handleEvents(data) {
     state.isEventsLoading = false;
+    fadeOutLoadingSpinner("body", 150);
     events = $.extend([], data); // copies data into classes
     createEvents("#schedule-container", events);
 }

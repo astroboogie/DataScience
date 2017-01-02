@@ -8,12 +8,15 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
+import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 
 applyFastClick();
+displayLoadingSpinner();
 
 var state = {
     isSubjectsLoading: true,
     isCoursesLoading: true,
+    isClassesLoading: true,
     hasFetchError: false,
 }
 
@@ -80,6 +83,7 @@ function handleCourses(data) {
 
 function handleClasses(data) {
     state.isClassesLoading = false;
+    fadeOutLoadingSpinner(250);
     classes = $.extend([], data); // copies data into classes
     createTransitionFromSubjectToSchedule();
     // Assign function to 'search' button that transitions page from schedule to list of courses

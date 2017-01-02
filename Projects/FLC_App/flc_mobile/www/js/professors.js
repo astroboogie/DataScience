@@ -5,11 +5,13 @@ import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
 
 applyFastClick();
+displayLoadingSpinner();
 
 var state = {
     isSubjectsLoading: true,
@@ -42,8 +44,7 @@ fetchData("instructors")
     .done(handleProfessors)
     .fail(handleError);
 
-// Creates a div for each professor and appends it to the
-// professor-container div.
+// Creates a div for each professor and appends it to the given div.
 function createProfessors(div, professors) {
     $.each(professors, function(index, element) {
         let name = element["name"];
@@ -52,7 +53,6 @@ function createProfessors(div, professors) {
         let phone = element["phone"] || "";
         let subjects = createSubjectList(element["subjects"], 3);
         let status = determineProfessorStatus(element["classHours"], element["classList"]);
-
         $(div).append(professorInfo(id, name, status, subjects, email, phone));
     });
 
@@ -77,8 +77,9 @@ function handleSubjects (data) {
 
 function handleProfessors(data) {
     state.isProfessorsLoading = false;
+    fadeOutLoadingSpinner(250);
     professors = $.extend([], data); // copies data into classes
-    createProfessors($("#professor-container"), professors);
+    createProfessors("#professor-container", professors);
 }
 
 function handleCourses(data) {
