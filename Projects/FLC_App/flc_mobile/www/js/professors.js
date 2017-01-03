@@ -44,16 +44,6 @@ fetchData("instructors")
     .done(handleProfessors)
     .fail(handleError);
 
-function generateEmail(professorName) {
-    var nameContainer = professorName.split(" ");
-    if (nameContainer.length == 2) {
-        return nameContainer[1].substring(0, 6).toLowerCase() + nameContainer[0].substring(0, 1).toLowerCase() + "@flc.losrios.edu";
-    }
-    else {
-        return "";
-    }
-}
-
 // Creates a div for each professor and appends it to the given div.
 function createProfessors(div, professors) {
     $.each(professors, function(index, element) {
@@ -77,24 +67,24 @@ function createProfessors(div, professors) {
 
 function handleClasses(data) {
     state.isClassesLoading = false;
-    classes = $.extend([], data); // copies data into classes
+    classes = $.extend([], data);
 }
 
 function handleSubjects (data) {
     state.isSubjectsLoading = false;
-    subjects = $.extend([], data); // copies data into classes
+    subjects = $.extend([], data);
 }
 
 function handleProfessors(data) {
     state.isProfessorsLoading = false;
     fadeOutLoadingSpinner(250);
-    professors = $.extend([], data); // copies data into classes
+    professors = $.extend([], data);
     createProfessors("#professor-container", professors);
 }
 
 function handleCourses(data) {
     state.isCoursesLoading = false;
-    courses = $.extend([], data); // copies data into classes
+    courses = $.extend([], data);
 }
 
 function handleError() {
@@ -119,6 +109,16 @@ var determineProfessorStatus = function(hours, classlist) {
     }
     return "Part-time";
 };
+
+function generateEmail(professorName) {
+    var nameContainer = professorName.split(" ");
+    if (nameContainer.length == 2) {
+        return nameContainer[1].substring(0, 6).toLowerCase() + nameContainer[0].substring(0, 1).toLowerCase() + "@flc.losrios.edu";
+    }
+    else {
+        return "";
+    }
+}
 
 // Returns a div outlining the professor's information
 var professorInfo = function(id, name, status, subjects, email) {
@@ -169,6 +169,7 @@ var createProfessorPage = function(object) {
     addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
     $(".course-arrow").click(function () {
         currentPage = "description";
+        $("#header-text > span").text("Course Description");
         $("#course-overlay").addClass("transition-course-overlay");
     });
 
@@ -241,6 +242,7 @@ var backArrowPress = function(pageSet) {
     else if (pageSet == "description") {
         currentPage = "professor-overlay";
         $("#course-overlay").removeClass("transition-course-overlay");
+        $("#header-text > span").text("Professor");
     }
 };
 

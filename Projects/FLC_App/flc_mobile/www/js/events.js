@@ -11,7 +11,7 @@ import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 
 applyBackTransition();
 applyFastClick();
-displayLoadingSpinner("body");
+displayLoadingSpinner();
 
 var state = {
     isEventsLoading: true,

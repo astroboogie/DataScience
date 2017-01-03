@@ -43,7 +43,6 @@
     "prebuild": "npm run clean",
     "build": "webpack",
     "predeploy": "npm run build",
-    "deploy": "cd ./backend && python ./updateAll.py --server && cd ..",
-    "prestart": "npm run build"
+    "deploy": "cd ./backend && python ./updateAll.py --server && cd .."
   }
 }
