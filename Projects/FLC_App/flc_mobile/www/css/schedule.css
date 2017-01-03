@@ -4,6 +4,27 @@ body {
     padding: 0;
 }
 
+#schedule-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden !important;
+}
+
+#main-container {
+    position: fixed;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 #main-container {
     height: 100vh;
     width: 100vw;

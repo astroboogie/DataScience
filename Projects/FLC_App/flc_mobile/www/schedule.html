@@ -7,197 +7,199 @@
     <link href="./build/scheduleEntry.css" rel="stylesheet">
 </head>
 <body>
-    <div id="main-container">
-        <div id="header-section">
-            <!--<img src="img/iphone-header.png">-->
-            <div id="header-container">
-                <div id="back-arrow">
-                    <i class="material-icons">arrow_back</i>
+    <div id="schedule-container">
+        <div id="main-container">
+            <div id="header-section">
+                <!--<img src="img/iphone-header.png">-->
+                <div id="header-container">
+                    <div id="back-arrow">
+                        <i class="material-icons">arrow_back</i>
+                    </div>
+                    <div id="header-text">
+                        <span>Browse Courses</span>
+                    </div>
                 </div>
-                <div id="header-text">
-                    <span>Browse Courses</span>
+            </div>
+
+            <div id="body-section">
+
+                <!-- Subject Section -->
+                <div class="title-container">
+                    <span>SUBJECT</span>
+                </div>
+                <div class="option-container" id="subject-button">
+                    <div id="subject-text">
+                        <span>Select a course</span>
+                    </div>
+                    <div id="right-arrow">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                </div>
+
+                <!-- Course Day Section -->
+                <div class="title-container">
+                    <span>DAYS</span>
+                </div>
+                <div class="option-container">
+                    <div id="day-form">
+                        <form>
+                            <label class="needsclick type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="M">
+                                <span class="checkbox-text">M</span>
+                            </label>
+                            <label class="needsclick type-checkbox">
+                                <input type="checkbox" name="day" value="T">
+                                <span class="checkbox-text">T</span>
+                            </label>
+                            <label class="needsclick type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="W">
+                                <span class="checkbox-text">W</span>
+                            </label>
+                            <label class="type-checkbox">
+                                <input type="checkbox" name="day" value="Th">
+                                <span class="checkbox-text">Th</span>
+                            </label>
+                            <label class="type-checkbox">
+                                <input checked="checked" type="checkbox" name="day" value="F">
+                                <span class="checkbox-text">F</span>
+                            </label>
+                            <label class="type-checkbox">
+                                <input type="checkbox" name="day" value="S">
+                                <span class="checkbox-text">S</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Course Type Section -->
+                <div class="title-container">
+                    <span>COURSE TYPE</span>
+                </div>
+                <div class="option-container" id="type-container">
+                    <div class="type-form">
+                        <form>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="All" checked="checked">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>All</span>
+                                </div>
+                            </label>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="Fast Track">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>Fast Track</span>
+                                </div>
+                            </label>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="Online">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>Online</span>
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Course Semester Section -->
+                <div class="title-container">
+                    <span>SEMESTER</span>
+                </div>
+                <div class="option-container" id="semester-container">
+                    <div class="type-form">
+                        <form>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="Spring 2017">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>Summer 2016</span>
+                                </div>
+                            </label>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="Fall 2016" checked="checked">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>Fall 2016</span>
+                                </div>
+                            </label>
+                            <label class="type-radio control-checkbox">
+                                <input type="radio" name="type" value="Spring 2017">
+                                <div class="input-object">
+                                    <div></div>
+                                </div>
+                                <div class="span-object">
+                                    <span>Spring 2017</span>
+                                </div>
+                            </label>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!--&lt;!&ndash; Enrollment Section &ndash;&gt;-->
+                <!--<div class="title-container">-->
+                <!--<span>-->
+                <!--ENROLLMENT STATUS-->
+                <!--</span>-->
+                <!--</div>-->
+                <!--<div class="option-container" id="enrollment-container">-->
+                <!--<div class="type-form">-->
+                <!--<form>-->
+                <!--<label class="type-radio control-checkbox">-->
+                <!--<input type="radio" name="type" value="All" checked="checked">-->
+                <!--<div class="input-object">-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--<div class="span-object">-->
+                <!--<span>All</span>-->
+                <!--</div>-->
+                <!--</label>-->
+                <!--<label class="type-radio control-checkbox">-->
+                <!--<input type="radio" name="type" value="Open">-->
+                <!--<div class="input-object">-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--<div class="span-object">-->
+                <!--<span>Open</span>-->
+                <!--</div>-->
+                <!--</label>-->
+                <!--<label class="type-radio control-checkbox">-->
+                <!--<input type="radio" name="type" value="Waitlisted">-->
+                <!--<div class="input-object">-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--<div class="span-object">-->
+                <!--<span>Waitlisted</span>-->
+                <!--</div>-->
+                <!--</label>-->
+                <!--</form>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--Search Button -->
+                <div id="search-container">
+                    <div id="search-button">
+                        <span>Search</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="body-section">
-
-            <!-- Subject Section -->
-            <div class="title-container">
-                <span>SUBJECT</span>
-            </div>
-            <div class="option-container" id="subject-button">
-                <div id="subject-text">
-                    <span>Select a course</span>
-                </div>
-                <div id="right-arrow">
-                    <i class="material-icons">keyboard_arrow_right</i>
-                </div>
-            </div>
-
-            <!-- Course Day Section -->
-            <div class="title-container">
-                <span>DAYS</span>
-            </div>
-            <div class="option-container">
-                <div id="day-form">
-                    <form>
-                        <label class="needsclick type-checkbox">
-                            <input checked="checked" type="checkbox" name="day" value="M">
-                            <span class="checkbox-text">M</span>
-                        </label>
-                        <label class="needsclick type-checkbox">
-                            <input type="checkbox" name="day" value="T">
-                            <span class="checkbox-text">T</span>
-                        </label>
-                        <label class="needsclick type-checkbox">
-                            <input checked="checked" type="checkbox" name="day" value="W">
-                            <span class="checkbox-text">W</span>
-                        </label>
-                        <label class="type-checkbox">
-                            <input type="checkbox" name="day" value="Th">
-                            <span class="checkbox-text">Th</span>
-                        </label>
-                        <label class="type-checkbox">
-                            <input checked="checked" type="checkbox" name="day" value="F">
-                            <span class="checkbox-text">F</span>
-                        </label>
-                        <label class="type-checkbox">
-                            <input type="checkbox" name="day" value="S">
-                            <span class="checkbox-text">S</span>
-                        </label>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Course Type Section -->
-            <div class="title-container">
-                <span>COURSE TYPE</span>
-            </div>
-            <div class="option-container" id="type-container">
-                <div class="type-form">
-                    <form>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="All" checked="checked">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>All</span>
-                            </div>
-                        </label>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="Fast Track">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>Fast Track</span>
-                            </div>
-                        </label>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="Online">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>Online</span>
-                            </div>
-                        </label>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Course Semester Section -->
-            <div class="title-container">
-                <span>SEMESTER</span>
-            </div>
-            <div class="option-container" id="semester-container">
-                <div class="type-form">
-                    <form>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="Spring 2017">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>Summer 2016</span>
-                            </div>
-                        </label>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="Fall 2016" checked="checked">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>Fall 2016</span>
-                            </div>
-                        </label>
-                        <label class="type-radio control-checkbox">
-                            <input type="radio" name="type" value="Spring 2017">
-                            <div class="input-object">
-                                <div></div>
-                            </div>
-                            <div class="span-object">
-                                <span>Spring 2017</span>
-                            </div>
-                        </label>
-
-                    </form>
-                </div>
-            </div>
-
-            <!--&lt;!&ndash; Enrollment Section &ndash;&gt;-->
-            <!--<div class="title-container">-->
-            <!--<span>-->
-            <!--ENROLLMENT STATUS-->
-            <!--</span>-->
-            <!--</div>-->
-            <!--<div class="option-container" id="enrollment-container">-->
-            <!--<div class="type-form">-->
-            <!--<form>-->
-            <!--<label class="type-radio control-checkbox">-->
-            <!--<input type="radio" name="type" value="All" checked="checked">-->
-            <!--<div class="input-object">-->
-            <!--<div></div>-->
-            <!--</div>-->
-            <!--<div class="span-object">-->
-            <!--<span>All</span>-->
-            <!--</div>-->
-            <!--</label>-->
-            <!--<label class="type-radio control-checkbox">-->
-            <!--<input type="radio" name="type" value="Open">-->
-            <!--<div class="input-object">-->
-            <!--<div></div>-->
-            <!--</div>-->
-            <!--<div class="span-object">-->
-            <!--<span>Open</span>-->
-            <!--</div>-->
-            <!--</label>-->
-            <!--<label class="type-radio control-checkbox">-->
-            <!--<input type="radio" name="type" value="Waitlisted">-->
-            <!--<div class="input-object">-->
-            <!--<div></div>-->
-            <!--</div>-->
-            <!--<div class="span-object">-->
-            <!--<span>Waitlisted</span>-->
-            <!--</div>-->
-            <!--</label>-->
-            <!--</form>-->
-            <!--</div>-->
-            <!--</div>-->
-
-            <!--Search Button -->
-            <div id="search-container">
-                <div id="search-button">
-                    <span>Search</span>
-                </div>
-            </div>
-        </div>
+        <div id="subjects"></div>
+        <div id="courses"></div>
+        <div id="course-overlay"></div>
     </div>
-    <div id="subjects"></div>
-    <div id="courses"></div>
-    <div id="course-overlay"></div>
 </body>
 
 <script type="text/javascript" src="./build/common.js"></script>
