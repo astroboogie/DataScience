@@ -11,25 +11,24 @@
 
 ```
 .
-├── /build/                     # The folder for compiled output
 ├── /backend/                   # All scripts relating to gathering and saving our backend data
 ├── /node_modules/              # 3rd-party libraries and utilities
 ├── /hooks/                     # Scripts to support custom Cordova commands
 ├── /platforms/                 # Mobile platform support from Cordova
 ├── /plugins/                   # Configs for Cordova/Phonegap plugins
 ├── /www/                       # The source code of the application
+│   ├── /build/                 # The folder for compiled output
 │   ├── /css/                   # Css files
 │   ├── /fonts/                 # Font files
 │   ├── /img/                   # Image files
 │   ├── /js/                    # JavaScript files
 │   ├── /lib/                   # Libraries for the web browser
 │   ├── /res/                   # Repository of Android/iPhone splash screens and icons
-│   ├── /config.js              # Global application settings
-│   └── /server.js              # Server-side startup script
+│   ├── /*.html                 # Each app page
 ├── /test/                      # Unit and end-to-end tests
-├── /tools/                     # Build automation scripts and utilities
-└── config.xml                  # Configuration for iPhone/Android publishing
-└── package.json                # The list of 3rd party libraries and utilities
+├── config.xml                  # Configuration for iPhone/Android publishing
+├── package.json                # The list of 3rd party libraries and utilities
+└── webpack.config.babel.js     # Configuration for webpack (a JavaScript build tool)
 ```
 
 ### Quick Start
@@ -47,11 +46,14 @@ $ git clone https://github.com/AstroBoogie/DataScience.git
 This will install both run-time project dependencies and developer tools listed
 in [package.json](../package.json) file.
 
-#### 3. Run `npm run build`
+#### 3. Run `npm run build` or `npm run build:dev`
 
 This command will build the app from the source files (`/www`) into the output
-`/build` folder. As soon as the initial build completes, you can open the app
+`/www/build` folder. As soon as the initial build completes, you can open the app
 by navigating to /www/index.html and open the file with a browser.
+
+Running with `:dev` appended will build the app with no plugins (faster build times
+and no minified code).
 
 ### How to Test
 

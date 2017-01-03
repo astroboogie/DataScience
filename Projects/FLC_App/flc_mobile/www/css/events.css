@@ -6,6 +6,7 @@
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
 }
 
 #header-container {

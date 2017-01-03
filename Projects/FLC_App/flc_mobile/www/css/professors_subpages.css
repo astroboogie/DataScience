@@ -1,4 +1,4 @@
-#header-section, #professor-overlay, #professor-container, #header-search {
+#professor-overlay, #professor-container {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);

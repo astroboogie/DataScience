@@ -2,6 +2,8 @@ import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
+const PROD = (process.argv.indexOf('--production') !== -1);
+
 module.exports = {
     entry: {
         "eventsEntry": './www/js/events.js',
@@ -38,7 +40,7 @@ module.exports = {
             },
         ],
     },
-    plugins: [
+    plugins: PROD ? [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
@@ -52,6 +54,13 @@ module.exports = {
             jQuery: "jquery",
         }),
         new webpack.optimize.CommonsChunkPlugin('common.js'),
+        new ExtractTextPlugin("[name].css"),
+    ] :
+    [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+        }),
         new ExtractTextPlugin("[name].css"),
     ],
 };
