@@ -3,7 +3,6 @@ from getEvents import getEvents
 from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 from getClasses import getClasses
-from buildPackage import buildPackage
 import boto3
 import os
 import sys
@@ -38,13 +37,6 @@ def uploadAll():
 			filesUploaded += 1
 	print 'Successfully loaded', filesUploaded, 'files.\n'
 
-def uploadPackage():
-	print "Uploading package to AWS..."
-	client = boto3.client('lambda')
-	zipFile = open('update-flc-app-data-package.zip', 'rb').read()
-	client.update_function_code(FunctionName='FLC-App-Update-Data', ZipFile=zipFile)
-	print "Successfully uploaded package.\n"
-
 def updateAll(uploadToServer):
 	getAll()
 	deriveAll()
@@ -52,12 +44,10 @@ def updateAll(uploadToServer):
 		uploadAll()
 
 if __name__ == "__main__":
-	uploadToServer = False
+	willUploadToServer = False
 	if '--server' in sys.argv:
-		uploadToServer = True
-		buildPackage()
-		uploadPackage()
-	updateAll(uploadToServer)
+		willUploadToServer = True
+	updateAll(willUploadToServer)
 
 # This is the function that AWS Lambda looks for to execute
 def lambda_handler(event, context):
