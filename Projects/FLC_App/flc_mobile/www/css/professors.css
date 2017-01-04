@@ -5,7 +5,7 @@
     justify-content: flex-end;
     position: fixed;
     background-color: white;
-    z-index: 99;
+    z-index: 3;
 }
 
 #header-container {
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     -webkit-transition: opacity 0.3s;
+    z-index: 4;
 }
 
 #back-arrow > i {
@@ -181,16 +182,17 @@ button:focus {
 
 #professor-container {
     overflow-y: scroll;
-    padding-top: 12vh;
+    padding: 12vh 0 0 0;
+    margin: 0;
     -webkit-transition: margin-left 0.3s;
 }
 
 .transition-professor-container {
-    margin-left: -100vw;
+    margin-left: -100vw !important;
 }
 
 .course-object {
-    width: 80%;
+    width: 100%;
     height: auto;
     float: left;
     margin: 0 0 15px 0;

@@ -169,12 +169,14 @@ var createProfessorPage = function(object) {
     addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
     $(".course-arrow").click(function () {
         currentPage = "description";
+        $("#professor-overlay").removeClass("transition-professor-overlay-center");
+        $("#professor-overlay").addClass("transition-professor-overlay-left");
         $("#header-text > span").text("Course Description");
         $("#course-overlay").addClass("transition-course-overlay");
     });
 
     // add header transitions
-    $("#professor-overlay").addClass("transition-professor-overlay");
+    $("#professor-overlay").addClass("transition-professor-overlay-center");
     $("#professor-container").addClass("transition-professor-container");
     $("#header-search").addClass("professor-scaled");
     $("#header-text").addClass("header-text-scaled");
@@ -234,13 +236,15 @@ var backArrowPress = function(pageSet) {
     }
     else if (pageSet == "professor-overlay") {
         currentPage = "search";
-        $("#professor-overlay").removeClass("transition-professor-overlay");
+        $("#professor-overlay").removeClass("transition-professor-overlay-center");
         $("#professor-container").removeClass("transition-professor-container");
         $("#header-search").removeClass("professor-scaled");
         $("#header-text").removeClass("header-text-scaled");
     }
     else if (pageSet == "description") {
         currentPage = "professor-overlay";
+        $("#professor-overlay").removeClass("transition-professor-overlay-left");
+        $("#professor-overlay").addClass("transition-professor-overlay-center");
         $("#course-overlay").removeClass("transition-course-overlay");
         $("#header-text > span").text("Professor");
     }
@@ -273,18 +277,6 @@ var professorCoursesList = function(classes, id) {
             </div>\
         </div>"
     );
-};
-
-// Scrolls between pages
-var pageTransition = function (direction, initPage, newPage) {
-    if (direction == "new") {
-        $("#" + initPage).addClass("hide-container");
-        $("#" + newPage).addClass("show-container");
-    }
-    else if (direction == "back") {
-        $("#" + initPage).removeClass("hide-container");
-        $("#" + newPage).removeClass("show-container")
-    }
 };
 
 // sets width of text inputs to placeholder length

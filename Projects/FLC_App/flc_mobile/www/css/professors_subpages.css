@@ -34,8 +34,12 @@
     -webkit-transition: margin-left 0.3s;
 }
 
-.transition-professor-overlay {
+.transition-professor-overlay-center {
     margin-left: 0 !important;
+}
+
+.transition-professor-overlay-left {
+    margin-left: -100vw !important;
 }
 
 .transition-course-overlay {
@@ -149,19 +153,6 @@
     width: 100%;
     height: 94.5%;
     overflow-y: scroll;
-}
-
-/* Course Object */
-
-.course-object {
-    width: 100%;
-    height: auto;
-}
-
-.course-text-container {
-    width: 85%;
-    min-height: 75px;
-    float: left;
 }
 
 .course-title {
