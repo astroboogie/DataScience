@@ -224,7 +224,7 @@ var createSearchResults = function(div, classes) {
     });
     // Display error message if search result is empty.
     if ($(div).is(':empty')) {
-        $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
+        $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div>")
     }
 };
 

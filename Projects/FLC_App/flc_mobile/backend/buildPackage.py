@@ -7,7 +7,7 @@ def buildPackage():
 	print 'Zipping files for Lambda package...'
 	zipCount = 0
 	for file in os.listdir('.'):
-		if file.endswith('.py') and file != curFile:
+		if file.endswith('.py'):
 			zipFile.write(file)
 			zipCount += 1
 	print 'Successfully zipped', zipCount, 'files.\n'

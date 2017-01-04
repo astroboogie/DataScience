@@ -13,7 +13,11 @@ def populateEvents(events, url):
 		title = utils.extractInfo(eventItem, '<h4>', '<h4>', '</h4>')
 		date = utils.extractInfo(eventItem, 'Date:', 'Date:</b>', '<br>')
 		location = utils.extractInfo(eventItem, 'Location:', 'Location:</b>', '</p>')
-		description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
+		for line in eventItem:
+			if '<p><p>' in line and '</p></p>' in line:
+				description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
+			elif '<p><p>' in line:
+				description = line
 		
 		if not filter(lambda event: event['description'] == description, events):
 			events.append({"title" : title})
