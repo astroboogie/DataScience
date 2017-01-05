@@ -1,3 +1,4 @@
+from getLatestSemesters import getLatestSemesters
 import utils
 import json
 import re
@@ -17,21 +18,21 @@ def getDays(line):
 
 def getLecTime(line):
 	return line[line.index("    ") + len("    ") : line.index("LEC")].lstrip(" ").rstrip(" ")
-	
+
 def getLabTime(line):
 	return line[line.index("    ") + len("    ") : line.rindex("LAB")].lstrip(" ").rstrip(" ")
-	
+
 def getRoom(start, line):
 	room = line[line.rindex(start) + len(start) : line.rindex("  ")].lstrip(" ").rstrip(" ")
 	if not room:
 		room = line[line.rfind(start) + len(start) : line.rfind("<a href") - 7].lstrip(" ").rstrip(" ") or "TBA"
 	return room
-	
+
 def populateClasses(classes, url):
 	response = utils.getHTML(url, "class schedule")
 	classCount = 0
 	print "Parsing the classes..."
-	
+
 	schedule = None
 	days = None
 	lecTime = None
@@ -45,7 +46,7 @@ def populateClasses(classes, url):
 		courseInfo = utils.extractCourseInfo(response, "<!--Course Title-->", "<center><hr width=60%></center>")
 		if not courseInfo:
 			break
-			
+
 		courseTitle = utils.extractInfo(courseInfo, "Course Title", "<b>", "    ")
 		if not courseTitle:
 			continue
@@ -104,19 +105,14 @@ def populateClasses(classes, url):
 				classType = None
 	print "Successfully added", classCount, "classes.\n"
 
-def getClasses():
-	classes = []
-	populateClasses(classes, "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html")
-	
-	if os.path.isdir('/tmp'):
-		# For writing on AWS Lambda
-		filePath = '/tmp/classes.json'
-	else:
-		# For writing locally
-		filePath = 'classes.json'
-		
-	with open(filePath, 'w') as f:
-		f.write(json.dumps(classes, indent=4, separators=(',', ': ')))
-	
+def getClasses(semesters):
+	endpoints = semesters["endpoints"]
+	for endpoint in endpoints:
+		classes = []
+		populateClasses(classes, "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + endpoint + "/index.html")
+
+		filePath = utils.getAndCreateFilePath('classes', endpoint)
+		utils.writeJSON(classes, filePath)
+
 if __name__ == "__main__":
-	getClasses()
+	getClasses(getLatestSemesters())

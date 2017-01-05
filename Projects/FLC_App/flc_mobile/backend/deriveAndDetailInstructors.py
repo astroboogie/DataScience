@@ -61,14 +61,15 @@ def getInstructorDetails(instructors, url):
 				professor["name"] = faculty["name"]
 				professor["email"] = faculty["email"]
 				professor["phone"] = faculty["phone"]
-			
+
 	# Convert class hours to easy-to-read format
 	for professor in instructors:
 		professor["classHours"] = utils.convertTime(professor["classHours"])
 	print "\rSuccessfully added details to ", facultyMembersNum, " faculty members.\n"
 
-def deriveInstructorsFromClasses(instructors, classes):
+def deriveInstructorsFromClasses(instructors, classes, endpoint):
 	print "Parsing the instructors from courses..."
+	classListKey = "classList_" + endpoint
 	instructorCount = 0
 	# Create list of all professors
 	for item in classes:
@@ -76,7 +77,7 @@ def deriveInstructorsFromClasses(instructors, classes):
 		alreadyExists = filter(lambda person: person['name'] == item["instructor"], instructors)
 		if validInstructor and not alreadyExists:
 			instructors.append({"name" : item["instructor"]})
-			instructors[-1]["classList"] = []
+			instructors[-1][classListKey] = []
 			instructors[-1]["classHours"] = 0
 			instructors[-1]["classTimes"] = {}
 			instructors[-1]["classTimes"]["M"] = []
@@ -98,7 +99,9 @@ def deriveInstructorsFromClasses(instructors, classes):
 		if validInstructor:
 			for professor in instructors:
 				if item["instructor"] == professor["name"]:
-					professor["classList"].append(item["id"])
+					if classListKey not in professor:
+						professor[classListKey] = []
+					professor[classListKey].append(item["id"])
 					subject = item["courseTitle"][0 : item["courseTitle"].index(" ")]
 					if subject not in professor["subjects"]:
 						professor["subjects"].append(subject)
@@ -116,28 +119,22 @@ def deriveInstructorsFromClasses(instructors, classes):
 							professor["classTimes"][day].sort(utils.sortTimes)
 							professor["classHours"] += utils.calcTime(item["labTime"])
 	print "Successfully added", instructorCount, " instructors.\n"
-	
-def deriveAndDetailInstructors():
+
+def deriveAndDetailInstructors(semesters):
+	endpoints = semesters["endpoints"]
 	instructors = []
-	if os.path.isdir('/tmp'):
-		# For reading on AWS Lambda
-		filePath = '/tmp/classes.json'
-	else:
-		# For reading locally
-		filePath = 'classes.json'
 
-	deriveInstructorsFromClasses(instructors, json.load(open(filePath)))
+	for endpoint in endpoints:
+		if utils.isLambdaEnv():
+			filePath = '/tmp/classes' + endpoint + '.json'
+		else:
+			filePath = 'classes/' + endpoint + '.json'
+		deriveInstructorsFromClasses(instructors, json.load(open(filePath)), endpoint)
+
 	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
-	
-	if os.path.isdir('/tmp'):
-		# For writing on AWS Lambda
-		filePath = '/tmp/instructors.json'
-	else:
-		# For writing locally
-		filePath = 'instructors.json'
 
-	with open(filePath, 'w') as f:
-		f.write(json.dumps(instructors, indent=4, separators=(',', ': ')))
+	filePath = utils.getAndCreateFilePath('', 'instructors')
+	utils.writeJSON(instructors, filePath)
 
 if __name__ == "__main__":
 	deriveAndDetailInstructors()

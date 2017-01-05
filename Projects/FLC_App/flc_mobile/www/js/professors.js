@@ -31,13 +31,13 @@ var subjects;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-fetchData("subjects")
+fetchData("subjects", "fall")
     .done(handleSubjects)
     .fail(handleError);
-fetchData("classes")
+fetchData("classes", "fall")
     .done(handleClasses)
     .fail(handleError);
-fetchData("courses")
+fetchData("courses", "fall")
     .done(handleCourses)
     .fail(handleError);
 fetchData("instructors")
@@ -104,7 +104,7 @@ var createSubjectList = function(subjects, max = 99) {
 // hours is passed in as a string of the form "8hr 50min"
 var determineProfessorStatus = function(hours, classlist) {
     let parsedHours = parseInt(hours.substring(0, hours.indexOf('hr')));
-    if (parsedHours >= 8 || classlist.length >= 6) {
+    if (parsedHours >= 8) {
         return "Full-time";
     }
     return "Part-time";
@@ -160,10 +160,10 @@ var createProfessorPage = function(object) {
     $("#professor-email > span").text(professorEmail);
 
     let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
-    let classIds = professors[professorId]["classList"];
+    let classIds = professors[professorId]["classList_fall"];
     $("#course-container").empty();
     $(classIds).each(function (index, element) {
-        $("#course-container").append(professorCoursesList(classes, Number(element)));
+        $("#course-container").append(professorCoursesList(classes[Number(element)]));
     });
 
     addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
@@ -252,12 +252,13 @@ var backArrowPress = function(pageSet) {
 
 // Returns a string representation of html corresponding to the list of classes
 // the professor has.
-var professorCoursesList = function(classes, id) {
-    let courseTitle = classes[id]["courseTitle"];
-    let courseName = classes[id]["courseName"];
-    let days = classes[id]["days"];
-    let time = classes[id]["lecTime"] || classes[id]["labTime"];
-    let location = classes[id]["lecRoom"] || classes[id]["labRoom"];
+var professorCoursesList = function(curClass) {
+    let id = curClass["id"];
+    let courseTitle = curClass["courseTitle"];
+    let courseName = curClass["courseName"];
+    let days = curClass["days"];
+    let time = curClass["lecTime"] || curClass["labTime"];
+    let location = curClass["lecRoom"] || curClass["labRoom"];
     return ("\
         <div id='" + id + "' class='course-object'>\
             <div class='course-text-container'>\

@@ -18,7 +18,7 @@ def populateEvents(events, url):
 				description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
 			elif '<p><p>' in line:
 				description = line
-		
+
 		if not filter(lambda event: event['description'] == description, events):
 			events.append({"title" : title})
 			events[-1]["id"] = str(eventCount)
@@ -31,16 +31,9 @@ def populateEvents(events, url):
 def getEvents():
 	events = []
 	populateEvents(events, "http://www.flc.losrios.edu/x65?view=month")
-	
-	if os.path.isdir('/tmp'):
-		# For writing on AWS Lambda
-		filePath = '/tmp/events.json'
-	else:
-		# For writing locally
-		filePath = 'events.json'
-	
-	with open(filePath, 'w') as f:
-		f.write(json.dumps(events, indent=4, separators=(',', ': ')))
-			
+
+	filePath = utils.getAndCreateFilePath('', 'events')
+	utils.writeJSON(events, filePath)
+
 if __name__ == "__main__":
 	getEvents()

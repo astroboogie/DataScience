@@ -45,6 +45,6 @@
     "prebuild:dev": "npm run clean",
     "build:dev": "webpack",
     "predeploy": "npm run build",
-    "deploy": "cd ./backend && python ./updateAll.py --server && cd .."
+    "deploy": "cd ./backend && python ./updateAll.py --server && buildPackage.py && cd .."
   }
 }

@@ -11,7 +11,7 @@ def populateSubjects(subjects, url):
 	subjectCount = 0
 	lindex = "</b></b><center><h3>"
 	rindex = "</h3>"
-	
+
 	for line in response:
 		if lindex in line and rindex in line:
 			subject = line[line.index(lindex) + len(lindex) : line.rindex(rindex)]
@@ -21,20 +21,15 @@ def populateSubjects(subjects, url):
 			subjectCount += 1
 	print "Successfully added ", subjectCount, " subjects.\n"
 
-def getSubjects():
-	subjects = {}
-	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
-	populateSubjects(subjects, url)
-	
-	if os.path.isdir('/tmp'):
-		# For writing on AWS Lambda
-		filePath = '/tmp/subjects.json'
-	else:
-		# For writing locally
-		filePath = 'subjects.json'
-		
-	with open(filePath, 'w') as f:
-		f.write(json.dumps(subjects, sort_keys=True, indent=4, separators=(',', ': ')))
+def getSubjects(semesters):
+	endpoints = semesters["endpoints"]
+	for endpoint in endpoints:
+		subjects = {}
+		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + endpoint + "/index.html"
+		populateSubjects(subjects, url)
+
+		filePath = utils.getAndCreateFilePath('subjects', endpoint)
+		utils.writeJSON(subjects, filePath)
 
 if __name__ == "__main__":
 	getSubjects()

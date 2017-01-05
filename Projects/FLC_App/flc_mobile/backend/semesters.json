@@ -1,0 +1,12 @@
+{
+    "endpoints": [
+        "fall",
+        "spring",
+        "summer"
+    ],
+    "semesters": [
+        "Fall 2016",
+        "Spring 2017",
+        "Summer 2016"
+    ]
+}

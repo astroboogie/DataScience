@@ -1,6 +1,8 @@
 import re
 import string
 import urllib2
+import os
+import json
 
 # @Param - url, the url to get the page source from
 def getHTML(url, reason = "html"):
@@ -19,7 +21,7 @@ def getHTML(url, reason = "html"):
 	if reason:
 		print "Failed to fetch", reason, "data.\n"
 	return None
-	
+
 # Returns a string containing all the lines relating to
 # a single class
 def extractCourseInfo(HTML, start, end):
@@ -59,20 +61,20 @@ def extractInfoFromLine(line, marker, lindex, rindex):
 		info = filter(lambda x: x in string.printable, info) 						 # remove non-printing characters
 		info = info.replace("&amp;", "&")
 	return info
-	
+
 def clearLine():
 	print "\r                                                                                ",
-	
+
 # Returns -1 if A is a lesser time than B
 # Very ugly, should be cleaned up
 def sortTimes(a, b):
-	aNum = int(a[0]) * 10 + int(a[1]) + (int(a[3]) * 10 + int(a[4]))/60 
+	aNum = int(a[0]) * 10 + int(a[1]) + (int(a[3]) * 10 + int(a[4]))/60
 	if a[5] == "P" and not (a[0] == "1" and a[1] == "2"):
 		aNum += 12
-	bNum = int(b[0]) * 10 + int(b[1]) + (int(b[3]) * 10 + int(b[4]))/60 
+	bNum = int(b[0]) * 10 + int(b[1]) + (int(b[3]) * 10 + int(b[4]))/60
 	if b[5] == "P" and not (b[0] == "1" and b[1] == "2"):
 		bNum += 12
-		
+
 	if aNum < bNum:
 		return -1
 	elif bNum < aNum:
@@ -86,7 +88,7 @@ def calcTime(time):
 	startTime = float(time[0]) * 10 + float(time[1]) + (float(time[3]) * 10 + float(time[4]))/60
 	if time[5] == "P" and not (time[0] == "1" and time[1] == "2"):
 		startTime += 12
-	endTime = float(time[8]) * 10 + float(time[9]) + (float(time[11]) * 10 + float(time[12]))/60 
+	endTime = float(time[8]) * 10 + float(time[9]) + (float(time[11]) * 10 + float(time[12]))/60
 	if time[13] == "P" and not (time[8] == "1" and time[9] == "2"):
 			endTime += 12
 	timeWorked = endTime - startTime
@@ -102,3 +104,28 @@ def convertTime(time):
 	if not mins:
 		mins = 0.0
 	return str(hours) + "hr " + str(mins).rstrip('0').rstrip('.') + "min"
+
+def createDirectory(directory):
+	try:
+	    os.makedirs(directory)
+	except OSError:
+	    if not os.path.isdir(directory):
+	        raise
+
+def isLambdaEnv():
+	if os.path.isdir('/tmp'):
+		return True
+	return False
+
+def getAndCreateFilePath(directory, fileName):
+	if isLambdaEnv():
+		return '/tmp/' + directory + fileName + '.json'
+	else:
+		if directory:
+			createDirectory(directory)
+			return directory + '/' + fileName + '.json'
+		return fileName + '.json'
+
+def writeJSON(jsonData, filePath):
+	with open(filePath, 'w') as f:
+		f.write(json.dumps(jsonData, sort_keys=True, indent=4, separators=(',', ': ')))

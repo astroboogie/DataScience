@@ -1,3 +1,4 @@
+from getLatestSemesters import getLatestSemesters
 import utils
 import json
 import re
@@ -29,7 +30,7 @@ def populateCourses(courses, url):
 		if not courseTitle:
 			continue
 		coursesCount += 1
-		
+
 		courseName = utils.extractInfo(courseInfo, "Course Title", "    ", "    ")
 		units = extractUnits(courseInfo)
 		description = utils.extractInfo(courseInfo, "Description:", "</em>", "<br />")
@@ -58,21 +59,15 @@ def populateCourses(courses, url):
 		courses[-1]["courseFamily"] = courseFamily
 	print "Successfully added ", coursesCount, " courses.\n"
 
-def getCourses():
-	courses = []
-	
-	url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/fall/index.html"
-	populateCourses(courses, url)
-	
-	if os.path.isdir('/tmp'):
-		# For writing on AWS Lambda
-		filePath = '/tmp/courses.json'
-	else:
-		# For writing locally
-		filePath = 'courses.json'
-		
-	with open(filePath, 'w') as f:
-		f.write(json.dumps(courses, indent=4, separators=(',', ': ')))
-	
+def getCourses(semesters):
+	endpoints = semesters["endpoints"]
+	for endpoint in endpoints:
+		courses = []
+		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + endpoint + "/index.html"
+		populateCourses(courses, url)
+
+		filePath = utils.getAndCreateFilePath('courses', endpoint)
+		utils.writeJSON(courses, filePath)
+
 if __name__ == "__main__":
-	getCourses()
+	getCourses(getLatestSemesters())

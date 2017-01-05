@@ -3,18 +3,19 @@ from getEvents import getEvents
 from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 from getClasses import getClasses
+from getLatestSemesters import getLatestSemesters
 import boto3
 import os
 import sys
 
-def getAll():
-	getSubjects()
+def getAll(semesters):
+	getSubjects(semesters)
 	getEvents()
-	getCourses()
-	getClasses()
+	getCourses(semesters)
+	getClasses(semesters)
 
-def deriveAll():
-	deriveAndDetailInstructors()
+def deriveAll(semesters):
+	deriveAndDetailInstructors(semesters)
 
 def uploadAll():
 	s3 = boto3.resource('s3')
@@ -38,8 +39,9 @@ def uploadAll():
 	print 'Successfully loaded', filesUploaded, 'files.\n'
 
 def updateAll(uploadToServer):
-	getAll()
-	deriveAll()
+	semesters = getLatestSemesters()
+	getAll(semesters)
+	deriveAll(semesters)
 	if uploadToServer:
 		uploadAll()
 

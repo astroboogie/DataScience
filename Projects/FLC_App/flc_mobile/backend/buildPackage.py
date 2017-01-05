@@ -7,6 +7,7 @@ def uploadPackage():
 	client = boto3.client('lambda')
 	zipFile = open('update-flc-app-data-package.zip', 'rb').read()
 	client.update_function_code(FunctionName='FLC-App-Update-Data', ZipFile=zipFile)
+	client.update_function_configuration(FunctionName='FLC-App-Update-Data', Timeout=300)
 	print "Successfully uploaded package.\n"
 
 def buildPackage():
