@@ -227,7 +227,9 @@ var resetSearchResults = function(div) {
 
 var createSearchResults = function(div, classesData) {
     // Extract the subject's abbreviated name (the text between the parenthesis).
-    let curSubject = $("#subject-text").children('span').text().match(/\((.*)\)/)[1];
+    let parenthesesRegExp = /\(([^)]+)\)/;
+    let subjectMatch = parenthesesRegExp.exec($("#subject-text").children('span').text());
+    let curSubject = subjectMatch && subjectMatch[1] || '';
     let semester = getSemesterRadioVal();
     $.each(classesData, function(index, element) {
         // Check that each class is the same as the selected subjects

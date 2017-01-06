@@ -14,46 +14,42 @@ applyFastClick();
 displayLoadingSpinner();
 
 var state = {
-    isSubjectsLoading: true,
-    isClassesLoading: true,
-    isCoursesLoading: true,
-    isProfessorsLoading: true,
     hasFetchError: false
 };
-
+var cache = {
+    "courses": {},
+    "classes": {},
+};
 var currentPage = "search";
 var backSelectable = true;
-var classes;
-var courses;
-var professors;
-var subjects;
-
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-fetchData("subjects", "fall")
-    .done(handleSubjects)
-    .fail(handleError);
-fetchData("classes", "fall")
-    .done(handleClasses)
-    .fail(handleError);
-fetchData("courses", "fall")
-    .done(handleCourses)
-    .fail(handleError);
-fetchData("instructors")
-    .done(handleProfessors)
-    .fail(handleError);
+fetchFataAndCreatePage();
+function fetchFataAndCreatePage() {
+    let semester = getSemesterRadioVal();
+
+    fetchData("instructors")
+        .done(function(response) {
+            handleProfessors(response, semester)
+        })
+        .fail(handleError);
+
+    $.when(fetchData("courses", semester), fetchData("classes", semester))
+        .done(function(response) {
+            handleProfessorClassListAJAX(response, semester)
+        })
+        .then(function(coursesData, classesData) {
+            cache["courses"][semester] = coursesData[0];
+            cache["classes"][semester] = classesData[0];
+        })
+        .fail(handleError);
+}
 
 // Creates a div for each professor and appends it to the given div.
-function createProfessors(div, professors) {
-    $.each(professors, function(index, element) {
-        let name = element["name"];
-        let id = element["id"];
-        let email = element["email"] || generateEmail(name);
-        let phone = element["phone"] || "";
-        let subjects = createSubjectList(element["subjects"], 3);
-        let status = determineProfessorStatus(element["classHours"], element["classList"]);
-        $(div).append(professorInfo(id, name, status, subjects, email, phone));
+function createProfessors(div, professors, semester) {
+    $.each(professors, function(index, professor) {
+        $(div).append(professorInfo(professor));
     });
 
     // Adds professor-arrow click-functionality to view
@@ -61,34 +57,55 @@ function createProfessors(div, professors) {
     $(".professor-arrow").click(function () {
         backSelectable = true;
         currentPage = "professor-overlay";
-        createProfessorPage(this);
+        createProfessorPage(this, professors, semester);
     });
 }
 
-function handleClasses(data) {
-    state.isClassesLoading = false;
-    classes = $.extend([], data);
+function handleProfessorClassListCached(coursesData, classesData, semester) {
+    handleProfessorClassList(coursesData, classesData, semester);
 }
 
-function handleSubjects (data) {
-    state.isSubjectsLoading = false;
-    subjects = $.extend([], data);
+function handleProfessorClassListAJAX(coursesData, classesData, semester) {
+    handleProfessorClassList(coursesData[0], classesData[0], semester);
 }
 
-function handleProfessors(data) {
-    state.isProfessorsLoading = false;
+function  handleProfessorClassList(coursesData, classesData, semester) {
     fadeOutLoadingSpinner(250);
-    professors = $.extend([], data);
-    createProfessors("#professor-container", professors);
+    updateProfessorClassList(semester)
 }
 
-function handleCourses(data) {
-    state.isCoursesLoading = false;
-    courses = $.extend([], data);
+function updateProfessorClassList(semester) {
+    // TODO: update with html
+    $("#professor-semester-form input[type='radio']").change(function() {
+        if (cache["classes"][semester] && cache["courses"][semester]) {
+            handleProfessorClassListCached(cache["courses"][semester], cache["classes"][semester]);
+        }
+        else {
+            displayLoadingSpinner();
+            $.when(fetchData("courses", semester), fetchData("classes", semester))
+                .done(handleProfessorClassListAJAX)
+                .then(function(coursesData, classesData) {
+                    cache["courses"][semester] = coursesData[0];
+                    cache["classes"][semester] = classesData[0];
+                })
+                .fail(handleError);
+        }
+    });
+}
+
+function handleProfessors(data, semester) {
+    fadeOutLoadingSpinner(250);
+    createProfessors("#professor-container", data, semester);
 }
 
 function handleError() {
     state.hasFetchError = true;
+}
+
+function getSemesterRadioVal() {
+    return "spring";
+    // TODO: implement radio selector on professor page
+    //return $("#semester-form input[type='radio']:checked").val();
 }
 
 // Returns a string representation of a list of subjects
@@ -121,7 +138,13 @@ function generateEmail(professorName) {
 }
 
 // Returns a div outlining the professor's information
-var professorInfo = function(id, name, status, subjects, email) {
+var professorInfo = function(professor) {
+    let name = professor["name"];
+    let id = professor["id"];
+    let email = professor["email"] || generateEmail(name);
+    let phone = professor["phone"] || "";
+    let subjects = createSubjectList(professor["subjects"], 3);
+    let status = determineProfessorStatus(professor["classHours"], professor["classList"]);
     return ("\
         <div id='" + id + "' class='course-object'>\
             <div class='course-text-container'>\
@@ -147,7 +170,7 @@ var professorInfo = function(id, name, status, subjects, email) {
     );
 };
 
-var createProfessorPage = function(object) {
+var createProfessorPage = function(object, professors, semester) {
     var professorTitle = $(object).parent().find($(".professor-title > span")).text();
     var professorStatus = $(object).parent().find($(".professor-status")).text();
     var professorSubject = $(object).parent().find($(".professor-subject")).text();
@@ -160,13 +183,16 @@ var createProfessorPage = function(object) {
     $("#professor-email > span").text(professorEmail);
 
     let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
-    let classIds = professors[professorId]["classList_fall"];
+    let classListSemester = "classList_" + semester;
+    let classIds = professors[professorId][classListSemester];
     $("#course-container").empty();
     $(classIds).each(function (index, element) {
-        $("#course-container").append(professorCoursesList(classes[Number(element)]));
+        $("#course-container").append(professorClass(cache["classes"][semester][element]));
     });
-
-    addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
+    if ($("#course-container").is(':empty')) {
+        $("#course-container").append(emptyClassList());
+    }
+    addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), cache["classes"][semester], cache["courses"][semester]);
     $(".course-arrow").click(function () {
         currentPage = "description";
         $("#professor-overlay").removeClass("transition-professor-overlay-center");
@@ -206,14 +232,14 @@ $(function () {
 });
 
 var filterProfessors = function(search, professorDivs) {
-    $.each(professorDivs.children('div'), function(index, element) {
-        name = $(element).find($(".course-text-container > .professor-title > span")).text();
-        subjects = $(element).find($(".course-text-container > .professor-info > .professor-subject > span")).text();
+    $.each($(professorDivs).children('div'), function(index, element) {
+        let name = $(element).find($(".course-text-container > .professor-title > span")).text();
+        let subjects = $(element).find($(".course-text-container > .professor-info > .professor-subject > span")).text();
         if (cleanString(name + subjects).indexOf(cleanString(search)) !== -1) {
-            $(element).removeClass("course-object-hide");
+            $(element).css("display", "block");
         }
         else {
-            $(element).addClass("course-object-hide");
+            $(element).css("display", "none");
         }
     });
 };
@@ -250,15 +276,14 @@ var backArrowPress = function(pageSet) {
     }
 };
 
-// Returns a string representation of html corresponding to the list of classes
-// the professor has.
-var professorCoursesList = function(curClass) {
-    let id = curClass["id"];
-    let courseTitle = curClass["courseTitle"];
-    let courseName = curClass["courseName"];
-    let days = curClass["days"];
-    let time = curClass["lecTime"] || curClass["labTime"];
-    let location = curClass["lecRoom"] || curClass["labRoom"];
+// Returns a string representation of html corresponding to a professor's classes
+var professorClass = function(classData) {
+    let id = classData["id"];
+    let courseTitle = classData["courseTitle"];
+    let courseName = classData["courseName"];
+    let days = classData["days"];
+    let time = classData["lecTime"] || classData["labTime"];
+    let location = classData["lecRoom"] || classData["labRoom"];
     return ("\
         <div id='" + id + "' class='course-object'>\
             <div class='course-text-container'>\
@@ -321,7 +346,7 @@ var createSearchHeaderCancelTransitionOnClick = function() {
         $("#cancel-button > span").removeClass("transition-cancel-button");
 
         searchInput.val("");
-        filterProfessors("", $("#professor-container"));
+        filterProfessors("", "#professor-container");
     });
 };
 
@@ -329,13 +354,24 @@ var createSearchHeaderCancelTransitionOnClick = function() {
 var createUpdateSearchResultsHandler = function() {
     searchInput.keyup(function() {
         if (searchInput.val().length > 0) {
-            filterProfessors(searchInput.val(), $("#professor-container"));
+            filterProfessors(searchInput.val(), "#professor-container");
         }
         else {
-            filterProfessors("", $("#professor-container"));
+            filterProfessors("", "#professor-container");
         }
     });
 };
+
+function emptyClassList() {
+    return ("\
+        <div id='professor-classlist-empty'>\
+            <div id='professor-classlist-empty-container'>\
+                <i class='material-icons'>block</i>\
+                <span>No classes found.</span>\
+            </div>\
+        </div>\
+    ");
+}
 
 setIntputTextWidth();
 resetContainerWidth();
