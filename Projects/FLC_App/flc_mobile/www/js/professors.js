@@ -9,13 +9,11 @@ import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
+import { errorPage } from './error';
 
 applyFastClick();
 displayLoadingSpinner();
 
-var state = {
-    hasFetchError: false
-};
 var cache = {
     "courses": {},
     "classes": {},
@@ -31,19 +29,10 @@ function fetchFataAndCreatePage() {
 
     fetchData("instructors")
         .done(function(response) {
-            handleProfessors(response, semester)
+            createProfessors("#professor-container", response, semester)
+            fadeOutLoadingSpinner(250);
         })
-        .fail(handleError);
-
-    $.when(fetchData("courses", semester), fetchData("classes", semester))
-        .done(function(response) {
-            handleProfessorClassListAJAX(response, semester)
-        })
-        .then(function(coursesData, classesData) {
-            cache["courses"][semester] = coursesData[0];
-            cache["classes"][semester] = classesData[0];
-        })
-        .fail(handleError);
+        .fail(handleCreateProfessorsError);
 }
 
 // Creates a div for each professor and appends it to the given div.
@@ -51,55 +40,59 @@ function createProfessors(div, professors, semester) {
     $.each(professors, function(index, professor) {
         $(div).append(professorInfo(professor));
     });
-
     // Adds professor-arrow click-functionality to view
     // more in-depth professor information.
     $(".professor-arrow").click(function () {
         backSelectable = true;
         currentPage = "professor-overlay";
-        createProfessorPage(this, professors, semester);
+        createProfessorOverlay(this, professors, semester);
+
+        // transition page to professor overlay
+        $("#professor-overlay").addClass("transition-professor-overlay-center");
+        $("#professor-container").addClass("transition-professor-container");
+        $("#header-search").addClass("professor-scaled");
+        $("#header-text").addClass("header-text-scaled");
+
+        // reset search bar
+        $("#back-arrow").removeClass("transition-back-arrow");
+        $("#header-search").removeClass("transition-header-search");
+        $("#search-text-container").removeClass("transition-search-text-container");
+        $("#search-icon > i").removeClass("transition-search-icon");
+        $("#cancel-button-container").removeClass("transition-cancel-button-container");
+        $("#cancel-button > span").removeClass("transition-cancel-button");
     });
 }
 
-function handleProfessorClassListCached(coursesData, classesData, semester) {
-    handleProfessorClassList(coursesData, classesData, semester);
-}
-
-function handleProfessorClassListAJAX(coursesData, classesData, semester) {
-    handleProfessorClassList(coursesData[0], classesData[0], semester);
-}
-
-function  handleProfessorClassList(coursesData, classesData, semester) {
-    fadeOutLoadingSpinner(250);
-    updateProfessorClassList(semester)
-}
-
-function updateProfessorClassList(semester) {
+function updateProfessorClassListOnChange(semester) {
     // TODO: update with html
     $("#professor-semester-form input[type='radio']").change(function() {
         if (cache["classes"][semester] && cache["courses"][semester]) {
-            handleProfessorClassListCached(cache["courses"][semester], cache["classes"][semester]);
+            createProfessorClassList(".professor-arrow", PROFESSORS, semester, cache["courses"][semester], cache["classes"][semester]);
         }
         else {
             displayLoadingSpinner();
             $.when(fetchData("courses", semester), fetchData("classes", semester))
-                .done(handleProfessorClassListAJAX)
-                .then(function(coursesData, classesData) {
+                .done(function(coursesData, classesData) {
+                    fadeOutLoadingSpinner(250);
+                    createProfessorClassList(".professor-arrow", PROFESSORS, semester, coursesData[0], classesData[0]);
                     cache["courses"][semester] = coursesData[0];
                     cache["classes"][semester] = classesData[0];
                 })
-                .fail(handleError);
+                .fail(handleProfessorClassListError);
         }
     });
 }
 
-function handleProfessors(data, semester) {
-    fadeOutLoadingSpinner(250);
-    createProfessors("#professor-container", data, semester);
+function handleCreateProfessorsError() {
+    //fadeOutLoadingSpinner(250);
+    $("#professor-container").empty();
+    errorPage("#professor-container");
 }
 
-function handleError() {
-    state.hasFetchError = true;
+function handleProfessorClassListError() {
+    //fadeOutLoadingSpinner(250);
+    $("#course-container").empty();
+    errorPage("#course-container");
 }
 
 function getSemesterRadioVal() {
@@ -170,11 +163,11 @@ var professorInfo = function(professor) {
     );
 };
 
-var createProfessorPage = function(object, professors, semester) {
-    var professorTitle = $(object).parent().find($(".professor-title > span")).text();
-    var professorStatus = $(object).parent().find($(".professor-status")).text();
-    var professorSubject = $(object).parent().find($(".professor-subject")).text();
-    var professorEmail = $(object).parent().find($(".professor-email > span")).text();
+var createProfessorOverlay = function(arrow, professors, semester) {
+    var professorTitle = $(arrow).parent().find($(".professor-title > span")).text();
+    var professorStatus = $(arrow).parent().find($(".professor-status")).text();
+    var professorSubject = $(arrow).parent().find($(".professor-subject")).text();
+    var professorEmail = $(arrow).parent().find($(".professor-email > span")).text();
 
     // updates page content
     $("#header-title > span").text("Professor " + professorTitle);
@@ -182,7 +175,24 @@ var createProfessorPage = function(object, professors, semester) {
     $("#professor-subject > span").text(professorSubject);
     $("#professor-email > span").text(professorEmail);
 
-    let professorId = $(object).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
+    if (cache["courses"][semester] && cache["classes"][semester]) {
+        createProfessorClassList(arrow, professors, semester, cache["courses"][semester], cache["classes"][semester]);
+    }
+    else {
+        displayLoadingSpinner();
+        $.when(fetchData("courses", semester), fetchData("classes", semester))
+            .done(function(coursesResponse, classesResponse) {
+                cache["courses"][semester] = coursesResponse[0];
+                cache["classes"][semester] = classesResponse[0];
+                createProfessorClassList(arrow, professors, semester, coursesResponse[0], classesResponse[0]);
+                fadeOutLoadingSpinner(250);
+            })
+            .fail(handleProfessorClassListError);
+    }
+};
+
+function createProfessorClassList(arrow, professors, semester, courses, classes) {
+    let professorId = $(arrow).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
     let classListSemester = "classList_" + semester;
     let classIds = professors[professorId][classListSemester];
     $("#course-container").empty();
@@ -200,21 +210,7 @@ var createProfessorPage = function(object, professors, semester) {
         $("#header-text > span").text("Course Description");
         $("#course-overlay").addClass("transition-course-overlay");
     });
-
-    // add header transitions
-    $("#professor-overlay").addClass("transition-professor-overlay-center");
-    $("#professor-container").addClass("transition-professor-container");
-    $("#header-search").addClass("professor-scaled");
-    $("#header-text").addClass("header-text-scaled");
-
-    // reset search bar
-    $("#back-arrow").removeClass("transition-back-arrow");
-    $("#header-search").removeClass("transition-header-search");
-    $("#search-text-container").removeClass("transition-search-text-container");
-    $("#search-icon > i").removeClass("transition-search-icon");
-    $("#cancel-button-container").removeClass("transition-cancel-button-container");
-    $("#cancel-button > span").removeClass("transition-cancel-button");
-};
+}
 
 // back arrow functionality
 $(function () {

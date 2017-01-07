@@ -13,6 +13,7 @@
     left: 0;
     overflow: hidden;
     position: fixed;
+    z-index: 89;
 }
 
 .spinner {
@@ -27,9 +28,9 @@
     box-sizing: border-box;
     position: absolute;
     top: 35vh;
-    left: 30vw;
-    width: 40vw;
-    height: 40vw;
+    left: 35vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
     border: 2vw solid #ccc;
     border-top-color: #07d;

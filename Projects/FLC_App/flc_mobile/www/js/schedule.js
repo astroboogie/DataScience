@@ -9,12 +9,10 @@ import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
 import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
+import { errorPage } from './error';
 
 applyFastClick();
 
-var state = {
-    hasFetchError: false,
-};
 var cache = {
     "subjects": {},
     "courses": {},
@@ -57,16 +55,11 @@ function handleSubjects (data) {
     createSubjectsList("#subjects", data);
 }
 
-function handleSearchResultsCached(coursesData, classesData) {
-    handleSearchResults(coursesData, classesData);
-}
-
 function handleSearchResultsAJAX(coursesData, classesData) {
     handleSearchResults(coursesData[0], classesData[0]);
 }
 
 function handleSearchResults(coursesData, classesData) {
-    fadeOutLoadingSpinner(250);
     currentPage = "courses";
     pageTransition("new", "body-section", "courses");
     resetSearchResults($("#courses"));
@@ -79,23 +72,35 @@ function handleSearchResults(coursesData, classesData) {
 $("#search-button").click(function () {
     let semester = getSemesterRadioVal();
     if (cache["courses"][semester] && cache["classes"][semester]) {
-        handleSearchResultsCached(cache["courses"][semester], cache["classes"][semester]);
+        handleSearchResults(cache["courses"][semester], cache["classes"][semester]);
     }
     else {
         displayLoadingSpinner();
         $.when(fetchData("courses", semester), fetchData("classes", semester))
-            .done(handleSearchResultsAJAX)
-            .then(function(coursesData, classesData) {
+            .done(function(coursesData, classesData) {
                 cache["courses"][semester] = coursesData[0];
                 cache["classes"][semester] = classesData[0];
+                handleSearchResults(coursesData[0], classesData[0]);
+                fadeOutLoadingSpinner(250);
             })
-            .fail(handleError);
+            .fail(handleSearchResultsError);
     }
 });
 
-function handleError() {
+function handleSearchResultsError() {
     fadeOutLoadingSpinner(250);
-    state.hasFetchError = true;
+    currentPage = "courses";
+    pageTransition("new", "body-section", "courses");
+    $("#courses").empty();
+    errorPage("#courses");
+}
+
+function handleSubjectError() {
+    fadeOutLoadingSpinner(250);
+    currentPage = "subjects";
+    pageTransition("new", "body-section", "subjects");
+    $("#subjects").empty();
+    errorPage("#subjects");
 }
 
 function getSemesterRadioVal() {
@@ -116,7 +121,7 @@ function transitionToSubjectsListOnClick(button) {
                 .done(function(data) {
                     cache["subjects"][semester] = data;
                 })
-                .fail(handleError);
+                .fail(handleSubjectError);
         }
     });
 }

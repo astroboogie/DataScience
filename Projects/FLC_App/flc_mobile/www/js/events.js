@@ -8,31 +8,25 @@ import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { applyBackTransition } from './backtransition';
 import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
+import { errorPage } from './error';
 
 applyBackTransition();
 applyFastClick();
 displayLoadingSpinner();
-
-var state = {
-    isEventsLoading: true,
-    hasFetchError: false,
-};
-
-var events;
 
 fetchData("events")
     .done(handleEvents)
     .fail(handleError);
 
 function handleEvents(data) {
-    state.isEventsLoading = false;
     fadeOutLoadingSpinner("body", 150);
-    events = $.extend([], data); // copies data into classes
-    createEvents("#schedule-container", events);
+    createEvents("#schedule-container", data);
 }
 
 function handleError() {
-    state.hasFetchError = true;
+    fadeOutLoadingSpinner(250);
+    $("#schedule-container").empty();
+    errorPage("#schedule-container");
 }
 
 function createEvents(div, events) {

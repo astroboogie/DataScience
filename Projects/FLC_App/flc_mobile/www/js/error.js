@@ -1,10 +1,13 @@
-import '../css/error';
+import '../css/error.css';
+import '../fonts/material-icons.css';
 
 const errorPage = function(div) {
     $(div).append(
-        "<div id='error-container'>\
-            <i class='material-icons fa-exclamation-circle'></i>\
-            <span>Error fetching data.</span>\
+        "<div id='error'>\
+            <div id='error-container'>\
+                <i class='material-icons'>error</i>\
+                <span>Error fetching data.</span>\
+            </div>\
         </div>"
     );
 }
