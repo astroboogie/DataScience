@@ -60,13 +60,12 @@ def populateCourses(courses, url):
 	print "Successfully added ", coursesCount, " courses.\n"
 
 def getCourses(semesters):
-	endpoints = semesters["endpoints"]
-	for endpoint in endpoints:
+	for item in semesters:
 		courses = []
-		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + endpoint + "/index.html"
+		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + item["endpoint"] + "/index.html"
 		populateCourses(courses, url)
 
-		filePath = utils.getAndCreateFilePath('courses', endpoint)
+		filePath = utils.getAndCreateFilePath('courses', item["endpoint"])
 		utils.writeJSON(courses, filePath)
 
 if __name__ == "__main__":

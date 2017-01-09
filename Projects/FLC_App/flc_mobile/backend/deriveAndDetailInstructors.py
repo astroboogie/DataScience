@@ -121,15 +121,14 @@ def deriveInstructorsFromClasses(instructors, classes, endpoint):
 	print "Successfully added", instructorCount, " instructors.\n"
 
 def deriveAndDetailInstructors(semesters):
-	endpoints = semesters["endpoints"]
 	instructors = []
 
-	for endpoint in endpoints:
+	for item in semesters:
 		if utils.isLambdaEnv():
-			filePath = '/tmp/classes' + endpoint + '.json'
+			filePath = '/tmp/classes' + item["endpoint"] + '.json'
 		else:
-			filePath = 'classes/' + endpoint + '.json'
-		deriveInstructorsFromClasses(instructors, json.load(open(filePath)), endpoint)
+			filePath = 'classes/' + item["endpoint"] + '.json'
+		deriveInstructorsFromClasses(instructors, json.load(open(filePath)), item["endpoint"])
 
 	getInstructorDetails(instructors, "http://www.flc.losrios.edu/academics")
 

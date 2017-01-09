@@ -1,14 +1,14 @@
 [
     {
         "date": "01/14/2017",
-        "description": "Folsom Lake Colleges Spring 2017 semester officially begins on Saturday, January 14th. Saturday and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. FLC will be closed on Monday, January 16th for Martin Luther King, Jr.s birthday. Most classes will have their first session Tuesday, January 17th-Monday, January 23rd.",
+        "description": "Folsom Lake College's Spring 2017 semester officially begins on Saturday, January 14th. Saturday and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. FLC will be closed on Monday, January 16th for Martin Luther King, Jr.'s birthday. Most classes will have their first session Tuesday, January 17th-Monday, January 23rd.",
         "id": "0",
         "location": "All campuses",
         "title": "Spring semester officially begins"
     },
     {
         "date": "01/16/2017",
-        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of Dr. Martin Luther King Jr.s birthday on Monday, January 16th. No classes will be held.Folsom Lake Colleges Spring 2017 semester officially begins on Saturday, January 14th. Saturday classes and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. Most classes will begin Tues., Jan. 17 - Mon., Jan. 23.",
+        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of Dr. Martin Luther King Jr.'s birthday on Monday, January 16th. No classes will be held.Folsom Lake College's Spring 2017 semester officially begins on Saturday, January 14th. Saturday classes and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. Most classes will begin Tues., Jan. 17 - Mon., Jan. 23.",
         "id": "1",
         "location": "All campuses",
         "title": "MLK Jr. Holiday (college closed)"
@@ -25,14 +25,14 @@
         "description": "Kick off the semester at FLC with a little celebration and by getting to know your Associated Students representatives, student services available to you, and clubs you can join.",
         "id": "3",
         "location": "Folsom campus, outside the Roost",
-        "title": "Falcons Day @ Folsom"
+        "title": "Falcon's Day @ Folsom"
     },
     {
         "date": "01/19/2017 | 12 PM - 1:00 p.m",
         "description": "Kick off the semester at EDC with a little celebration and by getting to know your Associated Students representatives, student services available to you, and clubs you can join.",
         "id": "4",
         "location": "El Dorado Center, The Green",
-        "title": "Falcons Day @ EDC"
+        "title": "Falcon's Day @ EDC"
     },
     {
         "date": "01/20/2017 | 9:00 a.m - 2:00 p.m",
@@ -43,44 +43,44 @@
     },
     {
         "date": "01/27/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Womens Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
+        "description": "FLC Women's Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
         "id": "6",
         "location": "Folsom campus, Tennis Courts",
-        "title": "Womens Tennis Match"
+        "title": "Women's Tennis Match"
     },
     {
         "date": "01/27/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Mens Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
+        "description": "FLC Men's Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
         "id": "7",
         "location": "Folsom campus, Tennis Courts",
-        "title": "Mens Tennis Match"
+        "title": "Men's Tennis Match"
     },
     {
         "date": "01/30/2017 | 5:00 p.m - 8:00 p.m",
-        "description": "FLC Mens Baseball Team vs. ButteFor more information on FLC Athletics, click here.",
+        "description": "FLC Men's Baseball Team vs. ButteFor more information on FLC Athletics, click here.",
         "id": "8",
         "location": "Folsom campus, Baseball Field",
-        "title": "Mens Baseball Game"
+        "title": "Men's Baseball Game"
     },
     {
         "date": "01/30/2017 | 6:30 p.m - 10:00 p.m",
-        "description": "The Falcons Eye Theatre at Folsom Lake College calls for FLC students and actors from the community to audition for its spring production ofCyrano. All skill levels encouraged to audition. For more information click here.",
+        "description": "The Falcon's Eye Theatre at Folsom Lake College calls for FLC students and actors from the community to audition for its spring production ofCyrano. All skill levels encouraged to audition. For more information click here.",
         "id": "9",
         "location": "Folsom campus, Harris Center, Drama Lab (PAC-1170)",
-        "title": "Falcons Eye Auditions"
+        "title": "Falcon's Eye Auditions"
     },
     {
         "date": "01/31/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Womens Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
+        "description": "FLC Women's Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
         "id": "10",
         "location": "Folsom campus, Tennis Courts",
-        "title": "Womens Tennis Match"
+        "title": "Women's Tennis Match"
     },
     {
         "date": "01/31/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Mens Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
+        "description": "FLC Men's Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
         "id": "11",
         "location": "Folsom campus, Tennis Courts",
-        "title": "Mens Tennis Match"
+        "title": "Men's Tennis Match"
     }
 ]

@@ -55,7 +55,7 @@ def extractInfoFromLine(line, marker, lindex, rindex):
 		else:
 			info = line[line.index(lindex) + len(lindex) : line.index(rindex)]
 		info = info.rstrip(" ").lstrip(" ").decode('ascii','ignore').encode("ascii") # remove extra whitespace
-		info = info.replace("'", "")												 # remove quotes (messes up json parsing)
+		#info = info.replace("'", "")												 # remove quotes (messes up json parsing)
 		info = info.replace('"', '')												 # remove quotes (messes up json parsing)
 		info = re.sub(r'<.+?>', '', info)											 # remove any html elements in the line
 		info = filter(lambda x: x in string.printable, info) 						 # remove non-printing characters

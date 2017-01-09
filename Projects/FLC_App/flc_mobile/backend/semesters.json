@@ -1,12 +1,14 @@
-{
-    "endpoints": [
-        "fall",
-        "spring",
-        "summer"
-    ],
-    "semesters": [
-        "Fall 2016",
-        "Spring 2017",
-        "Summer 2016"
-    ]
-}
+[
+    {
+        "endpoint": "spring",
+        "name": "Spring 2017"
+    },
+    {
+        "endpoint": "fall",
+        "name": "Fall 2016"
+    },
+    {
+        "endpoint": "summer",
+        "name": "Summer 2016"
+    }
+]

@@ -22,13 +22,12 @@ def populateSubjects(subjects, url):
 	print "Successfully added ", subjectCount, " subjects.\n"
 
 def getSubjects(semesters):
-	endpoints = semesters["endpoints"]
-	for endpoint in endpoints:
+	for item in semesters:
 		subjects = {}
-		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + endpoint + "/index.html"
+		url = "http://www.losrios.edu/schedules_reader_all.php?loc=flc/" + item["endpoint"] + "/index.html"
 		populateSubjects(subjects, url)
 
-		filePath = utils.getAndCreateFilePath('subjects', endpoint)
+		filePath = utils.getAndCreateFilePath('subjects', item["endpoint"])
 		utils.writeJSON(subjects, filePath)
 
 if __name__ == "__main__":
