@@ -4,6 +4,7 @@ from deriveAndDetailInstructors import deriveAndDetailInstructors
 from getSubjects import getSubjects
 from getClasses import getClasses
 from getLatestSemesters import getLatestSemesters
+from getSports import getSports
 import boto3
 import os
 import sys
@@ -13,6 +14,7 @@ def getAll(semesters):
 	getEvents()
 	getCourses(semesters)
 	getClasses(semesters)
+	getSports()
 
 def deriveAll(semesters):
 	deriveAndDetailInstructors(semesters)

@@ -44,12 +44,14 @@ function createSports(div, sports) {
 
 // Returns a string representing the HTML of an event element
 function sportInfo(sport, date, opponent, site, time) {
+    console.log("OPPONENT: ", opponent);
+    console.log("SITE: ", site);
     return (
         "<div class='sport-object'>\
             <div class='sport-text-container'>\
                 <div class='sport-title'>" + sport + "</div>\
                 <div class='sport-date'><b>Date: </b>" + date + "</div>\
-                <div class='sport-location'><b>Location: </b>" + site + "</div>\
+                <div class='sport-location'><b>Location: </b>" + opponent + " " + site + "</div>\
                 <div class='sport-description'>" + time + "</div>\
             </div>\
             <div class='sport-arrow'>\

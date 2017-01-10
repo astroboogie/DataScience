@@ -11,7 +11,7 @@ def parseOpponentInfo(opponentInfo):
 	info = re.sub(' +', ' ', info) # Remove mutliple spaces
 	return info
 
-def populateEvents(sports, url):
+def populateSports(sports, url):
 	response = utils.getHTML(url, "sports")
 	print "Parsing sports data..."
 	sportCount = 0
@@ -33,17 +33,17 @@ def populateEvents(sports, url):
 		sports[-1]["id"] = str(sportCount)
 		sports[-1]["sport"] = sport
 		sports[-1]["time"] = time
-		sports[-1]["oponnent"] = opponent
+		sports[-1]["opponent"] = opponent
 		sports[-1]["neutralSite"] = neutralSite
 		sportCount += 1
 	print "Successfully parsed", sportCount, "sports.\n"
 
-def getEvents():
+def getSports():
 	events = []
-	populateEvents(events, "http://flcfalcons.com/landing/index")
+	populateSports(events, "http://flcfalcons.com/landing/index")
 
 	filePath = utils.getAndCreateFilePath('', 'sports')
 	utils.writeJSON(events, filePath)
 
 if __name__ == "__main__":
-	getEvents()
+	getSports()

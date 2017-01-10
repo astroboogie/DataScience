@@ -57,6 +57,12 @@
     margin: 0 0 20px 0;
 }
 
+#sports-container {
+    padding-top: 12vh;
+    height: 90vh;
+    width: 100vw;
+}
+
 .sport-text-container {
     width: 85%;
     margin-bottom: 20px;
