@@ -13,6 +13,7 @@ module.exports = {
         "professorsEntry": './www/js/professors.js',
         "scheduleEntry": './www/js/schedule.js',
         "scrollEntry": './www/js/scroll.js',
+        "sportsEntry": './www/js/sports.js',
     },
     target: 'web',
     exclude: /node_modules/,

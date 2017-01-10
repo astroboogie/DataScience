@@ -1,0 +1,125 @@
+/* Header */
+#header-section {
+    position: fixed;
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+#header-container {
+    height: 69%;
+    width: 100vw;
+    align-self: flex-end;
+}
+
+#back-arrow {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#back-arrow > i {
+    font-size: 5vw;
+    align-self: center;
+}
+
+#header-text {
+    width: 85%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+#schedule-container {
+    padding-top: 12vh;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* Sport Object */
+.sport-object {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.sport-text-container {
+    width: 85%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.sport-title {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4f9bd4;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-left: 5%;
+    align-self: center;
+}
+
+.sport-description {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-left: 5%;
+    align-self: center;
+}
+
+.sport-date {
+    width: 100%;
+    float: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-left: 5%;
+    align-self: center;
+}
+
+.sport-location {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-left: 5%;
+    align-self: center;
+}
+
+.sport-arrow {
+    width: 15%;
+    height: 100%;
+    padding: 0 20px 0 0;
+    margin: 0;
+    float: left;
+}
+
+.sport-arrow > i{
+    font-size: 6vw;
+    color: #bcbcbc;
+    margin: 0 0 0 40%;
+    padding: 10px 0 0 0;
+    align-self: center;
+}
