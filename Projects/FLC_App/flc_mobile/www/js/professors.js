@@ -29,7 +29,7 @@ function fetchDataAndCreatePage() {
     $.when(fetchData("semesters",), fetchData("instructors"))
         .done(function(semesterData, instructorData) {
             setSemesterValues("#professor-semester-form", semesterData[0]);
-            updateProfessorClassListOnSemesterChange(".professor-arrow", instructorData[0]);
+            updateProfessorClassListOnSemesterChange(instructorData[0]);
             createProfessors("#professor-container", instructorData[0]);
             fadeOutLoadingSpinner(250);
         })
@@ -64,20 +64,16 @@ function createProfessors(div, professors) {
     });
 }
 
-function getProfessorsClassList(arrow, professors, semester) {
-    let professorId = $(arrow).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
-    console.log("PROF ID:", professorId);
+function getProfessorsClassList(professorID, professors, semester) {
     let classListSemester = "classList_" + semester;
-    console.log("ENDPOINT:", classListSemester);
-    console.log("CLASSLIST (FUNC):",  professors[professorId][classListSemester]);
-    return professors[professorId][classListSemester];
+    return professors[professorID][classListSemester];
 }
 
-function updateProfessorClassListOnSemesterChange(arrow, professors) {
+function updateProfessorClassListOnSemesterChange(professors) {
     $("#professor-semester-form input[type='radio']").change(function() {
         let semester = getSemesterRadioVal();
-        let classList = getProfessorsClassList(arrow, professors, semester);
-        console.log("CLASSLIST: ", classList);
+        let professorID = $(this).closest("form").attr("professor-id").replace(/[^\/\d]/g,''); // remove non-digit
+        let classList = getProfessorsClassList(professorID, professors, semester);
         if (cache["classes"][semester] && cache["courses"][semester]) {
             createProfessorClassList(classList, cache["courses"][semester], cache["classes"][semester]);
         }
@@ -186,7 +182,9 @@ var createProfessorOverlay = function(arrow, professors) {
     $("#professor-subject > span").text(professorSubject);
     $("#professor-email > span").text(professorEmail);
 
-    let classList = getProfessorsClassList(arrow, professors, semester);
+    let professorID = $(arrow).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
+    $("#professor-semester-form").attr('professor-id', professorID);
+    let classList = getProfessorsClassList(professorID, professors, semester);
     if (cache["courses"][semester] && cache["classes"][semester]) {
         createProfessorClassList(classList, cache["courses"][semester], cache["classes"][semester]);
     }
