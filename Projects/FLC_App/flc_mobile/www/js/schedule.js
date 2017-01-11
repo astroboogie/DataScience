@@ -8,6 +8,7 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
+import { setSemesterValues } from './semesters';
 import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 import { errorPage } from './error';
 
@@ -19,6 +20,17 @@ var cache = {
     "classes": {},
 };
 var currentPage = "schedule";
+
+setSemesterValuesOnPageLoad();
+function setSemesterValuesOnPageLoad() {
+    displayLoadingSpinner();
+    fetchData("semesters")
+        .done(function(semesterData) {
+            setSemesterValues("#schedule-semester-form", semesterData);
+            fadeOutLoadingSpinner(250);
+        })
+        .fail(fadeOutLoadingSpinner(250));
+}
 
 // Creates all back arrow functionality
 $("#back-arrow").click(function () {
@@ -69,23 +81,26 @@ function handleSearchResults(coursesData, classesData) {
 
 // Assign function to 'search' button that transitions page from schedule to list of courses.
 // Also create the search results page when the 'search' button is clicked.
-$("#search-button").click(function () {
-    let semester = getSemesterRadioVal();
-    if (cache["courses"][semester] && cache["classes"][semester]) {
-        handleSearchResults(cache["courses"][semester], cache["classes"][semester]);
-    }
-    else {
-        displayLoadingSpinner();
-        $.when(fetchData("courses", semester), fetchData("classes", semester))
-            .done(function(coursesData, classesData) {
-                cache["courses"][semester] = coursesData[0];
-                cache["classes"][semester] = classesData[0];
-                handleSearchResults(coursesData[0], classesData[0]);
-                fadeOutLoadingSpinner(250);
-            })
-            .fail(handleSearchResultsError);
-    }
-});
+createSearchButtonFunctionailty()
+function createSearchButtonFunctionailty() {
+    $("#search-button").click(function () {
+        let semester = getSemesterRadioVal();
+        if (cache["courses"][semester] && cache["classes"][semester]) {
+            handleSearchResults(cache["courses"][semester], cache["classes"][semester]);
+        }
+        else {
+            displayLoadingSpinner();
+            $.when(fetchData("courses", semester), fetchData("classes", semester))
+                .done(function(coursesData, classesData) {
+                    cache["courses"][semester] = coursesData[0];
+                    cache["classes"][semester] = classesData[0];
+                    handleSearchResults(coursesData[0], classesData[0]);
+                    fadeOutLoadingSpinner(250);
+                })
+                .fail(handleSearchResultsError);
+        }
+    });
+}
 
 function handleSearchResultsError() {
     fadeOutLoadingSpinner(250);
@@ -104,7 +119,7 @@ function handleSubjectError() {
 }
 
 function getSemesterRadioVal() {
-    return $("#semester-form input[type='radio']:checked").val();
+    return $("#schedule-semester-form input[type='radio']:checked").val();
 }
 
 // Creates search arrow functionality

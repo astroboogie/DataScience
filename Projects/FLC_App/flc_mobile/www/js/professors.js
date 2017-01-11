@@ -8,11 +8,11 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
+import { setSemesterValues } from './semesters';
 import { addAppendClassOverlayOnClick } from './classDescription';
 import { errorPage } from './error';
 
 applyFastClick();
-displayLoadingSpinner();
 
 var cache = {
     "courses": {},
@@ -23,20 +23,21 @@ var backSelectable = true;
 var searchText = $("#search-text");
 var searchInput = $("#search-text > input");
 
-fetchFataAndCreatePage();
-function fetchFataAndCreatePage() {
-    let semester = getSemesterRadioVal();
-
-    fetchData("instructors")
-        .done(function(response) {
-            createProfessors("#professor-container", response, semester)
+fetchDataAndCreatePage();
+function fetchDataAndCreatePage() {
+    displayLoadingSpinner();
+    $.when(fetchData("semesters",), fetchData("instructors"))
+        .done(function(semesterData, instructorData) {
+            setSemesterValues("#professor-semester-form", semesterData[0]);
+            updateProfessorClassListOnSemesterChange(".professor-arrow", instructorData[0]);
+            createProfessors("#professor-container", instructorData[0]);
             fadeOutLoadingSpinner(250);
         })
         .fail(handleCreateProfessorsError);
 }
 
 // Creates a div for each professor and appends it to the given div.
-function createProfessors(div, professors, semester) {
+function createProfessors(div, professors) {
     $.each(professors, function(index, professor) {
         $(div).append(professorInfo(professor));
     });
@@ -45,7 +46,7 @@ function createProfessors(div, professors, semester) {
     $(".professor-arrow").click(function () {
         backSelectable = true;
         currentPage = "professor-overlay";
-        createProfessorOverlay(this, professors, semester);
+        createProfessorOverlay(this, professors);
 
         // transition page to professor overlay
         $("#professor-overlay").addClass("transition-professor-overlay-center");
@@ -63,18 +64,29 @@ function createProfessors(div, professors, semester) {
     });
 }
 
-function updateProfessorClassListOnChange(semester) {
-    // TODO: update with html
+function getProfessorsClassList(arrow, professors, semester) {
+    let professorId = $(arrow).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
+    console.log("PROF ID:", professorId);
+    let classListSemester = "classList_" + semester;
+    console.log("ENDPOINT:", classListSemester);
+    console.log("CLASSLIST (FUNC):",  professors[professorId][classListSemester]);
+    return professors[professorId][classListSemester];
+}
+
+function updateProfessorClassListOnSemesterChange(arrow, professors) {
     $("#professor-semester-form input[type='radio']").change(function() {
+        let semester = getSemesterRadioVal();
+        let classList = getProfessorsClassList(arrow, professors, semester);
+        console.log("CLASSLIST: ", classList);
         if (cache["classes"][semester] && cache["courses"][semester]) {
-            createProfessorClassList(".professor-arrow", PROFESSORS, semester, cache["courses"][semester], cache["classes"][semester]);
+            createProfessorClassList(classList, cache["courses"][semester], cache["classes"][semester]);
         }
         else {
             displayLoadingSpinner();
             $.when(fetchData("courses", semester), fetchData("classes", semester))
                 .done(function(coursesData, classesData) {
                     fadeOutLoadingSpinner(250);
-                    createProfessorClassList(".professor-arrow", PROFESSORS, semester, coursesData[0], classesData[0]);
+                    createProfessorClassList(classList, coursesData[0], classesData[0]);
                     cache["courses"][semester] = coursesData[0];
                     cache["classes"][semester] = classesData[0];
                 })
@@ -84,7 +96,7 @@ function updateProfessorClassListOnChange(semester) {
 }
 
 function handleCreateProfessorsError() {
-    //fadeOutLoadingSpinner(250);
+    fadeOutLoadingSpinner(250);
     $("#professor-container").empty();
     errorPage("#professor-container");
 }
@@ -96,9 +108,7 @@ function handleProfessorClassListError() {
 }
 
 function getSemesterRadioVal() {
-    return "spring";
-    // TODO: implement radio selector on professor page
-    //return $("#semester-form input[type='radio']:checked").val();
+    return $("#professor-semester-form input[type='radio']:checked").val();
 }
 
 // Returns a string representation of a list of subjects
@@ -163,7 +173,8 @@ var professorInfo = function(professor) {
     );
 };
 
-var createProfessorOverlay = function(arrow, professors, semester) {
+var createProfessorOverlay = function(arrow, professors) {
+    let semester = getSemesterRadioVal();
     var professorTitle = $(arrow).parent().find($(".professor-title > span")).text();
     var professorStatus = $(arrow).parent().find($(".professor-status")).text();
     var professorSubject = $(arrow).parent().find($(".professor-subject")).text();
@@ -175,8 +186,9 @@ var createProfessorOverlay = function(arrow, professors, semester) {
     $("#professor-subject > span").text(professorSubject);
     $("#professor-email > span").text(professorEmail);
 
+    let classList = getProfessorsClassList(arrow, professors, semester);
     if (cache["courses"][semester] && cache["classes"][semester]) {
-        createProfessorClassList(arrow, professors, semester, cache["courses"][semester], cache["classes"][semester]);
+        createProfessorClassList(classList, cache["courses"][semester], cache["classes"][semester]);
     }
     else {
         displayLoadingSpinner();
@@ -184,25 +196,22 @@ var createProfessorOverlay = function(arrow, professors, semester) {
             .done(function(coursesResponse, classesResponse) {
                 cache["courses"][semester] = coursesResponse[0];
                 cache["classes"][semester] = classesResponse[0];
-                createProfessorClassList(arrow, professors, semester, coursesResponse[0], classesResponse[0]);
+                createProfessorClassList(classList, coursesResponse[0], classesResponse[0]);
                 fadeOutLoadingSpinner(250);
             })
             .fail(handleProfessorClassListError);
     }
 };
 
-function createProfessorClassList(arrow, professors, semester, courses, classes) {
-    let professorId = $(arrow).parent().attr("id").replace(/[^\/\d]/g,''); // remove non-digit;
-    let classListSemester = "classList_" + semester;
-    let classIds = professors[professorId][classListSemester];
+function createProfessorClassList(classList, courses, classes) {
     $("#course-container").empty();
-    $(classIds).each(function (index, element) {
-        $("#course-container").append(professorClass(cache["classes"][semester][element]));
+    $(classList).each(function (index, id) {
+        $("#course-container").append(professorClass(classes[id]));
     });
     if ($("#course-container").is(':empty')) {
         $("#course-container").append(emptyClassList());
     }
-    addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), cache["classes"][semester], cache["courses"][semester]);
+    addAppendClassOverlayOnClick($(".course-arrow"), $("#course-overlay"), classes, courses);
     $(".course-arrow").click(function () {
         currentPage = "description";
         $("#professor-overlay").removeClass("transition-professor-overlay-center");
