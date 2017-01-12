@@ -257,3 +257,32 @@
     text-align: center;
     font-family: 'PT Sans', sans-serif;
 }
+
+label {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input:checked ~ .span-object > span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.span-object > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 300;
+    align-self: center;
+}
