@@ -3,120 +3,127 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-
 #main-container {
-    background-color: #ffffff;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+}
+
+/* Header Section */
+#header-section {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    z-index: 99;
 }
 
 #header-container {
-    position: absolute;
-    background-color: #337ab7;
-    height: 20%;
+    height: 100%;
     width: 100%;
-    -webkit-transition: height 0.13s;
-    z-index: 2;
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
 }
 
-#header-container > img {
-    width: 35vw;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transition: opacity 0.13s;
-}
-
-#header-container > div > i {
-    padding-top: 11.5%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-size: 6em;
-    width: 100vw;
-    cursor: default;
-}
-
-.header-scaled {
-    height: 10% !important;
-}
-
-.header-scaled > div > i {
-    opacity: 0;
-    -webkit-transition: opacity 0.13s;
-}
-
-.icon-container {
-    text-align: center;
+#back-arrow {
+    width: 15%;
+    height: 69%;
     float: left;
-    height: 100%;
-    display: table;
-    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
-.icon-container > i {
-    color: #337ab7;
-    font-size: 10vh;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#main-container {
-    background-color: #ffffff;
-    height: 100vh;
-    width: 100vw;
-}
-
-.category {
-    padding: 0 0 0 0 !important;
-    width: 100vw;
-    height: 50px;
-    background-color: white;
-    border: none;
-    outline: none;
-}
-
-#category-back {
-    float: left;
-    margin-left: 5px;
-    margin-top: 6px;
-    background-color: transparent;
-    border: none;
-    outline:none;
-    opacity: 1;
-}
-
-#category-back > i {
-    font-size: 3em;
-    color: white;
-}
-
-.body-container {
-    height: 100%;
-    width: 100vw;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-
-
-
-#emergency-container {
-    margin-top: 21vh;
-    height: 100vh;
-    width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transition: margin-left 0.3s;
-}
-
-#emergency-container > span {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#back-arrow > i {
     font-size: 5vw;
-    font-weight: 600;
+    align-self: center;
+}
+
+#header-text {
+    width: 85%;
+    height: 69%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-text > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 500;
+    align-self: center;
+}
+
+/* Section Title */
+.title-container {
+    height: 5.5%;
+    background-color: #f8f8f8;
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-container > span {
+    font-size: 3.5vw;
+    font-family: 'PT Sans', sans-serif;
+    color: #b6b6b6;
+}
+
+.number-container {
+    width: 100%;
+    height: 7%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.number-container > span {
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+    color: #539cd2;
+    align-self: center;
+}
+
+/* Phone Procedures */
+
+#phone-procedures {
+    width: 100%;
+    margin-bottom: 2.5vh;
+}
+
+.procedure-icon {
+    margin-top: 2.5vh;
+    float: left;
+    width: 15vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+}
+
+.procedure-icon > i {
+    font-size: 3.5vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: #539cd2;
+    color: white;
+    padding: 3px 3px 3px 3px;
+    align-self: center;
+    font-weight: 700;
+}
+
+.procedure-text {
+    margin-top: 2.5vh;
+    float: left;
+    height: 7vw;
+    width: 85vw;
+    display: flex;
+}
+
+.procedure-text > span {
+    font-size: 3.5vw;
+    font-family: 'PT Sans', sans-serif;
+    color: #4f4f4f;
+    align-self: center;
+}
+
+#text-end {
+    margin-bottom: 2.5vh;
 }
