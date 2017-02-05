@@ -1,0 +1,164 @@
+body {
+    margin: 0 0 0 0;
+}
+
+@font-face { font-family: Nunito; src: url('../fonts/Nunito/Nunito-Regular.ttf'); }
+@font-face { font-family: Raleway; src: url('../fonts/Raleway/Raleway-Regular.ttf');}
+@font-face { font-family: Raleway; font-weight: bold; src: url('../fonts/Raleway/Raleway-SemiBold.ttf');}
+
+
+#main-container {
+    -webkit-transition: margin-left 1s; /* Safari */
+    transition: margin-left 1s;
+    margin-left: 0;
+    position: fixed;
+    width: 130vw;
+    height: 100vh;
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+.container-transition {
+    margin-left: -120vw !important;
+}
+
+.header-container {
+    width: 100%;
+    height: 12vh;
+    /*background-color: #8ebbff;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*border-bottom: 2pt solid #ffffff;*/
+}
+
+.header-container > img {
+    width: auto;
+    height: 6vh;
+    padding-left: 5%;
+    font-size: 1.75vw;
+}
+
+#visualizations-container {
+    width: 100%;
+    height: 88vh;
+}
+
+.sensor-container {
+    height: 40%;
+    width: 20%;
+    margin-top: -15px;
+}
+
+#slideshow-container {
+    font-size: 6vw;
+    width: 100vw;
+    height: 88vh;
+}
+
+.slideshow-object {
+    width: 100vw;
+}
+
+.slideshow-text {
+    margin-left: 10vw;
+    width: 80vw;
+    text-align: center;
+    position: fixed;
+    /*margin-top: 35vh;*/
+    opacity: 1;
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+    font-size: 4vh;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.first-slide {
+    margin-top: 35vh;
+}
+
+.credits {
+    margin-top: -10vh !important;
+}
+
+.transition-in {
+    opacity: 1 !important;
+}
+
+#small-font {
+    padding-top: 10vh !important;
+    font-size: 2.8vh !important;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    left: -1.5vh;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+#graph-container {
+    -webkit-transition: margin-left 1s; /* Safari */
+    transition: margin-left 1s;
+    margin-left: 120vw;
+    position: absolute;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url('img/FLC_Aquaponics.png');*/
+    /*background-size: contain;*/
+}
+
+.graph-transition {
+    margin-left: 0 !important;
+}
+
+.graph-object {
+    width: 100vw;
+    height: 17vh;
+}
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: #f5f5f5;
+}
+
+.axis text {
+}
+
+.line{
+    fill: none;
+    stroke-width: 4px;
+}
+
+.tick text{
+    font-size: 12px;
+    fill: #adaeb6;
+    font-family: 'Raleway', sans-serif;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+}
+
+.tick line{
+}
+
+.text-header {
+    font-size: 2vh;
+    fill: #282828;
+    font-family: 'Raleway', sans-serif;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+}
+
+.text-subheader {
+    font-size: 1.5vh;
+    fill: #282828;
+    font-family: 'Raleway', sans-serif;
+    font-stretch: ultra-condensed;
+}
