@@ -52,38 +52,21 @@ body {
 
 #slideshow-container {
     font-size: 6vw;
-    width: 100vw;
+    margin-left: 5vw;
+    width: 90vw;
     height: 88vh;
-}
-
-.slideshow-object {
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slideshow-text {
-    margin-left: 10vw;
-    width: 80vw;
     text-align: center;
-    position: fixed;
-    /*margin-top: 35vh;*/
     opacity: 1;
-    -webkit-transition: opacity 0.5s; /* Safari */
-    transition: opacity 0.5s;
+    margin-top: -10vh;
     font-size: 4vh;
     color: white;
     font-family: 'Nunito', sans-serif;
-}
-
-.first-slide {
-    margin-top: 35vh;
-}
-
-.credits {
-    margin-top: -10vh !important;
-}
-
-.transition-in {
-    opacity: 1 !important;
 }
 
 #small-font {
@@ -93,13 +76,20 @@ body {
 
 sup {
     vertical-align: super;
-    font-size: smaller;
+    font-size: 2.8vh;
     left: -1.5vh;
 }
 
 sub {
     vertical-align: sub;
-    font-size: smaller;
+    font-size: 2.8vh;
+}
+
+#cycle {
+    background-image: url('../img/cycle.png');
+    background-size: contain;
+    width: 90vw;
+    height: 90vw;
 }
 
 #graph-container {
