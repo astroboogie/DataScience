@@ -56,9 +56,7 @@ window.setInterval(function () {
     else {
         currentSlide = 0;
     }
-
-    console.log(currentSlide, slideText);
-
+    
     slideText.fadeOut(fadeTime * 1000, function() {
         slideText.remove();
         slideContainer
