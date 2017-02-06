@@ -88,8 +88,16 @@ sub {
 #cycle {
     background-image: url('../img/cycle.png');
     background-size: contain;
+}
+
+.cycle-tall {
     width: 90vw;
     height: 90vw;
+}
+
+.cycle-wide {
+    width: 85vh;
+    height: 85vh;
 }
 
 #graph-container {
@@ -128,7 +136,7 @@ sub {
 }
 
 .tick text{
-    font-size: 12px;
+    font-size: 1vh;
     fill: #adaeb6;
     font-family: 'Raleway', sans-serif;
     font-stretch: ultra-condensed;

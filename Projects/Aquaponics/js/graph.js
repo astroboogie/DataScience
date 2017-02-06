@@ -1,8 +1,16 @@
 var screenHeight = $(window).height();
 var screenWidth = $(window).width();
 
-var margin = {top: 80, right: 60, bottom: 50, left: 70},
-    width = screenWidth - margin.left - margin.right,
+var margin;
+
+if (screenHeight > screenWidth) {
+    margin = {top: screenHeight * 0.06, right: screenWidth * 0.08, bottom: screenHeight * 0.04, left: screenWidth * 0.09};
+}
+else {
+    margin = {top: screenHeight * 0.06, right: screenWidth * 0.2, bottom: screenHeight * 0.04, left: screenWidth * 0.2};
+}
+
+var width = screenWidth - margin.left - margin.right,
     height = (screenHeight * 0.17) - margin.top - margin.bottom;
 
 var graphBuilder = function(graphNumber, data, headerText, subHeaderText, lineColor) {

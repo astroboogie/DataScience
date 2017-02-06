@@ -1,13 +1,22 @@
 // Transition delay in seconds
 var graphTransitionTime = 3;
-var slideTransitionTime = 5;
+var slideTransitionTime = 2;
 var fadeTime = 0.5;
+
+var cycleType;
+
+if ($(window).height() < $(window).width()) {
+    cycleType = "cycle-wide";
+}
+else {
+    cycleType = "cycle-tall";
+}
 
 var slideShowTexts = [
     "<span class='slideshow-text'>The Aquaponics Project</span>",
     "<span class='slideshow-text'>What does “Aquaponics” mean?</span>",
     "<span class='slideshow-text'><strong>Aqua</strong>culture - raising aquatic animals </br>+ </br>Hydro<strong>ponics</strong> - cultivating plants in water</br>=</br><strong>Aquaponics</strong></span>",
-    "<span class='slideshow-text'><div id='cycle'></div></span>",
+    "<span class='slideshow-text'><div id='cycle' class=" + cycleType + "></div></span>",
     "<span class='slideshow-text'>Fish and aquatic animals produce waste containing ammonia (NH<sub>3</sub>)</span>",
     "<span class='slideshow-text'>Ammonia in high concentrations is toxic to fish</span>",
     "<span class='slideshow-text'>Nitrosomonas bacteria convert ammonia into nitrites (NO<sub>2</sub><sup>-</sup>)</span>",
