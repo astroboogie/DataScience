@@ -16,11 +16,12 @@ def populateEvents(events, url):
 		for line in eventItem:
 			if '<p><p>' in line and '</p></p>' in line:
 				description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
+				break
 			elif '<p><p>' in line:
 				description = line
+				break
 			else:
-				description = ''
-
+				description = None
 		if not filter(lambda event: event['description'] == description, events):
 			events.append({"title" : title})
 			events[-1]["id"] = str(eventCount)

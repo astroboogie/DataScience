@@ -9,7 +9,8 @@
             "0",
             "1",
             "3",
-            "8"
+            "6",
+            "9"
         ],
         "classList_summer": [
             "0"
@@ -94,11 +95,11 @@
                 "10:30AM-12:35PM"
             ]
         },
-        "email": "hegnerP@flc.losrios.edu",
+        "email": null,
         "id": "2",
-        "name": "Paula Hegner",
+        "name": "P. Hegner",
         "office": null,
-        "phone": "(916) 608-6582",
+        "phone": null,
         "subjects": [
             "ACCT"
         ]
@@ -111,9 +112,9 @@
             "11"
         ],
         "classList_spring": [
-            "6",
             "7",
-            "9"
+            "8",
+            "10"
         ],
         "classList_summer": [
             "1"
@@ -148,7 +149,7 @@
             "3"
         ],
         "classList_spring": [
-            "10"
+            "11"
         ],
         "classTimes": {
             "F": [],
@@ -176,7 +177,7 @@
         ]
     },
     {
-        "classHours": "0hr 0min",
+        "classHours": "2hr 40min",
         "classList_fall": [
             "13",
             "14",
@@ -215,44 +216,49 @@
             "811"
         ],
         "classList_spring": [
-            "11",
             "12",
-            "25",
+            "13",
             "26",
-            "134",
-            "135",
-            "181",
-            "182",
-            "232",
-            "233",
-            "247",
-            "248",
-            "275",
-            "276",
-            "434",
-            "435",
-            "441",
-            "442",
-            "464",
-            "465",
-            "529",
-            "530",
-            "540",
-            "541",
-            "546",
-            "547",
+            "27",
+            "118",
+            "119",
+            "137",
+            "138",
+            "174",
+            "175",
+            "187",
+            "188",
+            "238",
+            "239",
+            "253",
+            "254",
+            "281",
+            "282",
+            "443",
+            "444",
+            "450",
+            "451",
+            "469",
+            "470",
+            "505",
+            "532",
+            "533",
+            "543",
+            "544",
+            "549",
+            "550",
             "650",
             "651",
             "667",
             "668",
             "688",
             "689",
-            "841",
-            "842",
-            "857",
+            "838",
+            "839",
+            "854",
+            "855",
             "858",
-            "861",
-            "862"
+            "859"
         ],
         "classList_summer": [
             "3",
@@ -273,11 +279,15 @@
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "09:30AM-10:50AM"
+            ],
             "Sa": [],
             "T": [],
             "Th": [],
-            "W": []
+            "W": [
+                "09:30AM-10:50AM"
+            ]
         },
         "email": null,
         "id": "5",
@@ -287,7 +297,9 @@
         "subjects": [
             "ACCT",
             "ADMJ",
+            "BIOL",
             "BUS",
+            "CHEM",
             "CISC",
             "COMM",
             "DANCE",
@@ -295,6 +307,7 @@
             "ENVT",
             "FT",
             "GERON",
+            "HCD",
             "HSER",
             "KINES",
             "MGMT",
@@ -328,25 +341,27 @@
             "812"
         ],
         "classList_spring": [
-            "13",
-            "27",
-            "136",
-            "183",
-            "234",
-            "249",
-            "277",
-            "436",
-            "443",
-            "466",
-            "531",
-            "542",
-            "548",
+            "14",
+            "28",
+            "120",
+            "139",
+            "176",
+            "189",
+            "240",
+            "255",
+            "283",
+            "445",
+            "452",
+            "471",
+            "534",
+            "545",
+            "551",
             "652",
             "669",
             "690",
-            "843",
-            "859",
-            "863"
+            "840",
+            "856",
+            "860"
         ],
         "classList_summer": [
             "2",
@@ -381,7 +396,9 @@
         "subjects": [
             "ACCT",
             "ADMJ",
+            "BIOL",
             "BUS",
+            "CHEM",
             "CISC",
             "COMM",
             "DANCE",
@@ -422,25 +439,27 @@
             "813"
         ],
         "classList_spring": [
-            "14",
-            "28",
-            "137",
-            "184",
-            "235",
-            "250",
-            "278",
-            "437",
-            "444",
-            "467",
-            "532",
-            "543",
-            "549",
+            "15",
+            "29",
+            "121",
+            "140",
+            "177",
+            "190",
+            "241",
+            "256",
+            "284",
+            "446",
+            "453",
+            "472",
+            "535",
+            "546",
+            "552",
             "653",
             "670",
             "691",
-            "844",
-            "860",
-            "864"
+            "841",
+            "857",
+            "861"
         ],
         "classTimes": {
             "F": [],
@@ -458,7 +477,9 @@
         "subjects": [
             "ACCT",
             "ADMJ",
+            "BIOL",
             "BUS",
+            "CHEM",
             "CISC",
             "COMM",
             "DANCE",
@@ -485,10 +506,10 @@
             "23"
         ],
         "classList_spring": [
-            "15",
             "16",
             "17",
-            "23"
+            "18",
+            "24"
         ],
         "classTimes": {
             "F": [],
@@ -511,11 +532,11 @@
                 "01:00PM-02:20PM"
             ]
         },
-        "email": "accooer@flc.losrios.edu",
+        "email": null,
         "id": "8",
-        "name": "Reynando Accooe",
+        "name": "R. Accooe",
         "office": null,
-        "phone": "(916) 608-6912",
+        "phone": null,
         "subjects": [
             "ADMJ"
         ]
@@ -528,7 +549,7 @@
             "25"
         ],
         "classList_spring": [
-            "18"
+            "19"
         ],
         "classTimes": {
             "F": [],
@@ -558,13 +579,44 @@
         ]
     },
     {
+        "classHours": "5hr 45min",
+        "classList_fall": [
+            "19"
+        ],
+        "classList_spring": [
+            "20"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "01:00PM-02:20PM"
+            ],
+            "Sa": [],
+            "T": [
+                "07:00PM-10:05PM"
+            ],
+            "Th": [],
+            "W": [
+                "01:00PM-02:20PM"
+            ]
+        },
+        "email": null,
+        "id": "10",
+        "name": "D. Hopkins",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ADMJ"
+        ]
+    },
+    {
         "classHours": "6hr 40min",
         "classList_fall": [
             "24"
         ],
         "classList_spring": [
-            "20",
-            "24"
+            "21",
+            "25"
         ],
         "classTimes": {
             "F": [],
@@ -580,7 +632,7 @@
             ]
         },
         "email": null,
-        "id": "10",
+        "id": "11",
         "name": "A. Bates",
         "office": null,
         "phone": null,
@@ -591,8 +643,8 @@
     {
         "classHours": "5hr 45min",
         "classList_spring": [
-            "21",
-            "22"
+            "22",
+            "23"
         ],
         "classTimes": {
             "F": [],
@@ -609,7 +661,7 @@
             ]
         },
         "email": null,
-        "id": "11",
+        "id": "12",
         "name": "C. Crennell",
         "office": null,
         "phone": null,
@@ -623,7 +675,7 @@
             "30"
         ],
         "classList_spring": [
-            "29"
+            "30"
         ],
         "classTimes": {
             "F": [],
@@ -638,7 +690,7 @@
             "W": []
         },
         "email": null,
-        "id": "12",
+        "id": "13",
         "name": "C. Yeager",
         "office": null,
         "phone": null,
@@ -652,12 +704,12 @@
             "46"
         ],
         "classList_spring": [
-            "30",
             "31",
-            "33",
+            "32",
             "34",
-            "40",
+            "35",
             "41",
+            "42",
             "48"
         ],
         "classTimes": {
@@ -675,7 +727,7 @@
             "W": []
         },
         "email": null,
-        "id": "13",
+        "id": "14",
         "name": "A. Cahoon",
         "office": null,
         "phone": null,
@@ -689,9 +741,9 @@
             "48"
         ],
         "classList_spring": [
-            "32",
-            "36",
-            "38"
+            "33",
+            "37",
+            "39"
         ],
         "classList_summer": [
             "6"
@@ -717,7 +769,7 @@
             ]
         },
         "email": null,
-        "id": "14",
+        "id": "15",
         "name": "J. Rush",
         "office": null,
         "phone": null,
@@ -731,8 +783,8 @@
             "37"
         ],
         "classList_spring": [
-            "35",
-            "39"
+            "36",
+            "40"
         ],
         "classTimes": {
             "F": [],
@@ -753,7 +805,7 @@
             ]
         },
         "email": null,
-        "id": "15",
+        "id": "16",
         "name": "J. Thompson",
         "office": null,
         "phone": null,
@@ -767,7 +819,7 @@
             "38"
         ],
         "classList_spring": [
-            "37"
+            "38"
         ],
         "classList_summer": [
             "8",
@@ -790,7 +842,7 @@
             ]
         },
         "email": null,
-        "id": "16",
+        "id": "17",
         "name": "D. Hoffman",
         "office": null,
         "phone": null,
@@ -800,7 +852,7 @@
         ]
     },
     {
-        "classHours": "23hr 0min",
+        "classHours": "19hr 55min",
         "classList_fall": [
             "41",
             "42",
@@ -808,19 +860,16 @@
             "47"
         ],
         "classList_spring": [
-            "42",
             "43",
-            "45",
+            "44",
             "46",
-            "49",
-            "498"
+            "47"
         ],
         "classTimes": {
             "F": [],
             "M": [
                 "09:00AM-10:20AM",
-                "01:00PM-04:05PM",
-                "06:00PM-09:05PM"
+                "01:00PM-04:05PM"
             ],
             "Sa": [],
             "T": [
@@ -840,13 +889,12 @@
             ]
         },
         "email": null,
-        "id": "17",
+        "id": "18",
         "name": "H. Olts",
         "office": null,
         "phone": null,
         "subjects": [
-            "ANTH",
-            "HIST"
+            "ANTH"
         ]
     },
     {
@@ -855,7 +903,7 @@
             "45"
         ],
         "classList_spring": [
-            "44"
+            "45"
         ],
         "classTimes": {
             "F": [],
@@ -872,7 +920,7 @@
             ]
         },
         "email": null,
-        "id": "18",
+        "id": "19",
         "name": "S. Watters",
         "office": null,
         "phone": null,
@@ -881,7 +929,7 @@
         ]
     },
     {
-        "classHours": "19hr 45min",
+        "classHours": "22hr 10min",
         "classList_fall": [
             "49",
             "50",
@@ -891,11 +939,11 @@
             "72"
         ],
         "classList_spring": [
+            "49",
             "50",
-            "51",
-            "60",
-            "67",
-            "69"
+            "59",
+            "66",
+            "68"
         ],
         "classTimes": {
             "F": [],
@@ -919,8 +967,10 @@
                 "02:30PM-03:50PM"
             ],
             "W": [
+                "10:30AM-12:20PM",
                 "10:30AM-11:20AM",
                 "11:30AM-12:50PM",
+                "12:20PM-12:55PM",
                 "01:30PM-03:20PM",
                 "01:30PM-02:20PM",
                 "02:30PM-03:50PM",
@@ -928,7 +978,7 @@
             ]
         },
         "email": "sayagom@flc.losrios.edu",
-        "id": "19",
+        "id": "20",
         "name": "Marisa Sayago",
         "office": null,
         "phone": "(916) 608-6556",
@@ -937,14 +987,14 @@
         ]
     },
     {
-        "classHours": "15hr 0min",
+        "classHours": "16hr 40min",
         "classList_fall": [
             "54",
             "79"
         ],
         "classList_spring": [
-            "52",
-            "77"
+            "51",
+            "56"
         ],
         "classTimes": {
             "F": [
@@ -954,13 +1004,15 @@
             "M": [],
             "Sa": [],
             "T": [
-                "09:00AM-10:20AM",
+                "10:30AM-11:20AM",
+                "11:30AM-12:50PM",
                 "05:00PM-05:50PM",
                 "05:30PM-06:50PM",
                 "06:00PM-07:20PM"
             ],
             "Th": [
-                "09:00AM-10:20AM",
+                "10:30AM-11:20AM",
+                "11:30AM-12:50PM",
                 "05:00PM-05:50PM",
                 "05:30PM-06:50PM",
                 "06:00PM-07:20PM"
@@ -968,7 +1020,7 @@
             "W": []
         },
         "email": null,
-        "id": "20",
+        "id": "21",
         "name": "T. Germany",
         "office": null,
         "phone": null,
@@ -985,8 +1037,8 @@
             "74"
         ],
         "classList_spring": [
-            "53",
-            "71"
+            "52",
+            "70"
         ],
         "classList_summer": [
             "9",
@@ -1018,7 +1070,7 @@
             ]
         },
         "email": null,
-        "id": "21",
+        "id": "22",
         "name": "M. Welty",
         "office": null,
         "phone": null,
@@ -1036,10 +1088,10 @@
             "64"
         ],
         "classList_spring": [
+            "53",
             "54",
             "55",
-            "56",
-            "58"
+            "57"
         ],
         "classTimes": {
             "F": [],
@@ -1078,7 +1130,7 @@
             ]
         },
         "email": "SchmidH@flc.losrios.edu",
-        "id": "22",
+        "id": "23",
         "name": "Heike Schmid",
         "office": null,
         "phone": "(916) 608-6794",
@@ -1097,11 +1149,11 @@
             "81"
         ],
         "classList_spring": [
-            "57",
-            "59",
-            "74",
+            "58",
+            "73",
+            "75",
             "76",
-            "78"
+            "77"
         ],
         "classList_summer": [
             "12",
@@ -1141,11 +1193,11 @@
                 "05:30PM-06:50PM"
             ]
         },
-        "email": "HwangE@flc.losrios.edu",
-        "id": "23",
-        "name": "Eunyoung Hwang",
+        "email": null,
+        "id": "24",
+        "name": "E. Hwang",
         "office": null,
-        "phone": "(916) 608-6425",
+        "phone": null,
         "subjects": [
             "ART",
             "ARTH"
@@ -1159,10 +1211,10 @@
             "67"
         ],
         "classList_spring": [
+            "60",
             "61",
             "62",
-            "63",
-            "64"
+            "63"
         ],
         "classList_summer": [
             "10"
@@ -1195,7 +1247,7 @@
             ]
         },
         "email": null,
-        "id": "24",
+        "id": "25",
         "name": "A. Hart",
         "office": null,
         "phone": null,
@@ -1212,10 +1264,10 @@
             "73"
         ],
         "classList_spring": [
+            "64",
             "65",
-            "66",
-            "68",
-            "70"
+            "67",
+            "69"
         ],
         "classTimes": {
             "F": [],
@@ -1232,7 +1284,7 @@
             "W": []
         },
         "email": null,
-        "id": "25",
+        "id": "26",
         "name": "J. Hayes",
         "office": null,
         "phone": null,
@@ -1246,8 +1298,8 @@
             "77"
         ],
         "classList_spring": [
-            "73",
-            "75"
+            "72",
+            "74"
         ],
         "classTimes": {
             "F": [],
@@ -1261,7 +1313,7 @@
             "W": []
         },
         "email": null,
-        "id": "26",
+        "id": "27",
         "name": "P. Milton",
         "office": null,
         "phone": null,
@@ -1275,7 +1327,7 @@
             "75"
         ],
         "classList_spring": [
-            "79"
+            "78"
         ],
         "classTimes": {
             "F": [],
@@ -1291,7 +1343,7 @@
             ]
         },
         "email": null,
-        "id": "27",
+        "id": "28",
         "name": "K. Wendt",
         "office": null,
         "phone": null,
@@ -1306,8 +1358,8 @@
             "506"
         ],
         "classList_spring": [
-            "80",
-            "521"
+            "79",
+            "525"
         ],
         "classTimes": {
             "F": [],
@@ -1326,7 +1378,7 @@
             ]
         },
         "email": null,
-        "id": "28",
+        "id": "29",
         "name": "S. Mirmobiny",
         "office": null,
         "phone": null,
@@ -1344,10 +1396,10 @@
             "91"
         ],
         "classList_spring": [
-            "81",
-            "87",
-            "90",
-            "91"
+            "80",
+            "86",
+            "89",
+            "90"
         ],
         "classList_summer": [
             "15"
@@ -1369,7 +1421,7 @@
             "W": []
         },
         "email": null,
-        "id": "29",
+        "id": "30",
         "name": "R. Laurent",
         "office": null,
         "phone": null,
@@ -1378,7 +1430,7 @@
         ]
     },
     {
-        "classHours": "22hr 55min",
+        "classHours": "25hr 35min",
         "classList_fall": [
             "83",
             "85",
@@ -1387,11 +1439,12 @@
             "694"
         ],
         "classList_spring": [
+            "81",
             "82",
             "83",
             "84",
-            "85",
-            "741"
+            "736",
+            "742"
         ],
         "classList_summer": [
             "16",
@@ -1408,12 +1461,14 @@
             "T": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
+                "01:00PM-02:20PM",
                 "06:00PM-09:10PM",
                 "07:00PM-10:05PM"
             ],
             "Th": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
+                "01:00PM-02:20PM",
                 "06:00PM-09:10PM"
             ],
             "W": [
@@ -1422,11 +1477,11 @@
                 "12:00PM-01:25PM"
             ]
         },
-        "email": "HaleD@flc.losrios.edu",
-        "id": "30",
-        "name": "Daniel Hale",
+        "email": null,
+        "id": "31",
+        "name": "D. Hale",
         "office": null,
-        "phone": "(916) 608-6786",
+        "phone": null,
         "subjects": [
             "ASTR",
             "PHYS"
@@ -1438,8 +1493,8 @@
             "82"
         ],
         "classList_spring": [
-            "86",
-            "88"
+            "85",
+            "87"
         ],
         "classTimes": {
             "F": [],
@@ -1460,7 +1515,7 @@
             ]
         },
         "email": null,
-        "id": "31",
+        "id": "32",
         "name": "M. Shiva",
         "office": null,
         "phone": null,
@@ -1477,11 +1532,11 @@
             "693"
         ],
         "classList_spring": [
-            "89",
-            "92",
-            "738",
+            "88",
+            "91",
             "739",
-            "740"
+            "740",
+            "741"
         ],
         "classTimes": {
             "F": [],
@@ -1512,11 +1567,11 @@
                 "04:00PM-05:20PM"
             ]
         },
-        "email": "EiteneD@flc.losrios.edu",
-        "id": "32",
+        "email": "Eitened@flc.losrios.edu",
+        "id": "33",
         "name": "Daria Eiteneer-Harmon",
         "office": null,
-        "phone": null,
+        "phone": "(916) 608-6574",
         "subjects": [
             "ASTR",
             "PHYS"
@@ -1529,8 +1584,8 @@
             "117"
         ],
         "classList_spring": [
-            "93",
-            "118"
+            "92",
+            "117"
         ],
         "classTimes": {
             "F": [],
@@ -1549,7 +1604,7 @@
             ]
         },
         "email": null,
-        "id": "33",
+        "id": "34",
         "name": "P. Jazbi",
         "office": null,
         "phone": null,
@@ -1560,7 +1615,7 @@
     {
         "classHours": "2hr 40min",
         "classList_spring": [
-            "94"
+            "93"
         ],
         "classTimes": {
             "F": [],
@@ -1575,7 +1630,7 @@
             ]
         },
         "email": null,
-        "id": "34",
+        "id": "35",
         "name": "D. Weyland Watson",
         "office": null,
         "phone": null,
@@ -1590,8 +1645,8 @@
             "99"
         ],
         "classList_spring": [
-            "95",
-            "105"
+            "94",
+            "104"
         ],
         "classTimes": {
             "F": [],
@@ -1618,7 +1673,7 @@
             ]
         },
         "email": "wadae@flc.losrios.edu",
-        "id": "35",
+        "id": "36",
         "name": "Eric Wada",
         "office": null,
         "phone": "(916) 608-6767",
@@ -1634,9 +1689,9 @@
             "415"
         ],
         "classList_spring": [
-            "96",
-            "99",
-            "428"
+            "95",
+            "98",
+            "437"
         ],
         "classList_summer": [
             "18",
@@ -1664,7 +1719,7 @@
             ]
         },
         "email": null,
-        "id": "36",
+        "id": "37",
         "name": "M. Wenzel",
         "office": null,
         "phone": null,
@@ -1680,7 +1735,7 @@
             "98"
         ],
         "classList_spring": [
-            "97"
+            "96"
         ],
         "classTimes": {
             "F": [
@@ -1704,7 +1759,7 @@
             ]
         },
         "email": null,
-        "id": "37",
+        "id": "38",
         "name": "C. Osorio",
         "office": null,
         "phone": null,
@@ -1721,10 +1776,10 @@
             "414"
         ],
         "classList_spring": [
-            "98",
-            "101",
-            "106",
-            "430"
+            "97",
+            "100",
+            "105",
+            "439"
         ],
         "classTimes": {
             "F": [
@@ -1757,7 +1812,7 @@
             ]
         },
         "email": null,
-        "id": "38",
+        "id": "39",
         "name": "M. Keller",
         "office": null,
         "phone": null,
@@ -1773,8 +1828,8 @@
             "416"
         ],
         "classList_spring": [
-            "100",
-            "429"
+            "99",
+            "438"
         ],
         "classTimes": {
             "F": [],
@@ -1789,7 +1844,7 @@
             "W": []
         },
         "email": null,
-        "id": "39",
+        "id": "40",
         "name": "W. Hamilton",
         "office": null,
         "phone": null,
@@ -1804,7 +1859,7 @@
             "103"
         ],
         "classList_spring": [
-            "102"
+            "101"
         ],
         "classTimes": {
             "F": [
@@ -1817,7 +1872,7 @@
             "W": []
         },
         "email": null,
-        "id": "40",
+        "id": "41",
         "name": "R. Skillen",
         "office": null,
         "phone": null,
@@ -1832,8 +1887,8 @@
             "105"
         ],
         "classList_spring": [
-            "103",
-            "104"
+            "102",
+            "103"
         ],
         "classTimes": {
             "F": [],
@@ -1856,10 +1911,38 @@
             ]
         },
         "email": "HolzbeS@flc.losrios.edu",
-        "id": "41",
+        "id": "42",
         "name": "Steve Holzberg",
         "office": null,
         "phone": "(916) 608-6657",
+        "subjects": [
+            "BIOL"
+        ]
+    },
+    {
+        "classHours": "8hr 50min",
+        "classList_spring": [
+            "106"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "01:00PM-02:20PM",
+                "02:30PM-05:35PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "01:00PM-02:20PM",
+                "02:30PM-05:35PM"
+            ]
+        },
+        "email": null,
+        "id": "43",
+        "name": "M. Lee",
+        "office": null,
+        "phone": null,
         "subjects": [
             "BIOL"
         ]
@@ -1870,7 +1953,7 @@
             "111"
         ],
         "classList_spring": [
-            "108"
+            "107"
         ],
         "classTimes": {
             "F": [],
@@ -1887,7 +1970,7 @@
             ]
         },
         "email": null,
-        "id": "42",
+        "id": "44",
         "name": "J. Patterson",
         "office": null,
         "phone": null,
@@ -1902,8 +1985,8 @@
             "112"
         ],
         "classList_spring": [
-            "109",
-            "112"
+            "108",
+            "111"
         ],
         "classTimes": {
             "F": [],
@@ -1926,7 +2009,7 @@
             ]
         },
         "email": "lagalad@flc.losrios.edu",
-        "id": "43",
+        "id": "45",
         "name": "David Lagala",
         "office": null,
         "phone": "(530) 642-5638",
@@ -1941,8 +2024,8 @@
             "108"
         ],
         "classList_spring": [
-            "110",
-            "111"
+            "109",
+            "110"
         ],
         "classTimes": {
             "F": [],
@@ -1963,7 +2046,7 @@
             "W": []
         },
         "email": "RogersS@flc.losrios.edu",
-        "id": "44",
+        "id": "46",
         "name": "Sherry Rogers",
         "office": null,
         "phone": "(916) 608-6550",
@@ -1977,7 +2060,7 @@
             "167"
         ],
         "classList_spring": [
-            "113"
+            "112"
         ],
         "classList_summer": [
             "24"
@@ -2011,7 +2094,7 @@
             ]
         },
         "email": null,
-        "id": "45",
+        "id": "47",
         "name": "P. Dao",
         "office": null,
         "phone": null,
@@ -2028,9 +2111,9 @@
             "518"
         ],
         "classList_spring": [
+            "113",
             "114",
-            "115",
-            "533"
+            "536"
         ],
         "classTimes": {
             "F": [],
@@ -2050,11 +2133,11 @@
                 "11:00AM-01:05PM"
             ]
         },
-        "email": "AbrahaL@flc.losrios.edu",
-        "id": "46",
-        "name": "Linda Abraham",
+        "email": null,
+        "id": "48",
+        "name": "L. Abraham",
         "office": null,
-        "phone": "(916) 608-6682",
+        "phone": null,
         "subjects": [
             "BIOL",
             "INDIS"
@@ -2067,8 +2150,8 @@
             "118"
         ],
         "classList_spring": [
-            "116",
-            "117"
+            "115",
+            "116"
         ],
         "classTimes": {
             "F": [],
@@ -2091,7 +2174,7 @@
             "W": []
         },
         "email": null,
-        "id": "47",
+        "id": "49",
         "name": "S. Jahangiri",
         "office": null,
         "phone": null,
@@ -2112,12 +2195,12 @@
             "530"
         ],
         "classList_spring": [
-            "119",
-            "121",
-            "123",
-            "538",
-            "544",
-            "545"
+            "122",
+            "124",
+            "126",
+            "541",
+            "547",
+            "548"
         ],
         "classTimes": {
             "F": [
@@ -2145,7 +2228,7 @@
             ]
         },
         "email": "WatanaM@flc.losrios.edu",
-        "id": "48",
+        "id": "50",
         "name": "Matt Watanabe",
         "office": null,
         "phone": "(916) 608-6973",
@@ -2164,8 +2247,8 @@
             "520"
         ],
         "classList_spring": [
-            "120",
-            "535"
+            "123",
+            "538"
         ],
         "classTimes": {
             "F": [],
@@ -2178,7 +2261,7 @@
             "W": []
         },
         "email": null,
-        "id": "49",
+        "id": "51",
         "name": "O. Ghamami",
         "office": null,
         "phone": null,
@@ -2190,7 +2273,7 @@
     {
         "classHours": "2hr 40min",
         "classList_spring": [
-            "122"
+            "125"
         ],
         "classTimes": {
             "F": [],
@@ -2205,7 +2288,7 @@
             ]
         },
         "email": null,
-        "id": "50",
+        "id": "52",
         "name": "L. Kolleda",
         "office": null,
         "phone": null,
@@ -2216,7 +2299,7 @@
     {
         "classHours": "2hr 40min",
         "classList_spring": [
-            "124"
+            "127"
         ],
         "classTimes": {
             "F": [],
@@ -2231,7 +2314,7 @@
             "W": []
         },
         "email": null,
-        "id": "51",
+        "id": "53",
         "name": "C. Kaufman",
         "office": null,
         "phone": null,
@@ -2246,8 +2329,8 @@
             "134"
         ],
         "classList_spring": [
-            "125",
-            "132"
+            "128",
+            "135"
         ],
         "classList_summer": [
             "21"
@@ -2261,7 +2344,7 @@
             "W": []
         },
         "email": null,
-        "id": "52",
+        "id": "54",
         "name": "D. Buch",
         "office": null,
         "phone": null,
@@ -2277,8 +2360,8 @@
             "284"
         ],
         "classList_spring": [
-            "126",
-            "288"
+            "129",
+            "294"
         ],
         "classTimes": {
             "F": [],
@@ -2294,7 +2377,7 @@
             ]
         },
         "email": null,
-        "id": "53",
+        "id": "55",
         "name": "J. McClatchy",
         "office": null,
         "phone": null,
@@ -2309,8 +2392,8 @@
             "522"
         ],
         "classList_spring": [
-            "127",
-            "128"
+            "130",
+            "131"
         ],
         "classTimes": {
             "F": [],
@@ -2323,7 +2406,7 @@
             "W": []
         },
         "email": null,
-        "id": "54",
+        "id": "56",
         "name": "M. Mabry",
         "office": null,
         "phone": null,
@@ -2342,9 +2425,9 @@
             "740"
         ],
         "classList_spring": [
-            "129",
-            "130",
-            "131",
+            "132",
+            "133",
+            "134",
             "789",
             "791"
         ],
@@ -2371,11 +2454,11 @@
                 "01:00PM-02:20PM"
             ]
         },
-        "email": "ellermh@flc.losrios.edu",
-        "id": "55",
-        "name": "C. Howell Ellerman",
+        "email": null,
+        "id": "57",
+        "name": "C. Ellerman",
         "office": null,
-        "phone": "(530) 344-5717",
+        "phone": null,
         "subjects": [
             "BUS",
             "RE"
@@ -2393,38 +2476,13 @@
             "150"
         ],
         "classList_spring": [
-            "138",
-            "139",
-            "140",
             "141",
             "142",
+            "143",
+            "144",
             "145",
-            "146"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": []
-        },
-        "email": "swithee@flc.losrios.edu",
-        "id": "56",
-        "name": "Elizabeth Swithenbank",
-        "office": null,
-        "phone": "(916) 608-6774",
-        "subjects": [
-            "BUSTEC"
-        ]
-    },
-    {
-        "classHours": "0hr 0min",
-        "classList_fall": [
-            "148"
-        ],
-        "classList_spring": [
-            "143"
+            "148",
+            "149"
         ],
         "classTimes": {
             "F": [],
@@ -2435,7 +2493,32 @@
             "W": []
         },
         "email": null,
-        "id": "57",
+        "id": "58",
+        "name": "E. Swithenbank",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "BUSTEC"
+        ]
+    },
+    {
+        "classHours": "0hr 0min",
+        "classList_fall": [
+            "148"
+        ],
+        "classList_spring": [
+            "146"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "59",
         "name": "C. Hicks",
         "office": null,
         "phone": null,
@@ -2450,9 +2533,9 @@
             "180"
         ],
         "classList_spring": [
-            "144",
-            "179",
-            "180"
+            "147",
+            "185",
+            "186"
         ],
         "classTimes": {
             "F": [],
@@ -2463,7 +2546,7 @@
             "W": []
         },
         "email": null,
-        "id": "58",
+        "id": "60",
         "name": "J. Millington",
         "office": null,
         "phone": null,
@@ -2480,8 +2563,8 @@
             "152"
         ],
         "classList_spring": [
-            "147",
-            "148"
+            "150",
+            "151"
         ],
         "classTimes": {
             "F": [],
@@ -2492,7 +2575,7 @@
             "W": []
         },
         "email": null,
-        "id": "59",
+        "id": "61",
         "name": "F. Heiler",
         "office": null,
         "phone": null,
@@ -2509,9 +2592,9 @@
             "171"
         ],
         "classList_spring": [
-            "149",
-            "150",
-            "170"
+            "152",
+            "153",
+            "173"
         ],
         "classTimes": {
             "F": [],
@@ -2537,7 +2620,7 @@
             ]
         },
         "email": "OberthC@flc.losrios.edu",
-        "id": "60",
+        "id": "62",
         "name": "Christa Oberth",
         "office": null,
         "phone": "(916) 608-6663",
@@ -2552,8 +2635,8 @@
             "156"
         ],
         "classList_spring": [
-            "151",
-            "152"
+            "154",
+            "155"
         ],
         "classTimes": {
             "F": [],
@@ -2572,7 +2655,7 @@
             ]
         },
         "email": null,
-        "id": "61",
+        "id": "63",
         "name": "L. Bria",
         "office": null,
         "phone": null,
@@ -2586,8 +2669,8 @@
             "163"
         ],
         "classList_spring": [
-            "153",
-            "154"
+            "156",
+            "157"
         ],
         "classTimes": {
             "F": [
@@ -2605,7 +2688,7 @@
             ]
         },
         "email": null,
-        "id": "62",
+        "id": "64",
         "name": "J. Oswald",
         "office": null,
         "phone": null,
@@ -2616,7 +2699,7 @@
     {
         "classHours": "10hr 20min",
         "classList_spring": [
-            "155"
+            "158"
         ],
         "classTimes": {
             "F": [],
@@ -2633,7 +2716,7 @@
             ]
         },
         "email": null,
-        "id": "63",
+        "id": "65",
         "name": "W. Hawkes",
         "office": null,
         "phone": null,
@@ -2649,9 +2732,9 @@
             "172"
         ],
         "classList_spring": [
-            "156",
-            "157",
-            "168"
+            "159",
+            "160",
+            "171"
         ],
         "classTimes": {
             "F": [],
@@ -2675,11 +2758,11 @@
                 "02:15PM-05:20PM"
             ]
         },
-        "email": "FosterT@flc.losrios.edu",
-        "id": "64",
-        "name": "Ted Foster",
+        "email": null,
+        "id": "66",
+        "name": "T. Foster",
         "office": null,
-        "phone": "(530) 642-5610",
+        "phone": null,
         "subjects": [
             "CHEM"
         ]
@@ -2691,8 +2774,8 @@
             "162"
         ],
         "classList_spring": [
-            "158",
-            "159"
+            "161",
+            "162"
         ],
         "classTimes": {
             "F": [],
@@ -2709,7 +2792,7 @@
             ]
         },
         "email": null,
-        "id": "65",
+        "id": "67",
         "name": "J. Stark",
         "office": null,
         "phone": null,
@@ -2724,7 +2807,7 @@
             "158"
         ],
         "classList_spring": [
-            "160"
+            "163"
         ],
         "classTimes": {
             "F": [
@@ -2744,7 +2827,7 @@
             ]
         },
         "email": null,
-        "id": "66",
+        "id": "68",
         "name": "W. Sughrue",
         "office": null,
         "phone": null,
@@ -2755,8 +2838,8 @@
     {
         "classHours": "12hr 20min",
         "classList_spring": [
-            "161",
-            "164"
+            "164",
+            "167"
         ],
         "classTimes": {
             "F": [],
@@ -2773,7 +2856,7 @@
             ]
         },
         "email": null,
-        "id": "67",
+        "id": "69",
         "name": "H. Poorjahanshah",
         "office": null,
         "phone": null,
@@ -2789,9 +2872,9 @@
             "169"
         ],
         "classList_spring": [
-            "162",
-            "166",
-            "169"
+            "165",
+            "169",
+            "172"
         ],
         "classTimes": {
             "F": [],
@@ -2814,7 +2897,7 @@
             ]
         },
         "email": "mahonem@flc.losrios.edu",
-        "id": "68",
+        "id": "70",
         "name": "Max Mahoney",
         "office": null,
         "phone": "(916) 608-6917",
@@ -2828,7 +2911,7 @@
             "164"
         ],
         "classList_spring": [
-            "163"
+            "166"
         ],
         "classList_summer": [
             "25",
@@ -2859,7 +2942,7 @@
             ]
         },
         "email": null,
-        "id": "69",
+        "id": "71",
         "name": "D. Green",
         "office": null,
         "phone": null,
@@ -2873,8 +2956,8 @@
             "168"
         ],
         "classList_spring": [
-            "165",
-            "167"
+            "168",
+            "170"
         ],
         "classTimes": {
             "F": [],
@@ -2895,7 +2978,7 @@
             ]
         },
         "email": "samplem@flc.losrios.edu",
-        "id": "70",
+        "id": "72",
         "name": "Marjorie Samples",
         "office": null,
         "phone": "(916) 608-6681",
@@ -2904,12 +2987,45 @@
         ]
     },
     {
+        "classHours": "5hr 30min",
+        "classList_fall": [
+            "175"
+        ],
+        "classList_spring": [
+            "178",
+            "206"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "10:30AM-11:50AM",
+                "06:00PM-08:50PM"
+            ],
+            "Th": [
+                "10:30AM-11:50AM"
+            ],
+            "W": []
+        },
+        "email": null,
+        "id": "73",
+        "name": "A. Mukarram",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "CISA",
+            "CISC",
+            "CISP"
+        ]
+    },
+    {
         "classHours": "3hr 10min",
         "classList_fall": [
             "173"
         ],
         "classList_spring": [
-            "172"
+            "179"
         ],
         "classTimes": {
             "F": [],
@@ -2922,7 +3038,7 @@
             ]
         },
         "email": null,
-        "id": "71",
+        "id": "74",
         "name": "M. Davis",
         "office": null,
         "phone": null,
@@ -2938,7 +3054,7 @@
             "189"
         ],
         "classList_spring": [
-            "173"
+            "180"
         ],
         "classTimes": {
             "F": [],
@@ -2952,7 +3068,7 @@
             ]
         },
         "email": null,
-        "id": "72",
+        "id": "75",
         "name": "R. Monsen",
         "office": null,
         "phone": null,
@@ -2970,11 +3086,11 @@
             "287"
         ],
         "classList_spring": [
-            "174",
-            "201",
-            "202",
-            "291",
-            "292"
+            "181",
+            "207",
+            "208",
+            "297",
+            "298"
         ],
         "classTimes": {
             "F": [],
@@ -3003,7 +3119,7 @@
             ]
         },
         "email": "rossd@flc.losrios.edu",
-        "id": "73",
+        "id": "76",
         "name": "Dan Ross",
         "office": null,
         "phone": "(916) 608-6532",
@@ -3019,8 +3135,8 @@
             "178"
         ],
         "classList_spring": [
-            "175",
-            "178"
+            "182",
+            "184"
         ],
         "classTimes": {
             "F": [],
@@ -3038,7 +3154,7 @@
             ]
         },
         "email": null,
-        "id": "74",
+        "id": "77",
         "name": "R. Hendricks",
         "office": null,
         "phone": null,
@@ -3056,11 +3172,11 @@
             "198"
         ],
         "classList_spring": [
-            "176",
-            "187",
-            "188",
+            "183",
+            "193",
             "194",
-            "198"
+            "200",
+            "204"
         ],
         "classTimes": {
             "F": [],
@@ -3084,41 +3200,9 @@
                 "01:00PM-02:20PM"
             ]
         },
-        "email": "fowlerc@flc.losrios.edu",
-        "id": "75",
-        "name": "Caleb Fowler",
-        "office": null,
-        "phone": "(916) 608-6595",
-        "subjects": [
-            "CISC",
-            "CISP"
-        ]
-    },
-    {
-        "classHours": "5hr 30min",
-        "classList_fall": [
-            "175"
-        ],
-        "classList_spring": [
-            "177",
-            "200"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "10:30AM-11:50AM",
-                "06:00PM-08:50PM"
-            ],
-            "Th": [
-                "10:30AM-11:50AM"
-            ],
-            "W": []
-        },
         "email": null,
-        "id": "76",
-        "name": "A. Mukarram",
+        "id": "78",
+        "name": "C. Fowler",
         "office": null,
         "phone": null,
         "subjects": [
@@ -3133,8 +3217,8 @@
             "197"
         ],
         "classList_spring": [
-            "185",
-            "197"
+            "191",
+            "203"
         ],
         "classTimes": {
             "F": [],
@@ -3149,7 +3233,7 @@
             ]
         },
         "email": null,
-        "id": "77",
+        "id": "79",
         "name": "D. Tully",
         "office": null,
         "phone": null,
@@ -3166,11 +3250,11 @@
             "199"
         ],
         "classList_spring": [
-            "186",
-            "190",
-            "191",
             "192",
-            "195"
+            "196",
+            "197",
+            "198",
+            "201"
         ],
         "classTimes": {
             "F": [],
@@ -3193,7 +3277,7 @@
             ]
         },
         "email": "AlJuboS@flc.losrios.edu",
-        "id": "78",
+        "id": "80",
         "name": "Suha Al Juboori",
         "office": null,
         "phone": "(916) 608-6513",
@@ -3205,8 +3289,8 @@
     {
         "classHours": "6hr 10min",
         "classList_spring": [
-            "189",
-            "196"
+            "195",
+            "202"
         ],
         "classTimes": {
             "F": [],
@@ -3221,7 +3305,7 @@
             ]
         },
         "email": null,
-        "id": "79",
+        "id": "81",
         "name": "S. Srivatsa",
         "office": null,
         "phone": null,
@@ -3236,7 +3320,7 @@
             "193"
         ],
         "classList_spring": [
-            "193"
+            "199"
         ],
         "classTimes": {
             "F": [],
@@ -3251,7 +3335,7 @@
             ]
         },
         "email": null,
-        "id": "80",
+        "id": "82",
         "name": "S. Allen",
         "office": null,
         "phone": null,
@@ -3267,7 +3351,7 @@
             "192"
         ],
         "classList_spring": [
-            "199"
+            "205"
         ],
         "classTimes": {
             "F": [],
@@ -3280,7 +3364,7 @@
             "W": []
         },
         "email": null,
-        "id": "81",
+        "id": "83",
         "name": "G. Johnson",
         "office": null,
         "phone": null,
@@ -3299,13 +3383,13 @@
             "228"
         ],
         "classList_spring": [
-            "203",
-            "205",
-            "206",
-            "216",
-            "223",
-            "227",
-            "228"
+            "209",
+            "211",
+            "212",
+            "222",
+            "229",
+            "233",
+            "234"
         ],
         "classTimes": {
             "F": [],
@@ -3327,7 +3411,7 @@
             ]
         },
         "email": "prelipa@flc.losrios.edu",
-        "id": "82",
+        "id": "84",
         "name": "Angela Prelip",
         "office": null,
         "phone": "(530) 642-5636",
@@ -3343,10 +3427,10 @@
             "218"
         ],
         "classList_spring": [
-            "204",
-            "211",
-            "221",
-            "231"
+            "210",
+            "217",
+            "227",
+            "237"
         ],
         "classList_summer": [
             "36",
@@ -3369,7 +3453,7 @@
             ]
         },
         "email": "haugp@flc.losrios.edu",
-        "id": "83",
+        "id": "85",
         "name": "Paula Haug",
         "office": null,
         "phone": "(916) 608-6691",
@@ -3383,8 +3467,8 @@
             "215"
         ],
         "classList_spring": [
-            "207",
-            "212"
+            "213",
+            "218"
         ],
         "classTimes": {
             "F": [
@@ -3403,7 +3487,7 @@
             ]
         },
         "email": null,
-        "id": "84",
+        "id": "86",
         "name": "D. DeMercurio",
         "office": null,
         "phone": null,
@@ -3417,7 +3501,7 @@
             "205"
         ],
         "classList_spring": [
-            "208"
+            "214"
         ],
         "classList_summer": [
             "32"
@@ -3441,7 +3525,7 @@
             ]
         },
         "email": null,
-        "id": "85",
+        "id": "87",
         "name": "H. Boeh",
         "office": null,
         "phone": null,
@@ -3455,7 +3539,7 @@
             "206"
         ],
         "classList_spring": [
-            "209"
+            "215"
         ],
         "classList_summer": [
             "33"
@@ -3473,7 +3557,7 @@
             "W": []
         },
         "email": null,
-        "id": "86",
+        "id": "88",
         "name": "T. Upton Benton",
         "office": null,
         "phone": null,
@@ -3489,8 +3573,8 @@
             "222"
         ],
         "classList_spring": [
-            "210",
-            "229"
+            "216",
+            "235"
         ],
         "classList_summer": [
             "34"
@@ -3515,7 +3599,7 @@
             "W": []
         },
         "email": null,
-        "id": "87",
+        "id": "89",
         "name": "B. Works",
         "office": null,
         "phone": null,
@@ -3529,7 +3613,7 @@
             "208"
         ],
         "classList_spring": [
-            "213"
+            "219"
         ],
         "classList_summer": [
             "31"
@@ -3552,7 +3636,7 @@
             ]
         },
         "email": null,
-        "id": "88",
+        "id": "90",
         "name": "E. LeFebvre",
         "office": null,
         "phone": null,
@@ -3566,7 +3650,7 @@
             "227"
         ],
         "classList_spring": [
-            "214"
+            "220"
         ],
         "classTimes": {
             "F": [],
@@ -3579,7 +3663,7 @@
             ]
         },
         "email": null,
-        "id": "89",
+        "id": "91",
         "name": "B. Droege",
         "office": null,
         "phone": null,
@@ -3595,9 +3679,9 @@
             "226"
         ],
         "classList_spring": [
-            "215",
-            "225",
-            "230"
+            "221",
+            "231",
+            "236"
         ],
         "classList_summer": [
             "38"
@@ -3622,7 +3706,7 @@
             ]
         },
         "email": null,
-        "id": "90",
+        "id": "92",
         "name": "A. Hicks",
         "office": null,
         "phone": null,
@@ -3637,7 +3721,7 @@
             "223"
         ],
         "classList_spring": [
-            "217"
+            "223"
         ],
         "classTimes": {
             "F": [],
@@ -3655,7 +3739,7 @@
             "W": []
         },
         "email": null,
-        "id": "91",
+        "id": "93",
         "name": "S. Laczko",
         "office": null,
         "phone": null,
@@ -3671,9 +3755,9 @@
             "213"
         ],
         "classList_spring": [
-            "218",
-            "219",
-            "220"
+            "224",
+            "225",
+            "226"
         ],
         "classList_summer": [
             "29",
@@ -3707,7 +3791,7 @@
             ]
         },
         "email": null,
-        "id": "92",
+        "id": "94",
         "name": "C. Boylan",
         "office": null,
         "phone": null,
@@ -3721,7 +3805,7 @@
             "224"
         ],
         "classList_spring": [
-            "222"
+            "228"
         ],
         "classTimes": {
             "F": [],
@@ -3737,7 +3821,7 @@
             "W": []
         },
         "email": null,
-        "id": "93",
+        "id": "95",
         "name": "M. Brandson",
         "office": null,
         "phone": null,
@@ -3751,7 +3835,7 @@
             "225"
         ],
         "classList_spring": [
-            "224"
+            "230"
         ],
         "classList_summer": [
             "35"
@@ -3773,7 +3857,7 @@
             ]
         },
         "email": null,
-        "id": "94",
+        "id": "96",
         "name": "F. Winters",
         "office": null,
         "phone": null,
@@ -3787,7 +3871,7 @@
             "204"
         ],
         "classList_spring": [
-            "226"
+            "232"
         ],
         "classTimes": {
             "F": [],
@@ -3802,7 +3886,7 @@
             "W": []
         },
         "email": null,
-        "id": "95",
+        "id": "97",
         "name": "L. Hygh",
         "office": null,
         "phone": null,
@@ -3828,15 +3912,15 @@
             "246"
         ],
         "classList_spring": [
-            "236",
-            "237",
-            "238",
-            "239",
-            "240",
-            "241",
+            "242",
+            "243",
             "244",
             "245",
-            "246"
+            "246",
+            "247",
+            "250",
+            "251",
+            "252"
         ],
         "classList_summer": [
             "7"
@@ -3872,11 +3956,11 @@
                 "02:50PM-03:25PM"
             ]
         },
-        "email": "davisd@flc.losrios.edu",
-        "id": "96",
-        "name": "Debi Davis Worth",
+        "email": null,
+        "id": "98",
+        "name": "D. Worth",
         "office": null,
-        "phone": "(916) 608-6775",
+        "phone": null,
         "subjects": [
             "ANTH",
             "DANCE"
@@ -3889,8 +3973,8 @@
             "240"
         ],
         "classList_spring": [
-            "242",
-            "243"
+            "248",
+            "249"
         ],
         "classTimes": {
             "F": [],
@@ -3905,7 +3989,7 @@
             "W": []
         },
         "email": null,
-        "id": "97",
+        "id": "99",
         "name": "S. Mitchell",
         "office": null,
         "phone": null,
@@ -3921,10 +4005,10 @@
             "267"
         ],
         "classList_spring": [
-            "251",
-            "252",
-            "253",
-            "264"
+            "257",
+            "258",
+            "259",
+            "270"
         ],
         "classTimes": {
             "F": [],
@@ -3946,11 +4030,11 @@
                 "07:00PM-08:50PM"
             ]
         },
-        "email": "DalyL@flc.losrios.edu",
-        "id": "98",
-        "name": "Lisa Daly",
+        "email": null,
+        "id": "100",
+        "name": "L. Daly",
         "office": null,
-        "phone": "(916) 608-6559",
+        "phone": null,
         "subjects": [
             "ECE"
         ]
@@ -3961,8 +4045,8 @@
             "270"
         ],
         "classList_spring": [
-            "254",
-            "272"
+            "260",
+            "278"
         ],
         "classTimes": {
             "F": [
@@ -3978,7 +4062,7 @@
             "W": []
         },
         "email": null,
-        "id": "99",
+        "id": "101",
         "name": "J. Walker",
         "office": null,
         "phone": null,
@@ -4000,16 +4084,16 @@
             "735"
         ],
         "classList_spring": [
-            "255",
-            "256",
-            "257",
             "261",
             "262",
+            "263",
+            "267",
             "268",
-            "273",
+            "274",
+            "279",
+            "782",
             "783",
-            "784",
-            "785"
+            "784"
         ],
         "classList_summer": [
             "44",
@@ -4034,7 +4118,7 @@
             "W": []
         },
         "email": "kraemej@flc.losrios.edu",
-        "id": "100",
+        "id": "102",
         "name": "Jennifer Kraemer",
         "office": null,
         "phone": "(916) 608-6685",
@@ -4051,12 +4135,12 @@
             "266"
         ],
         "classList_spring": [
-            "258",
-            "260",
+            "264",
             "266",
-            "267",
-            "786",
-            "788"
+            "272",
+            "273",
+            "785",
+            "787"
         ],
         "classTimes": {
             "F": [],
@@ -4075,7 +4159,7 @@
             ]
         },
         "email": "peraltm@flc.losrios.edu",
-        "id": "101",
+        "id": "103",
         "name": "Marsha Peralta",
         "office": null,
         "phone": "(916) 608-6667",
@@ -4090,8 +4174,8 @@
             "253"
         ],
         "classList_spring": [
-            "259",
-            "787"
+            "265",
+            "786"
         ],
         "classTimes": {
             "F": [
@@ -4108,7 +4192,7 @@
             "W": []
         },
         "email": null,
-        "id": "102",
+        "id": "104",
         "name": "E. Ferry-Perata",
         "office": null,
         "phone": null,
@@ -4125,8 +4209,8 @@
             "737"
         ],
         "classList_spring": [
-            "263",
-            "270"
+            "269",
+            "276"
         ],
         "classList_summer": [
             "43"
@@ -4150,7 +4234,7 @@
             ]
         },
         "email": null,
-        "id": "103",
+        "id": "105",
         "name": "A. Sutton",
         "office": null,
         "phone": null,
@@ -4165,7 +4249,7 @@
             "264"
         ],
         "classList_spring": [
-            "265"
+            "271"
         ],
         "classTimes": {
             "F": [],
@@ -4181,7 +4265,7 @@
             ]
         },
         "email": null,
-        "id": "104",
+        "id": "106",
         "name": "K. Bliss",
         "office": null,
         "phone": null,
@@ -4195,7 +4279,7 @@
             "268"
         ],
         "classList_spring": [
-            "269"
+            "275"
         ],
         "classTimes": {
             "F": [],
@@ -4208,7 +4292,7 @@
             "W": []
         },
         "email": null,
-        "id": "105",
+        "id": "107",
         "name": "J. Daniels",
         "office": null,
         "phone": null,
@@ -4223,9 +4307,9 @@
             "631"
         ],
         "classList_spring": [
-            "271",
-            "656",
-            "665"
+            "277",
+            "657",
+            "666"
         ],
         "classList_summer": [
             "46",
@@ -4242,9 +4326,9 @@
             "Th": [],
             "W": []
         },
-        "email": "",
-        "id": "106",
-        "name": "Julie BoarerPitchford, RD, MS, PhD",
+        "email": null,
+        "id": "108",
+        "name": "J. BoarerPitchford",
         "office": null,
         "phone": null,
         "subjects": [
@@ -4258,7 +4342,7 @@
             "279"
         ],
         "classList_spring": [
-            "279"
+            "285"
         ],
         "classTimes": {
             "F": [],
@@ -4273,7 +4357,7 @@
             ]
         },
         "email": null,
-        "id": "107",
+        "id": "109",
         "name": "D. Barthel",
         "office": null,
         "phone": null,
@@ -4287,8 +4371,8 @@
             "275"
         ],
         "classList_spring": [
-            "281",
-            "282"
+            "287",
+            "288"
         ],
         "classTimes": {
             "F": [],
@@ -4303,7 +4387,7 @@
             ]
         },
         "email": null,
-        "id": "108",
+        "id": "110",
         "name": "J. Radding",
         "office": null,
         "phone": null,
@@ -4318,9 +4402,9 @@
             "282"
         ],
         "classList_spring": [
-            "283",
-            "284",
-            "287"
+            "289",
+            "290",
+            "293"
         ],
         "classTimes": {
             "F": [],
@@ -4339,7 +4423,7 @@
             ]
         },
         "email": null,
-        "id": "109",
+        "id": "111",
         "name": "S. Fitch",
         "office": null,
         "phone": null,
@@ -4348,12 +4432,42 @@
         ]
     },
     {
+        "classHours": "3hr 10min",
+        "classList_fall": [
+            "276",
+            "280"
+        ],
+        "classList_spring": [
+            "291",
+            "540"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [],
+            "Th": [
+                "01:00PM-04:10PM"
+            ],
+            "W": []
+        },
+        "email": null,
+        "id": "112",
+        "name": "C. Smith",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ECON",
+            "MGMT"
+        ]
+    },
+    {
         "classHours": "8hr 0min",
         "classList_fall": [
             "285"
         ],
         "classList_spring": [
-            "289"
+            "295"
         ],
         "classTimes": {
             "F": [],
@@ -4370,7 +4484,7 @@
             "W": []
         },
         "email": null,
-        "id": "110",
+        "id": "113",
         "name": "J. Swanson",
         "office": null,
         "phone": null,
@@ -4384,7 +4498,7 @@
             "286"
         ],
         "classList_spring": [
-            "290"
+            "296"
         ],
         "classTimes": {
             "F": [],
@@ -4397,7 +4511,7 @@
             "W": []
         },
         "email": null,
-        "id": "111",
+        "id": "114",
         "name": "B. Olson-Arenz",
         "office": null,
         "phone": null,
@@ -4413,12 +4527,12 @@
             "310"
         ],
         "classList_spring": [
-            "293",
-            "295",
-            "308",
-            "317",
-            "318",
-            "319"
+            "299",
+            "301",
+            "314",
+            "323",
+            "324",
+            "325"
         ],
         "classList_summer": [
             "52",
@@ -4459,7 +4573,7 @@
             ]
         },
         "email": "larrykd@flc.losrios.edu",
-        "id": "112",
+        "id": "115",
         "name": "Debora Larry-Kearney",
         "office": null,
         "phone": "(530) 344-5702",
@@ -4480,11 +4594,11 @@
             "387"
         ],
         "classList_spring": [
-            "294",
-            "328",
-            "358",
-            "359",
-            "394"
+            "300",
+            "334",
+            "366",
+            "367",
+            "403"
         ],
         "classTimes": {
             "F": [],
@@ -4517,7 +4631,7 @@
             ]
         },
         "email": "fernanj@flc.losrios.edu",
-        "id": "113",
+        "id": "116",
         "name": "Josh Fernandez",
         "office": null,
         "phone": "(916) 608-6911",
@@ -4535,11 +4649,12 @@
             "382"
         ],
         "classList_spring": [
-            "296",
-            "357",
-            "363",
-            "382",
-            "391"
+            "302",
+            "365",
+            "371",
+            "390",
+            "397",
+            "400"
         ],
         "classList_summer": [
             "61"
@@ -4559,7 +4674,7 @@
             "W": []
         },
         "email": "royert@flc.losrios.edu",
-        "id": "114",
+        "id": "117",
         "name": "Tina Royer",
         "office": null,
         "phone": "(916) 608-6762",
@@ -4580,14 +4695,14 @@
             "385"
         ],
         "classList_spring": [
-            "297",
-            "298",
-            "299",
-            "300",
-            "347",
-            "373",
-            "386",
-            "400"
+            "303",
+            "304",
+            "305",
+            "306",
+            "353",
+            "381",
+            "395",
+            "409"
         ],
         "classList_summer": [
             "60"
@@ -4609,7 +4724,7 @@
             ]
         },
         "email": "SapraL@flc.losrios.edu",
-        "id": "115",
+        "id": "118",
         "name": "Lisa Sapra",
         "office": null,
         "phone": "(916) 608-6783",
@@ -4632,15 +4747,15 @@
             "319"
         ],
         "classList_spring": [
-            "301",
-            "302",
-            "305",
+            "307",
+            "308",
             "311",
-            "312",
-            "321",
-            "323",
-            "325",
-            "327"
+            "317",
+            "318",
+            "327",
+            "329",
+            "331",
+            "333"
         ],
         "classTimes": {
             "F": [],
@@ -4659,7 +4774,7 @@
             ]
         },
         "email": "LelandK@flc.losrios.edu",
-        "id": "116",
+        "id": "119",
         "name": "Kathy Leland",
         "office": null,
         "phone": "(530) 642-5637",
@@ -4680,12 +4795,12 @@
             "369"
         ],
         "classList_spring": [
-            "303",
-            "314",
-            "339",
-            "342",
-            "362",
-            "389"
+            "309",
+            "320",
+            "345",
+            "348",
+            "370",
+            "398"
         ],
         "classTimes": {
             "F": [],
@@ -4717,7 +4832,7 @@
             ]
         },
         "email": "RauschT@flc.losrios.edu",
-        "id": "117",
+        "id": "120",
         "name": "Tracy Rauschkolb",
         "office": null,
         "phone": "(916) 608-6805",
@@ -4735,10 +4850,8 @@
             "372"
         ],
         "classList_spring": [
-            "304",
-            "307",
-            "324",
-            "326"
+            "310",
+            "313"
         ],
         "classTimes": {
             "F": [],
@@ -4759,7 +4872,7 @@
             ]
         },
         "email": "FletchF@flc.losrios.edu",
-        "id": "118",
+        "id": "121",
         "name": "Francis Fletcher",
         "office": null,
         "phone": "(916) 608-6627",
@@ -4782,13 +4895,13 @@
             "386"
         ],
         "classList_spring": [
-            "306",
-            "320",
-            "322",
-            "338",
-            "341",
-            "395",
-            "396"
+            "312",
+            "326",
+            "328",
+            "344",
+            "347",
+            "404",
+            "405"
         ],
         "classList_summer": [
             "53"
@@ -4824,7 +4937,7 @@
             ]
         },
         "email": "dannerl@flc.losrios.edu",
-        "id": "119",
+        "id": "122",
         "name": "Lisa Danner",
         "office": null,
         "phone": "(916) 608-6670",
@@ -4844,11 +4957,12 @@
             "380"
         ],
         "classList_spring": [
-            "309",
-            "310",
-            "335",
-            "337",
-            "351"
+            "315",
+            "316",
+            "341",
+            "343",
+            "357",
+            "363"
         ],
         "classTimes": {
             "F": [],
@@ -4874,11 +4988,11 @@
                 "05:30PM-06:50PM"
             ]
         },
-        "email": "brownk@flc.losrios.edu",
-        "id": "120",
-        "name": "Krisi Brown",
+        "email": null,
+        "id": "123",
+        "name": "K. Brown",
         "office": null,
-        "phone": "(530) 642-5633",
+        "phone": null,
         "subjects": [
             "ENGRD",
             "ENGWR"
@@ -4892,9 +5006,9 @@
             "383"
         ],
         "classList_spring": [
-            "313",
-            "315",
-            "316"
+            "319",
+            "321",
+            "322"
         ],
         "classTimes": {
             "F": [],
@@ -4919,7 +5033,7 @@
             ]
         },
         "email": null,
-        "id": "121",
+        "id": "124",
         "name": "M. Plaxton",
         "office": null,
         "phone": null,
@@ -4938,11 +5052,13 @@
             "384"
         ],
         "classList_spring": [
-            "329",
-            "360",
-            "380",
-            "393",
-            "402"
+            "330",
+            "332",
+            "335",
+            "368",
+            "388",
+            "402",
+            "411"
         ],
         "classList_summer": [
             "57",
@@ -4979,7 +5095,7 @@
             ]
         },
         "email": "siegfrd@flc.losrios.edu",
-        "id": "122",
+        "id": "125",
         "name": "Danny Siegfried",
         "office": null,
         "phone": "(916) 608-6671",
@@ -4997,10 +5113,11 @@
             "374"
         ],
         "classList_spring": [
-            "330",
-            "345",
-            "349",
-            "399"
+            "336",
+            "351",
+            "355",
+            "364",
+            "408"
         ],
         "classTimes": {
             "F": [],
@@ -5028,11 +5145,11 @@
                 "07:00PM-09:05PM"
             ]
         },
-        "email": null,
-        "id": "123",
-        "name": "D. Lacy",
+        "email": "lacyd@flc.losrios.edu",
+        "id": "126",
+        "name": "David Lacy",
         "office": null,
-        "phone": null,
+        "phone": "(916) 608-6741",
         "subjects": [
             "ENGWR"
         ]
@@ -5047,11 +5164,11 @@
             "356"
         ],
         "classList_spring": [
-            "331",
-            "340",
-            "364",
-            "384",
-            "398"
+            "337",
+            "346",
+            "372",
+            "393",
+            "407"
         ],
         "classList_summer": [
             "56"
@@ -5089,7 +5206,7 @@
             ]
         },
         "email": "pricey@flc.losrios.edu",
-        "id": "124",
+        "id": "127",
         "name": "Yvonne Price",
         "office": null,
         "phone": "(916) 608-6785",
@@ -5105,8 +5222,8 @@
             "389"
         ],
         "classList_spring": [
-            "332",
-            "385"
+            "338",
+            "394"
         ],
         "classTimes": {
             "F": [],
@@ -5126,7 +5243,7 @@
             ]
         },
         "email": null,
-        "id": "125",
+        "id": "128",
         "name": "J. Hawley",
         "office": null,
         "phone": null,
@@ -5141,9 +5258,9 @@
             "365"
         ],
         "classList_spring": [
-            "333",
-            "372",
-            "387"
+            "339",
+            "380",
+            "396"
         ],
         "classTimes": {
             "F": [],
@@ -5167,7 +5284,7 @@
             ]
         },
         "email": null,
-        "id": "126",
+        "id": "129",
         "name": "J. Manfredi",
         "office": null,
         "phone": null,
@@ -5182,8 +5299,8 @@
             "325"
         ],
         "classList_spring": [
-            "334",
-            "336"
+            "340",
+            "342"
         ],
         "classTimes": {
             "F": [],
@@ -5204,7 +5321,7 @@
             ]
         },
         "email": null,
-        "id": "127",
+        "id": "130",
         "name": "W. Williams",
         "office": null,
         "phone": null,
@@ -5218,7 +5335,7 @@
             "321"
         ],
         "classList_spring": [
-            "343"
+            "349"
         ],
         "classTimes": {
             "F": [],
@@ -5233,7 +5350,7 @@
             "W": []
         },
         "email": null,
-        "id": "128",
+        "id": "131",
         "name": "B. Beda",
         "office": null,
         "phone": null,
@@ -5248,8 +5365,8 @@
             "370"
         ],
         "classList_spring": [
-            "344",
-            "368"
+            "350",
+            "376"
         ],
         "classList_summer": [
             "54"
@@ -5276,7 +5393,7 @@
             ]
         },
         "email": null,
-        "id": "129",
+        "id": "132",
         "name": "R. Cruz",
         "office": null,
         "phone": null,
@@ -5285,14 +5402,17 @@
         ]
     },
     {
-        "classHours": "6hr 50min",
+        "classHours": "13hr 0min",
         "classList_spring": [
-            "346",
-            "367"
+            "352",
+            "375",
+            "391"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "10:30AM-01:35PM"
+            ],
             "Sa": [],
             "T": [
                 "05:30PM-06:50PM",
@@ -5302,10 +5422,12 @@
                 "05:30PM-06:50PM",
                 "07:00PM-09:05PM"
             ],
-            "W": []
+            "W": [
+                "10:30AM-01:35PM"
+            ]
         },
         "email": null,
-        "id": "130",
+        "id": "133",
         "name": "C. Stanphill",
         "office": null,
         "phone": null,
@@ -5322,11 +5444,11 @@
             "367"
         ],
         "classList_spring": [
-            "348",
-            "366",
-            "370",
-            "371",
-            "397"
+            "354",
+            "374",
+            "378",
+            "379",
+            "406"
         ],
         "classTimes": {
             "F": [],
@@ -5357,7 +5479,7 @@
             ]
         },
         "email": "WilliaA2@flc.losrios.edu",
-        "id": "131",
+        "id": "134",
         "name": "Andrew Williamson",
         "office": null,
         "phone": "(916)608-6976",
@@ -5372,8 +5494,8 @@
             "353"
         ],
         "classList_spring": [
-            "350",
-            "378"
+            "356",
+            "386"
         ],
         "classTimes": {
             "F": [],
@@ -5392,7 +5514,7 @@
             ]
         },
         "email": null,
-        "id": "132",
+        "id": "135",
         "name": "D. Powell",
         "office": null,
         "phone": null,
@@ -5409,11 +5531,11 @@
             "390"
         ],
         "classList_spring": [
-            "352",
-            "355",
-            "369",
-            "383",
-            "403"
+            "358",
+            "361",
+            "377",
+            "392",
+            "412"
         ],
         "classTimes": {
             "F": [],
@@ -5443,8 +5565,34 @@
             ]
         },
         "email": null,
-        "id": "133",
+        "id": "136",
         "name": "R. Roehr",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ENGWR"
+        ]
+    },
+    {
+        "classHours": "4hr 10min",
+        "classList_spring": [
+            "359"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "07:00PM-09:05PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "07:00PM-09:05PM"
+            ]
+        },
+        "email": null,
+        "id": "137",
+        "name": "D. Starkey",
         "office": null,
         "phone": null,
         "subjects": [
@@ -5457,8 +5605,8 @@
             "391"
         ],
         "classList_spring": [
-            "354",
-            "381"
+            "360",
+            "389"
         ],
         "classTimes": {
             "F": [],
@@ -5479,7 +5627,7 @@
             ]
         },
         "email": null,
-        "id": "134",
+        "id": "138",
         "name": "H. Beatty",
         "office": null,
         "phone": null,
@@ -5493,7 +5641,7 @@
             "362"
         ],
         "classList_spring": [
-            "356"
+            "362"
         ],
         "classTimes": {
             "F": [],
@@ -5510,8 +5658,37 @@
             "W": []
         },
         "email": null,
-        "id": "135",
+        "id": "139",
         "name": "E. Mailman",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ENGWR"
+        ]
+    },
+    {
+        "classHours": "5hr 20min",
+        "classList_spring": [
+            "369",
+            "384"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "09:00AM-10:20AM",
+                "01:00PM-02:20PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "09:00AM-10:20AM",
+                "01:00PM-02:20PM"
+            ]
+        },
+        "email": null,
+        "id": "140",
+        "name": "M. Crowder",
         "office": null,
         "phone": null,
         "subjects": [
@@ -5525,8 +5702,8 @@
             "349"
         ],
         "classList_spring": [
-            "365",
-            "392"
+            "373",
+            "401"
         ],
         "classTimes": {
             "F": [],
@@ -5546,7 +5723,7 @@
             "W": []
         },
         "email": null,
-        "id": "136",
+        "id": "141",
         "name": "M. Magneson",
         "office": null,
         "phone": null,
@@ -5560,7 +5737,7 @@
             "345"
         ],
         "classList_spring": [
-            "374"
+            "382"
         ],
         "classTimes": {
             "F": [],
@@ -5577,7 +5754,7 @@
             "W": []
         },
         "email": null,
-        "id": "137",
+        "id": "142",
         "name": "S. Abeyta",
         "office": null,
         "phone": null,
@@ -5591,7 +5768,7 @@
             "371"
         ],
         "classList_spring": [
-            "375"
+            "383"
         ],
         "classList_summer": [
             "59"
@@ -5613,51 +5790,8 @@
             ]
         },
         "email": null,
-        "id": "138",
+        "id": "143",
         "name": "J. Howerter",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "ENGWR"
-        ]
-    },
-    {
-        "classHours": "17hr 50min",
-        "classList_fall": [
-            "343",
-            "366"
-        ],
-        "classList_spring": [
-            "376"
-        ],
-        "classList_summer": [
-            "55"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [
-                "08:00AM-10:05AM",
-                "09:00AM-10:20AM"
-            ],
-            "Sa": [],
-            "T": [
-                "08:00AM-10:05AM",
-                "01:00PM-03:05PM",
-                "07:00PM-08:20PM"
-            ],
-            "Th": [
-                "08:00AM-10:05AM",
-                "01:00PM-03:05PM",
-                "07:00PM-08:20PM"
-            ],
-            "W": [
-                "08:00AM-10:05AM",
-                "09:00AM-10:20AM"
-            ]
-        },
-        "email": null,
-        "id": "139",
-        "name": "M. Barrish",
         "office": null,
         "phone": null,
         "subjects": [
@@ -5670,7 +5804,7 @@
             "388"
         ],
         "classList_spring": [
-            "377"
+            "385"
         ],
         "classTimes": {
             "F": [],
@@ -5685,7 +5819,7 @@
             ]
         },
         "email": null,
-        "id": "140",
+        "id": "144",
         "name": "K. Meyer",
         "office": null,
         "phone": null,
@@ -5694,15 +5828,14 @@
         ]
     },
     {
-        "classHours": "23hr 45min",
+        "classHours": "21hr 5min",
         "classList_fall": [
             "375",
             "476"
         ],
         "classList_spring": [
-            "379",
-            "483",
-            "494"
+            "387",
+            "488"
         ],
         "classList_summer": [
             "64",
@@ -5712,7 +5845,6 @@
             "F": [],
             "M": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "06:00PM-09:10PM"
             ],
             "Sa": [],
@@ -5727,12 +5859,11 @@
             ],
             "W": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
                 "06:00PM-09:10PM"
             ]
         },
         "email": null,
-        "id": "141",
+        "id": "145",
         "name": "A. Knudson",
         "office": null,
         "phone": null,
@@ -5748,8 +5879,8 @@
             "381"
         ],
         "classList_spring": [
-            "390",
-            "401"
+            "399",
+            "410"
         ],
         "classList_summer": [
             "62"
@@ -5778,7 +5909,7 @@
             ]
         },
         "email": null,
-        "id": "142",
+        "id": "146",
         "name": "N. Oliver",
         "office": null,
         "phone": null,
@@ -5797,12 +5928,12 @@
             "413"
         ],
         "classList_spring": [
-            "405",
-            "406",
-            "408",
-            "421",
-            "425",
-            "427"
+            "414",
+            "415",
+            "417",
+            "430",
+            "434",
+            "436"
         ],
         "classTimes": {
             "F": [],
@@ -5826,11 +5957,11 @@
                 "03:30PM-06:35PM"
             ]
         },
-        "email": "AnayahB@flc.losrios.edu",
-        "id": "143",
-        "name": "Bernadette Anayah",
+        "email": null,
+        "id": "147",
+        "name": "B. Anayah",
         "office": null,
-        "phone": "(916) 608-6522",
+        "phone": null,
         "subjects": [
             "ESL",
             "ESLR",
@@ -5847,11 +5978,11 @@
             "411"
         ],
         "classList_spring": [
-            "407",
-            "409",
-            "413",
-            "414",
-            "419"
+            "416",
+            "418",
+            "422",
+            "423",
+            "428"
         ],
         "classTimes": {
             "F": [],
@@ -5879,7 +6010,7 @@
             ]
         },
         "email": "BjerkeA@flc.losrios.edu",
-        "id": "144",
+        "id": "148",
         "name": "Ann Lynn Bjerke",
         "office": null,
         "phone": "(530) 642-5683",
@@ -5894,7 +6025,7 @@
     {
         "classHours": "4hr 5min",
         "classList_spring": [
-            "410"
+            "419"
         ],
         "classTimes": {
             "F": [
@@ -5907,7 +6038,7 @@
             "W": []
         },
         "email": null,
-        "id": "145",
+        "id": "149",
         "name": "T. Saur",
         "office": null,
         "phone": null,
@@ -5925,11 +6056,11 @@
             "408"
         ],
         "classList_spring": [
-            "411",
-            "415",
-            "417",
-            "418",
-            "422"
+            "420",
+            "424",
+            "426",
+            "427",
+            "431"
         ],
         "classTimes": {
             "F": [
@@ -5956,7 +6087,7 @@
             ]
         },
         "email": "EckmanS@flc.losrios.edu",
-        "id": "146",
+        "id": "150",
         "name": "Spencer Eckman",
         "office": null,
         "phone": "(916) 608-6795",
@@ -5965,6 +6096,62 @@
             "ESLL",
             "ESLR",
             "ESLW"
+        ]
+    },
+    {
+        "classHours": "8hr 20min",
+        "classList_spring": [
+            "421",
+            "432"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "09:00AM-11:05AM",
+                "01:30PM-03:35PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "09:00AM-11:05AM",
+                "01:30PM-03:35PM"
+            ]
+        },
+        "email": null,
+        "id": "151",
+        "name": "W. Wise",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ESLL",
+            "ESLW"
+        ]
+    },
+    {
+        "classHours": "4hr 10min",
+        "classList_spring": [
+            "425"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "11:15AM-01:20PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "11:15AM-01:20PM"
+            ]
+        },
+        "email": null,
+        "id": "152",
+        "name": "J. Kashi",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "ESLR"
         ]
     },
     {
@@ -5978,11 +6165,9 @@
             "409"
         ],
         "classList_spring": [
-            "412",
-            "420",
-            "423",
-            "424",
-            "426"
+            "429",
+            "433",
+            "435"
         ],
         "classTimes": {
             "F": [],
@@ -6009,7 +6194,7 @@
             ]
         },
         "email": "tinocod@flc.losrios.edu",
-        "id": "147",
+        "id": "153",
         "name": "Diana Tinoco",
         "office": null,
         "phone": "(916) 608-6661",
@@ -6021,36 +6206,10 @@
         ]
     },
     {
-        "classHours": "4hr 10min",
-        "classList_spring": [
-            "416"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [
-                "11:15AM-01:20PM"
-            ],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": [
-                "11:15AM-01:20PM"
-            ]
-        },
-        "email": null,
-        "id": "148",
-        "name": "J. Kashi",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "ESLR"
-        ]
-    },
-    {
         "classHours": "6hr 10min",
         "classList_spring": [
-            "431",
-            "432"
+            "440",
+            "441"
         ],
         "classTimes": {
             "F": [],
@@ -6065,7 +6224,7 @@
             "W": []
         },
         "email": null,
-        "id": "149",
+        "id": "154",
         "name": "D. Herrmann",
         "office": null,
         "phone": null,
@@ -6079,7 +6238,7 @@
             "418"
         ],
         "classList_spring": [
-            "433"
+            "442"
         ],
         "classList_summer": [
             "65"
@@ -6101,7 +6260,7 @@
             ]
         },
         "email": null,
-        "id": "150",
+        "id": "155",
         "name": "C. Abney",
         "office": null,
         "phone": null,
@@ -6116,8 +6275,8 @@
             "425"
         ],
         "classList_spring": [
-            "438",
-            "439"
+            "447",
+            "448"
         ],
         "classList_summer": [
             "68"
@@ -6141,7 +6300,7 @@
             ]
         },
         "email": null,
-        "id": "151",
+        "id": "156",
         "name": "D. Whitt",
         "office": null,
         "phone": null,
@@ -6150,12 +6309,9 @@
         ]
     },
     {
-        "classHours": "6hr 10min",
-        "classList_fall": [
-            "423"
-        ],
+        "classHours": "3hr 5min",
         "classList_spring": [
-            "440"
+            "449"
         ],
         "classTimes": {
             "F": [],
@@ -6164,14 +6320,12 @@
             "T": [
                 "06:00PM-09:05PM"
             ],
-            "Th": [
-                "06:00PM-09:05PM"
-            ],
+            "Th": [],
             "W": []
         },
         "email": null,
-        "id": "152",
-        "name": "J. Woodward",
+        "id": "157",
+        "name": "K. Kwong",
         "office": null,
         "phone": null,
         "subjects": [
@@ -6186,9 +6340,9 @@
             "433"
         ],
         "classList_spring": [
-            "445",
-            "446",
-            "448"
+            "454",
+            "455",
+            "457"
         ],
         "classTimes": {
             "F": [],
@@ -6214,11 +6368,11 @@
                 "07:30PM-08:55PM"
             ]
         },
-        "email": "ritzimv@flc.losrios.edu",
-        "id": "153",
-        "name": "Viviane Ritzi-Marouf",
+        "email": null,
+        "id": "158",
+        "name": "V. Ritzi-Marouf",
         "office": null,
-        "phone": "(916) 608-6506",
+        "phone": null,
         "subjects": [
             "FREN"
         ]
@@ -6229,7 +6383,7 @@
             "431"
         ],
         "classList_spring": [
-            "447"
+            "456"
         ],
         "classTimes": {
             "F": [],
@@ -6248,7 +6402,7 @@
             ]
         },
         "email": null,
-        "id": "154",
+        "id": "159",
         "name": "N. Emad",
         "office": null,
         "phone": null,
@@ -6259,7 +6413,7 @@
     {
         "classHours": "6hr 10min",
         "classList_spring": [
-            "449"
+            "458"
         ],
         "classTimes": {
             "F": [],
@@ -6274,7 +6428,7 @@
             "W": []
         },
         "email": null,
-        "id": "155",
+        "id": "160",
         "name": "R. Downey",
         "office": null,
         "phone": null,
@@ -6292,11 +6446,11 @@
             "443"
         ],
         "classList_spring": [
-            "450",
-            "451",
             "459",
             "460",
-            "461"
+            "464",
+            "465",
+            "466"
         ],
         "classList_summer": [
             "72"
@@ -6316,43 +6470,14 @@
                 "10:30AM-11:50AM"
             ]
         },
-        "email": "PittmaJ@flc.losrios.edu",
-        "id": "156",
-        "name": "Jason Pittman",
-        "office": null,
-        "phone": "(916) 608-6668",
-        "subjects": [
-            "GEOG",
-            "GEOL"
-        ]
-    },
-    {
-        "classHours": "4hr 30min",
-        "classList_fall": [
-            "434"
-        ],
-        "classList_spring": [
-            "452"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "01:00PM-04:10PM"
-            ],
-            "Th": [
-                "10:30AM-11:50AM"
-            ],
-            "W": []
-        },
         "email": null,
-        "id": "157",
-        "name": "S. Welsh",
+        "id": "161",
+        "name": "J. Pittman",
         "office": null,
         "phone": null,
         "subjects": [
-            "GEOG"
+            "GEOG",
+            "GEOL"
         ]
     },
     {
@@ -6362,9 +6487,7 @@
             "439"
         ],
         "classList_spring": [
-            "453",
-            "454",
-            "455"
+            "461"
         ],
         "classTimes": {
             "F": [
@@ -6379,7 +6502,7 @@
             "W": []
         },
         "email": null,
-        "id": "158",
+        "id": "162",
         "name": "T. Krabacher",
         "office": null,
         "phone": null,
@@ -6390,7 +6513,7 @@
     {
         "classHours": "5hr 50min",
         "classList_spring": [
-            "456"
+            "462"
         ],
         "classList_summer": [
             "71"
@@ -6409,33 +6532,8 @@
             "W": []
         },
         "email": null,
-        "id": "159",
+        "id": "163",
         "name": "J. McHenry",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "GEOG"
-        ]
-    },
-    {
-        "classHours": "3hr 25min",
-        "classList_spring": [
-            "457"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": [
-                "05:30PM-08:20PM",
-                "08:20PM-08:55PM"
-            ]
-        },
-        "email": null,
-        "id": "160",
-        "name": "N. Vidic",
         "office": null,
         "phone": null,
         "subjects": [
@@ -6449,8 +6547,8 @@
             "446"
         ],
         "classList_spring": [
-            "458",
-            "462"
+            "463",
+            "467"
         ],
         "classTimes": {
             "F": [],
@@ -6470,7 +6568,7 @@
             ]
         },
         "email": null,
-        "id": "161",
+        "id": "164",
         "name": "K. Stevens",
         "office": null,
         "phone": null,
@@ -6486,7 +6584,7 @@
             "447"
         ],
         "classList_spring": [
-            "463"
+            "468"
         ],
         "classTimes": {
             "F": [
@@ -6503,12 +6601,75 @@
             "W": []
         },
         "email": null,
-        "id": "162",
+        "id": "165",
         "name": "G. Wheeldon",
         "office": null,
         "phone": null,
         "subjects": [
             "GEOL"
+        ]
+    },
+    {
+        "classHours": "31hr 10min",
+        "classList_fall": [
+            "645",
+            "658",
+            "662",
+            "666",
+            "687"
+        ],
+        "classList_spring": [
+            "473",
+            "685",
+            "686",
+            "699",
+            "706",
+            "707",
+            "728"
+        ],
+        "classList_summer": [
+            "116"
+        ],
+        "classTimes": {
+            "F": [
+                "09:00AM-11:50AM",
+                "02:00PM-03:50PM"
+            ],
+            "M": [
+                "09:00AM-10:20AM",
+                "09:00AM-11:50AM",
+                "10:30AM-11:50AM",
+                "02:00PM-03:50PM"
+            ],
+            "Sa": [],
+            "T": [
+                "09:00AM-10:20AM",
+                "09:00AM-11:50AM",
+                "10:30AM-11:50AM",
+                "02:00PM-03:50PM"
+            ],
+            "Th": [
+                "09:00AM-10:20AM",
+                "09:00AM-11:50AM",
+                "10:30AM-11:50AM",
+                "02:00PM-03:50PM"
+            ],
+            "W": [
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM",
+                "02:00PM-03:50PM"
+            ]
+        },
+        "email": "torrezm@flc.losrios.edu",
+        "id": "166",
+        "name": "Matt Torrez",
+        "office": null,
+        "phone": "(916) 608-6600",
+        "subjects": [
+            "FITNS",
+            "HEED",
+            "KINES",
+            "SPORT"
         ]
     },
     {
@@ -6521,8 +6682,8 @@
             "689"
         ],
         "classList_spring": [
-            "469",
-            "471",
+            "474",
+            "476",
             "704",
             "705",
             "724",
@@ -6559,7 +6720,7 @@
             ]
         },
         "email": "ribaudd@flc.losrios.edu",
-        "id": "163",
+        "id": "167",
         "name": "Donny Ribaudo",
         "office": null,
         "phone": "(916) 608-6619",
@@ -6578,8 +6739,7 @@
             "683"
         ],
         "classList_spring": [
-            "470",
-            "683",
+            "475",
             "692",
             "693",
             "725"
@@ -6618,15 +6778,14 @@
                 "05:30PM-06:50PM"
             ]
         },
-        "email": "AlexanJ@flc.losrios.edu",
-        "id": "164",
-        "name": "John Alexander",
+        "email": null,
+        "id": "168",
+        "name": "J. Alexander",
         "office": null,
-        "phone": "(916) 608-6514",
+        "phone": null,
         "subjects": [
             "FITNS",
             "HEED",
-            "KINES",
             "SPORT"
         ]
     },
@@ -6639,7 +6798,7 @@
             "670"
         ],
         "classList_spring": [
-            "472",
+            "477",
             "698",
             "703"
         ],
@@ -6664,7 +6823,7 @@
             ]
         },
         "email": null,
-        "id": "165",
+        "id": "169",
         "name": "E. Johnston",
         "office": null,
         "phone": null,
@@ -6683,12 +6842,12 @@
             "475"
         ],
         "classList_spring": [
-            "473",
-            "474",
-            "477",
-            "485",
-            "489",
-            "495"
+            "478",
+            "479",
+            "482",
+            "490",
+            "494",
+            "499"
         ],
         "classTimes": {
             "F": [],
@@ -6715,7 +6874,7 @@
             ]
         },
         "email": "mowrerr@flc.losrios.edu",
-        "id": "166",
+        "id": "170",
         "name": "Richard Mowrer",
         "office": null,
         "phone": "(916) 608-6910",
@@ -6729,8 +6888,8 @@
             "470"
         ],
         "classList_spring": [
-            "475",
-            "487"
+            "480",
+            "492"
         ],
         "classList_summer": [
             "74",
@@ -6753,7 +6912,7 @@
             ]
         },
         "email": null,
-        "id": "167",
+        "id": "171",
         "name": "P. Baltimore",
         "office": null,
         "phone": null,
@@ -6762,7 +6921,7 @@
         ]
     },
     {
-        "classHours": "11hr 40min",
+        "classHours": "9hr 0min",
         "classList_fall": [
             "462",
             "463",
@@ -6771,19 +6930,18 @@
             "474"
         ],
         "classList_spring": [
-            "476",
-            "482",
-            "484",
-            "488",
-            "493"
+            "481",
+            "487",
+            "489",
+            "493",
+            "498"
         ],
         "classTimes": {
             "F": [
                 "09:30AM-12:40PM"
             ],
             "M": [
-                "11:15AM-12:35PM",
-                "02:30PM-03:50PM"
+                "11:15AM-12:35PM"
             ],
             "Sa": [],
             "T": [
@@ -6791,12 +6949,11 @@
             ],
             "Th": [],
             "W": [
-                "11:15AM-12:35PM",
-                "02:30PM-03:50PM"
+                "11:15AM-12:35PM"
             ]
         },
         "email": "GomperG@flc.losrios.edu",
-        "id": "168",
+        "id": "172",
         "name": "Gena Estep-Gompert",
         "office": null,
         "phone": "(916) 608-6590",
@@ -6813,11 +6970,11 @@
             "479"
         ],
         "classList_spring": [
-            "478",
-            "480",
-            "490",
-            "491",
-            "497"
+            "483",
+            "485",
+            "495",
+            "496",
+            "501"
         ],
         "classTimes": {
             "F": [],
@@ -6846,7 +7003,7 @@
             ]
         },
         "email": "MorenoD@flc.losrios.edu",
-        "id": "169",
+        "id": "173",
         "name": "Deborah Moreno",
         "office": null,
         "phone": "(916) 608-6521",
@@ -6862,8 +7019,8 @@
             "477"
         ],
         "classList_spring": [
-            "479",
-            "492"
+            "484",
+            "497"
         ],
         "classList_summer": [
             "75",
@@ -6898,7 +7055,7 @@
             ]
         },
         "email": null,
-        "id": "170",
+        "id": "174",
         "name": "R. Maddock",
         "office": null,
         "phone": null,
@@ -6912,8 +7069,8 @@
             "460"
         ],
         "classList_spring": [
-            "481",
-            "486"
+            "486",
+            "491"
         ],
         "classTimes": {
             "F": [],
@@ -6930,7 +7087,7 @@
             ]
         },
         "email": null,
-        "id": "171",
+        "id": "175",
         "name": "M. Walker",
         "office": null,
         "phone": null,
@@ -6941,7 +7098,7 @@
     {
         "classHours": "14hr 35min",
         "classList_spring": [
-            "496"
+            "500"
         ],
         "classList_summer": [
             "76",
@@ -6966,7 +7123,7 @@
             ]
         },
         "email": null,
-        "id": "172",
+        "id": "176",
         "name": "P. Cooper",
         "office": null,
         "phone": null,
@@ -6982,8 +7139,8 @@
             "487"
         ],
         "classList_spring": [
-            "499",
-            "503"
+            "502",
+            "506"
         ],
         "classTimes": {
             "F": [],
@@ -7004,7 +7161,7 @@
             ]
         },
         "email": null,
-        "id": "173",
+        "id": "177",
         "name": "R. Nielsen",
         "office": null,
         "phone": null,
@@ -7018,7 +7175,7 @@
             "481"
         ],
         "classList_spring": [
-            "500"
+            "503"
         ],
         "classTimes": {
             "F": [],
@@ -7033,7 +7190,7 @@
             "W": []
         },
         "email": null,
-        "id": "174",
+        "id": "178",
         "name": "K. McGhee",
         "office": null,
         "phone": null,
@@ -7047,7 +7204,7 @@
             "482"
         ],
         "classList_spring": [
-            "501"
+            "504"
         ],
         "classList_summer": [
             "82"
@@ -7071,7 +7228,7 @@
             ]
         },
         "email": null,
-        "id": "175",
+        "id": "179",
         "name": "B. Lewis",
         "office": null,
         "phone": null,
@@ -7087,8 +7244,8 @@
             "486"
         ],
         "classList_spring": [
-            "504",
-            "505"
+            "507",
+            "508"
         ],
         "classList_summer": [
             "83"
@@ -7122,7 +7279,7 @@
             ]
         },
         "email": null,
-        "id": "176",
+        "id": "180",
         "name": "M. Robinson",
         "office": null,
         "phone": null,
@@ -7137,7 +7294,7 @@
             "490"
         ],
         "classList_spring": [
-            "506"
+            "509"
         ],
         "classTimes": {
             "F": [],
@@ -7149,11 +7306,11 @@
             "Th": [],
             "W": []
         },
-        "email": "clarkc@flc.losrios.edu",
-        "id": "177",
-        "name": "Chris Clark",
+        "email": null,
+        "id": "181",
+        "name": "C. Clark",
         "office": null,
-        "phone": "(916) 608-6719",
+        "phone": null,
         "subjects": [
             "HCD"
         ]
@@ -7164,7 +7321,7 @@
             "491"
         ],
         "classList_spring": [
-            "507"
+            "510"
         ],
         "classTimes": {
             "F": [],
@@ -7175,7 +7332,7 @@
             "W": []
         },
         "email": null,
-        "id": "178",
+        "id": "182",
         "name": "J. Collier",
         "office": null,
         "phone": null,
@@ -7193,11 +7350,11 @@
             "496"
         ],
         "classList_spring": [
-            "508",
-            "509",
-            "510",
             "511",
-            "512"
+            "512",
+            "513",
+            "514",
+            "515"
         ],
         "classTimes": {
             "F": [],
@@ -7208,7 +7365,7 @@
             "W": []
         },
         "email": null,
-        "id": "179",
+        "id": "183",
         "name": "S. Raskin",
         "office": null,
         "phone": null,
@@ -7228,12 +7385,13 @@
             "508"
         ],
         "classList_spring": [
-            "513",
-            "514",
+            "516",
             "517",
-            "520",
-            "522",
-            "523"
+            "518",
+            "521",
+            "524",
+            "526",
+            "527"
         ],
         "classList_summer": [
             "86",
@@ -7260,11 +7418,11 @@
                 "06:00PM-07:20PM"
             ]
         },
-        "email": "devillr@flc.losrios.edu",
-        "id": "180",
-        "name": "Rebecca DeVille",
+        "email": null,
+        "id": "184",
+        "name": "R. DeVille",
         "office": null,
-        "phone": "(916) 608-6694",
+        "phone": null,
         "subjects": [
             "HUM"
         ]
@@ -7276,8 +7434,8 @@
             "503"
         ],
         "classList_spring": [
-            "515",
-            "518"
+            "519",
+            "522"
         ],
         "classTimes": {
             "F": [],
@@ -7296,7 +7454,7 @@
             ]
         },
         "email": null,
-        "id": "181",
+        "id": "185",
         "name": "M. Pinkerton",
         "office": null,
         "phone": null,
@@ -7310,7 +7468,7 @@
             "500"
         ],
         "classList_spring": [
-            "516"
+            "520"
         ],
         "classTimes": {
             "F": [
@@ -7323,7 +7481,7 @@
             "W": []
         },
         "email": null,
-        "id": "182",
+        "id": "186",
         "name": "M. Emmert",
         "office": null,
         "phone": null,
@@ -7334,7 +7492,7 @@
     {
         "classHours": "3hr 25min",
         "classList_spring": [
-            "519"
+            "523"
         ],
         "classList_summer": [
             "89"
@@ -7352,7 +7510,7 @@
             ]
         },
         "email": null,
-        "id": "183",
+        "id": "187",
         "name": "L. Smith",
         "office": null,
         "phone": null,
@@ -7361,14 +7519,13 @@
         ]
     },
     {
-        "classHours": "11hr 5min",
+        "classHours": "8hr 0min",
         "classList_fall": [
             "509",
             "511"
         ],
         "classList_spring": [
-            "524",
-            "525"
+            "528"
         ],
         "classTimes": {
             "F": [],
@@ -7382,7 +7539,6 @@
             ],
             "Th": [
                 "09:00AM-10:20AM",
-                "07:00PM-10:05PM",
                 "07:00PM-08:20PM"
             ],
             "W": [
@@ -7390,7 +7546,7 @@
             ]
         },
         "email": null,
-        "id": "184",
+        "id": "188",
         "name": "K. Van Noord",
         "office": null,
         "phone": null,
@@ -7404,7 +7560,7 @@
             "512"
         ],
         "classList_spring": [
-            "526"
+            "529"
         ],
         "classTimes": {
             "F": [],
@@ -7421,7 +7577,7 @@
             "W": []
         },
         "email": null,
-        "id": "185",
+        "id": "189",
         "name": "C. Ciampa",
         "office": null,
         "phone": null,
@@ -7436,8 +7592,8 @@
             "513"
         ],
         "classList_spring": [
-            "527",
-            "528"
+            "530",
+            "531"
         ],
         "classTimes": {
             "F": [],
@@ -7457,11 +7613,11 @@
                 "01:00PM-01:50PM"
             ]
         },
-        "email": "jonesk@flc.losrios.edu",
-        "id": "186",
-        "name": "Kalinda Jones",
+        "email": null,
+        "id": "190",
+        "name": "K. Jones",
         "office": null,
-        "phone": "(530) 642-5641",
+        "phone": null,
         "subjects": [
             "HSER"
         ]
@@ -7472,7 +7628,7 @@
             "519"
         ],
         "classList_spring": [
-            "534"
+            "537"
         ],
         "classList_summer": [
             "93"
@@ -7485,11 +7641,11 @@
             "Th": [],
             "W": []
         },
-        "email": "brinkla@flc.losrios.edu",
-        "id": "187",
-        "name": "Amy Brinkley",
+        "email": null,
+        "id": "191",
+        "name": "A. Brinkley",
         "office": null,
-        "phone": "(916) 608-6914",
+        "phone": null,
         "subjects": [
             "LIBR"
         ]
@@ -7500,8 +7656,8 @@
             "523"
         ],
         "classList_spring": [
-            "536",
-            "539"
+            "539",
+            "542"
         ],
         "classTimes": {
             "F": [],
@@ -7512,7 +7668,7 @@
             "W": []
         },
         "email": null,
-        "id": "188",
+        "id": "192",
         "name": "R. Garbett",
         "office": null,
         "phone": null,
@@ -7526,8 +7682,8 @@
             "562"
         ],
         "classList_spring": [
-            "550",
-            "576"
+            "553",
+            "579"
         ],
         "classTimes": {
             "F": [],
@@ -7543,7 +7699,7 @@
             "W": []
         },
         "email": null,
-        "id": "189",
+        "id": "193",
         "name": "M. Roberts",
         "office": null,
         "phone": null,
@@ -7559,9 +7715,9 @@
             "591"
         ],
         "classList_spring": [
-            "551",
             "554",
-            "607"
+            "557",
+            "610"
         ],
         "classTimes": {
             "F": [
@@ -7583,7 +7739,7 @@
             ]
         },
         "email": "olsenm@flc.losrios.edu",
-        "id": "190",
+        "id": "194",
         "name": "Marc Olsen",
         "office": null,
         "phone": "(916) 608-6759",
@@ -7597,7 +7753,7 @@
             "537"
         ],
         "classList_spring": [
-            "552"
+            "555"
         ],
         "classList_summer": [
             "94"
@@ -7619,7 +7775,7 @@
             ]
         },
         "email": null,
-        "id": "191",
+        "id": "195",
         "name": "B. Watson",
         "office": null,
         "phone": null,
@@ -7635,9 +7791,9 @@
             "586"
         ],
         "classList_spring": [
-            "553",
-            "592",
-            "605"
+            "556",
+            "595",
+            "608"
         ],
         "classTimes": {
             "F": [
@@ -7663,7 +7819,7 @@
             ]
         },
         "email": "nguyenb@flc.losrios.edu",
-        "id": "192",
+        "id": "196",
         "name": "Bi Nguyen",
         "office": null,
         "phone": "(916) 361-6314",
@@ -7679,9 +7835,9 @@
             "595"
         ],
         "classList_spring": [
-            "555",
-            "594",
-            "611"
+            "558",
+            "597",
+            "614"
         ],
         "classTimes": {
             "F": [
@@ -7703,7 +7859,7 @@
             ]
         },
         "email": "claytok@flc.losrios.edu",
-        "id": "193",
+        "id": "197",
         "name": "Keith Clayton",
         "office": null,
         "phone": "(530) 344-5701",
@@ -7719,10 +7875,10 @@
             "590"
         ],
         "classList_spring": [
-            "556",
-            "570",
-            "585",
-            "604"
+            "559",
+            "573",
+            "588",
+            "607"
         ],
         "classTimes": {
             "F": [
@@ -7752,8 +7908,8 @@
             ]
         },
         "email": "NersesV@flc.losrios.edu",
-        "id": "194",
-        "name": "Vadim Nersesyan Email",
+        "id": "198",
+        "name": "Vadim Nersesyan",
         "office": null,
         "phone": "(916) 608-6873",
         "subjects": [
@@ -7766,7 +7922,7 @@
             "560"
         ],
         "classList_spring": [
-            "557"
+            "560"
         ],
         "classTimes": {
             "F": [
@@ -7786,7 +7942,7 @@
             ]
         },
         "email": null,
-        "id": "195",
+        "id": "199",
         "name": "Y. Zhang",
         "office": null,
         "phone": null,
@@ -7805,12 +7961,12 @@
             "770"
         ],
         "classList_spring": [
-            "558",
-            "571",
-            "578",
-            "822",
-            "823",
-            "824"
+            "561",
+            "574",
+            "581",
+            "820",
+            "821",
+            "822"
         ],
         "classList_summer": [
             "95",
@@ -7858,7 +8014,7 @@
             ]
         },
         "email": "eitelj@flc.losrios.edu",
-        "id": "196",
+        "id": "200",
         "name": "Joe Eitel",
         "office": null,
         "phone": "(916) 608-6580",
@@ -7873,9 +8029,9 @@
             "564"
         ],
         "classList_spring": [
-            "559",
-            "564",
-            "596"
+            "562",
+            "567",
+            "599"
         ],
         "classTimes": {
             "F": [],
@@ -7896,7 +8052,7 @@
             ]
         },
         "email": null,
-        "id": "197",
+        "id": "201",
         "name": "C. Middleton",
         "office": null,
         "phone": null,
@@ -7912,10 +8068,10 @@
             "577"
         ],
         "classList_spring": [
-            "560",
-            "574",
-            "575",
-            "579"
+            "563",
+            "577",
+            "578",
+            "582"
         ],
         "classTimes": {
             "F": [
@@ -7949,7 +8105,7 @@
             ]
         },
         "email": "HardenJ@flc.losrios.edu",
-        "id": "198",
+        "id": "202",
         "name": "Jeremy Harden",
         "office": null,
         "phone": "(916) 608-6592",
@@ -7967,10 +8123,10 @@
             "772"
         ],
         "classList_spring": [
-            "561",
-            "565",
-            "566",
-            "821"
+            "564",
+            "568",
+            "569",
+            "819"
         ],
         "classList_summer": [
             "96"
@@ -8004,7 +8160,7 @@
             ]
         },
         "email": "jensenw@flc.losrios.edu",
-        "id": "199",
+        "id": "203",
         "name": "Wayne Jensen",
         "office": null,
         "phone": "(916) 608-6629",
@@ -8022,9 +8178,9 @@
             "571"
         ],
         "classList_spring": [
-            "562",
-            "580",
-            "586",
+            "565",
+            "583",
+            "589",
             "735"
         ],
         "classTimes": {
@@ -8057,7 +8213,7 @@
             ]
         },
         "email": "kroencm@flc.losrios.edu",
-        "id": "200",
+        "id": "204",
         "name": "Mike Kroencke",
         "office": null,
         "phone": "(916) 608-6596",
@@ -8075,9 +8231,9 @@
             "567"
         ],
         "classList_spring": [
-            "563",
-            "567",
-            "581"
+            "566",
+            "570",
+            "584"
         ],
         "classTimes": {
             "F": [
@@ -8100,7 +8256,7 @@
             ]
         },
         "email": null,
-        "id": "201",
+        "id": "205",
         "name": "L. Schritter",
         "office": null,
         "phone": null,
@@ -8116,9 +8272,9 @@
             "583"
         ],
         "classList_spring": [
-            "568",
-            "569",
-            "598"
+            "571",
+            "572",
+            "601"
         ],
         "classTimes": {
             "F": [
@@ -8140,11 +8296,11 @@
                 "12:15PM-01:45PM"
             ]
         },
-        "email": "ChiangM@flc.losrios.edu",
-        "id": "202",
-        "name": "Michelle Chiang-Yamada",
+        "email": null,
+        "id": "206",
+        "name": "M. Chiang-Yamada",
         "office": null,
-        "phone": "(916) 608-6606",
+        "phone": null,
         "subjects": [
             "MATH"
         ]
@@ -8157,10 +8313,10 @@
             "559"
         ],
         "classList_spring": [
-            "572",
-            "587",
-            "589",
-            "612"
+            "575",
+            "590",
+            "592",
+            "615"
         ],
         "classList_summer": [
             "97"
@@ -8192,7 +8348,7 @@
             ]
         },
         "email": "pietrod@flc.losrios.edu",
-        "id": "203",
+        "id": "207",
         "name": "Dean Pietromonaco",
         "office": null,
         "phone": "(916) 608-6990",
@@ -8207,8 +8363,8 @@
             "775"
         ],
         "classList_spring": [
-            "573",
-            "825"
+            "576",
+            "823"
         ],
         "classTimes": {
             "F": [],
@@ -8229,7 +8385,7 @@
             "W": []
         },
         "email": null,
-        "id": "204",
+        "id": "208",
         "name": "M. Nye",
         "office": null,
         "phone": null,
@@ -8248,11 +8404,11 @@
             "777"
         ],
         "classList_spring": [
-            "577",
-            "599",
-            "600",
-            "613",
-            "829"
+            "580",
+            "602",
+            "603",
+            "616",
+            "827"
         ],
         "classList_summer": [
             "130",
@@ -8293,7 +8449,7 @@
             ]
         },
         "email": "currant@flc.losrios.edu",
-        "id": "205",
+        "id": "209",
         "name": "Tim Curran",
         "office": null,
         "phone": "(530) 642-5673",
@@ -8311,9 +8467,9 @@
             "584"
         ],
         "classList_spring": [
-            "582",
-            "584",
-            "603"
+            "585",
+            "587",
+            "606"
         ],
         "classTimes": {
             "F": [],
@@ -8341,7 +8497,7 @@
             ]
         },
         "email": "fusonj@flc.losrios.edu",
-        "id": "206",
+        "id": "210",
         "name": "Joy Fuson",
         "office": null,
         "phone": "(916) 608-6504",
@@ -8357,9 +8513,9 @@
             "597"
         ],
         "classList_spring": [
-            "583",
-            "609",
-            "610"
+            "586",
+            "612",
+            "613"
         ],
         "classList_summer": [
             "104"
@@ -8396,7 +8552,7 @@
             ]
         },
         "email": "Pipkink@flc.losrios.edu",
-        "id": "207",
+        "id": "211",
         "name": "Kevin Pipkin",
         "office": null,
         "phone": "(916) 608-6674",
@@ -8413,10 +8569,10 @@
             "598"
         ],
         "classList_spring": [
-            "588",
-            "595",
-            "602",
-            "606"
+            "591",
+            "598",
+            "605",
+            "609"
         ],
         "classList_summer": [
             "100"
@@ -8455,7 +8611,7 @@
             ]
         },
         "email": "GreeneC@flc.losrios.edu",
-        "id": "208",
+        "id": "212",
         "name": "Calvin Greene",
         "office": null,
         "phone": "(530) 642-5611",
@@ -8469,7 +8625,7 @@
             "581"
         ],
         "classList_spring": [
-            "590"
+            "593"
         ],
         "classList_summer": [
             "101"
@@ -8495,7 +8651,7 @@
             ]
         },
         "email": null,
-        "id": "209",
+        "id": "213",
         "name": "T. Suter",
         "office": null,
         "phone": null,
@@ -8509,7 +8665,7 @@
             "771"
         ],
         "classList_spring": [
-            "591"
+            "594"
         ],
         "classTimes": {
             "F": [],
@@ -8526,7 +8682,7 @@
             "W": []
         },
         "email": null,
-        "id": "210",
+        "id": "214",
         "name": "Y. Cai",
         "office": null,
         "phone": null,
@@ -8541,7 +8697,7 @@
             "551"
         ],
         "classList_spring": [
-            "593"
+            "596"
         ],
         "classList_summer": [
             "134"
@@ -8569,7 +8725,7 @@
             ]
         },
         "email": null,
-        "id": "211",
+        "id": "215",
         "name": "N. Wai",
         "office": null,
         "phone": null,
@@ -8584,7 +8740,7 @@
             "582"
         ],
         "classList_spring": [
-            "597"
+            "600"
         ],
         "classList_summer": [
             "99"
@@ -8610,7 +8766,7 @@
             ]
         },
         "email": null,
-        "id": "212",
+        "id": "216",
         "name": "D. Jordan",
         "office": null,
         "phone": null,
@@ -8626,10 +8782,10 @@
             "588"
         ],
         "classList_spring": [
-            "601",
-            "608",
-            "826",
-            "827"
+            "604",
+            "611",
+            "824",
+            "825"
         ],
         "classTimes": {
             "F": [],
@@ -8658,7 +8814,7 @@
             ]
         },
         "email": "McfaulS@flc.losrios.edu",
-        "id": "213",
+        "id": "217",
         "name": "Steve McFaul",
         "office": null,
         "phone": "(916) 608-6675",
@@ -8668,9 +8824,66 @@
         ]
     },
     {
+        "classHours": "5hr 20min",
+        "classList_fall": [
+            "599",
+            "600"
+        ],
+        "classList_spring": [
+            "617",
+            "618"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "02:15PM-03:35PM",
+                "03:45PM-05:05PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "02:15PM-03:35PM",
+                "03:45PM-05:05PM"
+            ]
+        },
+        "email": null,
+        "id": "218",
+        "name": "N. Cherok-Fenner",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "MEDTEC"
+        ]
+    },
+    {
+        "classHours": "3hr 5min",
+        "classList_spring": [
+            "619"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "10:30AM-01:35PM"
+            ],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "219",
+        "name": "W. Miller",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "MEDTEC"
+        ]
+    },
+    {
         "classHours": "6hr 40min",
         "classList_spring": [
-            "617"
+            "620"
         ],
         "classTimes": {
             "F": [],
@@ -8684,7 +8897,7 @@
             "W": []
         },
         "email": null,
-        "id": "214",
+        "id": "220",
         "name": "P. Pourvatan",
         "office": null,
         "phone": null,
@@ -8698,14 +8911,14 @@
             "602"
         ],
         "classList_spring": [
-            "618",
-            "619",
-            "620",
             "621",
             "622",
             "623",
             "624",
-            "625"
+            "625",
+            "626",
+            "627",
+            "628"
         ],
         "classTimes": {
             "F": [],
@@ -8721,11 +8934,11 @@
                 "11:15AM-01:05PM"
             ]
         },
-        "email": "pedroj@flc.losrios.edu",
-        "id": "215",
-        "name": "Jason Pedro",
+        "email": null,
+        "id": "221",
+        "name": "J. Pedro",
         "office": null,
-        "phone": "(530) 642-5639",
+        "phone": null,
         "subjects": [
             "MEDTEC"
         ]
@@ -8743,15 +8956,15 @@
             "620"
         ],
         "classList_spring": [
-            "626",
-            "627",
-            "628",
-            "634",
+            "629",
+            "630",
+            "631",
             "636",
+            "637",
             "638",
+            "644",
             "645",
-            "646",
-            "647"
+            "646"
         ],
         "classTimes": {
             "F": [],
@@ -8791,7 +9004,7 @@
             ]
         },
         "email": "newnhad@flc.losrios.edu",
-        "id": "216",
+        "id": "222",
         "name": "David Newnham",
         "office": null,
         "phone": "(916) 608-6777",
@@ -8811,10 +9024,10 @@
             "622"
         ],
         "classList_spring": [
-            "629",
-            "630",
-            "631",
             "632",
+            "633",
+            "634",
+            "635",
             "649"
         ],
         "classTimes": {
@@ -8847,43 +9060,15 @@
                 "03:00PM-04:20PM"
             ]
         },
-        "email": "AngoveP@flc.losrios.edu",
-        "id": "217",
-        "name": "Philip Angove",
+        "email": null,
+        "id": "223",
+        "name": "P. Angove",
         "office": null,
-        "phone": "(916) 608-6725",
+        "phone": null,
         "subjects": [
             "MUFHL",
             "MUP",
             "MUSM"
-        ]
-    },
-    {
-        "classHours": "2hr 55min",
-        "classList_spring": [
-            "633",
-            "635",
-            "637",
-            "639"
-        ],
-        "classTimes": {
-            "F": [
-                "10:00AM-11:50AM",
-                "12:00PM-01:05PM"
-            ],
-            "M": [],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": []
-        },
-        "email": null,
-        "id": "218",
-        "name": "M. Pechenova",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "MUIVI"
         ]
     },
     {
@@ -8894,8 +9079,8 @@
             "618"
         ],
         "classList_spring": [
-            "640",
-            "641"
+            "639",
+            "640"
         ],
         "classTimes": {
             "F": [],
@@ -8912,7 +9097,7 @@
             "W": []
         },
         "email": null,
-        "id": "219",
+        "id": "224",
         "name": "S. Rink",
         "office": null,
         "phone": null,
@@ -8928,9 +9113,9 @@
             "617"
         ],
         "classList_spring": [
+            "641",
             "642",
-            "643",
-            "644"
+            "643"
         ],
         "classTimes": {
             "F": [],
@@ -8951,13 +9136,40 @@
             ]
         },
         "email": null,
-        "id": "220",
+        "id": "225",
         "name": "L. Johnson",
         "office": null,
         "phone": null,
         "subjects": [
             "MUFHL",
             "MUIVI"
+        ]
+    },
+    {
+        "classHours": "1hr 50min",
+        "classList_fall": [
+            "621"
+        ],
+        "classList_spring": [
+            "647"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "07:00PM-08:50PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "226",
+        "name": "E. Sporov",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "MUP"
         ]
     },
     {
@@ -8986,7 +9198,7 @@
             "W": []
         },
         "email": null,
-        "id": "221",
+        "id": "227",
         "name": "M. Dale",
         "office": null,
         "phone": null,
@@ -9002,7 +9214,7 @@
         ],
         "classList_spring": [
             "654",
-            "661"
+            "662"
         ],
         "classTimes": {
             "F": [],
@@ -9020,9 +9232,35 @@
                 "01:00PM-04:10PM"
             ]
         },
+        "email": null,
+        "id": "228",
+        "name": "D. Oliveira da Silva",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "NUTRI"
+        ]
+    },
+    {
+        "classHours": "6hr 10min",
+        "classList_spring": [
+            "655"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "07:00PM-10:05PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "07:00PM-10:05PM"
+            ]
+        },
         "email": "",
-        "id": "222",
-        "name": "Debora Oliveira da Silva, MS SilvaD@flc.losrios.edu",
+        "id": "229",
+        "name": "Zachary Pierce, MS",
         "office": null,
         "phone": null,
         "subjects": [
@@ -9032,7 +9270,7 @@
     {
         "classHours": "3hr 10min",
         "classList_spring": [
-            "655"
+            "656"
         ],
         "classList_summer": [
             "105"
@@ -9048,8 +9286,8 @@
             ]
         },
         "email": "",
-        "id": "223",
-        "name": "Sandra Samarron, MS, PhD",
+        "id": "230",
+        "name": "Sandra Samarron, PhD",
         "office": null,
         "phone": null,
         "subjects": [
@@ -9066,11 +9304,11 @@
             "632"
         ],
         "classList_spring": [
-            "657",
             "658",
-            "660",
-            "662",
-            "663"
+            "659",
+            "661",
+            "663",
+            "664"
         ],
         "classTimes": {
             "F": [],
@@ -9094,7 +9332,7 @@
             ]
         },
         "email": null,
-        "id": "224",
+        "id": "231",
         "name": "R. Giordano",
         "office": null,
         "phone": null,
@@ -9105,7 +9343,7 @@
     {
         "classHours": "3hr 5min",
         "classList_spring": [
-            "659"
+            "660"
         ],
         "classTimes": {
             "F": [],
@@ -9117,9 +9355,9 @@
             ],
             "W": []
         },
-        "email": null,
-        "id": "225",
-        "name": "S. Pratt",
+        "email": "",
+        "id": "232",
+        "name": "Serena Fuller, PhD",
         "office": null,
         "phone": null,
         "subjects": [
@@ -9127,25 +9365,23 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "3hr 5min",
         "classList_spring": [
-            "666"
+            "665"
         ],
         "classTimes": {
             "F": [],
             "M": [],
             "Sa": [],
             "T": [
-                "01:00PM-02:20PM"
+                "06:00PM-09:05PM"
             ],
-            "Th": [
-                "01:00PM-02:20PM"
-            ],
+            "Th": [],
             "W": []
         },
-        "email": null,
-        "id": "226",
-        "name": "Z. Pierce",
+        "email": "",
+        "id": "233",
+        "name": "Julie Tharalson, RDN",
         "office": null,
         "phone": null,
         "subjects": [
@@ -9177,7 +9413,7 @@
             ]
         },
         "email": null,
-        "id": "227",
+        "id": "234",
         "name": "J. Tees",
         "office": null,
         "phone": null,
@@ -9226,11 +9462,11 @@
                 "02:30PM-03:50PM"
             ]
         },
-        "email": "ConsidD@flc.losrios.edu",
-        "id": "228",
-        "name": "Daniel Considine",
+        "email": null,
+        "id": "235",
+        "name": "D. Considine",
         "office": null,
-        "phone": "(916) 608-6594",
+        "phone": null,
         "subjects": [
             "PHIL"
         ]
@@ -9272,7 +9508,7 @@
             ]
         },
         "email": null,
-        "id": "229",
+        "id": "236",
         "name": "C. Bauer",
         "office": null,
         "phone": null,
@@ -9304,7 +9540,7 @@
             ]
         },
         "email": null,
-        "id": "230",
+        "id": "237",
         "name": "M. Warnes",
         "office": null,
         "phone": null,
@@ -9322,6 +9558,7 @@
             "680"
         ],
         "classList_spring": [
+            "683",
             "684",
             "695",
             "700",
@@ -9366,7 +9603,7 @@
             ]
         },
         "email": "johnsoj3@flc.losrios.edu",
-        "id": "231",
+        "id": "238",
         "name": "Justin Johnson",
         "office": null,
         "phone": "(916) 608-6624",
@@ -9375,67 +9612,6 @@
             "KINES",
             "SPORT",
             "TMACT"
-        ]
-    },
-    {
-        "classHours": "31hr 10min",
-        "classList_fall": [
-            "645",
-            "658",
-            "662",
-            "666",
-            "687"
-        ],
-        "classList_spring": [
-            "685",
-            "686",
-            "699",
-            "706",
-            "707",
-            "728"
-        ],
-        "classList_summer": [
-            "116"
-        ],
-        "classTimes": {
-            "F": [
-                "09:00AM-11:50AM",
-                "02:00PM-03:50PM"
-            ],
-            "M": [
-                "09:00AM-10:20AM",
-                "09:00AM-11:50AM",
-                "10:30AM-11:50AM",
-                "02:00PM-03:50PM"
-            ],
-            "Sa": [],
-            "T": [
-                "09:00AM-10:20AM",
-                "09:00AM-11:50AM",
-                "10:30AM-11:50AM",
-                "02:00PM-03:50PM"
-            ],
-            "Th": [
-                "09:00AM-10:20AM",
-                "09:00AM-11:50AM",
-                "10:30AM-11:50AM",
-                "02:00PM-03:50PM"
-            ],
-            "W": [
-                "09:00AM-10:20AM",
-                "10:30AM-11:50AM",
-                "02:00PM-03:50PM"
-            ]
-        },
-        "email": "torrezm@flc.losrios.edu",
-        "id": "232",
-        "name": "Matt Torrez",
-        "office": null,
-        "phone": "(916) 608-6600",
-        "subjects": [
-            "FITNS",
-            "KINES",
-            "SPORT"
         ]
     },
     {
@@ -9472,7 +9648,7 @@
             ]
         },
         "email": null,
-        "id": "233",
+        "id": "239",
         "name": "M. Jacques",
         "office": null,
         "phone": null,
@@ -9502,7 +9678,7 @@
             "W": []
         },
         "email": null,
-        "id": "234",
+        "id": "240",
         "name": "K. Morning",
         "office": null,
         "phone": null,
@@ -9538,7 +9714,7 @@
             ]
         },
         "email": null,
-        "id": "235",
+        "id": "241",
         "name": "K. Diehl",
         "office": null,
         "phone": null,
@@ -9577,7 +9753,7 @@
             ]
         },
         "email": "RicharR@flc.losrios.edu",
-        "id": "236",
+        "id": "242",
         "name": "Ron Richardson",
         "office": null,
         "phone": "(916) 608-6812",
@@ -9604,7 +9780,7 @@
             "W": []
         },
         "email": null,
-        "id": "237",
+        "id": "243",
         "name": "A. Jorgensen",
         "office": null,
         "phone": null,
@@ -9637,7 +9813,7 @@
             ]
         },
         "email": null,
-        "id": "238",
+        "id": "244",
         "name": "H. Alkhayyat",
         "office": null,
         "phone": null,
@@ -9674,7 +9850,7 @@
             ]
         },
         "email": null,
-        "id": "239",
+        "id": "245",
         "name": "F. Gaviola",
         "office": null,
         "phone": null,
@@ -9728,7 +9904,7 @@
             ]
         },
         "email": null,
-        "id": "240",
+        "id": "246",
         "name": "C. Perez",
         "office": null,
         "phone": null,
@@ -9777,7 +9953,7 @@
             ]
         },
         "email": null,
-        "id": "241",
+        "id": "247",
         "name": "R. Gregory",
         "office": null,
         "phone": null,
@@ -9810,7 +9986,7 @@
             ]
         },
         "email": null,
-        "id": "242",
+        "id": "248",
         "name": "B. Zarecky",
         "office": null,
         "phone": null,
@@ -9842,7 +10018,7 @@
             ]
         },
         "email": null,
-        "id": "243",
+        "id": "249",
         "name": "P. Rutz",
         "office": null,
         "phone": null,
@@ -9856,8 +10032,8 @@
             "692"
         ],
         "classList_spring": [
-            "736",
-            "737"
+            "737",
+            "738"
         ],
         "classTimes": {
             "F": [],
@@ -9876,7 +10052,7 @@
             ]
         },
         "email": null,
-        "id": "244",
+        "id": "250",
         "name": "D. Ring",
         "office": null,
         "phone": null,
@@ -9887,7 +10063,7 @@
     {
         "classHours": "3hr 15min",
         "classList_spring": [
-            "742"
+            "743"
         ],
         "classTimes": {
             "F": [
@@ -9900,7 +10076,7 @@
             "W": []
         },
         "email": null,
-        "id": "245",
+        "id": "251",
         "name": "J. Vitaich",
         "office": null,
         "phone": null,
@@ -9918,11 +10094,11 @@
             "700"
         ],
         "classList_spring": [
-            "743",
             "744",
             "745",
+            "746",
             "747",
-            "752"
+            "751"
         ],
         "classList_summer": [
             "117"
@@ -9954,11 +10130,11 @@
                 "05:30PM-06:50PM"
             ]
         },
-        "email": "reeseD@flc.losrios.edu",
-        "id": "246",
-        "name": "David Reese",
+        "email": null,
+        "id": "252",
+        "name": "D. Reese",
         "office": null,
-        "phone": "(916) 608-6665",
+        "phone": null,
         "subjects": [
             "POLS"
         ]
@@ -9989,7 +10165,7 @@
             ]
         },
         "email": null,
-        "id": "247",
+        "id": "253",
         "name": "T. Gaffaney",
         "office": null,
         "phone": null,
@@ -10004,8 +10180,8 @@
             "704"
         ],
         "classList_spring": [
-            "750",
-            "751"
+            "749",
+            "750"
         ],
         "classTimes": {
             "F": [],
@@ -10026,7 +10202,7 @@
             ]
         },
         "email": null,
-        "id": "248",
+        "id": "254",
         "name": "D. Repetto",
         "office": null,
         "phone": null,
@@ -10037,7 +10213,7 @@
     {
         "classHours": "0hr 0min",
         "classList_spring": [
-            "753"
+            "752"
         ],
         "classTimes": {
             "F": [],
@@ -10048,7 +10224,7 @@
             "W": []
         },
         "email": null,
-        "id": "249",
+        "id": "255",
         "name": "K. Fisher",
         "office": null,
         "phone": null,
@@ -10063,8 +10239,8 @@
             "707"
         ],
         "classList_spring": [
-            "754",
-            "755"
+            "753",
+            "754"
         ],
         "classList_summer": [
             "120"
@@ -10078,7 +10254,7 @@
             "W": []
         },
         "email": null,
-        "id": "250",
+        "id": "256",
         "name": "C. Wright",
         "office": null,
         "phone": null,
@@ -10094,9 +10270,9 @@
             "732"
         ],
         "classList_spring": [
-            "756",
-            "758",
-            "779"
+            "755",
+            "757",
+            "778"
         ],
         "classList_summer": [
             "124"
@@ -10124,7 +10300,7 @@
             ]
         },
         "email": null,
-        "id": "251",
+        "id": "257",
         "name": "J. Rodriguez",
         "office": null,
         "phone": null,
@@ -10135,8 +10311,8 @@
     {
         "classHours": "5hr 20min",
         "classList_spring": [
-            "757",
-            "759"
+            "756",
+            "758"
         ],
         "classTimes": {
             "F": [],
@@ -10153,8 +10329,34 @@
             ]
         },
         "email": null,
-        "id": "252",
+        "id": "258",
         "name": "B. Youngblood",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "PSYC"
+        ]
+    },
+    {
+        "classHours": "2hr 40min",
+        "classList_spring": [
+            "759"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "02:30PM-03:50PM"
+            ],
+            "Th": [
+                "02:30PM-03:50PM"
+            ],
+            "W": []
+        },
+        "email": null,
+        "id": "259",
+        "name": "B. Cone",
         "office": null,
         "phone": null,
         "subjects": [
@@ -10167,7 +10369,7 @@
             "713"
         ],
         "classList_spring": [
-            "761"
+            "760"
         ],
         "classList_summer": [
             "122"
@@ -10188,7 +10390,7 @@
             ]
         },
         "email": null,
-        "id": "253",
+        "id": "260",
         "name": "B. Gross",
         "office": null,
         "phone": null,
@@ -10199,7 +10401,7 @@
     {
         "classHours": "1hr 20min",
         "classList_spring": [
-            "762"
+            "761"
         ],
         "classTimes": {
             "F": [],
@@ -10212,7 +10414,7 @@
             ]
         },
         "email": null,
-        "id": "254",
+        "id": "261",
         "name": "A. Lowe",
         "office": null,
         "phone": null,
@@ -10226,9 +10428,9 @@
             "710"
         ],
         "classList_spring": [
-            "763",
-            "778",
-            "782"
+            "762",
+            "777",
+            "781"
         ],
         "classTimes": {
             "F": [],
@@ -10249,7 +10451,7 @@
             ]
         },
         "email": null,
-        "id": "255",
+        "id": "262",
         "name": "S. Mullen",
         "office": null,
         "phone": null,
@@ -10259,26 +10461,25 @@
     },
     {
         "classHours": "6hr 10min",
-        "classList_fall": [
-            "715"
-        ],
         "classList_spring": [
-            "764"
+            "763",
+            "770"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "06:00PM-09:05PM"
+            ],
             "Sa": [],
             "T": [
-                "06:00PM-09:05PM",
                 "07:00PM-10:05PM"
             ],
             "Th": [],
             "W": []
         },
         "email": null,
-        "id": "256",
-        "name": "J. Samboceti",
+        "id": "263",
+        "name": "E. Patten Armbrust",
         "office": null,
         "phone": null,
         "subjects": [
@@ -10294,10 +10495,11 @@
             "719"
         ],
         "classList_spring": [
+            "764",
             "765",
             "766",
             "767",
-            "768"
+            "788"
         ],
         "classTimes": {
             "F": [],
@@ -10317,7 +10519,7 @@
             ]
         },
         "email": "fannons@flc.losrios.edu",
-        "id": "257",
+        "id": "264",
         "name": "Sean Fannon",
         "office": null,
         "phone": "(916) 608-6755",
@@ -10332,8 +10534,8 @@
             "731"
         ],
         "classList_spring": [
-            "769",
-            "781"
+            "768",
+            "780"
         ],
         "classList_summer": [
             "84"
@@ -10357,7 +10559,7 @@
             ]
         },
         "email": null,
-        "id": "258",
+        "id": "265",
         "name": "C. Snow",
         "office": null,
         "phone": null,
@@ -10375,10 +10577,10 @@
             "724"
         ],
         "classList_spring": [
-            "770",
+            "769",
+            "771",
             "772",
-            "773",
-            "774"
+            "773"
         ],
         "classTimes": {
             "F": [],
@@ -10398,11 +10600,40 @@
                 "06:00PM-09:05PM"
             ]
         },
-        "email": "aldriccd@flc.losrios.edu",
-        "id": "259",
-        "name": "Christina Aldrich",
+        "email": null,
+        "id": "266",
+        "name": "C. Aldrich",
         "office": null,
-        "phone": "(916) 608-6951",
+        "phone": null,
+        "subjects": [
+            "PSYC"
+        ]
+    },
+    {
+        "classHours": "5hr 20min",
+        "classList_spring": [
+            "774",
+            "775"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "10:30AM-11:50AM",
+                "02:30PM-03:50PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "10:30AM-11:50AM",
+                "02:30PM-03:50PM"
+            ]
+        },
+        "email": null,
+        "id": "267",
+        "name": "M. Laird",
+        "office": null,
+        "phone": null,
         "subjects": [
             "PSYC"
         ]
@@ -10413,7 +10644,7 @@
             "728"
         ],
         "classList_spring": [
-            "777"
+            "776"
         ],
         "classTimes": {
             "F": [],
@@ -10426,7 +10657,7 @@
             "W": []
         },
         "email": null,
-        "id": "260",
+        "id": "268",
         "name": "R. Stieferman",
         "office": null,
         "phone": null,
@@ -10441,7 +10672,7 @@
             "730"
         ],
         "classList_spring": [
-            "780"
+            "779"
         ],
         "classList_summer": [
             "125"
@@ -10463,7 +10694,7 @@
             ]
         },
         "email": null,
-        "id": "261",
+        "id": "269",
         "name": "B. Lynch",
         "office": null,
         "phone": null,
@@ -10492,7 +10723,7 @@
             "W": []
         },
         "email": null,
-        "id": "262",
+        "id": "270",
         "name": "G. Zeller",
         "office": null,
         "phone": null,
@@ -10501,7 +10732,33 @@
         ]
     },
     {
-        "classHours": "20hr 50min",
+        "classHours": "4hr 10min",
+        "classList_spring": [
+            "792"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "10:30AM-12:35PM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "10:30AM-12:35PM"
+            ]
+        },
+        "email": null,
+        "id": "271",
+        "name": "S. Hauschildt",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "SILA"
+        ]
+    },
+    {
+        "classHours": "25hr 0min",
         "classList_fall": [
             "742",
             "743",
@@ -10510,9 +10767,9 @@
             "747"
         ],
         "classList_spring": [
-            "792",
             "793",
             "794",
+            "795",
             "796",
             "797"
         ],
@@ -10526,11 +10783,13 @@
             "Sa": [],
             "T": [
                 "10:30AM-12:35PM",
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "05:30PM-07:35PM"
             ],
             "Th": [
                 "10:30AM-12:35PM",
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "05:30PM-07:35PM"
             ],
             "W": [
                 "10:30AM-12:35PM",
@@ -10538,38 +10797,9 @@
                 "05:30PM-07:35PM"
             ]
         },
-        "email": "lennerm@flc.losrios.edu",
-        "id": "263",
-        "name": "Michelle Lennert",
-        "office": null,
-        "phone": "(916) 608-6630",
-        "subjects": [
-            "SILA"
-        ]
-    },
-    {
-        "classHours": "4hr 10min",
-        "classList_fall": [
-            "745"
-        ],
-        "classList_spring": [
-            "795"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "05:30PM-07:35PM"
-            ],
-            "Th": [
-                "05:30PM-07:35PM"
-            ],
-            "W": []
-        },
         "email": null,
-        "id": "264",
-        "name": "S. Thrapp",
+        "id": "272",
+        "name": "M. Lennert",
         "office": null,
         "phone": null,
         "subjects": [
@@ -10603,7 +10833,7 @@
             ]
         },
         "email": null,
-        "id": "265",
+        "id": "273",
         "name": "L. Faulkner",
         "office": null,
         "phone": null,
@@ -10647,9 +10877,9 @@
                 "11:15AM-12:35PM"
             ]
         },
-        "email": "carlsoD2@flc.losrios.edu",
-        "id": "266",
-        "name": "Diane Carlson",
+        "email": null,
+        "id": "274",
+        "name": "D. Carlson",
         "office": null,
         "phone": null,
         "subjects": [
@@ -10677,7 +10907,7 @@
             ]
         },
         "email": null,
-        "id": "267",
+        "id": "275",
         "name": "C. Cannon",
         "office": null,
         "phone": null,
@@ -10715,7 +10945,7 @@
             ]
         },
         "email": null,
-        "id": "268",
+        "id": "276",
         "name": "P. Burke",
         "office": null,
         "phone": null,
@@ -10724,7 +10954,7 @@
         ]
     },
     {
-        "classHours": "18hr 40min",
+        "classHours": "13hr 20min",
         "classList_fall": [
             "757",
             "758",
@@ -10733,17 +10963,14 @@
         "classList_spring": [
             "807",
             "808",
-            "813",
-            "815"
+            "813"
         ],
         "classTimes": {
             "F": [],
             "M": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
-                "01:00PM-02:20PM",
-                "06:00PM-07:20PM",
-                "07:30PM-08:50PM"
+                "01:00PM-02:20PM"
             ],
             "Sa": [],
             "T": [
@@ -10757,13 +10984,11 @@
             "W": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
-                "01:00PM-02:20PM",
-                "06:00PM-07:20PM",
-                "07:30PM-08:50PM"
+                "01:00PM-02:20PM"
             ]
         },
         "email": "MoragaJ@flc.losrios.edu",
-        "id": "269",
+        "id": "277",
         "name": "Juan Carlos Moraga",
         "office": null,
         "phone": "(916) 608-6669",
@@ -10804,7 +11029,7 @@
             ]
         },
         "email": "maciasE@flc.losrios.edu",
-        "id": "270",
+        "id": "278",
         "name": "Elvia Macias-Perez",
         "office": null,
         "phone": "(916) 608-6544",
@@ -10832,7 +11057,7 @@
             "W": []
         },
         "email": null,
-        "id": "271",
+        "id": "279",
         "name": "C. Veras",
         "office": null,
         "phone": null,
@@ -10848,7 +11073,7 @@
         ],
         "classList_spring": [
             "811",
-            "817"
+            "816"
         ],
         "classTimes": {
             "F": [],
@@ -10864,11 +11089,11 @@
                 "10:30AM-11:50AM"
             ]
         },
-        "email": "pactolm@flc.losrios.edu",
-        "id": "272",
-        "name": "Carlos Lopez",
+        "email": null,
+        "id": "280",
+        "name": "C. Lopez",
         "office": null,
-        "phone": "(530) 642-5618",
+        "phone": null,
         "subjects": [
             "SPAN"
         ]
@@ -10896,7 +11121,7 @@
             ]
         },
         "email": null,
-        "id": "273",
+        "id": "281",
         "name": "A. Divittorio",
         "office": null,
         "phone": null,
@@ -10910,7 +11135,7 @@
             "761"
         ],
         "classList_spring": [
-            "816"
+            "815"
         ],
         "classTimes": {
             "F": [],
@@ -10927,7 +11152,7 @@
             "W": []
         },
         "email": null,
-        "id": "274",
+        "id": "282",
         "name": "P. Alford",
         "office": null,
         "phone": null,
@@ -10941,7 +11166,7 @@
             "764"
         ],
         "classList_spring": [
-            "818"
+            "817"
         ],
         "classTimes": {
             "F": [],
@@ -10958,36 +11183,8 @@
             "W": []
         },
         "email": null,
-        "id": "275",
+        "id": "283",
         "name": "S. Postiglione",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "SPAN"
-        ]
-    },
-    {
-        "classHours": "5hr 20min",
-        "classList_spring": [
-            "819"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "06:00PM-07:20PM",
-                "07:30PM-08:50PM"
-            ],
-            "Th": [
-                "06:00PM-07:20PM",
-                "07:30PM-08:50PM"
-            ],
-            "W": []
-        },
-        "email": null,
-        "id": "276",
-        "name": "S. Bolton",
         "office": null,
         "phone": null,
         "subjects": [
@@ -11000,7 +11197,7 @@
             "767"
         ],
         "classList_spring": [
-            "820"
+            "818"
         ],
         "classTimes": {
             "F": [],
@@ -11019,7 +11216,7 @@
             ]
         },
         "email": null,
-        "id": "277",
+        "id": "284",
         "name": "S. Mason",
         "office": null,
         "phone": null,
@@ -11033,7 +11230,7 @@
             "575"
         ],
         "classList_spring": [
-            "828"
+            "826"
         ],
         "classTimes": {
             "F": [],
@@ -11052,7 +11249,7 @@
             ]
         },
         "email": null,
-        "id": "278",
+        "id": "285",
         "name": "J. Bulaong",
         "office": null,
         "phone": null,
@@ -11064,7 +11261,7 @@
     {
         "classHours": "4hr 10min",
         "classList_spring": [
-            "830"
+            "828"
         ],
         "classTimes": {
             "F": [],
@@ -11079,7 +11276,7 @@
             ]
         },
         "email": null,
-        "id": "279",
+        "id": "286",
         "name": "S. McKaig",
         "office": null,
         "phone": null,
@@ -11099,15 +11296,15 @@
             "797"
         ],
         "classList_spring": [
-            "833",
+            "830",
+            "842",
+            "843",
+            "844",
             "845",
-            "846",
-            "847",
-            "848",
-            "853",
-            "854",
-            "855",
-            "856"
+            "850",
+            "851",
+            "852",
+            "853"
         ],
         "classTimes": {
             "F": [],
@@ -11130,7 +11327,7 @@
             ]
         },
         "email": "wallaci@flc.losrios.edu",
-        "id": "280",
+        "id": "287",
         "name": "Ian Wallace",
         "office": null,
         "phone": "(916) 608-6933",
@@ -11157,13 +11354,13 @@
             "805"
         ],
         "classList_spring": [
+            "831",
             "834",
-            "837",
-            "838",
-            "849",
-            "850",
-            "851",
-            "852"
+            "835",
+            "846",
+            "847",
+            "848",
+            "849"
         ],
         "classList_summer": [
             "135"
@@ -11185,14 +11382,39 @@
                 "03:50PM-04:25PM"
             ]
         },
-        "email": "harrisd@flc.losrios.edu",
-        "id": "281",
-        "name": "David Harris",
+        "email": null,
+        "id": "288",
+        "name": "D. Harris",
         "office": null,
-        "phone": "(916) 608-6760",
+        "phone": null,
         "subjects": [
             "TA",
             "TAP"
+        ]
+    },
+    {
+        "classHours": "0hr 0min",
+        "classList_fall": [
+            "778"
+        ],
+        "classList_spring": [
+            "832"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "289",
+        "name": "J. Wallace",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "TA"
         ]
     },
     {
@@ -11201,7 +11423,7 @@
             "781"
         ],
         "classList_spring": [
-            "836"
+            "833"
         ],
         "classTimes": {
             "F": [],
@@ -11222,7 +11444,7 @@
             ]
         },
         "email": null,
-        "id": "282",
+        "id": "290",
         "name": "P. Mohrmann",
         "office": null,
         "phone": null,
@@ -11236,7 +11458,7 @@
             "785"
         ],
         "classList_spring": [
-            "839"
+            "836"
         ],
         "classTimes": {
             "F": [],
@@ -11257,7 +11479,7 @@
             ]
         },
         "email": null,
-        "id": "283",
+        "id": "291",
         "name": "S. Schmidt",
         "office": null,
         "phone": null,
@@ -11268,7 +11490,7 @@
     {
         "classHours": "4hr 20min",
         "classList_spring": [
-            "840"
+            "837"
         ],
         "classTimes": {
             "F": [],
@@ -11285,7 +11507,7 @@
             ]
         },
         "email": null,
-        "id": "284",
+        "id": "292",
         "name": "R. Redmond",
         "office": null,
         "phone": null,
@@ -11332,30 +11554,6 @@
         ]
     },
     {
-        "classHours": "3hr 5min",
-        "classList_fall": [
-            "19"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "07:00PM-10:05PM"
-            ],
-            "Th": [],
-            "W": []
-        },
-        "email": null,
-        "id": "1",
-        "name": "D. Hopkins",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "ADMJ"
-        ]
-    },
-    {
         "classHours": "4hr 15min",
         "classList_fall": [
             "31",
@@ -11378,7 +11576,7 @@
             ]
         },
         "email": "TylerE@flc.losrios.edu",
-        "id": "2",
+        "id": "1",
         "name": "Erica Tyler",
         "office": null,
         "phone": "(916) 608-6709",
@@ -11400,7 +11598,7 @@
             "W": []
         },
         "email": null,
-        "id": "3",
+        "id": "2",
         "name": "J. Marshall",
         "office": null,
         "phone": null,
@@ -11424,7 +11622,7 @@
             "W": []
         },
         "email": null,
-        "id": "4",
+        "id": "3",
         "name": "S. Stratton",
         "office": null,
         "phone": null,
@@ -11448,7 +11646,7 @@
             ]
         },
         "email": null,
-        "id": "5",
+        "id": "4",
         "name": "A. Hertzberg",
         "office": null,
         "phone": null,
@@ -11473,7 +11671,7 @@
             "W": []
         },
         "email": null,
-        "id": "6",
+        "id": "5",
         "name": "D. Coco-Russell",
         "office": null,
         "phone": null,
@@ -11499,7 +11697,7 @@
             ]
         },
         "email": null,
-        "id": "7",
+        "id": "6",
         "name": "M. Mijic",
         "office": null,
         "phone": null,
@@ -11527,7 +11725,7 @@
             ]
         },
         "email": null,
-        "id": "8",
+        "id": "7",
         "name": "M. Aly",
         "office": null,
         "phone": null,
@@ -11549,7 +11747,7 @@
             "W": []
         },
         "email": null,
-        "id": "9",
+        "id": "8",
         "name": "D. White",
         "office": null,
         "phone": null,
@@ -11577,7 +11775,7 @@
             "W": []
         },
         "email": null,
-        "id": "10",
+        "id": "9",
         "name": "R. Thomas",
         "office": null,
         "phone": null,
@@ -11587,28 +11785,41 @@
         ]
     },
     {
-        "classHours": "3hr 10min",
+        "classHours": "15hr 10min",
         "classList_fall": [
-            "276",
-            "280"
+            "343",
+            "366"
+        ],
+        "classList_summer": [
+            "55"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [],
-            "Th": [
-                "01:00PM-04:10PM"
+            "M": [
+                "08:00AM-10:05AM"
             ],
-            "W": []
+            "Sa": [],
+            "T": [
+                "08:00AM-10:05AM",
+                "01:00PM-03:05PM",
+                "07:00PM-08:20PM"
+            ],
+            "Th": [
+                "08:00AM-10:05AM",
+                "01:00PM-03:05PM",
+                "07:00PM-08:20PM"
+            ],
+            "W": [
+                "08:00AM-10:05AM"
+            ]
         },
         "email": null,
-        "id": "11",
-        "name": "C. Smith",
+        "id": "10",
+        "name": "M. Barrish",
         "office": null,
         "phone": null,
         "subjects": [
-            "ECON"
+            "ENGWR"
         ]
     },
     {
@@ -11629,7 +11840,7 @@
             ]
         },
         "email": null,
-        "id": "12",
+        "id": "11",
         "name": "L. Fox",
         "office": null,
         "phone": null,
@@ -11655,7 +11866,7 @@
             "W": []
         },
         "email": null,
-        "id": "13",
+        "id": "12",
         "name": "N. McQueen",
         "office": null,
         "phone": null,
@@ -11681,7 +11892,7 @@
             ]
         },
         "email": null,
-        "id": "14",
+        "id": "13",
         "name": "H. Davatz",
         "office": null,
         "phone": null,
@@ -11707,7 +11918,7 @@
             "W": []
         },
         "email": null,
-        "id": "15",
+        "id": "14",
         "name": "F. Graham",
         "office": null,
         "phone": null,
@@ -11731,12 +11942,60 @@
             "W": []
         },
         "email": null,
-        "id": "16",
+        "id": "15",
         "name": "M. Tolin",
         "office": null,
         "phone": null,
         "subjects": [
             "ENVT"
+        ]
+    },
+    {
+        "classHours": "3hr 5min",
+        "classList_fall": [
+            "423"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [],
+            "Th": [
+                "06:00PM-09:05PM"
+            ],
+            "W": []
+        },
+        "email": null,
+        "id": "16",
+        "name": "J. Woodward",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "FT"
+        ]
+    },
+    {
+        "classHours": "3hr 10min",
+        "classList_fall": [
+            "434"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "01:00PM-04:10PM"
+            ],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "17",
+        "name": "S. Welsh",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "GEOG"
         ]
     },
     {
@@ -11755,7 +12014,7 @@
             ]
         },
         "email": null,
-        "id": "17",
+        "id": "18",
         "name": "A. Reed",
         "office": null,
         "phone": null,
@@ -11786,11 +12045,11 @@
                 "10:30AM-11:50AM"
             ]
         },
-        "email": "wrightm@flc.losrios.edu",
-        "id": "18",
-        "name": "Matt Wright",
+        "email": null,
+        "id": "19",
+        "name": "M. Wright",
         "office": null,
-        "phone": "(916) 608-6797",
+        "phone": null,
         "subjects": [
             "HEED",
             "KINES"
@@ -11811,7 +12070,7 @@
             "W": []
         },
         "email": null,
-        "id": "19",
+        "id": "20",
         "name": "N. Podesta",
         "office": null,
         "phone": null,
@@ -11838,7 +12097,7 @@
             "W": []
         },
         "email": null,
-        "id": "20",
+        "id": "21",
         "name": "R. Chester",
         "office": null,
         "phone": null,
@@ -11869,7 +12128,7 @@
             ]
         },
         "email": "floresj@flc.losrios.edu",
-        "id": "21",
+        "id": "22",
         "name": "Juan Flores",
         "office": null,
         "phone": "(916) 608-6722",
@@ -11904,7 +12163,7 @@
             ]
         },
         "email": null,
-        "id": "22",
+        "id": "23",
         "name": "C. Palomares",
         "office": null,
         "phone": null,
@@ -11933,7 +12192,7 @@
             ]
         },
         "email": null,
-        "id": "23",
+        "id": "24",
         "name": "B. Herzberger",
         "office": null,
         "phone": null,
@@ -11964,7 +12223,7 @@
             ]
         },
         "email": null,
-        "id": "24",
+        "id": "25",
         "name": "S. Hafezi",
         "office": null,
         "phone": null,
@@ -11990,7 +12249,7 @@
             ]
         },
         "email": null,
-        "id": "25",
+        "id": "26",
         "name": "T. Dyer",
         "office": null,
         "phone": null,
@@ -12016,41 +12275,12 @@
             "W": []
         },
         "email": null,
-        "id": "26",
+        "id": "27",
         "name": "C. Glover",
         "office": null,
         "phone": null,
         "subjects": [
             "MATH"
-        ]
-    },
-    {
-        "classHours": "5hr 20min",
-        "classList_fall": [
-            "599",
-            "600"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [
-                "02:15PM-03:35PM",
-                "03:45PM-05:05PM"
-            ],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": [
-                "02:15PM-03:35PM",
-                "03:45PM-05:05PM"
-            ]
-        },
-        "email": null,
-        "id": "27",
-        "name": "N. Cherok-Fenner",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "MEDTEC"
         ]
     },
     {
@@ -12082,30 +12312,6 @@
         ]
     },
     {
-        "classHours": "1hr 50min",
-        "classList_fall": [
-            "621"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [
-                "07:00PM-08:50PM"
-            ],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": []
-        },
-        "email": null,
-        "id": "29",
-        "name": "E. Sporov",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "MUP"
-        ]
-    },
-    {
         "classHours": "2hr 40min",
         "classList_fall": [
             "629"
@@ -12123,8 +12329,8 @@
             ]
         },
         "email": "",
-        "id": "30",
-        "name": "Kevin D. Cooper, MAS, RD, LD",
+        "id": "29",
+        "name": "Kevin D. Cooper, MAS, RD",
         "office": null,
         "phone": null,
         "subjects": [
@@ -12147,7 +12353,7 @@
             "W": []
         },
         "email": null,
-        "id": "31",
+        "id": "30",
         "name": "D. Selby",
         "office": null,
         "phone": null,
@@ -12181,7 +12387,7 @@
             ]
         },
         "email": null,
-        "id": "32",
+        "id": "31",
         "name": "A. Clarke",
         "office": null,
         "phone": null,
@@ -12210,7 +12416,7 @@
             ]
         },
         "email": "snellk@flc.losrios.edu",
-        "id": "33",
+        "id": "32",
         "name": "Ken Snell",
         "office": null,
         "phone": "(916) 608-6575",
@@ -12250,12 +12456,62 @@
             ]
         },
         "email": null,
-        "id": "34",
+        "id": "33",
         "name": "B. Raines",
         "office": null,
         "phone": null,
         "subjects": [
             "PSYC"
+        ]
+    },
+    {
+        "classHours": "3hr 5min",
+        "classList_fall": [
+            "715"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "06:00PM-09:05PM"
+            ],
+            "Th": [],
+            "W": []
+        },
+        "email": null,
+        "id": "34",
+        "name": "J. Samboceti",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "PSYC"
+        ]
+    },
+    {
+        "classHours": "4hr 10min",
+        "classList_fall": [
+            "745"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [],
+            "Sa": [],
+            "T": [
+                "05:30PM-07:35PM"
+            ],
+            "Th": [
+                "05:30PM-07:35PM"
+            ],
+            "W": []
+        },
+        "email": null,
+        "id": "35",
+        "name": "S. Thrapp",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "SILA"
         ]
     },
     {
@@ -12276,7 +12532,7 @@
             ]
         },
         "email": null,
-        "id": "35",
+        "id": "36",
         "name": "K. Straus",
         "office": null,
         "phone": null,
@@ -12316,35 +12572,13 @@
             ]
         },
         "email": null,
-        "id": "36",
+        "id": "37",
         "name": "M. Taheri",
         "office": null,
         "phone": null,
         "subjects": [
             "MATH",
             "STAT"
-        ]
-    },
-    {
-        "classHours": "0hr 0min",
-        "classList_fall": [
-            "778"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [],
-            "Th": [],
-            "W": []
-        },
-        "email": null,
-        "id": "37",
-        "name": "J. Wallace",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "TA"
         ]
     },
     {
@@ -12444,11 +12678,11 @@
                 "01:00PM-03:05PM"
             ]
         },
-        "email": "davisd@flc.losrios.edu",
+        "email": null,
         "id": "2",
-        "name": "Debi Davis Worth",
+        "name": "D. Davis",
         "office": null,
-        "phone": "(916) 608-6775",
+        "phone": null,
         "subjects": [
             "HIST"
         ]

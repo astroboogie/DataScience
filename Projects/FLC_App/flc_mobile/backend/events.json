@@ -1,86 +1,121 @@
 [
     {
-        "date": "01/14/2017",
-        "description": "Folsom Lake College's Spring 2017 semester officially begins on Saturday, January 14th. Saturday and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. FLC will be closed on Monday, January 16th for Martin Luther King, Jr.'s birthday. Most classes will have their first session Tuesday, January 17th-Monday, January 23rd.",
+        "date": "02/16/2017 | 12 PM - 1:00 p.m",
+        "description": null,
         "id": "0",
-        "location": "All campuses",
-        "title": "Spring semester officially begins"
+        "location": "El Dorado Center",
+        "title": "EDC Day on the Greens"
     },
     {
-        "date": "01/16/2017",
-        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of Dr. Martin Luther King Jr.'s birthday on Monday, January 16th. No classes will be held.Folsom Lake College's Spring 2017 semester officially begins on Saturday, January 14th. Saturday classes and online classes (full term, 1st 8-week, and 1st 5-week) will begin- check with your instructor. Most classes will begin Tues., Jan. 17 - Mon., Jan. 23.",
+        "date": "02/17/2017",
+        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of Abraham Lincoln's birthday on Friday, February 17. No classes will be held.",
         "id": "1",
         "location": "All campuses",
-        "title": "MLK Jr. Holiday (college closed)"
+        "title": "Lincoln Holiday (college closed)"
     },
     {
-        "date": "01/16/2017 | 10:00 a.m - 2:00 p.m",
-        "description": "<p><p><strong>Garden Work at Wakamatsu<br />Jan. 16 - MLK Day&nbsp;<br /><br /></strong>Help expand and enhance the community garden and the native plant demonstration garden. Install native plants along the NEW mile-long trail at the farm to enhance our native food forest!</p><p>RSVP at <a href=\"http://bit.ly/MLKDay17\">http://bit.ly/MLKDay17</a> so that we can be sure to follow up with more details about the service day project in early January.&nbsp;</p><p><span style=\"font-size: 9pt;\">&nbsp;</span></p><p></p><div></div><div></div></p>",
+        "date": "02/20/2017",
+        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of George Washington's birthday on Monday, February 20. No classes will be held.",
         "id": "2",
-        "location": "El Dorado Center",
-        "title": "FLC Hiking Club"
+        "location": "All campuses",
+        "title": "Washington Holiday (college closed)"
     },
     {
-        "date": "01/18/2017 | 12 PM - 1:00 p.m",
-        "description": "Kick off the semester at FLC with a little celebration and by getting to know your Associated Students representatives, student services available to you, and clubs you can join.",
+        "date": "02/21/2017 | 12:30 p.m - 1:30 p.m",
+        "description": "The FLC Wisdom Book Club will meet every Tuesday, Starting January 31. For the full Wisdom Book Club schedule check with the facilitator, Mary Hansen: hansenm@flc.losrios.edu",
         "id": "3",
-        "location": "Folsom campus, outside the Roost",
-        "title": "Falcon's Day @ Folsom"
+        "location": "Folsom campus, Gymnasium, G-185",
+        "title": "The FLC Wisdom Book Club"
     },
     {
-        "date": "01/19/2017 | 12 PM - 1:00 p.m",
-        "description": "Kick off the semester at EDC with a little celebration and by getting to know your Associated Students representatives, student services available to you, and clubs you can join.",
+        "date": "02/22/2017 | 12 PM - 1:00 p.m",
+        "description": "The Folsom Lake College Work Experience & Internship Program, along with the Career & Transfer Services Center present the Spring 2017 Career Speaker Series: Conversations with the Pros: Where Faculty Meets Industry. This workshop will explore careers in Human Services.Do you know what you can do with your major?&bull; Learn what it's really like to work in your field.&bull; Find out about internship and job opportunities available for your major.&bull; Network with employers (bring your resume!).For more information, please contact: Julie Collier at colliej@flc.losrios.edu or (916) 608-6552",
         "id": "4",
-        "location": "El Dorado Center, The Green",
-        "title": "Falcon's Day @ EDC"
+        "location": "Folsom campus,  Falcon's Roost, Peregrine Room (FR-240)",
+        "title": "Careers in Human Services"
     },
     {
-        "date": "01/20/2017 | 9:00 a.m - 2:00 p.m",
-        "description": "El Dorado Center Bridge Day, organized by EDC Student Activities Club: New students are invited to participate in an interactive event hosted by the EDC Student Activities Club to get to know the El Dorado Center campus and services. For more info, click here.",
+        "date": "02/22/2017 | 12 PM - 1:00 p.m",
+        "description": "Major Decisions (Strategies for Choosing a Major): Do you struggle with the question So....what's your major? This workshop will help you explore majors that reflect your interests, abilities and values .Learn about self-assessment tools and online resources to discover your career path.",
         "id": "5",
-        "location": "El Dorado Center",
-        "title": "EDC Bridge Day"
+        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
+        "title": "Choosing a Major workshop"
     },
     {
-        "date": "01/27/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Women's Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
+        "date": "02/22/2017 | 12 PM - 3:00 p.m",
+        "description": "FLC Men's Golf match Big 8 #3For more information on FLC Athletics, click here.",
         "id": "6",
-        "location": "Folsom campus, Tennis Courts",
-        "title": "Women's Tennis Match"
+        "location": "Rancho Murieta Golf Club, 7000 Alameda Dr, Rancho Murieta",
+        "title": "Men's Golf Match"
     },
     {
-        "date": "01/27/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Men's Tennis Team vs. CabrilloFor more information on FLC Athletics, click here.",
+        "date": "02/23/2017 | 1:00 p.m - 4:00 p.m",
+        "description": "FLC Women's Tennis Team vs. Santa RosaFor more information on FLC Athletics, click here.",
         "id": "7",
+        "location": "Folsom campus, Tennis Courts",
+        "title": "Women's  Tennis Match"
+    },
+    {
+        "date": "02/23/2017 | 1:00 p.m - 4:00 p.m",
+        "description": "FLC Men's Tennis Team vs. Santa RosaFor more information on FLC Athletics, click here.",
+        "id": "8",
         "location": "Folsom campus, Tennis Courts",
         "title": "Men's Tennis Match"
     },
     {
-        "date": "01/30/2017 | 5:00 p.m - 8:00 p.m",
-        "description": "FLC Men's Baseball Team vs. ButteFor more information on FLC Athletics, click here.",
-        "id": "8",
-        "location": "Folsom campus, Baseball Field",
-        "title": "Men's Baseball Game"
-    },
-    {
-        "date": "01/30/2017 | 6:30 p.m - 10:00 p.m",
-        "description": "The Falcon's Eye Theatre at Folsom Lake College calls for FLC students and actors from the community to audition for its spring production ofCyrano. All skill levels encouraged to audition. For more information click here.",
+        "date": "02/24/2017 | 12 PM - 4:00 p.m",
+        "description": "FLC Women's Softball Team vs. Redwoods. Double header: 12 noon and 2:00 pmFor more information on FLC Athletics, click here.",
         "id": "9",
-        "location": "Folsom campus, Harris Center, Drama Lab (PAC-1170)",
-        "title": "Falcon's Eye Auditions"
+        "location": "Folsom campus, Softball Field",
+        "title": "Women's Softball Game"
     },
     {
-        "date": "01/31/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Women's Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
+        "date": "02/24/2017 | 1:00 p.m - 4:00 p.m",
+        "description": "FLC Women's Tennis Team vs. SolanoFor more information on FLC Athletics, click here.",
         "id": "10",
         "location": "Folsom campus, Tennis Courts",
         "title": "Women's Tennis Match"
     },
     {
-        "date": "01/31/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Men's Tennis Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
+        "date": "02/24/2017 | 1:00 p.m - 4:00 p.m",
+        "description": "FLC Men's Tennis Team vs. SolanoFor more information on FLC Athletics, click here.",
         "id": "11",
         "location": "Folsom campus, Tennis Courts",
         "title": "Men's Tennis Match"
+    },
+    {
+        "date": "02/27/2017 | 12 PM - 1:00 p.m",
+        "description": "College life can be challenging and stressful. Staying focused and balanced is essential. This Meditation Group meets every Tuesday to help students and staff be mindful of what is important for a quiet, centering, non-judgmental and relaxing hour. There is usually a facilitated meditation, a brief relaxation activity, and always time for discussion and support. Join us!",
+        "id": "12",
+        "location": "Folsom campus, Phycial Education, PE-204",
+        "title": "Meditation Group"
+    },
+    {
+        "date": "02/27/2017 | 2:00 p.m - 5:00 p.m",
+        "description": "FLC Men's Baseball Team vs. MendocinoFor more information on FLC Athletics, click here.",
+        "id": "13",
+        "location": "Folsom campus, Baseball Field",
+        "title": "Men's Baseball Game"
+    },
+    {
+        "date": "02/27/2017 | 5:30 p.m - 8:30 p.m",
+        "description": "The film, Planet Rock, takes a look at the rise of crack cocaine in urban America in the 1980s and it's influence on popular culture, especially in hip-hop music. Check here for additional Social Justice Spring events: http://bit.ly/flc100days",
+        "id": "14",
+        "location": "Folsom campus, Aspen Hall FL1-8",
+        "title": "Film: Planet Rock"
+    },
+    {
+        "date": "02/28/2017 | 12 PM - 1:00 p.m",
+        "description": "Join students and experts for a deep discussion about the rising climate of hate at the national and local levels. Check here for additional Social Justice Spring events: http://bit.ly/flc100days",
+        "id": "15",
+        "location": "Folsom campus, Aspen Hall, FL1-20 (Community Room)",
+        "title": "Combat Islamaphobia!"
+    },
+    {
+        "date": "02/28/2017 | 2:00 p.m - 5:00 p.m",
+        "description": "FLC Men's Baseball Team vs. Sacramento CityFor more information on FLC Athletics, click here.",
+        "id": "16",
+        "location": "Folsom campus, Baseball Field",
+        "title": "Men's Baseball Game"
     }
 ]
