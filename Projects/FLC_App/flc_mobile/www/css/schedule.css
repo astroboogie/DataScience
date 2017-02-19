@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0;
     padding: 0;
 }
@@ -79,7 +79,6 @@ body {
     width: 100%;
     height: 90%;
     -webkit-transition: margin-left 0.25s;
-    /*overflow-y: scroll;*/
     overflow: hidden;
 }
 
@@ -104,7 +103,7 @@ body {
 
 #subject-text {
     height: 100%;
-    width: 85%;
+    width: 80%;
     padding-left: 5%;
     float: left;
     display: flex;
@@ -145,7 +144,7 @@ body {
 #day-form > form > label {
     float: left;
     height: 100%;
-    width: calc(100% / 6);
+    width: calc(100vw / 6);
     display: flex;
     justify-content: center;
 }
@@ -156,11 +155,10 @@ body {
     font-size: 5vw;
     color: #4c4c4c;
     font-weight: 500;
-    padding-top: 4px;
-    height: 2em;
-    width: 2em;
+    padding-top: 1vw;
+    height: 7vw;
+    width: 8vw;
     text-align: center;
-    /*border-radius: 0.75em;*/
     border: solid 3px #ebebeb;
 }
 
@@ -311,7 +309,7 @@ body {
 
 /* Checkbox tick */
 .control-checkbox .input-object > div:after {
-    top: 4px;
+    margin-top: -4px;
     left: 8px;
     width: 5px;
     height: 10px;

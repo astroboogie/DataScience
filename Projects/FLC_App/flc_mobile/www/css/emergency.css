@@ -104,7 +104,8 @@ body {
     height: 5vw;
     background-color: #539cd2;
     color: white;
-    padding: 3px 3px 3px 3px;
+    padding-left: 1.7vw;
+    padding-top: 1.7vw;
     align-self: center;
     font-weight: 700;
 }

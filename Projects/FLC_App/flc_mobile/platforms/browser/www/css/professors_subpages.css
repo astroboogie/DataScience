@@ -1,4 +1,4 @@
-#header-section, #professor-overlay, #professor-container, #header-search {
+#professor-overlay, #professor-container {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -34,8 +34,12 @@
     -webkit-transition: margin-left 0.3s;
 }
 
-.transition-professor-overlay {
+.transition-professor-overlay-center {
     margin-left: 0 !important;
+}
+
+.transition-professor-overlay-left {
+    margin-left: -100vw !important;
 }
 
 .transition-course-overlay {
@@ -145,23 +149,10 @@
 }
 
 #course-container {
-    padding-top: 15px;
+    padding: 10px 0 50px 0;
     width: 100%;
     height: 94.5%;
     overflow-y: scroll;
-}
-
-/* Course Object */
-
-.course-object {
-    width: 100%;
-    height: auto;
-}
-
-.course-text-container {
-    width: 85%;
-    min-height: 75px;
-    float: left;
 }
 
 .course-title {
@@ -237,5 +228,61 @@
 .course-arrow > i{
     font-size: 6vw;
     color: #bcbcbc;
+    align-self: center;
+}
+
+#professor-classlist-empty {
+    width: 100%;
+    height: 40%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#professor-classlist-empty-container {
+    align-self: center;
+}
+
+#professor-classlist-empty-container > i {
+    color: #d2d2d2;
+    font-size: 14vw;
+    display: block;
+    text-align: center;
+}
+
+#professor-classlist-empty-container > span {
+    color: #d2d2d2;
+    font-size: 8vw;
+    display: block;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    float: left;
+    margin: 15px 0;
+    padding: 0;
+    text-align: center;
+}
+
+label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input:checked ~ .span-object > span {
+    font-weight: 700;
+    border-bottom: solid 2px #4f9bd4;
+}
+
+.span-object > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5vw;
+    color: #4c4c4c;
+    font-weight: 300;
     align-self: center;
 }

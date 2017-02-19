@@ -11,6 +11,7 @@ const addAppendClassOverlayOnClick = function(arrow, div, classes, courses) {
             return course["courseTitle"] === curClass["courseTitle"];
         })[0];
 
+        let courseTransfer = course["transferableTo"] || "Not transferable";
         let classTime = curClass["lecTime"] || curClass["labTime"];
         let classLocation = curClass["lecRoom"] || curClass["labRoom"];
         let coursePrerequisite = course["prerequisite"] || "None.";
@@ -25,7 +26,7 @@ const addAppendClassOverlayOnClick = function(arrow, div, classes, courses) {
             course["courseName"],
             curClass["classNum"],
             course["units"],
-            course["transferableTo"],
+            courseTransfer,
             curClass["instructor"],
             curClass["days"],
             classTime,
@@ -38,7 +39,7 @@ const addAppendClassOverlayOnClick = function(arrow, div, classes, courses) {
             course["description"]
         );
     });
-}
+};
 
 function appendClassOverlay(div, title, courseName, num, units, transfer, professor, days, time, location, schedule, prereq, coreq, advisory, genEd, description) {
     $(div).empty();

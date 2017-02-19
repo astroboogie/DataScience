@@ -1,5 +1,7 @@
 import $ from 'jquery';
 
+// Pulls data from amazon server
+
 const fetchData = function(directory, file = "") {
     let url = "https://s3-us-west-1.amazonaws.com/flc-app-data/" + directory + file + ".json";
     return $.ajax({

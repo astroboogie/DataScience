@@ -41,7 +41,7 @@
 }
 
 #course-overlay-title > div {
-    align-self: center;
+    align-self: flex-end;
 }
 
 #course-title-container > span {
@@ -53,7 +53,7 @@
 }
 
 #course-title-description {
-    padding-top: 15px;
+    padding-top: 3px;
 }
 
 #course-title-description > span {

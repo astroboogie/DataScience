@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>FLC - Mobile App</title>
     <link href="./build/common.js.css" rel="stylesheet">
     <link href="./build/professorsEntry.css" rel="stylesheet">
 </head>
 <body>
-
     <div id="main-container">
         <div id="header-section">
             <div id="header-container">
@@ -59,7 +58,40 @@
                 </div>
                 <div id="overlay-body">
                     <div class="title-container">
-                        <span>COURSES</span>
+                        <span>CLASSES</span>
+                    </div>
+                    <div class="option-container" id="semester-container">
+                        <div class="type-form">
+                            <form id="professor-semester-form">
+                                <label class="type-radio control-checkbox">
+                                    <input type="radio" name="type" value="summer" checked="checked">
+                                    <div class="input-object">
+                                        <div></div>
+                                    </div>
+                                    <div class="span-object">
+                                        <span>Spring 2017</span>
+                                    </div>
+                                </label>
+                                <label class="type-radio control-checkbox">
+                                    <input type="radio" name="type" value="fall">
+                                    <div class="input-object">
+                                        <div></div>
+                                    </div>
+                                    <div class="span-object">
+                                        <span>Fall 2016</span>
+                                    </div>
+                                </label>
+                                <label class="type-radio control-checkbox">
+                                    <input type="radio" name="type" value="spring">
+                                    <div class="input-object">
+                                        <div></div>
+                                    </div>
+                                    <div class="span-object">
+                                        <span>Summer 2016</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
                     </div>
                     <div id="course-container">
                         <div class='course-object'>
@@ -68,10 +100,8 @@
                 </div>
             </div>
         </div>
-        <div id="course-overlay">
-        </div>
-        <div id="professor-container">
-        </div>
+        <div id="course-overlay"></div>
+        <div id="professor-container"></div>
     </div>
 </body>
 

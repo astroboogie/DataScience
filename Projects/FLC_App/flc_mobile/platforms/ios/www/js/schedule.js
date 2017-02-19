@@ -2,82 +2,35 @@ import $ from 'jquery';
 import '../css/schedule.css';
 import '../css/schedule-subpages.css';
 import '../css/native_app_configuration.css';
-import '../fonts/material-icons.css';
+import '../css/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { addAppendClassOverlayOnClick } from './classDescription';
+import { setSemesterValues } from './semesters';
+import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
+import { errorPage } from './error';
 
 applyFastClick();
 
-var subjects;
-var courses;
-var selectedSubject;
+var cache = {
+    "subjects": {},
+    "courses": {},
+    "classes": {},
+};
 var currentPage = "schedule";
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/subjects.json",
-    type: "GET",
-    success: function(data) {
-        subjects = $.extend({}, data); // copies data into subjects
-        createSubjectsList("#subjects", subjects);
-    },
-});
-
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/courses.json",
-    type: "GET",
-    success: function(data) {
-        courses = $.extend([], data); // copies data into subjects
-    },
-});
-
-// TODO: This ajax call NEEDS to wait for the previous one to finish
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/classes.json",
-    type: "GET",
-    success: function(data) {
-        createTransitionFromSubjectToSchedule();
-        // Assign function to 'search' button that transitions page from schedule to list of courses
-        // Also create the page when the 'search' button is clicked
-        $("#search-button").click(function () {
-            currentPage = "courses";
-            pageTransition("new", "body-section", "courses");
-            resetSearchResults($("#courses"));
-            createSearchResults($("#courses"), data);
-            createCourseFullDescription($(".course-arrow"), $("#course-overlay"), data, courses);
-        });
-    },
-});
-
-var createSubjectsList = function(div, subjects) {
-    $.each(subjects, function(subjectAbbrev, subjectReadable) {
-        $(div).append(
-            "<button class='category-container'>\
-                <div class='category-text'>\
-                    <span>" + subjectReadable + "</span>\
-                </div>\
-            </button>"
-        );
-    });
+setSemesterValuesOnPageLoad();
+function setSemesterValuesOnPageLoad() {
+    displayLoadingSpinner();
+    fetchData("semesters")
+        .done(function(semesterData) {
+            setSemesterValues("#schedule-semester-form", semesterData);
+            fadeOutLoadingSpinner(250);
+        })
+        .fail(fadeOutLoadingSpinner(250));
 }
-
-// Scrolls between pages
-var pageTransition = function (direction, initPage, newPage) {
-    if (direction == "new") {
-        $("#" + initPage).addClass("hide-container");
-        $("#" + newPage).addClass("show-container");
-    }
-    else if (direction == "back") {
-        $("#" + initPage).removeClass("hide-container");
-        $("#" + newPage).removeClass("show-container")
-    }
-};
-
-$("#subject-button").click(function () {
-    currentPage = "subjects";
-    pageTransition("new", "body-section", "subjects");
-});
 
 // Creates all back arrow functionality
 $("#back-arrow").click(function () {
@@ -107,6 +60,114 @@ $("#back-arrow").click(function () {
     }
 });
 
+function handleSubjects (data) {
+    fadeOutLoadingSpinner(250);
+    currentPage = "subjects";
+    pageTransition("new", "body-section", "subjects");
+    createSubjectsList("#subjects", data);
+}
+
+function handleSearchResultsAJAX(coursesData, classesData) {
+    handleSearchResults(coursesData[0], classesData[0]);
+}
+
+function handleSearchResults(coursesData, classesData) {
+    currentPage = "courses";
+    pageTransition("new", "body-section", "courses");
+    resetSearchResults($("#courses"));
+    createSearchResults($("#courses"), classesData);
+    createCourseFullDescription($(".course-arrow"), $("#course-overlay"), classesData, coursesData);
+}
+
+// Assign function to 'search' button that transitions page from schedule to list of courses.
+// Also create the search results page when the 'search' button is clicked.
+createSearchButtonFunctionailty()
+function createSearchButtonFunctionailty() {
+    $("#search-button").click(function () {
+        let semester = getSemesterRadioVal();
+        if (cache["courses"][semester] && cache["classes"][semester]) {
+            handleSearchResults(cache["courses"][semester], cache["classes"][semester]);
+        }
+        else {
+            displayLoadingSpinner();
+            $.when(fetchData("courses", semester), fetchData("classes", semester))
+                .done(function(coursesData, classesData) {
+                    cache["courses"][semester] = coursesData[0];
+                    cache["classes"][semester] = classesData[0];
+                    handleSearchResults(coursesData[0], classesData[0]);
+                    fadeOutLoadingSpinner(250);
+                })
+                .fail(handleSearchResultsError);
+        }
+    });
+}
+
+function handleSearchResultsError() {
+    fadeOutLoadingSpinner(250);
+    currentPage = "courses";
+    pageTransition("new", "body-section", "courses");
+    $("#courses").empty();
+    errorPage("#courses");
+}
+
+function handleSubjectError() {
+    fadeOutLoadingSpinner(250);
+    currentPage = "subjects";
+    pageTransition("new", "body-section", "subjects");
+    $("#subjects").empty();
+    errorPage("#subjects");
+}
+
+function getSemesterRadioVal() {
+    return $("#schedule-semester-form input[type='radio']:checked").val();
+}
+
+// Creates search arrow functionality
+function transitionToSubjectsListOnClick(button) {
+    $(button).click(function () {
+        let semester = getSemesterRadioVal();
+        if (cache["subjects"][semester]) {
+            handleSubjects(cache["subjects"][semester]);
+        }
+        else {
+            displayLoadingSpinner();
+            fetchData("subjects", semester)
+                .done(handleSubjects)
+                .done(function(data) {
+                    cache["subjects"][semester] = data;
+                })
+                .fail(handleSubjectError);
+        }
+    });
+}
+transitionToSubjectsListOnClick("#subject-button")
+
+function createSubjectsList(div, subjects) {
+    $(div).empty();
+    $.each(subjects, function(subjectAbbrev, subjectReadable) {
+        $(div).append(
+            "<button class='category-container'>\
+                <div class='category-text'>\
+                    <span>" + subjectReadable + " (" + subjectAbbrev + ")</span>\
+                </div>\
+            </button>"
+        );
+    });
+    createTransitionFromSubjectToSchedule();
+}
+
+// Scrolls between pages
+function pageTransition(direction, initPage, newPage) {
+    if (direction == "new") {
+        $("#" + initPage).addClass("hide-container");
+        $("#" + newPage).addClass("show-container");
+    }
+    else if (direction == "back") {
+        $("#" + initPage).removeClass("hide-container");
+        $("#" + newPage).removeClass("show-container")
+    }
+}
+
 // Returns true if any of the selected days matches a class days
 // Returns true if class days have not been determined
 var hasValidDayConditions = function(checkBoxes, days) {
@@ -121,7 +182,7 @@ var hasValidDayConditions = function(checkBoxes, days) {
         }
     });
     return ret;
-}
+};
 
 // Returns true if there are no conflicts between the set conditions
 // and the course itself.
@@ -136,14 +197,14 @@ var hasValidCourseType = function(classTypeInputs, curClass) {
         }
 
         // condition to check if course is online
-        let isOnlineCourse = (curClass["classType"] === "Online")
+        let isOnlineCourse = (curClass["classType"] === "Online");
         if ($(this).val() === "Online" && !isOnlineCourse) {
             ret = false;
             return;
-        };
+        }
     });
     return ret;
-}
+};
 
 // Returns a string containing the html representation of a course
 var courseInfo = function(classId, courseTitle, courseName, courseType, days, time, instructor, room) {
@@ -167,34 +228,38 @@ var courseInfo = function(classId, courseTitle, courseName, courseType, days, ti
             </div>\
         </div>\
     ");
-}
+};
 
 // Transitions the subjects list page to the main schedule page
-// Returns a string of the selected subject
-var createTransitionFromSubjectToSchedule = function() {
+// after having selected a subject.
+function createTransitionFromSubjectToSchedule() {
     $(".category-container").click(function() {
-        selectedSubject = $(this).children('div').children('span').text();
+        let selectedSubject = $(this).children('div').children('span').text();
         $("#subject-text").children('span').text(selectedSubject);
         currentPage = "schedule";
         pageTransition("back", "body-section", "subjects");
     });
-}
+};
 
 var resetSearchResults = function(div) {
     $(div).empty();
-}
+};
 
-var createSearchResults = function(div, classes) {
-    $.each(classes, function(index, element) {
+var createSearchResults = function(div, classesData) {
+    // Extract the subject's abbreviated name (the text between the parenthesis).
+    let parenthesesRegExp = /\(([^)]+)\)/;
+    let subjectMatch = parenthesesRegExp.exec($("#subject-text").children('span').text());
+    let curSubject = subjectMatch && subjectMatch[1] || '';
+    let semester = getSemesterRadioVal();
+    $.each(classesData, function(index, element) {
         // Check that each class is the same as the selected subjects
         // e.g. that all classes are "Anthopology"
-        let courseTitleAbbrev = subjects[element['courseTitle'].split(" ")[0]];
-        let isCorrectSubject = (courseTitleAbbrev === selectedSubject);
+        let courseTitle = element['courseTitle'].split(" ")[0];
+        let isCorrectSubject = (courseTitle === curSubject);
         if (!isCorrectSubject) {
             return "continue"; //jQuery version of continue
         }
-
-        if (hasValidDayConditions($("#day-form > form > label > input:checked"), element['days'])
+        else if (hasValidDayConditions($("#day-form > form > label > input:checked"), element['days'])
             && hasValidCourseType("#type-container > div > form > label > input:checked", element)
             ) {
             // Grab lec/lab type
@@ -206,13 +271,13 @@ var createSearchResults = function(div, classes) {
     });
     // Display error message if search result is empty.
     if ($(div).is(':empty')) {
-        $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found</span></div></div> ")
+        $(div).append("<div id='course-empty'><div id='empty-container'><i class='material-icons'>block</i><span>No classes found.</span></div></div>")
     }
-}
+};
 
 // Adds an on_click event to an arrow that creates the entire course description
-var createCourseFullDescription = function(arrow, div, classes, courses) {
-    addAppendClassOverlayOnClick($(arrow), $(div), classes, courses);
+var createCourseFullDescription = function(arrow, div, classesData, coursesData) {
+    addAppendClassOverlayOnClick($(arrow), $(div), classesData, coursesData);
     // adds transitions
     $(arrow).click(function () {
         currentPage = "description";
@@ -221,4 +286,4 @@ var createCourseFullDescription = function(arrow, div, classes, courses) {
         $("#courses").addClass("course-full-transition");
         pageTransition("new", "courses", "course-overlay");
     });
-}
+};

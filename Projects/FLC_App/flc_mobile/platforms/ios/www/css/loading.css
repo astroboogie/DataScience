@@ -1,0 +1,38 @@
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 89;
+}
+
+.spinner {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 35vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border: 2vw solid #ccc;
+    border-top-color: #07d;
+    animation: spinner .6s linear infinite;
+}

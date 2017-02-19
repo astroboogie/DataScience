@@ -74,6 +74,9 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
+    <feature name="Mapbox">
+        <param name="ios-package" value="CDVMapbox" />
+    </feature>
     <name>FLC Mobile</name>
     <description>
         Mobile app for Folsom Lake College students to make connecting with the campus convenient.

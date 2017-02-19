@@ -63,6 +63,10 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-mapbox": {
+            "ACCESS_TOKEN": "pk.eyJ1IjoiZGF0YXNjaWVuY2UiLCJhIjoiY2l5eGU3cDJ2MDBiYTJ3cG0ydWZtejNobCJ9.X4DsnvOJVX83b_Yascwsrg",
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {

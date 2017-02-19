@@ -167,5 +167,15 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-mapbox": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-mapbox"
+        },
+        "is_top_level": true,
+        "variables": {
+            "ACCESS_TOKEN": "pk.eyJ1IjoiZGF0YXNjaWVuY2UiLCJhIjoiY2l5eGU3cDJ2MDBiYTJ3cG0ydWZtejNobCJ9.X4DsnvOJVX83b_Yascwsrg"
+        }
     }
 }

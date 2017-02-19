@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import '../css/index.css';
 import '../css/native_app_configuration.css';
-import '../fonts/material-icons.css';
+import '../css/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { applyFastClick } from './fastclick';
@@ -19,13 +19,63 @@ $("body > *").css("opacity", 0).animate({
 // Page Leave Transition
 $(".button-object").click(function () {
     var clickedObject = $(this);
+    if (clickedObject.attr('id').indexOf('-') > -1) {
+        var destination = clickedObject.attr('id').split("-")[1];
 
-    var destination = clickedObject.attr('id').split("-")[1];
-    console.log(destination);
+        $("body > *").not("body > #background-container").animate({
+            opacity: "0"
+        }, 150, function () {
+            window.location = destination + ".html";
+        });
+    }
+});
 
-    $("body > *").not("body > #background-container").animate({
-        opacity: "0"
-    }, 150, function() {
-        window.location = destination + ".html";
-    });
+var twitterCheck = function () {
+    var scheme;
+
+    if (device.platform == 'iOS') {
+        scheme = 'twitter://';
+    }
+    else if (device.platform === 'Android') {
+        scheme = 'com.twitter.android';
+    }
+
+    appAvailability.check(
+        scheme, // URI Scheme
+        function() {  // Success callback
+            window.open('twitter://user?screen_name=flcfalcons', '_system', 'location=no');
+        },
+        function() {  // Error callback
+            window.open("https://twitter.com/flcfalcons", '_system');
+        }
+    );
+};
+
+var facebookCheck = function () {
+    var scheme;
+
+    if (device.platform == 'iOS') {
+        scheme = 'fb://';
+    }
+    else if (device.platform === 'Android') {
+        scheme = 'com.facebook.katana';
+    }
+
+    appAvailability.check(
+        scheme, // URI Scheme
+        function() {  // Success callback
+            window.open('fb://profile/folsomlakecollege', '_system', 'location=no');
+        },
+        function() {  // Error callback
+            window.open("https://www.facebook.com/folsomlakecollege/", '_system');
+        }
+    );
+};
+
+$("#twitter").click(function () {
+    twitterCheck();
+});
+
+$("#facebook").click(function () {
+    facebookCheck();
 });

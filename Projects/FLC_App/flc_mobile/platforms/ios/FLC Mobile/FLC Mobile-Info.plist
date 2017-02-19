@@ -53,6 +53,10 @@
       <true/>
     </dict>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
+    <true/>
+    <key>MGLMapboxAccessToken</key>
+    <string>pk.eyJ1IjoiZGF0YXNjaWVuY2UiLCJhIjoiY2l5eGU3cDJ2MDBiYTJ3cG0ydWZtejNobCJ9.X4DsnvOJVX83b_Yascwsrg</string>
+    <key>MGLMapboxMetricsEnabledSettingShownInApp</key>
+    <true/>
   </dict>
 </plist>

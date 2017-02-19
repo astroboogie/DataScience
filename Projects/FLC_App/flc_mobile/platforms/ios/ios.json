@@ -95,6 +95,10 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Mapbox\"><param name=\"ios-package\" value=\"CDVMapbox\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -105,6 +109,22 @@
                         {
                             "xml": "<string />",
                             "count": 2
+                        },
+                        {
+                            "xml": "<true />",
+                            "count": 1
+                        }
+                    ],
+                    "MGLMapboxAccessToken": [
+                        {
+                            "xml": "<string>pk.eyJ1IjoiZGF0YXNjaWVuY2UiLCJhIjoiY2l5eGU3cDJ2MDBiYTJ3cG0ydWZtejNobCJ9.X4DsnvOJVX83b_Yascwsrg</string>",
+                            "count": 1
+                        }
+                    ],
+                    "MGLMapboxMetricsEnabledSettingShownInApp": [
+                        {
+                            "xml": "<true />",
+                            "count": 1
                         }
                     ]
                 }
@@ -173,6 +193,10 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-mapbox": {
+            "ACCESS_TOKEN": "pk.eyJ1IjoiZGF0YXNjaWVuY2UiLCJhIjoiY2l5eGU3cDJ2MDBiYTJ3cG0ydWZtejNobCJ9.X4DsnvOJVX83b_Yascwsrg",
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
@@ -737,6 +761,14 @@
                 "navigator.notification",
                 "navigator"
             ]
+        },
+        {
+            "id": "cordova-plugin-mapbox.Mapbox",
+            "file": "plugins/cordova-plugin-mapbox/www/Mapbox.js",
+            "pluginId": "cordova-plugin-mapbox",
+            "clobbers": [
+                "Mapbox"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -760,6 +792,7 @@
         "cordova-plugin-network-information": "1.2.1",
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-vibration": "2.1.2",
-        "cordova-plugin-whitelist": "1.2.2"
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-mapbox": "1.2.3"
     }
 }

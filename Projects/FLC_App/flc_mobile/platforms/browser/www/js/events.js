@@ -4,33 +4,54 @@ import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
 import '../lib/font-awesome.min.css';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
 import { applyBackTransition } from './backtransition';
+import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
+import { errorPage } from './error';
 
 applyBackTransition();
 applyFastClick();
+displayLoadingSpinner();
 
-$.ajax({
-    url: "https://s3-us-west-1.amazonaws.com/flc-app-data/events.json",
-    type: "GET",
-    success: function(data) {
-        $.each(data, function(index, value) {
-            let eventTitle = value['title'] || "";
-            let eventDescription = value['description'] || ""
-            let eventLocation = value['location'] || ""
-            let eventDate = value['date'] || ""
-            $("#schedule-container").append(
-                "<div class='event-object'>\
-                    <div class='event-text-container'>\
-                        <div class='event-title'>" + eventTitle + "</div>\
-                        <div class='event-date'><b>Date: </b>" + eventDate + "</div>\
-                        <div class='event-location'><b>Location: </b>" + eventLocation + "</div>\
-                        <div class='event-description'>" + eventDescription + "</div>\
-                    </div>\
-                    <div class='event-arrow'>\
-                        <i class='material-icons'>star</i>\
-                    </div>\
-                </div>");
-        });
-    },
-});
+fetchData("events")
+    .done(handleEvents)
+    .fail(handleError);
+
+function handleEvents(data) {
+    fadeOutLoadingSpinner("body", 150);
+    createEvents("#schedule-container", data);
+}
+
+function handleError() {
+    fadeOutLoadingSpinner(250);
+    $("#schedule-container").empty();
+    errorPage("#schedule-container");
+}
+
+function createEvents(div, events) {
+    $.each(events, function(index, value) {
+        let eventTitle = value['title'] || "";
+        let eventDate = value['date'] || "";
+        let eventLocation = value['location'] || "";
+        let eventDescription = value['description'] || "";
+        $(div).append(eventInfo(eventTitle, eventDate, eventLocation, eventDescription));
+    });
+}
+
+// Returns a string representing the HTML of an event element
+function eventInfo(title, date, location, description) {
+    return (
+        "<div class='event-object'>\
+            <div class='event-text-container'>\
+                <div class='event-title'>" + title + "</div>\
+                <div class='event-date'><b>Date: </b>" + date + "</div>\
+                <div class='event-location'><b>Location: </b>" + location + "</div>\
+                <div class='event-description'>" + description + "</div>\
+            </div>\
+            <div class='event-arrow'>\
+                <i class='material-icons'>star</i>\
+            </div>\
+        </div>"
+    );
+}

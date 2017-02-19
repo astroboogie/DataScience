@@ -6,6 +6,7 @@
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
 }
 
 #header-container {
@@ -59,7 +60,7 @@
 
 .event-text-container {
     width: 85%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     float: left;
 }
 
@@ -69,7 +70,7 @@
     font-size: 4vw;
     color: #4f9bd4;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 2px 0;
     margin-left: 5%;
     align-self: center;
 }
@@ -80,7 +81,7 @@
     font-size: 4vw;
     color: #4c4c4c;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 2px 0;
     margin-left: 5%;
     align-self: center;
 }
@@ -92,7 +93,7 @@
     font-size: 4vw;
     color: #4c4c4c;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 2px 0;
     margin-left: 5%;
     align-self: center;
 }
@@ -103,7 +104,7 @@
     font-size: 4vw;
     color: #4c4c4c;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 2px 0;
     margin-left: 5%;
     align-self: center;
 }

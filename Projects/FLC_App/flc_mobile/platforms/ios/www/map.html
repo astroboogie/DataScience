@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>FLC - Mobile App</title>
+    <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link href="./build/common.js.css" rel="stylesheet">
     <link href="./build/mapEntry.css" rel="stylesheet">
@@ -18,9 +20,7 @@
             </div>
         </div>
     </div>
-    <div id="map-container">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1WVW2iTQgoHSU1Bm3DkQJtlVYSAU" width="640" height="480" frameborder="none"></iframe>
-    </div>
+    <div id='map'></div>
 </body>
 
 <script type="text/javascript" src="./build/common.js"></script>

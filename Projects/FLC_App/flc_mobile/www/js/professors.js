@@ -3,8 +3,6 @@ import '../css/professors.css';
 import '../css/professors_subpages.css';
 import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
-import '../lib/font-awesome.min.css';
-import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { displayLoadingSpinner, fadeOutLoadingSpinner } from './loading';
 import { fetchData } from './fetchData';
 import { applyFastClick } from './fastclick';
