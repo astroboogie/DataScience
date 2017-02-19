@@ -2,7 +2,7 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>FLC Mobile</name>
     <description>
-        Mobile app for Folsom Lake College students to make connecting with the campus convenient.
+        The app that makes Folsom Lake College a connected campus.
     </description>
     <author href="http://www.flc.losrios.edu">
         FLC Data Science Club
