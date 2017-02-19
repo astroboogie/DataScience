@@ -100,12 +100,12 @@ body {
 
 .procedure-icon > i {
     font-size: 3.5vw;
-    width: 5vw;
-    height: 5vw;
+    width: 4.2vw;
+    height: 4.2vw;
     background-color: #539cd2;
     color: white;
-    padding-left: 1.7vw;
-    padding-top: 1.7vw;
+    padding-left: 0.9vw;
+    padding-top: 0.9vw;
     align-self: center;
     font-weight: 700;
 }
