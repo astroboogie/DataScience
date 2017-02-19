@@ -18,6 +18,8 @@ def populateEvents(events, url):
 				description = utils.extractInfo(eventItem, '<p><p>', '<p><p>', '</p></p>')
 			elif '<p><p>' in line:
 				description = line
+			else:
+				description = ''
 
 		if not filter(lambda event: event['description'] == description, events):
 			events.append({"title" : title})
