@@ -14,6 +14,7 @@ module.exports = {
         "scheduleEntry": './www/js/schedule.js',
         "scrollEntry": './www/js/scroll.js',
         "sportsEntry": './www/js/sports.js',
+		"clubsEntry": './www/js/clubs.js',
     },
     target: 'web',
     exclude: /node_modules/,
