@@ -1,5 +1,5 @@
 // Transition delay in seconds
-var graphTransitionTime = 3;
+var graphTransitionTime = 4;
 var slideTransitionTime = 2;
 var fadeTime = 0.5;
 
@@ -22,7 +22,7 @@ var slideShowTexts = [
     "<span class='slideshow-text'>Nitrosomonas bacteria convert ammonia into nitrites (NO<sub>2</sub><sup>-</sup>)</span>",
     "<span class='slideshow-text'>Nitrobacter bacteria convert nitrates into nitrites (NO<sub>3</sub><sup>-</sup>)</span>",
     "<span class='slideshow-text'>Nitrates are taken up by plants through their roots as nourishment, completing the cycle</span>",
-    "<span id='small-font' class='slideshow-text'>The Aquaponics Project is brought to you by:</br></br>The Departments of Biology and Chemistry</br></br>The Folsom Lake College Library</br></br>Installation design, development, and construction provided by the FLC Theater Arts Department</br></br>Aquatic community development provided by Taylor Zenobia and ?</br></br>Programming and technical implementation provided by the FLC Data Science ClubThe Folsom Lake College Innovation Center</span>"
+    "<span id='small-font' class='slideshow-text'>The Aquaponics Project is brought to you by:</br></br>The Departments of Biology and Chemistry</br></br>The Folsom Lake College Library</br></br>Installation design, development, and construction provided by the FLC Theater Arts Department</br></br>Aquatic community development provided by Taylor Zenobia</br></br>Programming and technical implementation provided by the FLC Data Science Club</br></br>The Folsom Lake College Innovation Center</span>"
 ];
 
 var transitionBoolean = false;
