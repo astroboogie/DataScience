@@ -7,29 +7,38 @@ import re
 import os
 
 # Fills the given list with a string representing each active (non-archived) semester
-def populateCurrentSemesters(semesters, url):
+def populateCurrentSemesters(semesters, url, maxSemesters):
     response = utils.getHTML(url, "current semesters")
-    htmlComments = ["<!--", "-->"]
     print "Parsing for current semesters..."
-    fall = "fall-class-schedules"
-    spring = "spring-class-schedules"
-    summer = "summer-class-schedules"
+    htmlComment = "<!--"
+    fall = "fall-class-schedules.php"
+    spring = "spring-class-schedules.php"
+    summer = "summer-class-schedules.php"
 
+    currentSemester = False
     for line in response:
-        if "<!--" in line or "-->" in line:
+        line = re.sub("(<!--.*?-->)", "", line)
+        if htmlComment in line:
             continue
-        elif fall in line:
+        if len(semesters) == maxSemesters:
+            break
+        if "<h3>" in line:
+            if "Current Semester" in line:
+                currentSemester = True
+            else:
+                currentSemester = False
+        if fall in line:
             name = utils.extractInfoFromLine(line, '', '-class-schedules.php">', '</a>')
             endpoint = "fall"
-            semesters.append({"name" : name, "endpoint" : endpoint})
+            semesters.append({"name" : name, "endpoint" : endpoint, "current" : currentSemester})
         elif spring in line:
             name = utils.extractInfoFromLine(line, '', '-class-schedules.php">', '</a>')
             endpoint = "spring"
-            semesters.append({"name" : name, "endpoint" : endpoint})
+            semesters.append({"name" : name, "endpoint" : endpoint, "current" : currentSemester})
         elif summer in line:
             name = utils.extractInfoFromLine(line, '', '-class-schedules.php">', '</a>')
             endpoint = "summer"
-            semesters.append({"name" : name, "endpoint" : endpoint})
+            semesters.append({"name" : name, "endpoint" : endpoint, "current" : currentSemester})
     print "Successfully parsed current semesters."
 
 # Adds to the given list with string representations of archived classes (up to 3 total)
@@ -51,7 +60,7 @@ def populateArchivedSemesters(semesters, url, semestersToAdd):
                 name = "Summer 20" + endpoint[-2:]
             elif "sp" in endpoint:
                 name = "Spring 20" + endpoint[-2:]
-            semesters.append({"name" : name, "endpoint" : endpoint})
+            semesters.append({"name" : name, "endpoint" : endpoint, "current" : False})
             semestersRemainingToAdd -= 1
 
 # Returns a numerical equivalent of the given semester.
@@ -65,9 +74,9 @@ def hashSemester(semester):
 def getLatestSemesters():
     numOfSemestersToGet = 3
     semesters = []
-    populateCurrentSemesters(semesters, "http://www.losrios.edu/class-schedules.php")
+    populateCurrentSemesters(semesters, "http://www.losrios.edu/class-schedules.php", numOfSemestersToGet)
     populateArchivedSemesters(semesters, "http://www.losrios.edu/flc/flc_archive.php", numOfSemestersToGet - len(semesters))
-    semesters = sorted(semesters, key=lambda k: hashSemester(k['name']), reverse=True)
+    semesters = sorted(semesters, key=lambda k: hashSemester(k['name']))
 
     filePath = utils.getAndCreateFilePath('', 'semesters')
     utils.writeJSON(semesters, filePath)

@@ -1,121 +1,79 @@
 [
     {
-        "date": "02/16/2017 | 12 PM - 1:00 p.m",
-        "description": null,
+        "date": "03/28/2017 | 10:00 a.m - 2:00 p.m",
+        "description": "For more info, click here.",
         "id": "0",
-        "location": "El Dorado Center",
-        "title": "EDC Day on the Greens"
+        "location": "Folsom campus, near Falcon's Roost",
+        "title": "Blood Drive @ Folsom"
     },
     {
-        "date": "02/17/2017",
-        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of Abraham Lincoln's birthday on Friday, February 17. No classes will be held.",
+        "date": "03/28/2017 | 12 PM - 1:00 p.m",
+        "description": "These information sessions will provide information on the application process, financial aid, cost, and the exciting experiences you'll have while studying abroad.Upcoming TripsSummer 2017 - Florence, ItalyFall 2017 - Barcelona, SpainSpring 2018 - Florence, ItalyContactsSummer 2017 Florence, ItalyBill Wrightson - WrightW@arc.losrios.eduFall 2017 Barcelona, SpainSteve James - JamesS@scc.losrios.eduSpring 2018 Florence, ItalyMarcia McCormick - mccormm@arc.losrios.edu",
         "id": "1",
-        "location": "All campuses",
-        "title": "Lincoln Holiday (college closed)"
+        "location": "Folsom campus, Aspen Hall FL1-8",
+        "title": "Study Abroad info session"
     },
     {
-        "date": "02/20/2017",
-        "description": "Folsom Lake College (including the El Dorado Center and Rancho Cordova Center) is closed in observance of George Washington's birthday on Monday, February 20. No classes will be held.",
-        "id": "2",
-        "location": "All campuses",
-        "title": "Washington Holiday (college closed)"
-    },
-    {
-        "date": "02/21/2017 | 12:30 p.m - 1:30 p.m",
+        "date": "03/28/2017 | 12:30 p.m - 1:30 p.m",
         "description": "The FLC Wisdom Book Club will meet every Tuesday, Starting January 31. For the full Wisdom Book Club schedule check with the facilitator, Mary Hansen: hansenm@flc.losrios.edu",
-        "id": "3",
+        "id": "2",
         "location": "Folsom campus, Gymnasium, G-185",
         "title": "The FLC Wisdom Book Club"
     },
     {
-        "date": "02/22/2017 | 12 PM - 1:00 p.m",
-        "description": "The Folsom Lake College Work Experience & Internship Program, along with the Career & Transfer Services Center present the Spring 2017 Career Speaker Series: Conversations with the Pros: Where Faculty Meets Industry. This workshop will explore careers in Human Services.Do you know what you can do with your major?&bull; Learn what it's really like to work in your field.&bull; Find out about internship and job opportunities available for your major.&bull; Network with employers (bring your resume!).For more information, please contact: Julie Collier at colliej@flc.losrios.edu or (916) 608-6552",
+        "date": "03/28/2017 | 2:30 p.m - 5:30 p.m",
+        "description": "FLC Men's Baseball Team vs. American RiverFor more information on FLC Athletics, click here.",
+        "id": "3",
+        "location": "Folsom campus, Baseball Field",
+        "title": "Men's Baseball Game"
+    },
+    {
+        "date": "03/28/2017 | 3:00 p.m - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. DeltaFor more information on FLC Athletics, click here.",
         "id": "4",
-        "location": "Folsom campus,  Falcon's Roost, Peregrine Room (FR-240)",
-        "title": "Careers in Human Services"
-    },
-    {
-        "date": "02/22/2017 | 12 PM - 1:00 p.m",
-        "description": "Major Decisions (Strategies for Choosing a Major): Do you struggle with the question So....what's your major? This workshop will help you explore majors that reflect your interests, abilities and values .Learn about self-assessment tools and online resources to discover your career path.",
-        "id": "5",
-        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
-        "title": "Choosing a Major workshop"
-    },
-    {
-        "date": "02/22/2017 | 12 PM - 3:00 p.m",
-        "description": "FLC Men's Golf match Big 8 #3For more information on FLC Athletics, click here.",
-        "id": "6",
-        "location": "Rancho Murieta Golf Club, 7000 Alameda Dr, Rancho Murieta",
-        "title": "Men's Golf Match"
-    },
-    {
-        "date": "02/23/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Women's Tennis Team vs. Santa RosaFor more information on FLC Athletics, click here.",
-        "id": "7",
-        "location": "Folsom campus, Tennis Courts",
-        "title": "Women's  Tennis Match"
-    },
-    {
-        "date": "02/23/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Men's Tennis Team vs. Santa RosaFor more information on FLC Athletics, click here.",
-        "id": "8",
-        "location": "Folsom campus, Tennis Courts",
-        "title": "Men's Tennis Match"
-    },
-    {
-        "date": "02/24/2017 | 12 PM - 4:00 p.m",
-        "description": "FLC Women's Softball Team vs. Redwoods. Double header: 12 noon and 2:00 pmFor more information on FLC Athletics, click here.",
-        "id": "9",
         "location": "Folsom campus, Softball Field",
         "title": "Women's Softball Game"
     },
     {
-        "date": "02/24/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Women's Tennis Team vs. SolanoFor more information on FLC Athletics, click here.",
-        "id": "10",
-        "location": "Folsom campus, Tennis Courts",
-        "title": "Women's Tennis Match"
-    },
-    {
-        "date": "02/24/2017 | 1:00 p.m - 4:00 p.m",
-        "description": "FLC Men's Tennis Team vs. SolanoFor more information on FLC Athletics, click here.",
-        "id": "11",
-        "location": "Folsom campus, Tennis Courts",
-        "title": "Men's Tennis Match"
-    },
-    {
-        "date": "02/27/2017 | 12 PM - 1:00 p.m",
-        "description": "College life can be challenging and stressful. Staying focused and balanced is essential. This Meditation Group meets every Tuesday to help students and staff be mindful of what is important for a quiet, centering, non-judgmental and relaxing hour. There is usually a facilitated meditation, a brief relaxation activity, and always time for discussion and support. Join us!",
-        "id": "12",
-        "location": "Folsom campus, Phycial Education, PE-204",
-        "title": "Meditation Group"
-    },
-    {
-        "date": "02/27/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Men's Baseball Team vs. MendocinoFor more information on FLC Athletics, click here.",
-        "id": "13",
-        "location": "Folsom campus, Baseball Field",
-        "title": "Men's Baseball Game"
-    },
-    {
-        "date": "02/27/2017 | 5:30 p.m - 8:30 p.m",
-        "description": "The film, Planet Rock, takes a look at the rise of crack cocaine in urban America in the 1980s and it's influence on popular culture, especially in hip-hop music. Check here for additional Social Justice Spring events: http://bit.ly/flc100days",
-        "id": "14",
+        "date": "03/28/2017 | 5:30 p.m - 7:30 p.m",
+        "description": "GIRL RISING AND EMPOWERMENT THROUGH EDUCATIONThis 2013 documentary tells the story of nine girls from different parts of the world whose societies and environments limit education for females. Each faces obstacles such as arranged marriages, child slavery, poverty, ca-tastrophe and violence, yet all break barriers through education. Professor Sapra will lead the discussion following the film.",
+        "id": "5",
         "location": "Folsom campus, Aspen Hall FL1-8",
-        "title": "Film: Planet Rock"
+        "title": "Women's History Month Film - Girl Rising"
     },
     {
-        "date": "02/28/2017 | 12 PM - 1:00 p.m",
-        "description": "Join students and experts for a deep discussion about the rising climate of hate at the national and local levels. Check here for additional Social Justice Spring events: http://bit.ly/flc100days",
-        "id": "15",
-        "location": "Folsom campus, Aspen Hall, FL1-20 (Community Room)",
-        "title": "Combat Islamaphobia!"
+        "date": "03/29/2017 | 9:30 a.m - 11:00 a.m",
+        "description": "INTRODUCTION TO FEMINISMJoin Professors Price and Carlson in Price's ENGWR302 Class for an intro-ductory lesson on feminism followed by a rousing discussion of the issues with thoughtful peers who enjoy the pithy and provocative.",
+        "id": "6",
+        "location": "Rancho Cordova Center, RCC1-227",
+        "title": "Introduction to Feminism"
     },
     {
-        "date": "02/28/2017 | 2:00 p.m - 5:00 p.m",
-        "description": "FLC Men's Baseball Team vs. Sacramento CityFor more information on FLC Athletics, click here.",
-        "id": "16",
-        "location": "Folsom campus, Baseball Field",
-        "title": "Men's Baseball Game"
+        "date": "03/29/2017 | 12 PM - 1:00 p.m",
+        "description": "Prepare for the Folsom Lake College Annual Career & Internship Fair on April 5thStudents will have the opportunity to explore career options, jobs, and internships, while introducing themselves and their resume to over 50 employers from throughout the region. These companies and organizations are specifically looking for community college students to hire for full-time and part-time jobs, in addition to internship and volunteer opportunities.",
+        "id": "7",
+        "location": "Folsom campus, Falcon's Roost FR-115",
+        "title": "Career Fair Prep & Interview Skills"
+    },
+    {
+        "date": "03/29/2017 | 1:00 p.m - 3:00 p.m",
+        "description": null,
+        "id": "8",
+        "location": "Folsom campus,  Falcon's Roost, FR-115",
+        "title": "Drop-in Resume Review"
+    },
+    {
+        "date": "03/30/2017 | 7:00 p.m - 9:00 p.m",
+        "description": "This group of talented FLC Music students will take us on an exploration of American Musical Culture. From country to soul, rock to R&B, funk to folk to hip-hop and beyond, we will take a tour of the amazing tapestry that is American Music, and American Life.The Commercial Music Ensemble will be performing the music of artists ranging from John Denver to John Legend and many more in between.For more information, click here.",
+        "id": "9",
+        "location": "Folsom campus, Harris Center, Stage 2",
+        "title": "Commercial Music Ensemble presents Soul of America"
+    },
+    {
+        "date": "03/31/2017 | 2:30 p.m - 4:30 p.m",
+        "description": "As part of Student Organization for Developing Art (SODA) activities and to celebrate Women's History Month, SODA is featuring W.A.R. (Women, Art, Revolution). The documentary is 83 minutes long. There will be a discussion following the film. For more information about the documentary, contact Eunyoung Hwang, faculty advisor for SODA, at hwange@flc.losrios.edu",
+        "id": "10",
+        "location": "Harris Center PAC-1062",
+        "title": "Film: Women, Art, Revolution"
     }
 ]

@@ -1,14 +1,17 @@
 [
     {
+        "current": true,
         "endpoint": "spring",
         "name": "Spring 2017"
     },
     {
-        "endpoint": "fall",
-        "name": "Fall 2016"
+        "current": false,
+        "endpoint": "summer",
+        "name": "Summer 2017"
     },
     {
-        "endpoint": "summer",
-        "name": "Summer 2016"
+        "current": false,
+        "endpoint": "fall",
+        "name": "Fall 2017"
     }
 ]

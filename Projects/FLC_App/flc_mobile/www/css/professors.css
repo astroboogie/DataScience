@@ -189,6 +189,7 @@ button:focus {
 
 .transition-professor-container {
     margin-left: -100vw !important;
+    overflow: hidden !important;
 }
 
 .course-object {
