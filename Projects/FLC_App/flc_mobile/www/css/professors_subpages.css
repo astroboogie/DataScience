@@ -5,7 +5,6 @@
     margin-top: 10vh;
     z-index: 4;
     position: fixed;
-    background-color: green;
     -webkit-transition: margin-left 0.3s;
 }
 
@@ -16,7 +15,6 @@
     margin-top: 10vh;
     z-index: 4;
     position: fixed;
-    background-color: green;
     -webkit-transition: margin-left 0.3s;
 }
 

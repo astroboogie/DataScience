@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import '../css/sports.css';
+import '../css/mobileView.css';
 import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';
 import { fetchData } from './fetchData';

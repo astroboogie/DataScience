@@ -1,79 +1,289 @@
 [
     {
-        "date": "03/28/2017 | 10:00 a.m - 2:00 p.m",
-        "description": "For more info, click here.",
+        "date": "04/08/2017 | 7:30 a.m",
+        "description": "<p><p><strong>Point Reyes Tomales Point (8-10 miles / Sometimes Hikers)</strong><br />Let's hit the trail together! The Folsom Lake College Hiking Club invites you to join us in exploring our region's great trails. Hiking Club events extend learning beyond the classroom, help to foster an appreciation for the outdoors, and promote fun and wellness while building relationships with other FLC community members.</p><p>Members - Free hikes w/$20 membership.&nbsp;Non-members - $5 suggested donation per hike</p><p>Meet at the El Dorado Center. Please bring plenty of water, sunblock, hat, snacks, comfortable hiking shoes/boots.</p><p>See the Spring 2017 Hike Schedule and RSVP at <a href=\"http://bit.ly/FLCHikes\">http://bit.ly/FLCHikes</a>.</p><p>Questions? Contact us at <a href=\"http://flchikingclub@gmail.com\">flchikingclub@gmail.com</a> for more information.</p><p></p><div></div><div></div></p>",
         "id": "0",
-        "location": "Folsom campus, near Falcon's Roost",
-        "title": "Blood Drive @ Folsom"
+        "location": "El Dorado Center",
+        "title": "FLC Hiking Club"
     },
     {
-        "date": "03/28/2017 | 12 PM - 1:00 p.m",
-        "description": "These information sessions will provide information on the application process, financial aid, cost, and the exciting experiences you'll have while studying abroad.Upcoming TripsSummer 2017 - Florence, ItalyFall 2017 - Barcelona, SpainSpring 2018 - Florence, ItalyContactsSummer 2017 Florence, ItalyBill Wrightson - WrightW@arc.losrios.eduFall 2017 Barcelona, SpainSteve James - JamesS@scc.losrios.eduSpring 2018 Florence, ItalyMarcia McCormick - mccormm@arc.losrios.edu",
+        "date": "04/08/2017 | 12 PM - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. Cosumnes River. Two games 12 noon and 2pm.For more information on FLC Athletics, click here.",
         "id": "1",
-        "location": "Folsom campus, Aspen Hall FL1-8",
-        "title": "Study Abroad info session"
+        "location": "Folsom campus, Softball Field",
+        "title": "Women's Softball Game"
     },
     {
-        "date": "03/28/2017 | 12:30 p.m - 1:30 p.m",
-        "description": "The FLC Wisdom Book Club will meet every Tuesday, Starting January 31. For the full Wisdom Book Club schedule check with the facilitator, Mary Hansen: hansenm@flc.losrios.edu",
+        "date": "04/10/2017",
+        "description": "Spring Recess is Monday, April 10 - Sunday, April 16. No classes will be held during this time. Folsom Lake College offices will be closed on Friday, April 14 for the Good Friday holiday.",
         "id": "2",
-        "location": "Folsom campus, Gymnasium, G-185",
-        "title": "The FLC Wisdom Book Club"
+        "location": "All campuses",
+        "title": "Spring Recess (thru 4/16)"
     },
     {
-        "date": "03/28/2017 | 2:30 p.m - 5:30 p.m",
-        "description": "FLC Men's Baseball Team vs. American RiverFor more information on FLC Athletics, click here.",
+        "date": "04/11/2017 | 2:30 p.m - 5:00 p.m",
+        "description": "FLC Men's Baseball Team vs. Cosumnes RiverFor more information on FLC Athletics, click here.",
         "id": "3",
         "location": "Folsom campus, Baseball Field",
         "title": "Men's Baseball Game"
     },
     {
-        "date": "03/28/2017 | 3:00 p.m - 6:00 p.m",
-        "description": "FLC Women's Softball Team vs. DeltaFor more information on FLC Athletics, click here.",
+        "date": "04/11/2017 | 3:00 p.m - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. Diablo ValleyFor more information on FLC Athletics, click here.",
         "id": "4",
         "location": "Folsom campus, Softball Field",
         "title": "Women's Softball Game"
     },
     {
-        "date": "03/28/2017 | 5:30 p.m - 7:30 p.m",
-        "description": "GIRL RISING AND EMPOWERMENT THROUGH EDUCATIONThis 2013 documentary tells the story of nine girls from different parts of the world whose societies and environments limit education for females. Each faces obstacles such as arranged marriages, child slavery, poverty, ca-tastrophe and violence, yet all break barriers through education. Professor Sapra will lead the discussion following the film.",
+        "date": "04/13/2017 | 3:00 p.m - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. San MateoFor more information on FLC Athletics, click here.",
         "id": "5",
-        "location": "Folsom campus, Aspen Hall FL1-8",
-        "title": "Women's History Month Film - Girl Rising"
+        "location": "Folsom campus, Softball Field",
+        "title": "Women's Softball Game"
     },
     {
-        "date": "03/29/2017 | 9:30 a.m - 11:00 a.m",
-        "description": "INTRODUCTION TO FEMINISMJoin Professors Price and Carlson in Price's ENGWR302 Class for an intro-ductory lesson on feminism followed by a rousing discussion of the issues with thoughtful peers who enjoy the pithy and provocative.",
+        "date": "04/16/2017",
+        "description": "The last day to drop full semester classes is Sunday, April 16th. Please call Admissions & Records if you have questions.FLC: (916) 608-6500EDC: (530) 642-5644RCC:  (916) 361-6321",
         "id": "6",
-        "location": "Rancho Cordova Center, RCC1-227",
-        "title": "Introduction to Feminism"
+        "location": "All campuses",
+        "title": "Last day to drop classes"
     },
     {
-        "date": "03/29/2017 | 12 PM - 1:00 p.m",
-        "description": "Prepare for the Folsom Lake College Annual Career & Internship Fair on April 5thStudents will have the opportunity to explore career options, jobs, and internships, while introducing themselves and their resume to over 50 employers from throughout the region. These companies and organizations are specifically looking for community college students to hire for full-time and part-time jobs, in addition to internship and volunteer opportunities.",
+        "date": "04/17/2017 | 12 PM - 1:00 p.m",
+        "description": "Interested in transfering to a CSU or UC, but confused about the process? In this workshop Chris Clark, FLC Trnasfer Counselor, will walk you through the transfer process and answer your questions.",
         "id": "7",
-        "location": "Folsom campus, Falcon's Roost FR-115",
-        "title": "Career Fair Prep & Interview Skills"
+        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
+        "title": "Preparing to Transfer to a CSU & UC"
     },
     {
-        "date": "03/29/2017 | 1:00 p.m - 3:00 p.m",
-        "description": null,
+        "date": "04/17/2017 | 12 PM - 1:00 p.m",
+        "description": "College life can be challenging and stressful. Staying focused and balanced is essential. This Meditation Group meets every Tuesday to help students and staff be mindful of what is important for a quiet, centering, non-judgmental and relaxing hour. There is usually a facilitated meditation, a brief relaxation activity, and always time for discussion and support. Join us!",
         "id": "8",
-        "location": "Folsom campus,  Falcon's Roost, FR-115",
-        "title": "Drop-in Resume Review"
+        "location": "Folsom campus, Phycial Education, PE-204",
+        "title": "Meditation Group"
     },
     {
-        "date": "03/30/2017 | 7:00 p.m - 9:00 p.m",
-        "description": "This group of talented FLC Music students will take us on an exploration of American Musical Culture. From country to soul, rock to R&B, funk to folk to hip-hop and beyond, we will take a tour of the amazing tapestry that is American Music, and American Life.The Commercial Music Ensemble will be performing the music of artists ranging from John Denver to John Legend and many more in between.For more information, click here.",
+        "date": "04/17/2017 | 5:30 p.m - 7:00 p.m",
+        "description": "Thousands of miles away from civilization, Midway Atoll is in one of the most remote places on earth. And yet its become ground zero for The Great Pacific Garbage Patch, syphoning plastics from three distant continents. In this independent documentary film, journalist/filmmaker Angela Sun travels on a personal journey of discovery to uncover this mysterious phenomenon. Along the way she meets scientists, researchers, influencers, and volunteers who shed light on the effects of our rabid plastic consumption and learns the problem is more insidious than we could have ever imagined. Film and discussion hosted by Professor Cecilia Osorio ",
         "id": "9",
-        "location": "Folsom campus, Harris Center, Stage 2",
-        "title": "Commercial Music Ensemble presents Soul of America"
+        "location": "Folsom campus, Cypress Hall FL2-209",
+        "title": "Earth Week Film Plastic Paradise"
     },
     {
-        "date": "03/31/2017 | 2:30 p.m - 4:30 p.m",
-        "description": "As part of Student Organization for Developing Art (SODA) activities and to celebrate Women's History Month, SODA is featuring W.A.R. (Women, Art, Revolution). The documentary is 83 minutes long. There will be a discussion following the film. For more information about the documentary, contact Eunyoung Hwang, faculty advisor for SODA, at hwange@flc.losrios.edu",
+        "date": "04/18/2017 | 12 PM - 1:00 p.m",
+        "description": null,
         "id": "10",
-        "location": "Harris Center PAC-1062",
-        "title": "Film: Women, Art, Revolution"
+        "location": "Folsom campus, SOAR Central (Cypress Hall room FL2-238)",
+        "title": "On Course: Develop Emotional Intelligence"
+    },
+    {
+        "date": "04/18/2017 | 12 PM - 2:00 p.m",
+        "description": "Attend this FREE Financial Aid Awareness Literacy Fair to learn about all of the different types of Financial Aid available for new and continuing community college students year-round. Bring your questions and get FREE one-on-one assistance, learn about important dates and deadlines, and the different types of aid that you may be eligible for. Informative and interactive plus FREE food, games, and prizes.",
+        "id": "11",
+        "location": "Rancho Cordova Center, in the courtyard",
+        "title": "Financial Aid Fair @ RCC"
+    },
+    {
+        "date": "04/18/2017 | 12:30 p.m - 1:30 p.m",
+        "description": "The FLC Wisdom Book Club will meet every Tuesday, Starting January 31. For the full Wisdom Book Club schedule check with the facilitator, Mary Hansen: hansenm@flc.losrios.edu",
+        "id": "12",
+        "location": "Folsom campus, Gymnasium, G-185",
+        "title": "The FLC Wisdom Book Club"
+    },
+    {
+        "date": "04/18/2017 | 3:00 p.m - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. Santa RosaFor more information on FLC Athletics, click here.",
+        "id": "13",
+        "location": "Folsom campus, Softball Field",
+        "title": "Women's Softball Game"
+    },
+    {
+        "date": "04/18/2017 | 6:00 p.m - 8:00 p.m",
+        "description": "This film weaves together expert analysis of America's food and farming system with a powerful narrative of one extraordinary farmer who is determined to create a sustainable future for his community. Marty Travis, a seventh-generation farmer from Illinois watched his land and community fall victim to the pressures of big agribusiness. Determined to create a proud legacy for his son, Marty transforms his profitless wasteland and pioneers the sustainable food movement in Chicago. The film unearths the future of agriculture - a marriage of age-old tradition and groundbreaking science. Industry pioneers from around the nation reveal the secrets behind human health and environmental protection. Woven into these stories are the foremost experts of the food industry - connecting the dots between agriculture, the environment, economics and public health. Their stories are a reminder of America's troubled past and the devastating consequences that await the country if left unchanged. Sustainable empowers audiences and gives them hope for the future - that through this food revolution, we can all save humanity. Film and discussion hosted by Professor Steve Holzberg. ",
+        "id": "14",
+        "location": "Folsom campus, Falcon's Roost FR-240 (Peregrine Room)",
+        "title": "Life Science/Earth Week: Film Sustainable"
+    },
+    {
+        "date": "04/19/2017 | 12 PM - 1:00 p.m",
+        "description": "Major Decisions (Strategies for Choosing a Major): Do you struggle with the question So....what's your major? This workshop will help you explore majors that reflect your interests, abilities and values .Learn about self-assessment tools and online resources to discover your career path.",
+        "id": "15",
+        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
+        "title": "Choosing a Major workshop"
+    },
+    {
+        "date": "04/19/2017 | 12 PM - 1:00 p.m",
+        "description": "The Secrets of Financial Success workshop will provide information to students so they are aware of the various financial resources available which will help with access and retention leading to successful outcomes.",
+        "id": "16",
+        "location": "Folsom Campus, Buckeye Hall FL3-173",
+        "title": "Secrets to Financial Success workshop"
+    },
+    {
+        "date": "04/19/2017 | 12:30 p.m - 1:00 p.m",
+        "description": "MOSAIC Dance Club performs a MOSAIC of dance styles, and our student population is reflective of the college life experience! A diverse cast of dancers, MOSAIC cultivates a culture on inclusiveness, welcoming dancers of all backgrounds, shapes, sizes, colors and lifeways. Our mission is to: Discover Yourself in dance!Come dance with us at FLC! Help bridge cultures and life experiences through Dance at FLC! ",
+        "id": "17",
+        "location": "Folsom campus, In front of the Falcon's Roost",
+        "title": "Life Science/Earth Week: MOSAIC performance"
+    },
+    {
+        "date": "04/19/2017 | 2:30 p.m - 4:00 p.m",
+        "description": "When her mother died at the age of 96, Susanne Sommer discovered letters and other documents stored away in folders, shoe boxes, closets and trunks. The correspondence described her parents' desperate efforts to leave Nazi Germany in 1938. At that time, the situation for Germany's Jews had become increasingly ominous, and most countries, including the United States, were hostile to receiving Jewish refugees. To tell her family's compelling story, Susanne compiled these letters and collaborated with a local playwright to write Echoes in the Heart. Presented by HIST 313: U.S. History Class/Deborah Moreno. ",
+        "id": "18",
+        "location": "Folsom campus, Lilac Hall FL5-113",
+        "title": "Escaping the Holocaust, Sharing the Planet"
+    },
+    {
+        "date": "04/19/2017 | 6:00 p.m - 8:00 p.m",
+        "description": "Actor Leonardo DiCaprio meets with scientists, activists and world leaders to discuss the dangers of climate change and possible solutions. Film and discussion hosted by Professor Steve Holzberg. ",
+        "id": "19",
+        "location": "Folsom campus, Falcon's Roost FR-240 (Peregrine Room)",
+        "title": "Life Science/Earth Week: Film Before the Flood"
+    },
+    {
+        "date": "04/20/2017 | 9:00 a.m - 12 PM",
+        "description": "A 30 minute appointment can be made by visiting the Career and Transfer Center or calling 916-608-6526.",
+        "id": "20",
+        "location": "Folsom campus, Career & Transfer Center (Falcon's Roost lower level, room 115)",
+        "title": "UC Santa Barbara rep visit"
+    },
+    {
+        "date": "04/20/2017 | 11:00 a.m - 1:00 p.m",
+        "description": "Fun fair with music, games & booths organized by the EDC Student Activities Club. ",
+        "id": "21",
+        "location": "El Dorado Center, The Greens",
+        "title": "Life Science/Earth Week: Earth Day on the Greens"
+    },
+    {
+        "date": "04/20/2017 | 12 PM - 1:00 p.m",
+        "description": "The purpose of the Privilege Walk Activity is to learn to recognize how power and privilege can affect our lives even when we are not aware it is happening.",
+        "id": "22",
+        "location": "Folsom campus, Meet on the grass next to the Roost",
+        "title": "Privilege Walk: Power and Access Activity"
+    },
+    {
+        "date": "04/20/2017 | 12 PM - 1:00 p.m",
+        "description": "The FLC Commercial Music Ensemble presents: Soul of America. This group of talented FLC Music students will take us on an exploration of American musical culture. From country to soul, rock to R&B, funk to folk to hip-hop and beyond, we will take a tour of the amazing tapestry that is American music, and American life. Music by: Bob Dylan, John Lennon, John Legend, John Denver, Lukas Graham, Tom Petty, Led Zeppelin, Paul Simon and more...For more information on Eartth Week events click here. ",
+        "id": "23",
+        "location": "Folsom campus, Falcon's Roost Lower Level (Student Lounge)",
+        "title": "FLC Music presents Soul of America"
+    },
+    {
+        "date": "04/20/2017 | 12 PM - 1:30 p.m",
+        "description": "Dr. Tim McHargue (DSP&S) and Tom Goff (Reading and Writing Center) invite FLC faculty, staff, and students to share in our Literature of the Wild poetry reading in honor of Earth Week. Interested poets and writers may share a favorite poem or SHORT piece of prose (by themselves or others) on nature, the environment, or anything celebrating the wild wonder of the world. ",
+        "id": "24",
+        "location": "Folsom campus, Buckeye Hall FL3-173 (Large Lecture Hall)",
+        "title": "Life Science/Earth Week: Literature of the Wild"
+    },
+    {
+        "date": "04/20/2017 | 1:00 p.m - 2:00 p.m",
+        "description": "Cultural Resources Manager and Local Historian Melinda Peak will lead a tour of the campus Heritage Interpretive Trail, which was preceded by a wildlife trail, a Niesenan trail, Johanna Luellen's ranch, and a Natomas ditch (transporting water for gold miners, farmers and cattle ranchers). Come see the beautiful wetlands trail where Melinda will tell stories of all this and more. Join Professor Moreno's U.S. History class. ",
+        "id": "25",
+        "location": "Folsom campus, Meet (promptly at 1PM) in front of the Folsom campus tennis courts",
+        "title": "Life Science/Earth Week: Heritage Interpretive Trail Tour"
+    },
+    {
+        "date": "04/20/2017 | 2:30 p.m - 5:30 p.m",
+        "description": "FLC Men's Baseball Team vs. DeltaFor more information on FLC Athletics, click here.",
+        "id": "26",
+        "location": "Folsom campus, Baseball Field",
+        "title": "Men's Baseball Game"
+    },
+    {
+        "date": "04/21/2017 | 11:00 a.m - 2:00 a.m",
+        "description": "BYO lab coat or T-shirt to decorate. Decorative supplies, good company, and snacks provided!",
+        "id": "27",
+        "location": "Folsom campus, Apsen Hall FL1-130 (Makerspace)",
+        "title": "March for Science: Sign Making Party"
+    },
+    {
+        "date": "04/21/2017 | 12 PM - 1:30 p.m",
+        "description": "For more information about the luncheon click here.",
+        "id": "28",
+        "location": "Cold Springs Community Church (2600 Cold Springs Rd. in Placerville)",
+        "title": "Patrons Club Luncheon"
+    },
+    {
+        "date": "04/21/2017 | 2:30 p.m - 4:30 p.m",
+        "description": "The highly acclaimed director of FINDING NEMO and the creative storytellers behind CARS and RATATOUILLE transport you to a galaxy not so far away for a new cosmic comedy adventure about a determined robot named WALL-E. After hundreds of lonely years of doing what he was built for, the curious and lovable WALL-E discovers a new purpose in life when he meets a sleek search robot named EVE. Join them and a hilarious cast of characters on a fantastic journey across the universe. Film and discussion hosted by Professor Steve Holzberg. ",
+        "id": "29",
+        "location": "Folsom campus, Aspen Hall FL1-20 (Community Room)",
+        "title": "Earth Week: Film Wall-E"
+    },
+    {
+        "date": "04/22/2017 | 7:30 a.m",
+        "description": "<p><p>March for Science!</p><p>Join FLC students, staff and faculty and the greater Sacramento Community as we demonstrate our passion for science and sound a call to support and safeguard the scientific community. Show your support for robustly funded and publicly communicated science as a pillar of human freedom and prosperity. We unite as a diverse, nonpartisan group to call for science that upholds the common good and for political leaders and policy makers to enact evidence based policies in the public interest. For information on the motivation behind the coordinated marches visit <a href=\"http://marchforscience.com\">marchforscience.com</a> or <a href=\"https://sacramento.downtowngrid.com/events/march-for-science/\">https://sacramento.downtowngrid.com/events/march-for-science/</a></p><p>FLC March Meet-Up<br />9:30am - 10am @ Department of Fish and Wildlife, 9th &amp; S St. Downtown Sacramento</p><p>March for Science 10am - 1:30pm<br />Southside Park, 2115 6th St., Sacramento</p><p>Ride Light Rail from Folsom / Rancho Cordova to 13th Street Station<br />Free w/RT Sticker \u25cf $7 / Non-Student \u25cf Trains depart every 30 minutes</p><p></p><p>See the Spring 2017 Hike Schedule and RSVP at <a href=\"http://bit.ly/FLCHikes\">http://bit.ly/FLCHikes</a>.</p><p>Questions? Contact us at <a href=\"http://flchikingclub@gmail.com\">flchikingclub@gmail.com</a> for more information.</p><p></p><div></div><div></div></p>",
+        "id": "30",
+        "location": "See Below",
+        "title": "FLC Hiking Club"
+    },
+    {
+        "date": "04/22/2017 | 9:30 a.m - 4:00 p.m",
+        "description": "March for Science!Join FLC students, staff and faculty and the greater Sacramento Community as we demonstrate our passion for science and sound a call to support and safeguard the scientific community. Show your support for robustly funded and publicly communicated science as a pillar of human freedom and prosperity. We unite as a diverse, nonpartisan group to call for science that upholds the common good and for political leaders and policy makers to enact evidence based policies in the public interest. For information on the motivation behind the coordinated marches visit marchforscience.com or https://sacramento.downtowngrid.com/events/march-for-science/FLC March Meet-Up9:30am - 10am @ Department of Fish and Wildlife, 9th & S St. Downtown SacramentoMarch for Science 10am - 1:30pmSouthside Park, 2115 6th St., SacramentoRide Light Rail from Folsom / Rancho Cordova to 13th Street StationFree w/RT Sticker  $7 / Non-Student  Trains depart every 30 minutes",
+        "id": "31",
+        "location": "See below",
+        "title": "March for Science"
+    },
+    {
+        "date": "04/22/2017 | 12 PM - 6:00 p.m",
+        "description": "FLC Women's Softball Team vs. Sacramento City. Two games 12 noon and 2pm.For more information on FLC Athletics, click here.",
+        "id": "32",
+        "location": "Folsom campus, Softball Field",
+        "title": "Women's Softball Game"
+    },
+    {
+        "date": "04/24/2017 | 12 PM - 1:00 p.m",
+        "description": "New Course Offering! Making Social Change and Walking-A-Mile Program. Check here for additional Social Justice Spring events: http://bit.ly/flc100days",
+        "id": "33",
+        "location": "Rancho Cordova Center",
+        "title": "Making Social Change"
+    },
+    {
+        "date": "04/24/2017 | 12 PM - 1:00 p.m",
+        "description": "Balancing School and Work: This workshop addresses the Art of Balancing School, Work and Life, and provides resources and tips for overcoming the Balancing challenges that college students face.",
+        "id": "34",
+        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
+        "title": "Balancing School & Work workshop"
+    },
+    {
+        "date": "04/25/2017 | 12 PM - 1:00 p.m",
+        "description": "You Should Really Think About It (Decision Making and Goal Setting): Decision Making is a process of identifying and choosing alternatives based on your values. Learning decision making skills can increase your chance of making satisfying and life enriching decisions. Come to this hands on workshop to learn successful decision making strategies.",
+        "id": "35",
+        "location": "Folsom campus, Career & Transfer Services Center (lower level of Falcon's Roost, room FR-115)",
+        "title": "Decision Making & Goal Setting workshop"
+    },
+    {
+        "date": "04/27/2017 | 2:30 p.m - 5:30 p.m",
+        "description": "FLC Men's Baseball Team vs. Diablo ValleyFor more information on FLC Athletics, click here.",
+        "id": "36",
+        "location": "Folsom campus, Baseball Field",
+        "title": "Men's Baseball Game"
+    },
+    {
+        "date": "04/27/2017 | 5:30 p.m - 8:30 p.m",
+        "description": "Join our entire campus community for an energetic evening of fun and action! This event includes, Tear Down That Wall, Live Graffiti, student art exhibit, FLC Student Voices Film, poetry slam, and free Food! RCC and EDC students encouraged to attend!",
+        "id": "37",
+        "location": "Folsom campus, Falcon's Roost inside and outside",
+        "title": "FLC OUT LOUD! SJS Finale!"
+    },
+    {
+        "date": "04/28/2017 | 7:30 p.m - 9:30 p.m",
+        "description": "The Falcon's Eye closes its tenth season with Cyrano. The most legendary nose in literature gets a makeover from playwright Aaron Posner in this lively American adaptation of the 1897 French classic by Edmond Rostand. Will Roxane fall for Christian's dashing looks or cyrano's daring poetry? Find out in this timeless tale-full of wordplay and swordplay-that's been an inspiration to writers and lovers for centuries.For more information, click here.",
+        "id": "38",
+        "location": "Folsom campus, Harris Center, Stage 1",
+        "title": "Cyrano"
+    },
+    {
+        "date": "04/29/2017 | 8:00 a.m - 12:30 p.m",
+        "description": "Learn about what Folsom Lake College has to offer through various workshops and informational sessions. Check-in outside of Aspen Hall. Refreshments and pizza lunch provided!",
+        "id": "39",
+        "location": "Folsom campus, Aspen Hall FL1",
+        "title": "Become a Future Falcon"
+    },
+    {
+        "date": "04/29/2017 | 6:30 p.m - 10:30 p.m",
+        "description": "National Astronomy Day! For more info, go to: http://communityobservatory.com/ Admission is FREE!",
+        "id": "40",
+        "location": "El Dorado Center, Community Observatory",
+        "title": "Astronomy Day"
     }
 ]

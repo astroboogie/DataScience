@@ -150,21 +150,6 @@
         "units": "3"
     },
     {
-        "advisory": "ENGWR 101",
-        "corequisite": null,
-        "courseFamily": null,
-        "courseName": "Community Relations: Multicultural Issues",
-        "courseTitle": "ADMJ 302",
-        "description": "This course examines the complex relationship between communities and the law enforcement, judicial and correctional institutions of the justice system. The course addresses the role that race, ethnicity, gender, sexual orientation, social class, culture and the criminal justice professional play in shaping these relationships. The course will explore new strategies, skills, tools, and cultural knowledge necessary for personnel engaged in all aspects of the criminal justice system. Special topics include how terrorism and the need for homeland security have changed the dynamics of police-community relations. (C-ID AJ 160)",
-        "enrollmentLimitation": null,
-        "generalEducation": "AA/AS Area V(b); AA/AS Area VI; CSU Area D; IGETC Area 4",
-        "hours": "54 hours LEC",
-        "prerequisite": "None.",
-        "sameAs": null,
-        "transferableTo": "UC/CSU",
-        "units": "3"
-    },
-    {
         "advisory": "ENGRD 310 and ENGWR 101",
         "corequisite": null,
         "courseFamily": null,
@@ -225,12 +210,27 @@
         "units": "3"
     },
     {
+        "advisory": "CISC 310; Students should have basic computer user skills prior to enrolling in this course.",
+        "corequisite": null,
+        "courseFamily": null,
+        "courseName": "Computer Crime and Digital Evidence",
+        "courseTitle": "ADMJ 333",
+        "description": "This course will introduce the student to the basic principles of computer crime investigation, including the role of computer devices in various types of criminal activities, computer related criminal law, methods of collecting digital evidence and how digital evidence can assist in solving crimes. The student will learn how to properly perform and document digital evidence collection.  The student will learn about court presentation and emerging case law related to computer crimes.",
+        "enrollmentLimitation": null,
+        "generalEducation": null,
+        "hours": "54 hours LEC",
+        "prerequisite": "None.",
+        "sameAs": null,
+        "transferableTo": "CSU",
+        "units": "3"
+    },
+    {
         "advisory": null,
         "corequisite": null,
         "courseFamily": null,
-        "courseName": "Illegal Drugs - Identification and Investigation",
-        "courseTitle": "ADMJ 370",
-        "description": "The study of current drugs of abuse will include identification, street terminology, pricing, packaging, methods of use, duration of effect, addiction, history, and recognizing persons under the influence.  The course also examines current laws and law enforcement agency functions, including search and seizure, search warrants, enforcement trends, ethics and leadership, and treatment programs versus incarceration. This course will also study several high profile drug traffickers who have been incarcerated.",
+        "courseName": "Introduction to Correctional Services",
+        "courseTitle": "ADMJ 340",
+        "description": "This course provides an overview of the history and trends of adult and juvenile corrections including probation and parole. It focuses on the legal issues, specific laws, and general operation of correctional institutions. The relationship between corrections and other components of the judicial system are examined.",
         "enrollmentLimitation": null,
         "generalEducation": null,
         "hours": "54 hours LEC",
@@ -1539,7 +1539,7 @@
         "enrollmentLimitation": null,
         "generalEducation": "AA/AS Area V(b); AA/AS Area VI; CSU Area D; IGETC Area 4",
         "hours": "54 hours LEC",
-        "prerequisite": "Eligibility for ENGWR 101",
+        "prerequisite": "ENGWR 51 with a grade of C or better; or placement into ENGWR 101 via the assessment process.",
         "sameAs": null,
         "transferableTo": "UC/CSU",
         "units": "3"
@@ -1753,6 +1753,21 @@
         "sameAs": null,
         "transferableTo": "UC/CSU",
         "units": "1"
+    },
+    {
+        "advisory": null,
+        "corequisite": null,
+        "courseFamily": null,
+        "courseName": "Pedagogy: Theory and Practice",
+        "courseTitle": "DANCE 381",
+        "description": "This course is designed to integrate the student's physical knowledge of dance technique with the pedagogical theory and practice of dance teaching with particular emphasis on social and cultural aspects of pedagogical theory in multiple settings. Effective methodologies for the teaching of safe and correct dance technique will be explored, specifically on how to guide beginning level dancers to intermediate and more advanced levels in a logical, progressive, and responsible manner. Students will gain an understanding of how particular problems and solutions within dance curriculum are organized and presented effectively for optimal success as a dance educator. This course emphasizes pedagogical structure and theory, adapted to the diverse interests and abilities of learners, and incorporates off-site classroom observation, lesson planning, classroom teaching and classroom management techniques. The principles, techniques, and materials used in the teaching of dance will culminate in a Teaching Practicum.",
+        "enrollmentLimitation": null,
+        "generalEducation": "CSU Area E2",
+        "hours": "30 hours LEC ; 18 hours LAB",
+        "prerequisite": "None.",
+        "sameAs": null,
+        "transferableTo": "UC/CSU",
+        "units": "2"
     },
     {
         "advisory": null,
@@ -3361,15 +3376,15 @@
     },
     {
         "advisory": null,
-        "corequisite": "HSER 350 and 360",
+        "corequisite": null,
         "courseFamily": null,
-        "courseName": "Practices in Human Services",
-        "courseTitle": "HSER 366",
-        "description": "This course provides research and supervised field experience in public and/or private agencies providing mental health, corrections, chemical dependency, and child/adolescent treatment services. Students apply concepts, values and skills acquired in other core courses to the process of helping others via internships and field trips. Students must provide their own transportation for field trips and internships. This course is not open to students who have taken HSER 362.",
+        "courseName": "Advanced Practices in Human Services",
+        "courseTitle": "HSER 367",
+        "description": "This advanced practicum course provides research and supervised field experience in public and/or private agencies providing mental health, corrections, chemical dependency, and child/adolescent treatment services.  Students integrate concepts, values, and skills acquired from previous courses and apply their knowledge to the process of helping others via internships.  Field trips are required and students provide their own transportation. This course is not open to students who have previously taken HSER 499: Experimental Offering in Human Services (Advanced Practices in Human Services).",
         "enrollmentLimitation": null,
         "generalEducation": null,
         "hours": "18 hours LEC ; 108 hours LAB",
-        "prerequisite": "HSER 302 with a grade of C or better",
+        "prerequisite": "HSER 366 with a grade of C or better",
         "sameAs": null,
         "transferableTo": "CSU",
         "units": "3"
@@ -3418,6 +3433,21 @@
         "sameAs": null,
         "transferableTo": "UC/CSU",
         "units": "1"
+    },
+    {
+        "advisory": null,
+        "corequisite": null,
+        "courseFamily": null,
+        "courseName": "Supervised Tutoring",
+        "courseTitle": "LTAT 1000",
+        "description": "This course offers individualized and/or group tutoring that is designed to assist students to increase their success in college courses. Content will vary depending upon the adjunct course. Attention will be given to discipline specific study skills and utilization of campus resources.",
+        "enrollmentLimitation": null,
+        "generalEducation": null,
+        "hours": "50 hours LAB",
+        "prerequisite": "None",
+        "sameAs": null,
+        "transferableTo": null,
+        "units": "0"
     },
     {
         "advisory": "BUS 310 or MGMT 360",

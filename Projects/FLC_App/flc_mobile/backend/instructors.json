@@ -177,44 +177,44 @@
         "classList_fall": [
             "12",
             "13",
-            "25",
-            "26",
-            "118",
-            "119",
-            "140",
-            "141",
-            "177",
-            "178",
-            "188",
-            "189",
-            "240",
-            "241",
-            "255",
-            "256",
-            "281",
-            "282",
-            "436",
-            "437",
-            "442",
-            "443",
-            "470",
-            "471",
-            "535",
-            "536",
-            "546",
-            "547",
-            "553",
-            "554",
-            "664",
-            "665",
-            "682",
-            "683",
-            "834",
-            "835",
-            "854",
-            "855",
+            "27",
+            "28",
+            "120",
+            "121",
+            "142",
+            "143",
+            "179",
+            "180",
+            "190",
+            "191",
+            "242",
+            "243",
+            "258",
+            "259",
+            "284",
+            "285",
+            "439",
+            "440",
+            "445",
+            "446",
+            "473",
+            "474",
+            "538",
+            "539",
+            "550",
+            "551",
+            "557",
+            "558",
+            "666",
+            "667",
+            "684",
+            "685",
+            "838",
+            "839",
             "858",
-            "859"
+            "859",
+            "862",
+            "863"
         ],
         "classList_spring": [
             "12",
@@ -332,25 +332,25 @@
         "classHours": "0hr 0min",
         "classList_fall": [
             "14",
-            "27",
-            "120",
-            "142",
-            "179",
-            "190",
-            "242",
-            "257",
-            "283",
-            "438",
-            "444",
-            "472",
-            "537",
-            "548",
-            "555",
-            "666",
-            "684",
-            "836",
-            "856",
-            "860"
+            "29",
+            "122",
+            "144",
+            "181",
+            "192",
+            "244",
+            "260",
+            "286",
+            "441",
+            "447",
+            "475",
+            "540",
+            "552",
+            "559",
+            "668",
+            "686",
+            "840",
+            "860",
+            "864"
         ],
         "classList_spring": [
             "14",
@@ -438,25 +438,25 @@
         "classHours": "0hr 0min",
         "classList_fall": [
             "15",
-            "28",
-            "121",
-            "143",
-            "180",
-            "191",
-            "243",
-            "258",
-            "284",
-            "439",
-            "445",
-            "473",
-            "538",
-            "549",
-            "556",
-            "667",
-            "685",
-            "837",
-            "857",
-            "861"
+            "30",
+            "123",
+            "145",
+            "182",
+            "193",
+            "245",
+            "261",
+            "287",
+            "442",
+            "448",
+            "476",
+            "541",
+            "553",
+            "560",
+            "669",
+            "687",
+            "841",
+            "861",
+            "865"
         ],
         "classList_spring": [
             "15",
@@ -525,8 +525,8 @@
         "classList_fall": [
             "16",
             "17",
-            "19",
-            "23"
+            "18",
+            "24"
         ],
         "classList_spring": [
             "16",
@@ -542,11 +542,11 @@
             ],
             "Sa": [],
             "T": [
-                "10:30AM-11:50AM",
+                "09:00AM-10:20AM",
                 "01:00PM-02:20PM"
             ],
             "Th": [
-                "10:30AM-11:50AM",
+                "09:00AM-10:20AM",
                 "01:00PM-02:20PM",
                 "06:00PM-09:05PM"
             ],
@@ -618,6 +618,9 @@
     },
     {
         "classHours": "3hr 35min",
+        "classList_fall": [
+            "25"
+        ],
         "classList_spring": [
             "21",
             "25"
@@ -673,6 +676,9 @@
     },
     {
         "classHours": "2hr 40min",
+        "classList_fall": [
+            "31"
+        ],
         "classList_spring": [
             "30"
         ],
@@ -700,8 +706,8 @@
     {
         "classHours": "9hr 5min",
         "classList_fall": [
-            "31",
-            "40"
+            "33",
+            "42"
         ],
         "classList_spring": [
             "31",
@@ -742,7 +748,7 @@
     {
         "classHours": "11hr 30min",
         "classList_fall": [
-            "48"
+            "50"
         ],
         "classList_spring": [
             "33",
@@ -779,7 +785,7 @@
     {
         "classHours": "8hr 25min",
         "classList_fall": [
-            "37"
+            "39"
         ],
         "classList_spring": [
             "36",
@@ -811,12 +817,15 @@
         ]
     },
     {
-        "classHours": "3hr 5min",
+        "classHours": "6hr 15min",
         "classList_fall": [
-            "38"
+            "40"
         ],
         "classList_spring": [
             "38"
+        ],
+        "classList_summer": [
+            "143"
         ],
         "classTimes": {
             "F": [
@@ -825,7 +834,9 @@
             "M": [],
             "Sa": [],
             "T": [],
-            "Th": [],
+            "Th": [
+                "01:00PM-04:10PM"
+            ],
             "W": []
         },
         "email": null,
@@ -834,16 +845,17 @@
         "office": null,
         "phone": null,
         "subjects": [
-            "ANTH"
+            "ANTH",
+            "SOC"
         ]
     },
     {
         "classHours": "19hr 55min",
         "classList_fall": [
-            "41",
-            "42",
-            "44",
-            "47"
+            "43",
+            "46",
+            "47",
+            "49"
         ],
         "classList_spring": [
             "43",
@@ -855,23 +867,23 @@
             "F": [],
             "M": [
                 "09:00AM-10:20AM",
+                "10:30AM-11:50AM",
                 "01:00PM-04:05PM"
             ],
             "Sa": [],
             "T": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
-                "01:00PM-04:05PM",
-                "02:30PM-03:50PM"
+                "01:00PM-04:05PM"
             ],
             "Th": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
-                "01:00PM-04:05PM",
-                "02:30PM-03:50PM"
+                "01:00PM-04:05PM"
             ],
             "W": [
-                "09:00AM-10:20AM"
+                "09:00AM-10:20AM",
+                "10:30AM-11:50AM"
             ]
         },
         "email": null,
@@ -884,7 +896,10 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "5hr 20min",
+        "classList_fall": [
+            "44"
+        ],
         "classList_spring": [
             "45"
         ],
@@ -894,8 +909,12 @@
                 "05:30PM-06:50PM"
             ],
             "Sa": [],
-            "T": [],
-            "Th": [],
+            "T": [
+                "02:30PM-03:50PM"
+            ],
+            "Th": [
+                "02:30PM-03:50PM"
+            ],
             "W": [
                 "05:30PM-06:50PM"
             ]
@@ -912,11 +931,11 @@
     {
         "classHours": "22hr 10min",
         "classList_fall": [
-            "49",
             "51",
-            "64",
-            "67",
-            "69"
+            "53",
+            "66",
+            "69",
+            "71"
         ],
         "classList_spring": [
             "49",
@@ -969,8 +988,8 @@
     {
         "classHours": "24hr 40min",
         "classList_fall": [
-            "52",
-            "54"
+            "54",
+            "56"
         ],
         "classList_spring": [
             "51",
@@ -1021,8 +1040,8 @@
     {
         "classHours": "29hr 40min",
         "classList_fall": [
-            "55",
-            "73"
+            "57",
+            "75"
         ],
         "classList_spring": [
             "52",
@@ -1072,12 +1091,12 @@
     {
         "classHours": "29hr 0min",
         "classList_fall": [
-            "50",
-            "56",
-            "57",
+            "52",
             "58",
+            "59",
             "60",
-            "61"
+            "62",
+            "63"
         ],
         "classList_spring": [
             "53",
@@ -1133,12 +1152,12 @@
     {
         "classHours": "25hr 0min",
         "classList_fall": [
-            "59",
-            "62",
-            "63",
-            "76",
-            "77",
-            "79"
+            "61",
+            "64",
+            "65",
+            "78",
+            "79",
+            "81"
         ],
         "classList_spring": [
             "58",
@@ -1192,9 +1211,9 @@
     {
         "classHours": "24hr 5min",
         "classList_fall": [
-            "53",
-            "65",
-            "66"
+            "55",
+            "67",
+            "68"
         ],
         "classList_spring": [
             "60",
@@ -1244,10 +1263,10 @@
     {
         "classHours": "9hr 50min",
         "classList_fall": [
-            "68",
             "70",
-            "71",
-            "72"
+            "72",
+            "73",
+            "74"
         ],
         "classList_spring": [
             "64",
@@ -1281,8 +1300,8 @@
     {
         "classHours": "9hr 35min",
         "classList_fall": [
-            "74",
-            "75"
+            "76",
+            "77"
         ],
         "classList_spring": [
             "72",
@@ -1314,13 +1333,17 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "5hr 50min",
         "classList_spring": [
             "78"
+        ],
+        "classList_summer": [
+            "14"
         ],
         "classTimes": {
             "F": [],
             "M": [
+                "08:30AM-11:40AM",
                 "05:30PM-06:50PM"
             ],
             "Sa": [],
@@ -1342,7 +1365,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "78"
+            "80"
         ],
         "classList_spring": [
             "79",
@@ -1408,11 +1431,11 @@
     {
         "classHours": "16hr 10min",
         "classList_fall": [
-            "81",
-            "82",
+            "83",
             "84",
-            "85",
-            "736"
+            "86",
+            "87",
+            "739"
         ],
         "classList_spring": [
             "81",
@@ -1492,11 +1515,11 @@
     {
         "classHours": "31hr 35min",
         "classList_fall": [
-            "90",
-            "730",
-            "732",
+            "92",
             "733",
-            "735"
+            "735",
+            "736",
+            "738"
         ],
         "classList_spring": [
             "88",
@@ -1550,8 +1573,8 @@
     {
         "classHours": "9hr 30min",
         "classList_fall": [
-            "91",
-            "117"
+            "93",
+            "119"
         ],
         "classList_spring": [
             "92",
@@ -1612,8 +1635,8 @@
     {
         "classHours": "26hr 30min",
         "classList_fall": [
-            "93",
-            "97"
+            "95",
+            "99"
         ],
         "classList_spring": [
             "94",
@@ -1655,9 +1678,9 @@
     {
         "classHours": "20hr 15min",
         "classList_fall": [
-            "94",
-            "99",
-            "432"
+            "96",
+            "101",
+            "435"
         ],
         "classList_spring": [
             "95",
@@ -1700,33 +1723,22 @@
         ]
     },
     {
-        "classHours": "24hr 30min",
-        "classList_fall": [
-            "95",
-            "96"
-        ],
+        "classHours": "9hr 10min",
         "classList_spring": [
             "96"
         ],
         "classTimes": {
-            "F": [
-                "09:30AM-10:50AM",
-                "11:00AM-02:15PM"
-            ],
+            "F": [],
             "M": [
                 "05:30PM-06:50PM",
-                "07:00PM-10:15PM",
-                "07:00PM-10:05PM"
+                "07:00PM-10:15PM"
             ],
             "Sa": [],
             "T": [],
             "Th": [],
             "W": [
-                "09:30AM-10:50AM",
-                "11:00AM-02:15PM",
                 "05:30PM-06:50PM",
-                "07:00PM-10:15PM",
-                "07:00PM-10:05PM"
+                "07:00PM-10:15PM"
             ]
         },
         "email": null,
@@ -1741,12 +1753,12 @@
     {
         "classHours": "34hr 55min",
         "classList_fall": [
-            "92",
-            "98",
-            "101",
-            "102",
-            "105",
-            "431"
+            "94",
+            "100",
+            "103",
+            "104",
+            "107",
+            "434"
         ],
         "classList_spring": [
             "97",
@@ -1797,8 +1809,8 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "100",
-            "433"
+            "102",
+            "436"
         ],
         "classList_spring": [
             "99",
@@ -1829,8 +1841,8 @@
     {
         "classHours": "17hr 40min",
         "classList_fall": [
-            "103",
-            "104"
+            "105",
+            "106"
         ],
         "classList_spring": [
             "101",
@@ -1896,7 +1908,7 @@
     {
         "classHours": "8hr 50min",
         "classList_fall": [
-            "111"
+            "113"
         ],
         "classList_spring": [
             "106"
@@ -1927,8 +1939,8 @@
     {
         "classHours": "17hr 40min",
         "classList_fall": [
-            "108",
-            "112"
+            "110",
+            "114"
         ],
         "classList_spring": [
             "107",
@@ -1966,8 +1978,8 @@
     {
         "classHours": "13hr 40min",
         "classList_fall": [
-            "106",
-            "107"
+            "108",
+            "109"
         ],
         "classList_spring": [
             "108",
@@ -2031,8 +2043,8 @@
     {
         "classHours": "13hr 40min",
         "classList_fall": [
-            "113",
-            "114"
+            "115",
+            "116"
         ],
         "classList_spring": [
             "112",
@@ -2070,8 +2082,7 @@
     {
         "classHours": "13hr 40min",
         "classList_fall": [
-            "115",
-            "116"
+            "117"
         ],
         "classList_spring": [
             "114",
@@ -2107,13 +2118,13 @@
     {
         "classHours": "24hr 0min",
         "classList_fall": [
-            "122",
-            "125",
-            "130",
-            "294",
-            "550",
-            "551",
-            "552"
+            "124",
+            "127",
+            "132",
+            "297",
+            "554",
+            "555",
+            "556"
         ],
         "classList_spring": [
             "121",
@@ -2168,7 +2179,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "541"
+            "545"
         ],
         "classList_spring": [
             "122",
@@ -2195,7 +2206,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "129"
+            "131"
         ],
         "classList_spring": [
             "124"
@@ -2222,7 +2233,10 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "5hr 20min",
+        "classList_fall": [
+            "130"
+        ],
         "classList_spring": [
             "126"
         ],
@@ -2231,9 +2245,11 @@
             "M": [],
             "Sa": [],
             "T": [
+                "10:30AM-11:50AM",
                 "01:00PM-02:20PM"
             ],
             "Th": [
+                "10:30AM-11:50AM",
                 "01:00PM-02:20PM"
             ],
             "W": []
@@ -2250,8 +2266,8 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "123",
-            "137"
+            "125",
+            "139"
         ],
         "classList_spring": [
             "127",
@@ -2280,9 +2296,9 @@
     {
         "classHours": "9hr 15min",
         "classList_fall": [
-            "126",
-            "132",
-            "296"
+            "128",
+            "134",
+            "299"
         ],
         "classList_spring": [
             "128",
@@ -2314,7 +2330,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "544"
+            "548"
         ],
         "classList_spring": [
             "129",
@@ -2343,11 +2359,11 @@
     {
         "classHours": "17hr 40min",
         "classList_fall": [
-            "135",
-            "136",
-            "783",
-            "784",
-            "785"
+            "137",
+            "138",
+            "786",
+            "787",
+            "788"
         ],
         "classList_spring": [
             "131",
@@ -2389,14 +2405,14 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "144",
-            "145",
             "146",
             "147",
             "148",
             "149",
             "150",
-            "155"
+            "151",
+            "152",
+            "157"
         ],
         "classList_spring": [
             "140",
@@ -2427,9 +2443,9 @@
     {
         "classHours": "4hr 20min",
         "classList_fall": [
-            "151",
-            "186",
-            "187"
+            "153",
+            "188",
+            "189"
         ],
         "classList_spring": [
             "146",
@@ -2460,9 +2476,9 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "153",
-            "154",
-            "156"
+            "155",
+            "156",
+            "158"
         ],
         "classList_spring": [
             "148",
@@ -2730,10 +2746,11 @@
         ]
     },
     {
-        "classHours": "24hr 40min",
+        "classHours": "30hr 50min",
         "classList_fall": [
             "172",
-            "173"
+            "174",
+            "175"
         ],
         "classList_spring": [
             "163",
@@ -2743,6 +2760,7 @@
         "classTimes": {
             "F": [],
             "M": [
+                "11:00AM-02:05PM",
                 "02:30PM-05:35PM",
                 "06:00PM-09:05PM"
             ],
@@ -2756,6 +2774,7 @@
                 "03:00PM-06:05PM"
             ],
             "W": [
+                "11:00AM-02:05PM",
                 "02:30PM-05:35PM",
                 "06:00PM-09:05PM"
             ]
@@ -2829,9 +2848,10 @@
         ]
     },
     {
-        "classHours": "5hr 30min",
+        "classHours": "8hr 35min",
         "classList_fall": [
-            "183"
+            "185",
+            "210"
         ],
         "classList_spring": [
             "176",
@@ -2839,7 +2859,9 @@
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "06:00PM-09:05PM"
+            ],
             "Sa": [],
             "T": [
                 "10:30AM-11:50AM",
@@ -2858,7 +2880,8 @@
         "subjects": [
             "CISA",
             "CISC",
-            "CISP"
+            "CISP",
+            "CISW"
         ]
     },
     {
@@ -2888,10 +2911,10 @@
     {
         "classHours": "19hr 35min",
         "classList_fall": [
-            "182",
-            "206",
-            "207",
-            "299"
+            "184",
+            "208",
+            "209",
+            "302"
         ],
         "classList_spring": [
             "178",
@@ -2939,7 +2962,7 @@
     {
         "classHours": "8hr 50min",
         "classList_fall": [
-            "184"
+            "186"
         ],
         "classList_spring": [
             "179",
@@ -2972,11 +2995,11 @@
     {
         "classHours": "13hr 20min",
         "classList_fall": [
-            "194",
-            "195",
-            "200",
-            "201",
-            "204"
+            "196",
+            "197",
+            "202",
+            "203",
+            "206"
         ],
         "classList_spring": [
             "180",
@@ -3020,8 +3043,8 @@
     {
         "classHours": "6hr 20min",
         "classList_fall": [
-            "192",
-            "203"
+            "194",
+            "205"
         ],
         "classList_spring": [
             "188",
@@ -3051,11 +3074,11 @@
     {
         "classHours": "13hr 30min",
         "classList_fall": [
-            "193",
-            "196",
-            "197",
-            "202",
-            "205"
+            "195",
+            "198",
+            "199",
+            "204",
+            "207"
         ],
         "classList_spring": [
             "189",
@@ -3124,8 +3147,8 @@
     {
         "classHours": "6hr 15min",
         "classList_fall": [
-            "185",
-            "199"
+            "187",
+            "201"
         ],
         "classList_spring": [
             "196"
@@ -3155,7 +3178,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "198"
+            "200"
         ],
         "classList_spring": [
             "202"
@@ -3182,13 +3205,13 @@
     {
         "classHours": "12hr 0min",
         "classList_fall": [
-            "212",
-            "218",
-            "219",
+            "214",
             "220",
-            "225",
-            "229",
-            "233"
+            "221",
+            "222",
+            "227",
+            "231",
+            "235"
         ],
         "classList_spring": [
             "206",
@@ -3198,6 +3221,9 @@
             "226",
             "230",
             "231"
+        ],
+        "classList_summer": [
+            "40"
         ],
         "classTimes": {
             "F": [],
@@ -3231,8 +3257,8 @@
     {
         "classHours": "4hr 0min",
         "classList_fall": [
-            "226",
-            "234"
+            "228",
+            "236"
         ],
         "classList_spring": [
             "207",
@@ -3268,24 +3294,33 @@
         ]
     },
     {
-        "classHours": "5hr 45min",
+        "classHours": "14hr 5min",
         "classList_spring": [
             "210",
             "215"
+        ],
+        "classList_summer": [
+            "36"
         ],
         "classTimes": {
             "F": [
                 "09:30AM-12:35PM"
             ],
-            "M": [],
+            "M": [
+                "08:00AM-10:05AM"
+            ],
             "Sa": [],
             "T": [
+                "08:00AM-10:05AM",
                 "09:00AM-10:20AM"
             ],
             "Th": [
+                "08:00AM-10:05AM",
                 "09:00AM-10:20AM"
             ],
-            "W": []
+            "W": [
+                "08:00AM-10:05AM"
+            ]
         },
         "email": null,
         "id": "83",
@@ -3321,18 +3356,24 @@
         ]
     },
     {
-        "classHours": "3hr 5min",
+        "classHours": "9hr 25min",
         "classList_spring": [
             "212"
+        ],
+        "classList_summer": [
+            "39"
         ],
         "classTimes": {
             "F": [],
             "M": [],
             "Sa": [],
             "T": [
+                "01:00PM-04:10PM",
                 "06:00PM-09:05PM"
             ],
-            "Th": [],
+            "Th": [
+                "01:00PM-04:10PM"
+            ],
             "W": []
         },
         "email": null,
@@ -3485,9 +3526,9 @@
     {
         "classHours": "39hr 5min",
         "classList_fall": [
-            "209",
-            "221",
-            "222"
+            "211",
+            "223",
+            "224"
         ],
         "classList_spring": [
             "221",
@@ -3537,17 +3578,23 @@
         ]
     },
     {
-        "classHours": "3hr 5min",
+        "classHours": "9hr 25min",
         "classList_spring": [
             "225"
+        ],
+        "classList_summer": [
+            "43"
         ],
         "classTimes": {
             "F": [],
             "M": [],
             "Sa": [],
-            "T": [],
+            "T": [
+                "06:00PM-09:10PM"
+            ],
             "Th": [
-                "06:00PM-09:05PM"
+                "06:00PM-09:05PM",
+                "06:00PM-09:10PM"
             ],
             "W": []
         },
@@ -3613,8 +3660,8 @@
     {
         "classHours": "14hr 35min",
         "classList_fall": [
-            "272",
-            "273"
+            "275",
+            "276"
         ],
         "classList_spring": [
             "243",
@@ -3680,17 +3727,17 @@
     {
         "classHours": "10hr 15min",
         "classList_fall": [
-            "262",
-            "263",
-            "264",
+            "265",
             "266",
-            "268",
+            "267",
             "269",
-            "280",
-            "777",
-            "778",
-            "779",
-            "781"
+            "271",
+            "272",
+            "283",
+            "780",
+            "781",
+            "782",
+            "784"
         ],
         "classList_spring": [
             "247",
@@ -3736,17 +3783,15 @@
         ]
     },
     {
-        "classHours": "16hr 20min",
+        "classHours": "15hr 0min",
         "classList_fall": [
-            "265",
-            "267",
+            "268",
             "270",
-            "271",
-            "275",
-            "276",
-            "277",
-            "780",
-            "782"
+            "278",
+            "279",
+            "280",
+            "783",
+            "785"
         ],
         "classList_spring": [
             "250",
@@ -3757,9 +3802,7 @@
             "756"
         ],
         "classTimes": {
-            "F": [
-                "11:15AM-12:35PM"
-            ],
+            "F": [],
             "M": [
                 "01:00PM-02:20PM",
                 "07:00PM-10:05PM"
@@ -3786,20 +3829,27 @@
         ]
     },
     {
-        "classHours": "1hr 20min",
+        "classHours": "5hr 45min",
+        "classList_fall": [
+            "264",
+            "274"
+        ],
         "classList_spring": [
             "251",
             "755"
         ],
         "classTimes": {
             "F": [
+                "11:15AM-12:35PM",
                 "01:00PM-02:20PM"
             ],
             "M": [],
             "Sa": [],
             "T": [],
             "Th": [],
-            "W": []
+            "W": [
+                "06:00PM-09:05PM"
+            ]
         },
         "email": null,
         "id": "99",
@@ -3812,7 +3862,12 @@
         ]
     },
     {
-        "classHours": "9hr 5min",
+        "classHours": "17hr 30min",
+        "classList_fall": [
+            "262",
+            "277",
+            "281"
+        ],
         "classList_spring": [
             "255",
             "262"
@@ -3823,17 +3878,22 @@
         "classTimes": {
             "F": [],
             "M": [
-                "10:15AM-12:20PM"
+                "10:15AM-12:20PM",
+                "10:30AM-11:50AM"
             ],
             "Sa": [],
             "T": [
+                "10:30AM-11:50AM",
                 "07:00PM-10:05PM"
             ],
             "Th": [
-                "07:00PM-08:50PM"
+                "10:30AM-11:50AM",
+                "07:00PM-08:50PM",
+                "07:00PM-10:05PM"
             ],
             "W": [
-                "10:15AM-12:20PM"
+                "10:15AM-12:20PM",
+                "10:30AM-11:50AM"
             ]
         },
         "email": null,
@@ -3871,6 +3931,9 @@
     },
     {
         "classHours": "3hr 5min",
+        "classList_fall": [
+            "282"
+        ],
         "classList_spring": [
             "261"
         ],
@@ -3896,8 +3959,8 @@
     {
         "classHours": "1hr 20min",
         "classList_fall": [
-            "654",
-            "661"
+            "656",
+            "663"
         ],
         "classList_spring": [
             "263"
@@ -3929,7 +3992,7 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "290"
+            "293"
         ],
         "classList_spring": [
             "271"
@@ -3958,8 +4021,8 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "285",
-            "542"
+            "288",
+            "546"
         ],
         "classList_spring": [
             "273",
@@ -3990,8 +4053,8 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "289",
-            "293"
+            "292",
+            "296"
         ],
         "classList_spring": [
             "275",
@@ -4026,7 +4089,7 @@
     {
         "classHours": "3hr 10min",
         "classList_fall": [
-            "543"
+            "547"
         ],
         "classList_spring": [
             "277",
@@ -4055,7 +4118,7 @@
     {
         "classHours": "8hr 0min",
         "classList_fall": [
-            "297"
+            "300"
         ],
         "classList_spring": [
             "281"
@@ -4086,7 +4149,7 @@
     {
         "classHours": "8hr 40min",
         "classList_fall": [
-            "298"
+            "301"
         ],
         "classList_spring": [
             "282"
@@ -4113,11 +4176,11 @@
     {
         "classHours": "21hr 20min",
         "classList_fall": [
-            "312",
-            "314",
-            "319",
+            "315",
+            "317",
             "322",
-            "324"
+            "325",
+            "327"
         ],
         "classList_spring": [
             "285",
@@ -4170,11 +4233,11 @@
     {
         "classHours": "25hr 50min",
         "classList_fall": [
-            "302",
-            "345",
-            "347",
-            "375",
-            "402"
+            "305",
+            "348",
+            "350",
+            "378",
+            "405"
         ],
         "classList_spring": [
             "286",
@@ -4222,13 +4285,11 @@
         ]
     },
     {
-        "classHours": "6hr 5min",
+        "classHours": "3hr 25min",
         "classList_fall": [
-            "376",
-            "378",
-            "391",
-            "394",
-            "400"
+            "379",
+            "387",
+            "394"
         ],
         "classList_spring": [
             "288",
@@ -4245,13 +4306,10 @@
             "F": [],
             "M": [
                 "01:00PM-02:20PM",
-                "02:30PM-04:35PM",
-                "07:00PM-08:20PM"
+                "02:30PM-04:35PM"
             ],
             "Sa": [],
-            "T": [
-                "01:00PM-02:20PM"
-            ],
+            "T": [],
             "Th": [],
             "W": []
         },
@@ -4268,13 +4326,13 @@
     {
         "classHours": "6hr 50min",
         "classList_fall": [
-            "303",
-            "304",
-            "305",
             "306",
-            "365",
-            "372",
-            "401"
+            "307",
+            "308",
+            "309",
+            "368",
+            "375",
+            "404"
         ],
         "classList_spring": [
             "289",
@@ -4316,15 +4374,15 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "307",
-            "308",
-            "313",
-            "317",
-            "318",
-            "326",
-            "328",
-            "330",
-            "332"
+            "310",
+            "311",
+            "316",
+            "320",
+            "321",
+            "329",
+            "331",
+            "333",
+            "335"
         ],
         "classList_spring": [
             "293",
@@ -4364,12 +4422,12 @@
     {
         "classHours": "28hr 30min",
         "classList_fall": [
-            "321",
-            "323",
-            "334",
-            "340",
-            "381",
-            "397"
+            "324",
+            "326",
+            "337",
+            "343",
+            "384",
+            "400"
         ],
         "classList_spring": [
             "295",
@@ -4423,12 +4481,12 @@
     {
         "classHours": "13hr 20min",
         "classList_fall": [
-            "310",
-            "329",
-            "331",
-            "373",
-            "374",
-            "380"
+            "313",
+            "332",
+            "334",
+            "376",
+            "377",
+            "383"
         ],
         "classList_spring": [
             "296",
@@ -4469,13 +4527,13 @@
     {
         "classHours": "44hr 0min",
         "classList_fall": [
-            "301",
-            "325",
-            "327",
-            "349",
-            "350",
-            "382",
-            "404"
+            "304",
+            "328",
+            "330",
+            "352",
+            "353",
+            "385",
+            "407"
         ],
         "classList_spring": [
             "298",
@@ -4542,11 +4600,10 @@
     {
         "classHours": "26hr 50min",
         "classList_fall": [
-            "315",
-            "316",
-            "336",
-            "341",
-            "360"
+            "318",
+            "319",
+            "339",
+            "344"
         ],
         "classList_spring": [
             "301",
@@ -4589,7 +4646,10 @@
         ]
     },
     {
-        "classHours": "8hr 0min",
+        "classHours": "12hr 10min",
+        "classList_fall": [
+            "359"
+        ],
         "classList_spring": [
             "305",
             "307",
@@ -4603,8 +4663,12 @@
                 "01:00PM-02:20PM"
             ],
             "Sa": [],
-            "T": [],
-            "Th": [],
+            "T": [
+                "01:00PM-03:05PM"
+            ],
+            "Th": [
+                "01:00PM-03:05PM"
+            ],
             "W": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
@@ -4617,17 +4681,18 @@
         "office": null,
         "phone": null,
         "subjects": [
-            "ENGRD"
+            "ENGRD",
+            "ENGWR"
         ]
     },
     {
         "classHours": "26hr 30min",
         "classList_fall": [
-            "367",
-            "368",
-            "369",
-            "389",
-            "390"
+            "370",
+            "371",
+            "372",
+            "392",
+            "393"
         ],
         "classList_spring": [
             "316",
@@ -4681,11 +4746,11 @@
     {
         "classHours": "24hr 40min",
         "classList_fall": [
-            "309",
-            "335",
-            "351",
-            "371",
-            "384"
+            "312",
+            "338",
+            "354",
+            "374",
+            "403"
         ],
         "classList_spring": [
             "322",
@@ -4737,12 +4802,12 @@
     {
         "classHours": "30hr 0min",
         "classList_fall": [
-            "346",
-            "352",
-            "370",
-            "377",
-            "395",
-            "403"
+            "349",
+            "355",
+            "373",
+            "380",
+            "398",
+            "406"
         ],
         "classList_spring": [
             "323",
@@ -4791,7 +4856,11 @@
         ]
     },
     {
-        "classHours": "11hr 10min",
+        "classHours": "13hr 50min",
+        "classList_fall": [
+            "381",
+            "408"
+        ],
         "classList_spring": [
             "324",
             "380"
@@ -4804,6 +4873,7 @@
             "M": [
                 "10:15AM-11:40AM",
                 "01:00PM-03:05PM",
+                "04:00PM-05:20PM",
                 "07:00PM-08:20PM"
             ],
             "Sa": [],
@@ -4815,7 +4885,8 @@
             ],
             "W": [
                 "10:15AM-11:40AM",
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "04:00PM-05:20PM"
             ]
         },
         "email": null,
@@ -4866,7 +4937,11 @@
         ]
     },
     {
-        "classHours": "16hr 40min",
+        "classHours": "20hr 50min",
+        "classList_fall": [
+            "341",
+            "358"
+        ],
         "classList_spring": [
             "326",
             "328"
@@ -4883,11 +4958,13 @@
             "Sa": [],
             "T": [
                 "08:00AM-10:05AM",
-                "06:00PM-08:05PM"
+                "06:00PM-08:05PM",
+                "07:00PM-09:05PM"
             ],
             "Th": [
                 "08:00AM-10:05AM",
-                "06:00PM-08:05PM"
+                "06:00PM-08:05PM",
+                "07:00PM-09:05PM"
             ],
             "W": [
                 "08:00AM-10:05AM",
@@ -4930,7 +5007,11 @@
         ]
     },
     {
-        "classHours": "15hr 45min",
+        "classHours": "23hr 0min",
+        "classList_fall": [
+            "361",
+            "388"
+        ],
         "classList_spring": [
             "336",
             "362"
@@ -4946,14 +5027,17 @@
             "Sa": [],
             "T": [
                 "06:00PM-08:50PM",
-                "07:00PM-10:05PM"
+                "07:00PM-10:05PM",
+                "07:00PM-09:05PM"
             ],
             "Th": [
-                "06:00PM-08:50PM"
+                "06:00PM-08:50PM",
+                "07:00PM-09:05PM"
             ],
             "W": [
                 "05:30PM-07:35PM",
-                "06:00PM-08:50PM"
+                "06:00PM-08:50PM",
+                "07:00PM-10:05PM"
             ]
         },
         "email": null,
@@ -4966,7 +5050,10 @@
         ]
     },
     {
-        "classHours": "17hr 10min",
+        "classHours": "21hr 20min",
+        "classList_fall": [
+            "356"
+        ],
         "classList_spring": [
             "338",
             "361",
@@ -4978,7 +5065,8 @@
         "classTimes": {
             "F": [],
             "M": [
-                "10:30AM-01:35PM"
+                "10:30AM-01:35PM",
+                "06:30PM-08:35PM"
             ],
             "Sa": [],
             "T": [
@@ -4992,7 +5080,8 @@
                 "07:00PM-09:05PM"
             ],
             "W": [
-                "10:30AM-01:35PM"
+                "10:30AM-01:35PM",
+                "06:30PM-08:35PM"
             ]
         },
         "email": null,
@@ -5007,10 +5096,10 @@
     {
         "classHours": "36hr 0min",
         "classList_fall": [
-            "339",
-            "344",
-            "364",
-            "393"
+            "342",
+            "347",
+            "367",
+            "396"
         ],
         "classList_spring": [
             "340",
@@ -5059,7 +5148,11 @@
         ]
     },
     {
-        "classHours": "6hr 50min",
+        "classHours": "13hr 40min",
+        "classList_fall": [
+            "364",
+            "402"
+        ],
         "classList_spring": [
             "342",
             "372"
@@ -5071,8 +5164,14 @@
                 "01:00PM-02:20PM"
             ],
             "Sa": [],
-            "T": [],
-            "Th": [],
+            "T": [
+                "09:00AM-10:20AM",
+                "10:30AM-12:35PM"
+            ],
+            "Th": [
+                "09:00AM-10:20AM",
+                "10:30AM-12:35PM"
+            ],
             "W": [
                 "10:30AM-12:35PM",
                 "01:00PM-02:20PM"
@@ -5090,10 +5189,10 @@
     {
         "classHours": "19hr 40min",
         "classList_fall": [
-            "337",
-            "387",
-            "388",
-            "406"
+            "340",
+            "390",
+            "391",
+            "409"
         ],
         "classList_spring": [
             "344",
@@ -5162,6 +5261,9 @@
     },
     {
         "classHours": "6hr 50min",
+        "classList_fall": [
+            "346"
+        ],
         "classList_spring": [
             "346",
             "375"
@@ -5192,13 +5294,18 @@
         ]
     },
     {
-        "classHours": "6hr 10min",
+        "classHours": "10hr 20min",
+        "classList_fall": [
+            "363"
+        ],
         "classList_spring": [
             "348"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "10:30AM-12:35PM"
+            ],
             "Sa": [],
             "T": [
                 "10:30AM-01:35PM"
@@ -5206,7 +5313,9 @@
             "Th": [
                 "10:30AM-01:35PM"
             ],
-            "W": []
+            "W": [
+                "10:30AM-12:35PM"
+            ]
         },
         "email": null,
         "id": "134",
@@ -5275,13 +5384,18 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "6hr 50min",
+        "classList_fall": [
+            "360"
+        ],
         "classList_spring": [
             "368"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "07:00PM-09:05PM"
+            ],
             "Sa": [],
             "T": [
                 "05:30PM-06:50PM"
@@ -5289,7 +5403,9 @@
             "Th": [
                 "05:30PM-06:50PM"
             ],
-            "W": []
+            "W": [
+                "07:00PM-09:05PM"
+            ]
         },
         "email": null,
         "id": "137",
@@ -5325,19 +5441,25 @@
         ]
     },
     {
-        "classHours": "1hr 20min",
+        "classHours": "4hr 0min",
+        "classList_fall": [
+            "410"
+        ],
         "classList_spring": [
             "371"
         ],
         "classTimes": {
             "F": [],
             "M": [
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "07:00PM-08:20PM"
             ],
             "Sa": [],
             "T": [],
             "Th": [],
-            "W": []
+            "W": [
+                "07:00PM-08:20PM"
+            ]
         },
         "email": null,
         "id": "139",
@@ -5349,9 +5471,10 @@
         ]
     },
     {
-        "classHours": "21hr 5min",
+        "classHours": "25hr 15min",
         "classList_fall": [
-            "499"
+            "336",
+            "502"
         ],
         "classList_spring": [
             "373",
@@ -5364,6 +5487,7 @@
         "classTimes": {
             "F": [],
             "M": [
+                "08:15AM-10:20AM",
                 "09:00AM-10:20AM",
                 "06:00PM-09:10PM"
             ],
@@ -5378,6 +5502,7 @@
                 "10:30AM-11:50AM"
             ],
             "W": [
+                "08:15AM-10:20AM",
                 "09:00AM-10:20AM",
                 "06:00PM-09:10PM"
             ]
@@ -5393,7 +5518,11 @@
         ]
     },
     {
-        "classHours": "4hr 0min",
+        "classHours": "9hr 30min",
+        "classList_fall": [
+            "351",
+            "397"
+        ],
         "classList_spring": [
             "385",
             "396"
@@ -5402,13 +5531,17 @@
             "F": [],
             "M": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "02:30PM-04:35PM"
             ],
             "Sa": [],
-            "T": [],
+            "T": [
+                "01:00PM-02:20PM"
+            ],
             "Th": [],
             "W": [
-                "09:00AM-10:20AM"
+                "09:00AM-10:20AM",
+                "02:30PM-04:35PM"
             ]
         },
         "email": null,
@@ -5421,7 +5554,16 @@
         ]
     },
     {
-        "classHours": "10hr 20min",
+        "classHours": "24hr 50min",
+        "classList_fall": [
+            "411",
+            "412",
+            "414",
+            "417",
+            "427",
+            "428",
+            "433"
+        ],
         "classList_spring": [
             "400",
             "401",
@@ -5432,7 +5574,11 @@
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "11:15AM-01:20PM",
+                "01:30PM-03:35PM",
+                "03:45PM-06:50PM"
+            ],
             "Sa": [],
             "T": [
                 "09:00AM-11:05AM",
@@ -5442,7 +5588,10 @@
                 "09:00AM-11:05AM"
             ],
             "W": [
-                "03:30PM-06:35PM"
+                "11:15AM-01:20PM",
+                "01:30PM-03:35PM",
+                "03:30PM-06:35PM",
+                "03:45PM-06:50PM"
             ]
         },
         "email": null,
@@ -5452,12 +5601,20 @@
         "phone": null,
         "subjects": [
             "ESL",
+            "ESLL",
             "ESLR",
             "ESLW"
         ]
     },
     {
-        "classHours": "18hr 10min",
+        "classHours": "26hr 30min",
+        "classList_fall": [
+            "413",
+            "418",
+            "419",
+            "423",
+            "431"
+        ],
         "classList_spring": [
             "402",
             "404",
@@ -5468,8 +5625,10 @@
         "classTimes": {
             "F": [],
             "M": [
+                "01:30PM-03:35PM",
                 "05:30PM-07:00PM",
-                "07:00PM-09:05PM"
+                "07:00PM-09:05PM",
+                "07:10PM-09:15PM"
             ],
             "Sa": [],
             "T": [
@@ -5483,7 +5642,9 @@
                 "03:45PM-05:50PM"
             ],
             "W": [
-                "07:00PM-09:05PM"
+                "01:30PM-03:35PM",
+                "07:00PM-09:05PM",
+                "07:10PM-09:15PM"
             ]
         },
         "email": "BjerkeA@flc.losrios.edu",
@@ -5495,7 +5656,8 @@
             "ESL",
             "ESLG",
             "ESLL",
-            "ESLR"
+            "ESLR",
+            "ESLW"
         ]
     },
     {
@@ -5523,7 +5685,14 @@
         ]
     },
     {
-        "classHours": "20hr 50min",
+        "classHours": "25hr 0min",
+        "classList_fall": [
+            "420",
+            "421",
+            "425",
+            "426",
+            "429"
+        ],
         "classList_spring": [
             "406",
             "410",
@@ -5540,10 +5709,12 @@
             ],
             "Sa": [],
             "T": [
+                "09:00AM-11:05AM",
                 "11:15AM-01:20PM",
                 "01:30PM-03:35PM"
             ],
             "Th": [
+                "09:00AM-11:05AM",
                 "11:15AM-01:20PM",
                 "01:30PM-03:35PM"
             ],
@@ -5621,15 +5792,27 @@
         ]
     },
     {
-        "classHours": "12hr 30min",
+        "classHours": "25hr 5min",
+        "classList_fall": [
+            "416",
+            "422",
+            "424",
+            "430",
+            "432"
+        ],
         "classList_spring": [
             "415",
             "419",
             "421"
         ],
         "classTimes": {
-            "F": [],
-            "M": [],
+            "F": [
+                "09:00AM-01:15PM"
+            ],
+            "M": [
+                "09:00AM-11:05AM",
+                "11:15AM-01:20PM"
+            ],
             "Sa": [],
             "T": [
                 "09:00AM-11:05AM",
@@ -5641,7 +5824,10 @@
                 "11:15AM-01:20PM",
                 "01:30PM-03:35PM"
             ],
-            "W": []
+            "W": [
+                "09:00AM-11:05AM",
+                "11:15AM-01:20PM"
+            ]
         },
         "email": "tinocod@flc.losrios.edu",
         "id": "148",
@@ -5649,6 +5835,7 @@
         "office": null,
         "phone": "(916) 608-6661",
         "subjects": [
+            "ESLG",
             "ESLR",
             "ESLW"
         ]
@@ -5707,8 +5894,8 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "440",
-            "441"
+            "443",
+            "444"
         ],
         "classList_spring": [
             "433",
@@ -5764,9 +5951,9 @@
     {
         "classHours": "16hr 10min",
         "classList_fall": [
-            "446",
-            "448",
-            "449"
+            "449",
+            "451",
+            "452"
         ],
         "classList_spring": [
             "440",
@@ -5837,7 +6024,7 @@
     {
         "classHours": "12hr 20min",
         "classList_fall": [
-            "451"
+            "454"
         ],
         "classList_spring": [
             "444"
@@ -5868,13 +6055,13 @@
     {
         "classHours": "9hr 30min",
         "classList_fall": [
-            "452",
-            "453",
-            "460",
-            "464",
-            "465",
-            "466",
-            "467"
+            "455",
+            "456",
+            "463",
+            "467",
+            "468",
+            "469",
+            "470"
         ],
         "classList_spring": [
             "445",
@@ -5914,8 +6101,8 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "456",
-            "458"
+            "459",
+            "461"
         ],
         "classList_spring": [
             "447"
@@ -5944,7 +6131,7 @@
     {
         "classHours": "5hr 55min",
         "classList_fall": [
-            "457"
+            "460"
         ],
         "classList_spring": [
             "448"
@@ -5975,8 +6162,8 @@
     {
         "classHours": "8hr 50min",
         "classList_fall": [
-            "468",
-            "469"
+            "471",
+            "472"
         ],
         "classList_spring": [
             "449",
@@ -6033,11 +6220,11 @@
     {
         "classHours": "31hr 10min",
         "classList_fall": [
-            "679",
-            "692",
-            "696",
-            "703",
-            "725"
+            "681",
+            "694",
+            "698",
+            "705",
+            "728"
         ],
         "classList_spring": [
             "459",
@@ -6053,31 +6240,31 @@
         "classTimes": {
             "F": [
                 "09:00AM-11:50AM",
-                "03:00PM-04:50PM"
+                "02:30PM-04:20PM"
             ],
             "M": [
                 "07:30AM-08:50AM",
                 "09:00AM-10:20AM",
                 "09:00AM-11:50AM",
-                "03:00PM-04:50PM"
+                "02:30PM-04:20PM"
             ],
             "Sa": [],
             "T": [
                 "09:00AM-10:20AM",
                 "09:00AM-11:50AM",
                 "10:30AM-11:50AM",
-                "03:00PM-04:50PM"
+                "02:30PM-04:20PM"
             ],
             "Th": [
                 "09:00AM-10:20AM",
                 "09:00AM-11:50AM",
                 "10:30AM-11:50AM",
-                "03:00PM-04:50PM"
+                "02:30PM-04:20PM"
             ],
             "W": [
                 "07:30AM-08:50AM",
                 "09:00AM-10:20AM",
-                "03:00PM-04:50PM"
+                "02:30PM-04:20PM"
             ]
         },
         "email": "torrezm@flc.losrios.edu",
@@ -6093,13 +6280,13 @@
         ]
     },
     {
-        "classHours": "30hr 5min",
+        "classHours": "29hr 40min",
         "classList_fall": [
-            "475",
-            "480",
-            "722",
-            "726",
-            "727"
+            "478",
+            "483",
+            "724",
+            "729",
+            "730"
         ],
         "classList_spring": [
             "460",
@@ -6116,28 +6303,28 @@
         ],
         "classTimes": {
             "F": [
-                "08:30AM-10:55AM",
+                "08:30AM-10:50AM",
                 "09:00AM-12:05PM",
                 "09:30AM-12:35PM",
                 "01:00PM-02:50PM"
             ],
             "M": [
                 "07:30AM-08:50AM",
-                "08:30AM-10:55AM",
+                "08:30AM-10:50AM",
                 "01:00PM-02:50PM"
             ],
             "Sa": [],
             "T": [
-                "08:30AM-10:55AM",
+                "08:30AM-10:50AM",
                 "01:00PM-02:50PM"
             ],
             "Th": [
-                "08:30AM-10:55AM",
+                "08:30AM-10:50AM",
                 "01:00PM-02:50PM"
             ],
             "W": [
                 "07:30AM-08:50AM",
-                "08:30AM-10:55AM",
+                "08:30AM-10:50AM",
                 "01:00PM-02:50PM"
             ]
         },
@@ -6156,12 +6343,12 @@
     {
         "classHours": "32hr 45min",
         "classList_fall": [
-            "678",
-            "686",
-            "689",
-            "699",
+            "680",
+            "688",
+            "691",
             "701",
-            "723"
+            "703",
+            "725"
         ],
         "classList_spring": [
             "461",
@@ -6216,10 +6403,10 @@
     {
         "classHours": "10hr 40min",
         "classList_fall": [
-            "479",
-            "690",
-            "706",
-            "707"
+            "482",
+            "692",
+            "708",
+            "709"
         ],
         "classList_spring": [
             "463",
@@ -6259,11 +6446,11 @@
     {
         "classHours": "16hr 0min",
         "classList_fall": [
-            "481",
-            "482",
-            "483",
-            "491",
-            "498"
+            "484",
+            "485",
+            "486",
+            "494",
+            "501"
         ],
         "classList_spring": [
             "464",
@@ -6309,7 +6496,7 @@
     {
         "classHours": "16hr 0min",
         "classList_fall": [
-            "493"
+            "496"
         ],
         "classList_spring": [
             "466",
@@ -6347,11 +6534,11 @@
     {
         "classHours": "9hr 20min",
         "classList_fall": [
-            "488",
-            "489",
+            "491",
             "492",
-            "496",
-            "502"
+            "495",
+            "499",
+            "505"
         ],
         "classList_spring": [
             "467",
@@ -6390,12 +6577,12 @@
     {
         "classHours": "19hr 5min",
         "classList_fall": [
-            "485",
-            "486",
-            "494",
-            "495",
-            "501",
-            "503"
+            "488",
+            "489",
+            "497",
+            "498",
+            "504",
+            "506"
         ],
         "classList_spring": [
             "469",
@@ -6441,8 +6628,8 @@
     {
         "classHours": "19hr 45min",
         "classList_fall": [
-            "487",
-            "490"
+            "490",
+            "493"
         ],
         "classList_spring": [
             "470",
@@ -6519,8 +6706,8 @@
     {
         "classHours": "19hr 5min",
         "classList_fall": [
-            "484",
-            "497"
+            "487",
+            "500"
         ],
         "classList_spring": [
             "486"
@@ -6561,9 +6748,9 @@
     {
         "classHours": "8hr 0min",
         "classList_fall": [
-            "504",
-            "508",
-            "511"
+            "507",
+            "511",
+            "514"
         ],
         "classList_spring": [
             "488",
@@ -6599,7 +6786,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "505"
+            "508"
         ],
         "classList_spring": [
             "489"
@@ -6654,8 +6841,8 @@
     {
         "classHours": "10hr 40min",
         "classList_fall": [
-            "509",
-            "510"
+            "512",
+            "513"
         ],
         "classList_spring": [
             "493",
@@ -6693,7 +6880,7 @@
     {
         "classHours": "2hr 5min",
         "classList_fall": [
-            "514"
+            "517"
         ],
         "classList_spring": [
             "495"
@@ -6720,7 +6907,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "516"
+            "519"
         ],
         "classList_spring": [
             "496"
@@ -6883,13 +7070,20 @@
         ]
     },
     {
-        "classHours": "2hr 40min",
+        "classHours": "6hr 40min",
+        "classList_fall": [
+            "532",
+            "535"
+        ],
         "classList_spring": [
             "514"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "09:00AM-10:20AM",
+                "06:00PM-07:20PM"
+            ],
             "Sa": [],
             "T": [
                 "09:00AM-10:20AM"
@@ -6897,7 +7091,9 @@
             "Th": [
                 "09:00AM-10:20AM"
             ],
-            "W": []
+            "W": [
+                "09:00AM-10:20AM"
+            ]
         },
         "email": null,
         "id": "183",
@@ -6935,14 +7131,20 @@
         ]
     },
     {
-        "classHours": "3hr 30min",
+        "classHours": "7hr 0min",
+        "classList_fall": [
+            "534",
+            "537"
+        ],
         "classList_spring": [
             "516",
             "517"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "10:30AM-11:50AM"
+            ],
             "Sa": [],
             "T": [
                 "09:00AM-09:50AM",
@@ -6951,7 +7153,10 @@
             "Th": [
                 "10:30AM-11:50AM"
             ],
-            "W": []
+            "W": [
+                "09:00AM-09:50AM",
+                "10:30AM-11:50AM"
+            ]
         },
         "email": null,
         "id": "185",
@@ -6965,7 +7170,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "540"
+            "543"
         ],
         "classList_spring": [
             "523"
@@ -6993,7 +7198,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "545"
+            "549"
         ],
         "classList_spring": [
             "525",
@@ -7019,8 +7224,8 @@
     {
         "classHours": "10hr 50min",
         "classList_fall": [
-            "609",
-            "610"
+            "613",
+            "614"
         ],
         "classList_spring": [
             "539",
@@ -7055,17 +7260,20 @@
         ]
     },
     {
-        "classHours": "18hr 10min",
+        "classHours": "31hr 30min",
         "classList_fall": [
-            "560",
-            "563",
-            "612",
-            "620"
+            "564",
+            "567",
+            "616",
+            "624"
         ],
         "classList_spring": [
             "540",
             "543",
             "596"
+        ],
+        "classList_summer": [
+            "110"
         ],
         "classTimes": {
             "F": [
@@ -7076,15 +7284,21 @@
             "M": [
                 "07:00AM-08:30AM",
                 "08:50AM-10:20AM",
+                "10:15AM-01:35PM",
                 "10:30AM-12:00PM",
                 "07:00PM-09:20PM"
             ],
             "Sa": [],
-            "T": [],
-            "Th": [],
+            "T": [
+                "10:15AM-01:35PM"
+            ],
+            "Th": [
+                "10:15AM-01:35PM"
+            ],
             "W": [
                 "07:00AM-08:30AM",
                 "08:50AM-10:20AM",
+                "10:15AM-01:35PM",
                 "10:30AM-12:00PM",
                 "07:00PM-09:20PM"
             ]
@@ -7101,7 +7315,7 @@
     {
         "classHours": "4hr 40min",
         "classList_fall": [
-            "561"
+            "565"
         ],
         "classList_spring": [
             "541"
@@ -7130,9 +7344,9 @@
     {
         "classHours": "18hr 20min",
         "classList_fall": [
-            "562",
-            "603",
-            "614"
+            "566",
+            "607",
+            "618"
         ],
         "classList_spring": [
             "542",
@@ -7174,10 +7388,10 @@
     {
         "classHours": "15hr 50min",
         "classList_fall": [
-            "559",
-            "605",
-            "619",
-            "625"
+            "563",
+            "609",
+            "623",
+            "629"
         ],
         "classList_spring": [
             "544",
@@ -7217,11 +7431,11 @@
     {
         "classHours": "40hr 10min",
         "classList_fall": [
-            "587",
-            "604",
-            "818",
-            "819",
-            "821"
+            "591",
+            "608",
+            "822",
+            "823",
+            "825"
         ],
         "classList_spring": [
             "545",
@@ -7312,12 +7526,12 @@
     {
         "classHours": "46hr 10min",
         "classList_fall": [
-            "567",
-            "573",
-            "580",
-            "617",
-            "622",
-            "816"
+            "571",
+            "577",
+            "584",
+            "621",
+            "626",
+            "820"
         ],
         "classList_spring": [
             "547",
@@ -7419,9 +7633,9 @@
     {
         "classHours": "32hr 20min",
         "classList_fall": [
-            "568",
-            "591",
-            "618"
+            "572",
+            "595",
+            "622"
         ],
         "classList_spring": [
             "549",
@@ -7470,11 +7684,11 @@
     {
         "classHours": "26hr 30min",
         "classList_fall": [
-            "571",
             "575",
-            "577",
-            "585",
-            "814"
+            "579",
+            "581",
+            "589",
+            "818"
         ],
         "classList_spring": [
             "550",
@@ -7523,10 +7737,10 @@
     {
         "classHours": "26hr 20min",
         "classList_fall": [
-            "300",
-            "565",
-            "566",
-            "597"
+            "303",
+            "569",
+            "570",
+            "601"
         ],
         "classList_spring": [
             "551",
@@ -7577,9 +7791,9 @@
     {
         "classHours": "13hr 30min",
         "classList_fall": [
-            "574",
             "578",
-            "592"
+            "582",
+            "596"
         ],
         "classList_spring": [
             "552",
@@ -7618,9 +7832,9 @@
     {
         "classHours": "13hr 30min",
         "classList_fall": [
-            "596",
             "600",
-            "611"
+            "604",
+            "615"
         ],
         "classList_spring": [
             "557",
@@ -7659,9 +7873,9 @@
     {
         "classHours": "31hr 20min",
         "classList_fall": [
-            "581",
-            "582",
-            "583"
+            "585",
+            "586",
+            "587"
         ],
         "classList_spring": [
             "561",
@@ -7744,11 +7958,11 @@
     {
         "classHours": "49hr 20min",
         "classList_fall": [
-            "588",
-            "613",
-            "623",
-            "822",
-            "823"
+            "592",
+            "617",
+            "627",
+            "826",
+            "827"
         ],
         "classList_spring": [
             "566",
@@ -7810,10 +8024,10 @@
     {
         "classHours": "21hr 50min",
         "classList_fall": [
-            "557",
-            "558",
-            "594",
-            "595"
+            "561",
+            "562",
+            "598",
+            "599"
         ],
         "classList_spring": [
             "571",
@@ -7863,9 +8077,9 @@
     {
         "classHours": "18hr 0min",
         "classList_fall": [
-            "624",
-            "626",
-            "627"
+            "628",
+            "630",
+            "631"
         ],
         "classList_spring": [
             "572",
@@ -7909,10 +8123,10 @@
     {
         "classHours": "45hr 10min",
         "classList_fall": [
-            "599",
-            "606",
-            "615",
-            "628"
+            "603",
+            "610",
+            "619",
+            "632"
         ],
         "classList_spring": [
             "577",
@@ -7971,7 +8185,7 @@
             "579"
         ],
         "classList_summer": [
-            "110"
+            "111"
         ],
         "classTimes": {
             "F": [],
@@ -8003,7 +8217,7 @@
     {
         "classHours": "4hr 40min",
         "classList_fall": [
-            "602"
+            "606"
         ],
         "classList_spring": [
             "580"
@@ -8032,7 +8246,7 @@
     {
         "classHours": "21hr 20min",
         "classList_fall": [
-            "815"
+            "819"
         ],
         "classList_spring": [
             "582"
@@ -8111,8 +8325,8 @@
     {
         "classHours": "26hr 0min",
         "classList_fall": [
-            "616",
-            "621"
+            "620",
+            "625"
         ],
         "classList_spring": [
             "590",
@@ -8157,7 +8371,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "629"
+            "633"
         ],
         "classList_spring": [
             "603",
@@ -8238,7 +8452,7 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "631"
+            "635"
         ],
         "classList_spring": [
             "607",
@@ -8274,16 +8488,16 @@
         ]
     },
     {
-        "classHours": "27hr 35min",
+        "classHours": "24hr 55min",
         "classList_fall": [
-            "632",
-            "633",
+            "636",
             "637",
-            "639",
-            "641",
+            "642",
             "643",
+            "644",
             "649",
-            "650"
+            "650",
+            "651"
         ],
         "classList_spring": [
             "615",
@@ -8312,8 +8526,6 @@
                 "10:30AM-11:50AM",
                 "11:15AM-12:35PM",
                 "02:30PM-03:50PM",
-                "02:30PM-03:20PM",
-                "03:20PM-03:50PM",
                 "06:00PM-06:50PM",
                 "07:00PM-09:25PM"
             ],
@@ -8321,8 +8533,6 @@
                 "10:30AM-11:50AM",
                 "11:15AM-12:35PM",
                 "02:30PM-03:50PM",
-                "02:30PM-03:20PM",
-                "03:20PM-03:50PM",
                 "07:00PM-10:05PM"
             ],
             "W": [
@@ -8345,14 +8555,15 @@
         ]
     },
     {
-        "classHours": "25hr 20min",
+        "classHours": "27hr 15min",
         "classList_fall": [
-            "634",
-            "635",
-            "636",
+            "638",
+            "639",
+            "640",
             "646",
             "648",
-            "652"
+            "653",
+            "654"
         ],
         "classList_spring": [
             "618",
@@ -8363,7 +8574,9 @@
         ],
         "classTimes": {
             "F": [
-                "01:00PM-04:15PM"
+                "12:00PM-02:05PM",
+                "01:00PM-04:15PM",
+                "02:15PM-04:20PM"
             ],
             "M": [
                 "01:30PM-02:50PM",
@@ -8373,15 +8586,14 @@
             "Sa": [],
             "T": [
                 "10:30AM-11:20AM",
-                "11:30AM-12:35PM",
                 "01:00PM-02:20PM",
-                "01:45PM-03:10PM",
+                "02:05PM-02:55PM",
                 "03:00PM-04:20PM",
                 "04:00PM-05:20PM"
             ],
             "Th": [
                 "01:00PM-02:20PM",
-                "01:45PM-03:10PM",
+                "02:05PM-02:55PM",
                 "03:00PM-04:20PM",
                 "04:00PM-05:20PM",
                 "07:00PM-10:10PM"
@@ -8467,7 +8679,7 @@
     {
         "classHours": "1hr 50min",
         "classList_fall": [
-            "651"
+            "652"
         ],
         "classList_spring": [
             "634"
@@ -8494,7 +8706,7 @@
     {
         "classHours": "5hr 30min",
         "classList_fall": [
-            "653"
+            "655"
         ],
         "classList_spring": [
             "635"
@@ -8528,6 +8740,9 @@
     },
     {
         "classHours": "7hr 10min",
+        "classList_fall": [
+            "672"
+        ],
         "classList_spring": [
             "645",
             "647"
@@ -8561,11 +8776,11 @@
     {
         "classHours": "13hr 20min",
         "classList_fall": [
-            "668",
-            "669",
+            "670",
             "671",
             "673",
-            "675"
+            "675",
+            "677"
         ],
         "classList_spring": [
             "646",
@@ -8607,7 +8822,11 @@
         ]
     },
     {
-        "classHours": "4hr 0min",
+        "classHours": "6hr 40min",
+        "classList_fall": [
+            "674",
+            "676"
+        ],
         "classList_spring": [
             "649",
             "653"
@@ -8618,10 +8837,12 @@
             "Sa": [],
             "T": [
                 "09:00AM-10:20AM",
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "01:00PM-02:20PM"
             ],
             "Th": [
-                "10:30AM-11:50AM"
+                "10:30AM-11:50AM",
+                "01:00PM-02:20PM"
             ],
             "W": []
         },
@@ -8635,7 +8856,11 @@
         ]
     },
     {
-        "classHours": "17hr 5min",
+        "classHours": "20hr 10min",
+        "classList_fall": [
+            "678",
+            "679"
+        ],
         "classList_spring": [
             "655",
             "656"
@@ -8649,7 +8874,8 @@
             "M": [
                 "08:30AM-09:55AM",
                 "10:15AM-11:40AM",
-                "02:30PM-03:50PM"
+                "02:30PM-03:50PM",
+                "06:00PM-09:05PM"
             ],
             "Sa": [],
             "T": [
@@ -8679,8 +8905,8 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "698",
-            "700"
+            "700",
+            "702"
         ],
         "classList_spring": [
             "663"
@@ -8713,10 +8939,10 @@
     {
         "classHours": "37hr 50min",
         "classList_fall": [
-            "477",
-            "687",
-            "688",
-            "721"
+            "480",
+            "689",
+            "690",
+            "723"
         ],
         "classList_spring": [
             "664",
@@ -8779,8 +9005,8 @@
     {
         "classHours": "13hr 40min",
         "classList_fall": [
-            "478",
-            "695"
+            "481",
+            "697"
         ],
         "classList_spring": [
             "665",
@@ -8824,8 +9050,8 @@
     {
         "classHours": "8hr 0min",
         "classList_fall": [
-            "691",
-            "713"
+            "693",
+            "715"
         ],
         "classList_spring": [
             "666",
@@ -8863,9 +9089,9 @@
     {
         "classHours": "8hr 0min",
         "classList_fall": [
-            "680",
-            "681",
-            "702"
+            "682",
+            "683",
+            "704"
         ],
         "classList_spring": [
             "677",
@@ -8927,7 +9153,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "704"
+            "706"
         ],
         "classList_spring": [
             "681"
@@ -8958,10 +9184,10 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "708",
-            "709",
             "710",
-            "711"
+            "711",
+            "712",
+            "713"
         ],
         "classList_spring": [
             "683",
@@ -8995,10 +9221,10 @@
     {
         "classHours": "23hr 45min",
         "classList_fall": [
-            "712",
             "714",
-            "715",
-            "724"
+            "716",
+            "717",
+            "727"
         ],
         "classList_spring": [
             "687",
@@ -9011,24 +9237,24 @@
             "M": [
                 "09:00AM-10:20AM",
                 "01:00PM-03:05PM",
-                "01:00PM-02:20PM",
+                "02:30PM-03:50PM",
                 "06:00PM-07:20PM"
             ],
             "Sa": [],
             "T": [
                 "10:30AM-11:50AM",
                 "01:00PM-03:05PM",
-                "01:00PM-02:20PM"
+                "02:30PM-03:50PM"
             ],
             "Th": [
                 "10:30AM-11:50AM",
                 "01:00PM-03:05PM",
-                "01:00PM-02:20PM"
+                "02:30PM-03:50PM"
             ],
             "W": [
                 "09:00AM-10:20AM",
                 "01:00PM-03:05PM",
-                "01:00PM-02:20PM",
+                "02:30PM-03:50PM",
                 "06:00PM-07:20PM"
             ]
         },
@@ -9113,7 +9339,10 @@
         ]
     },
     {
-        "classHours": "10hr 25min",
+        "classHours": "15hr 45min",
+        "classList_fall": [
+            "726"
+        ],
         "classList_spring": [
             "695"
         ],
@@ -9122,17 +9351,21 @@
                 "01:00PM-03:05PM"
             ],
             "M": [
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "01:00PM-02:20PM"
             ],
             "Sa": [],
             "T": [
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "01:00PM-02:20PM"
             ],
             "Th": [
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "01:00PM-02:20PM"
             ],
             "W": [
-                "01:00PM-03:05PM"
+                "01:00PM-03:05PM",
+                "01:00PM-02:20PM"
             ]
         },
         "email": null,
@@ -9147,8 +9380,8 @@
     {
         "classHours": "30hr 15min",
         "classList_fall": [
-            "718",
-            "720"
+            "720",
+            "722"
         ],
         "classList_spring": [
             "702",
@@ -9199,7 +9432,7 @@
     {
         "classHours": "8hr 10min",
         "classList_fall": [
-            "734"
+            "737"
         ],
         "classList_spring": [
             "706",
@@ -9378,8 +9611,8 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "747",
-            "748"
+            "750",
+            "751"
         ],
         "classList_spring": [
             "722",
@@ -9406,7 +9639,11 @@
         ]
     },
     {
-        "classHours": "17hr 20min",
+        "classHours": "22hr 40min",
+        "classList_fall": [
+            "753",
+            "772"
+        ],
         "classList_spring": [
             "724",
             "726",
@@ -9418,7 +9655,9 @@
         "classTimes": {
             "F": [],
             "M": [
+                "09:00AM-10:20AM",
                 "10:15AM-12:20PM",
+                "10:30AM-11:50AM",
                 "01:00PM-04:15PM"
             ],
             "Sa": [],
@@ -9432,7 +9671,9 @@
                 "06:00PM-09:05PM"
             ],
             "W": [
-                "10:15AM-12:20PM"
+                "09:00AM-10:20AM",
+                "10:15AM-12:20PM",
+                "10:30AM-11:50AM"
             ]
         },
         "email": null,
@@ -9629,10 +9870,10 @@
     {
         "classHours": "18hr 40min",
         "classList_fall": [
-            "759",
-            "760",
-            "761",
-            "762"
+            "762",
+            "763",
+            "764",
+            "765"
         ],
         "classList_spring": [
             "733",
@@ -9671,7 +9912,8 @@
     {
         "classHours": "15hr 20min",
         "classList_fall": [
-            "775"
+            "754",
+            "778"
         ],
         "classList_spring": [
             "737",
@@ -9710,13 +9952,12 @@
         ]
     },
     {
-        "classHours": "13hr 45min",
+        "classHours": "11hr 5min",
         "classList_fall": [
-            "763",
-            "764",
-            "766",
             "767",
-            "768"
+            "769",
+            "770",
+            "771"
         ],
         "classList_spring": [
             "738",
@@ -9729,13 +9970,11 @@
             "M": [],
             "Sa": [],
             "T": [
-                "09:00AM-10:20AM",
                 "01:00PM-02:20PM",
                 "05:30PM-06:50PM",
                 "07:00PM-08:20PM"
             ],
             "Th": [
-                "09:00AM-10:20AM",
                 "01:00PM-02:20PM",
                 "05:30PM-06:50PM",
                 "07:00PM-08:20PM"
@@ -9785,7 +10024,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "772"
+            "775"
         ],
         "classList_spring": [
             "745"
@@ -9842,7 +10081,7 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "786"
+            "789"
         ],
         "classList_spring": [
             "759"
@@ -9897,11 +10136,11 @@
     {
         "classHours": "25hr 0min",
         "classList_fall": [
-            "787",
-            "788",
-            "789",
+            "790",
             "791",
-            "792"
+            "792",
+            "794",
+            "795"
         ],
         "classList_spring": [
             "762",
@@ -9973,13 +10212,14 @@
         ]
     },
     {
-        "classHours": "12hr 55min",
+        "classHours": "12hr 25min",
         "classList_fall": [
-            "793",
-            "795",
             "797",
             "798",
-            "801"
+            "799",
+            "800",
+            "802",
+            "805"
         ],
         "classList_spring": [
             "768",
@@ -9995,11 +10235,12 @@
             ],
             "Sa": [],
             "T": [
+                "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
-                "01:00PM-02:20PM",
-                "01:00PM-04:10PM"
+                "01:00PM-02:20PM"
             ],
             "Th": [
+                "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
                 "01:00PM-02:20PM"
             ],
@@ -10041,19 +10282,29 @@
         ]
     },
     {
-        "classHours": "3hr 5min",
+        "classHours": "11hr 25min",
         "classList_spring": [
             "774"
         ],
+        "classList_summer": [
+            "142"
+        ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "10:15AM-12:20PM"
+            ],
             "Sa": [],
             "T": [
+                "10:15AM-12:20PM",
                 "07:00PM-10:05PM"
             ],
-            "Th": [],
-            "W": []
+            "Th": [
+                "10:15AM-12:20PM"
+            ],
+            "W": [
+                "10:15AM-12:20PM"
+            ]
         },
         "email": null,
         "id": "266",
@@ -10067,10 +10318,10 @@
     {
         "classHours": "13hr 20min",
         "classList_fall": [
-            "802",
-            "803",
-            "805",
-            "810"
+            "806",
+            "807",
+            "809",
+            "814"
         ],
         "classList_spring": [
             "776",
@@ -10111,8 +10362,8 @@
     {
         "classHours": "13hr 30min",
         "classList_fall": [
-            "804",
-            "811"
+            "808",
+            "815"
         ],
         "classList_spring": [
             "778",
@@ -10180,8 +10431,8 @@
     {
         "classHours": "10hr 40min",
         "classList_fall": [
-            "807",
-            "812"
+            "811",
+            "816"
         ],
         "classList_spring": [
             "780",
@@ -10219,7 +10470,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "808"
+            "812"
         ],
         "classList_spring": [
             "781"
@@ -10250,7 +10501,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "806"
+            "810"
         ],
         "classList_spring": [
             "784"
@@ -10281,7 +10532,7 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "809"
+            "813"
         ],
         "classList_spring": [
             "786"
@@ -10312,7 +10563,7 @@
     {
         "classHours": "8hr 10min",
         "classList_fall": [
-            "813"
+            "817"
         ],
         "classList_spring": [
             "787"
@@ -10397,13 +10648,13 @@
     {
         "classHours": "10hr 10min",
         "classList_fall": [
-            "827",
             "831",
-            "832",
-            "842",
-            "843",
-            "844",
-            "845"
+            "835",
+            "836",
+            "846",
+            "847",
+            "848",
+            "849"
         ],
         "classList_spring": [
             "799",
@@ -10449,7 +10700,7 @@
     {
         "classHours": "4hr 20min",
         "classList_fall": [
-            "829"
+            "833"
         ],
         "classList_spring": [
             "800"
@@ -10457,15 +10708,15 @@
         "classTimes": {
             "F": [],
             "M": [
-                "01:00PM-01:50PM",
-                "02:00PM-03:20PM"
+                "02:10PM-03:00PM",
+                "03:10PM-04:30PM"
             ],
             "Sa": [],
             "T": [],
             "Th": [],
             "W": [
-                "01:00PM-01:50PM",
-                "02:00PM-03:20PM"
+                "02:10PM-03:00PM",
+                "03:10PM-04:30PM"
             ]
         },
         "email": null,
@@ -10510,19 +10761,19 @@
     {
         "classHours": "8hr 35min",
         "classList_fall": [
-            "826",
-            "838",
-            "839",
-            "840",
-            "841",
-            "846",
-            "847",
-            "848",
-            "849",
+            "830",
+            "842",
+            "843",
+            "844",
+            "845",
             "850",
             "851",
             "852",
-            "853"
+            "853",
+            "854",
+            "855",
+            "856",
+            "857"
         ],
         "classList_spring": [
             "802",
@@ -10560,7 +10811,7 @@
     {
         "classHours": "5hr 50min",
         "classList_fall": [
-            "833"
+            "837"
         ],
         "classList_spring": [
             "804"
@@ -10617,23 +10868,27 @@
         ]
     },
     {
-        "classHours": "15hr 0min",
+        "classHours": "19hr 20min",
         "classList_fall": [
-            "244",
-            "245",
             "246",
             "247",
             "248",
             "249",
             "250",
-            "253",
-            "254"
+            "251",
+            "252",
+            "255",
+            "256",
+            "257"
         ],
         "classList_summer": [
             "8"
         ],
         "classTimes": {
-            "F": [],
+            "F": [
+                "09:30AM-10:35AM",
+                "10:45AM-02:00PM"
+            ],
             "M": [
                 "09:00AM-10:20AM",
                 "10:30AM-11:50AM",
@@ -10666,13 +10921,19 @@
         ]
     },
     {
-        "classHours": "6hr 20min",
+        "classHours": "12hr 30min",
+        "classList_fall": [
+            "263",
+            "273"
+        ],
         "classList_summer": [
             "48"
         ],
         "classTimes": {
             "F": [],
-            "M": [],
+            "M": [
+                "07:00PM-10:05PM"
+            ],
             "Sa": [],
             "T": [
                 "06:00PM-09:10PM"
@@ -10680,7 +10941,9 @@
             "Th": [
                 "06:00PM-09:10PM"
             ],
-            "W": []
+            "W": [
+                "07:00PM-10:05PM"
+            ]
         },
         "email": null,
         "id": "1",
@@ -10862,7 +11125,7 @@
     {
         "classHours": "15hr 20min",
         "classList_fall": [
-            "513"
+            "516"
         ],
         "classList_summer": [
             "92"
@@ -10897,7 +11160,7 @@
     {
         "classHours": "18hr 20min",
         "classList_summer": [
-            "111",
+            "112",
             "148"
         ],
         "classTimes": {
@@ -10955,11 +11218,11 @@
     {
         "classHours": "5hr 20min",
         "classList_fall": [
-            "655",
-            "656",
             "657",
-            "662",
-            "663"
+            "658",
+            "659",
+            "664",
+            "665"
         ],
         "classList_summer": [
             "115"
@@ -11012,8 +11275,8 @@
     {
         "classHours": "22hr 30min",
         "classList_fall": [
-            "717",
-            "719"
+            "719",
+            "721"
         ],
         "classList_summer": [
             "127"
@@ -11056,7 +11319,7 @@
     {
         "classHours": "1hr 35min",
         "classList_fall": [
-            "30"
+            "32"
         ],
         "classTimes": {
             "F": [],
@@ -11080,11 +11343,11 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "32",
             "34",
-            "35",
             "36",
-            "46"
+            "37",
+            "38",
+            "48"
         ],
         "classTimes": {
             "F": [],
@@ -11106,7 +11369,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "39"
+            "41"
         ],
         "classTimes": {
             "F": [],
@@ -11130,7 +11393,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "43"
+            "45"
         ],
         "classTimes": {
             "F": [],
@@ -11154,7 +11417,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "80"
+            "82"
         ],
         "classTimes": {
             "F": [],
@@ -11180,7 +11443,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "138"
+            "140"
         ],
         "classTimes": {
             "F": [],
@@ -11202,7 +11465,7 @@
     {
         "classHours": "0hr 0min",
         "classList_fall": [
-            "152"
+            "154"
         ],
         "classTimes": {
             "F": [],
@@ -11224,8 +11487,8 @@
     {
         "classHours": "6hr 10min",
         "classList_fall": [
-            "159",
-            "160"
+            "161",
+            "162"
         ],
         "classTimes": {
             "F": [],
@@ -11251,7 +11514,7 @@
     {
         "classHours": "3hr 10min",
         "classList_fall": [
-            "181"
+            "183"
         ],
         "classTimes": {
             "F": [],
@@ -11275,8 +11538,8 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "251",
-            "252"
+            "253",
+            "254"
         ],
         "classTimes": {
             "F": [],
@@ -11302,8 +11565,8 @@
     {
         "classHours": "4hr 30min",
         "classList_fall": [
-            "450",
-            "454"
+            "453",
+            "457"
         ],
         "classTimes": {
             "F": [],
@@ -11329,7 +11592,7 @@
     {
         "classHours": "3hr 5min",
         "classList_fall": [
-            "500"
+            "503"
         ],
         "classTimes": {
             "F": [],
@@ -11353,7 +11616,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "512"
+            "515"
         ],
         "classTimes": {
             "F": [],
@@ -11379,7 +11642,7 @@
     {
         "classHours": "2hr 5min",
         "classList_fall": [
-            "515"
+            "518"
         ],
         "classTimes": {
             "F": [],
@@ -11401,9 +11664,35 @@
         ]
     },
     {
+        "classHours": "2hr 40min",
+        "classList_fall": [
+            "533"
+        ],
+        "classTimes": {
+            "F": [],
+            "M": [
+                "09:00AM-10:20AM"
+            ],
+            "Sa": [],
+            "T": [],
+            "Th": [],
+            "W": [
+                "09:00AM-10:20AM"
+            ]
+        },
+        "email": null,
+        "id": "14",
+        "name": "A. Hensley",
+        "office": null,
+        "phone": null,
+        "subjects": [
+            "HSER"
+        ]
+    },
+    {
         "classHours": "6hr 25min",
         "classList_fall": [
-            "630"
+            "634"
         ],
         "classTimes": {
             "F": [],
@@ -11417,7 +11706,7 @@
             "W": []
         },
         "email": null,
-        "id": "14",
+        "id": "15",
         "name": "M. Semnani",
         "office": null,
         "phone": null,
@@ -11426,27 +11715,27 @@
         ]
     },
     {
-        "classHours": "3hr 10min",
+        "classHours": "3hr 40min",
         "classList_fall": [
-            "638",
-            "640",
-            "642",
-            "644"
+            "641"
         ],
         "classTimes": {
             "F": [],
-            "M": [
-                "07:00PM-09:05PM",
-                "09:15PM-10:20PM"
-            ],
+            "M": [],
             "Sa": [],
-            "T": [],
-            "Th": [],
+            "T": [
+                "12:00PM-01:20PM",
+                "01:20PM-01:50PM"
+            ],
+            "Th": [
+                "12:00PM-01:20PM",
+                "01:20PM-01:50PM"
+            ],
             "W": []
         },
         "email": null,
-        "id": "15",
-        "name": "L. Perpall",
+        "id": "16",
+        "name": "M. Pechenova",
         "office": null,
         "phone": null,
         "subjects": [
@@ -11456,7 +11745,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "658"
+            "660"
         ],
         "classTimes": {
             "F": [],
@@ -11471,7 +11760,7 @@
             "W": []
         },
         "email": null,
-        "id": "16",
+        "id": "17",
         "name": "D. Oliveira da Silva",
         "office": null,
         "phone": null,
@@ -11482,7 +11771,7 @@
     {
         "classHours": "2hr 40min",
         "classList_fall": [
-            "659"
+            "661"
         ],
         "classTimes": {
             "F": [],
@@ -11497,38 +11786,12 @@
             ]
         },
         "email": "",
-        "id": "17",
+        "id": "18",
         "name": "Kevin D. Cooper, MAS, RD",
         "office": null,
         "phone": null,
         "subjects": [
             "NUTRI"
-        ]
-    },
-    {
-        "classHours": "2hr 40min",
-        "classList_fall": [
-            "758"
-        ],
-        "classTimes": {
-            "F": [],
-            "M": [],
-            "Sa": [],
-            "T": [
-                "10:30AM-11:50AM"
-            ],
-            "Th": [
-                "10:30AM-11:50AM"
-            ],
-            "W": []
-        },
-        "email": null,
-        "id": "18",
-        "name": "J. Samboceti",
-        "office": null,
-        "phone": null,
-        "subjects": [
-            "PSYC"
         ]
     }
 ]

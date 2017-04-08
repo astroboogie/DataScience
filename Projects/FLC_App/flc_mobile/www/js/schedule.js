@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import '../css/schedule.css';
+import '../css/mobileView.css';
 import '../css/schedule-subpages.css';
 import '../css/native_app_configuration.css';
 import '../fonts/material-icons.css';

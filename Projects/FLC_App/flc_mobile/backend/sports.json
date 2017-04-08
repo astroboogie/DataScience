@@ -1,167 +1,47 @@
 [
     {
-        "date": "Mar 28",
+        "date": "Apr 08",
         "id": "0",
         "neutralSite": null,
-        "opponent": "vs. Solano",
-        "sport": "Men's Tennis",
-        "time": "1:00 PM"
+        "opponent": "vs. Cosumnes River",
+        "sport": "Softball",
+        "time": "12:00 PM"
     },
     {
-        "date": "Mar 28",
+        "date": "Apr 08",
         "id": "1",
         "neutralSite": null,
-        "opponent": "at American River",
-        "sport": "Women's Tennis",
-        "time": "1:00 PM"
+        "opponent": "vs. Cosumnes River",
+        "sport": "Softball",
+        "time": "2:00 PM"
     },
     {
-        "date": "Mar 28",
+        "date": "Apr 11",
         "id": "2",
         "neutralSite": null,
-        "opponent": "vs. San Joaquin Delta",
-        "sport": "Softball",
-        "time": "3:00 PM"
+        "opponent": "vs. Regional Team Playoffs Rd. 1",
+        "sport": "Men's Tennis",
+        "time": "1:00 PM"
     },
     {
-        "date": "Mar 29",
+        "date": "Apr 11",
         "id": "3",
         "neutralSite": null,
-        "opponent": "at Big 8 #8: American River",
-        "sport": "Men's Golf",
-        "time": "12:00 PM"
+        "opponent": "vs. Regional Team Playoffs Rd. 1",
+        "sport": "Women's Tennis",
+        "time": "1:00 PM"
     },
     {
-        "date": "Mar 30",
+        "date": "Apr 11",
         "id": "4",
         "neutralSite": null,
-        "opponent": "at American River",
+        "opponent": "vs. Cosumnes River",
         "sport": "Baseball",
         "time": "2:30 PM"
     },
     {
-        "date": "Apr 01",
+        "date": "Apr 11",
         "id": "5",
-        "neutralSite": null,
-        "opponent": "at Chabot",
-        "sport": "Softball",
-        "time": "11:00 AM"
-    },
-    {
-        "date": "Apr 01",
-        "id": "6",
-        "neutralSite": null,
-        "opponent": "at Chabot",
-        "sport": "Softball",
-        "time": "1:00 PM"
-    },
-    {
-        "date": "Apr 01",
-        "id": "7",
-        "neutralSite": null,
-        "opponent": "vs. American River",
-        "sport": "Baseball",
-        "time": "1:00 PM"
-    },
-    {
-        "date": "Apr 03",
-        "id": "8",
-        "neutralSite": null,
-        "opponent": "at Big 8 #9: Delta",
-        "sport": null,
-        "time": null
-    },
-    {
-        "date": "Apr 04",
-        "id": "9",
-        "neutralSite": null,
-        "opponent": "at Lassen",
-        "sport": "Baseball",
-        "time": "2:00 PM"
-    },
-    {
-        "date": "Apr 04",
-        "id": "10",
-        "neutralSite": null,
-        "opponent": "at Modesto",
-        "sport": "Softball",
-        "time": "3:00 PM"
-    },
-    {
-        "date": "Apr 06",
-        "id": "11",
-        "neutralSite": "@ American River College",
-        "opponent": "vs. Big 8 Conference Tournament",
-        "sport": "Men's Tennis",
-        "time": "TBA"
-    },
-    {
-        "date": "Apr 06",
-        "id": "12",
-        "neutralSite": "@ American River College",
-        "opponent": "vs. Big 8 Conference Tournament",
-        "sport": "Women's Tennis",
-        "time": "TBA"
-    },
-    {
-        "date": "Apr 06",
-        "id": "13",
-        "neutralSite": null,
-        "opponent": "vs. Shasta",
-        "sport": "Softball",
-        "time": "1:00 PM"
-    },
-    {
-        "date": "Apr 06",
-        "id": "14",
-        "neutralSite": null,
-        "opponent": "vs. Shasta",
-        "sport": "Softball",
-        "time": "3:00 PM"
-    },
-    {
-        "date": "Apr 08",
-        "id": "15",
-        "neutralSite": null,
-        "opponent": "vs. Cosumnes River",
-        "sport": "Softball",
-        "time": "12:00 PM"
-    },
-    {
-        "date": "Apr 08",
-        "id": "16",
-        "neutralSite": null,
-        "opponent": "vs. Cosumnes River",
-        "sport": "Softball",
-        "time": "2:00 PM"
-    },
-    {
-        "date": "Apr 11",
-        "id": "17",
-        "neutralSite": null,
-        "opponent": "vs. Regional Team Playoffs Rd. 1",
-        "sport": "Men's Tennis",
-        "time": "1:00 PM"
-    },
-    {
-        "date": "Apr 11",
-        "id": "18",
-        "neutralSite": null,
-        "opponent": "vs. Regional Team Playoffs Rd. 1",
-        "sport": "Women's Tennis",
-        "time": "1:00 PM"
-    },
-    {
-        "date": "Apr 11",
-        "id": "19",
-        "neutralSite": null,
-        "opponent": "vs. Cosumnes River",
-        "sport": "Baseball",
-        "time": "2:30 PM"
-    },
-    {
-        "date": "Apr 11",
-        "id": "20",
         "neutralSite": null,
         "opponent": "vs. Diablo Valley",
         "sport": "Softball",
@@ -169,7 +49,7 @@
     },
     {
         "date": "Apr 13",
-        "id": "21",
+        "id": "6",
         "neutralSite": null,
         "opponent": "vs. San Mateo",
         "sport": "Softball",
@@ -177,7 +57,7 @@
     },
     {
         "date": "Apr 13",
-        "id": "22",
+        "id": "7",
         "neutralSite": null,
         "opponent": "at Cosumnes River",
         "sport": "Baseball",
@@ -185,7 +65,7 @@
     },
     {
         "date": "Apr 15",
-        "id": "23",
+        "id": "8",
         "neutralSite": null,
         "opponent": "at American River",
         "sport": "Softball",
@@ -193,7 +73,7 @@
     },
     {
         "date": "Apr 15",
-        "id": "24",
+        "id": "9",
         "neutralSite": null,
         "opponent": "vs. Cosumnes River",
         "sport": "Baseball",
@@ -201,7 +81,7 @@
     },
     {
         "date": "Apr 15",
-        "id": "25",
+        "id": "10",
         "neutralSite": null,
         "opponent": "at American River",
         "sport": "Softball",
@@ -209,7 +89,7 @@
     },
     {
         "date": "Apr 17",
-        "id": "26",
+        "id": "11",
         "neutralSite": null,
         "opponent": "at Big 8 #10: American River",
         "sport": "Men's Golf",
@@ -217,7 +97,7 @@
     },
     {
         "date": "Apr 18",
-        "id": "27",
+        "id": "12",
         "neutralSite": null,
         "opponent": "vs. Regional Team Playoffs Rd. 2",
         "sport": "Men's Tennis",
@@ -225,7 +105,7 @@
     },
     {
         "date": "Apr 18",
-        "id": "28",
+        "id": "13",
         "neutralSite": null,
         "opponent": "vs. Regional Team Playoffs Rd. 2",
         "sport": "Women's Tennis",
@@ -233,7 +113,7 @@
     },
     {
         "date": "Apr 18",
-        "id": "29",
+        "id": "14",
         "neutralSite": null,
         "opponent": "at San Joaquin Delta",
         "sport": "Baseball",
@@ -241,7 +121,7 @@
     },
     {
         "date": "Apr 18",
-        "id": "30",
+        "id": "15",
         "neutralSite": null,
         "opponent": "vs. Santa Rosa",
         "sport": "Softball",
@@ -249,7 +129,7 @@
     },
     {
         "date": "Apr 19",
-        "id": "31",
+        "id": "16",
         "neutralSite": null,
         "opponent": "at Big 8 #11: Santa Rosa",
         "sport": "Men's Golf",
@@ -257,7 +137,7 @@
     },
     {
         "date": "Apr 20",
-        "id": "32",
+        "id": "17",
         "neutralSite": null,
         "opponent": "vs. San Joaquin Delta",
         "sport": "Baseball",
@@ -265,7 +145,7 @@
     },
     {
         "date": "Apr 22",
-        "id": "33",
+        "id": "18",
         "neutralSite": null,
         "opponent": "vs. Sacramento City",
         "sport": "Softball",
@@ -273,7 +153,7 @@
     },
     {
         "date": "Apr 22",
-        "id": "34",
+        "id": "19",
         "neutralSite": null,
         "opponent": "vs. Regional Team Championship",
         "sport": "Men's Tennis",
@@ -281,7 +161,7 @@
     },
     {
         "date": "Apr 22",
-        "id": "35",
+        "id": "20",
         "neutralSite": null,
         "opponent": "vs. Regional Team Championship",
         "sport": "Women's Tennis",
@@ -289,7 +169,7 @@
     },
     {
         "date": "Apr 22",
-        "id": "36",
+        "id": "21",
         "neutralSite": null,
         "opponent": "at San Joaquin Delta",
         "sport": "Baseball",
@@ -297,7 +177,7 @@
     },
     {
         "date": "Apr 22",
-        "id": "37",
+        "id": "22",
         "neutralSite": null,
         "opponent": "vs. Sacramento City",
         "sport": "Softball",
@@ -305,7 +185,7 @@
     },
     {
         "date": "Apr 24",
-        "id": "38",
+        "id": "23",
         "neutralSite": null,
         "opponent": "at Big 8 #12: Santa Rosa",
         "sport": null,
@@ -313,7 +193,7 @@
     },
     {
         "date": "Apr 25",
-        "id": "39",
+        "id": "24",
         "neutralSite": null,
         "opponent": "at Diablo Valley",
         "sport": "Baseball",
@@ -321,7 +201,7 @@
     },
     {
         "date": "Apr 25",
-        "id": "40",
+        "id": "25",
         "neutralSite": null,
         "opponent": "at Sierra",
         "sport": "Softball",
@@ -329,7 +209,7 @@
     },
     {
         "date": "Apr 26",
-        "id": "41",
+        "id": "26",
         "neutralSite": null,
         "opponent": "at Big 8 #13: Napa Valley",
         "sport": "Men's Golf",
@@ -337,7 +217,7 @@
     },
     {
         "date": "Apr 26",
-        "id": "42",
+        "id": "27",
         "neutralSite": "@ Ojai, CA.",
         "opponent": "vs. Team State Championship",
         "sport": "Men's Tennis",
@@ -345,7 +225,7 @@
     },
     {
         "date": "Apr 26",
-        "id": "43",
+        "id": "28",
         "neutralSite": "@ Ojai, CA.",
         "opponent": "vs. Team State Championship",
         "sport": "Women's Tennis",
@@ -353,7 +233,7 @@
     },
     {
         "date": "Apr 27",
-        "id": "44",
+        "id": "29",
         "neutralSite": "@ Ojai, CA.",
         "opponent": "vs. Individual Regional Playoffs",
         "sport": "Men's Tennis",
@@ -361,7 +241,7 @@
     },
     {
         "date": "Apr 27",
-        "id": "45",
+        "id": "30",
         "neutralSite": "@ Ojai, CA.",
         "opponent": "vs. Individual State Championship",
         "sport": "Women's Tennis",
@@ -369,7 +249,7 @@
     },
     {
         "date": "Apr 27",
-        "id": "46",
+        "id": "31",
         "neutralSite": null,
         "opponent": "vs. Diablo Valley",
         "sport": "Baseball",
@@ -377,7 +257,7 @@
     },
     {
         "date": "Apr 28",
-        "id": "47",
+        "id": "32",
         "neutralSite": null,
         "opponent": "at Diablo Valley",
         "sport": "Baseball",
@@ -385,7 +265,7 @@
     },
     {
         "date": "Apr 30",
-        "id": "48",
+        "id": "33",
         "neutralSite": "@ Ojai, CA.",
         "opponent": "vs. Individual State Championship",
         "sport": "Men's Tennis",
@@ -393,10 +273,74 @@
     },
     {
         "date": "May 05",
-        "id": "49",
+        "id": "34",
         "neutralSite": null,
         "opponent": "vs. Regional",
         "sport": "Softball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 05",
+        "id": "35",
+        "neutralSite": null,
+        "opponent": "vs. Regional",
+        "sport": "Baseball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 08",
+        "id": "36",
+        "neutralSite": null,
+        "opponent": "at NorCal Regional Championship",
+        "sport": "Men's Golf",
+        "time": "7:00 AM"
+    },
+    {
+        "date": "May 12",
+        "id": "37",
+        "neutralSite": null,
+        "opponent": "vs. Super Regional",
+        "sport": "Softball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 12",
+        "id": "38",
+        "neutralSite": null,
+        "opponent": "vs. Super Regional",
+        "sport": "Baseball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 15",
+        "id": "39",
+        "neutralSite": null,
+        "opponent": "at State Championship",
+        "sport": "Men's Golf",
+        "time": "7:00 AM"
+    },
+    {
+        "date": "May 19",
+        "id": "40",
+        "neutralSite": null,
+        "opponent": "vs. State Championship",
+        "sport": "Softball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 19",
+        "id": "41",
+        "neutralSite": null,
+        "opponent": "vs. Sectionals",
+        "sport": "Baseball",
+        "time": "TBA"
+    },
+    {
+        "date": "May 27",
+        "id": "42",
+        "neutralSite": null,
+        "opponent": "vs. State Championship",
+        "sport": "Baseball",
         "time": "TBA"
     }
 ]
